@@ -52,3 +52,4 @@ To terminate all running processes:
    - Append analyst case notes in the investigation journal.
 3. Click **Export Official SOC PDF Report**:
    - The platform will immediately render a formal cybersecurity incident PDF dossier complete with forensic timestamps, tactic tables, and Indian Cybercrime Helpline references (1930).
+

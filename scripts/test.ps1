@@ -31,3 +31,4 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "  ALL TESTS PASSED! PLATFORM VERIFIED AND COMPLIANT." -ForegroundColor Green
     Write-Host "==========================================================" -ForegroundColor Green
 }
+

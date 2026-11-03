@@ -1,7 +1,7 @@
 import os
 import uuid
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, List, Dict, Any
 from fastapi import FastAPI, UploadFile, File, Form, Depends, HTTPException, status, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -18,14 +18,14 @@ from app.database.models import (
     AnalysisResultDB, DetectedThreatDB, IncidentDB, 
     IncidentTimelineDB, ReportDB, FeedbackDB, SystemSettingsDB
 )
-from app.audio.processor import save_upload_file, delete_audio_file, extract_audio_metadata
-from app.audio.validator import validate_audio_file, sanitize_filename
+from app.audio.processor import (
+    save_upload_file, delete_audio_file, extract_audio_metadata, purge_expired_audio_files
+)
+from app.audio.validator import read_and_validate_stream, sanitize_filename
 from app.gnani.prisma_service import process_transcription, generate_warning_audio
 from app.detection.engine import analyze_transcript, get_safety_warning_text
 from app.reports.pdf_generator import generate_pdf_report
 from app.services.evaluation import run_evaluation_pipeline, LABELS_FILE
-
-from contextlib import asynccontextmanager
 
 # Initialize DB on load
 init_db()
@@ -37,12 +37,12 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS Middleware
+# Secure CORS Middleware with explicit origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=settings.ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -92,11 +92,9 @@ def provider_health():
 # ============================================================================
 @app.post("/api/v1/audio/upload")
 async def upload_audio(file: UploadFile = File(...), db: Session = Depends(get_db)):
-    """Upload audio file for validation and analysis."""
-    content = await file.read()
-    file_size = len(content)
-    
-    validate_audio_file(file, file_size)
+    """Upload audio file with chunked streaming validation and magic bytes inspection."""
+    max_bytes = settings.MAX_UPLOAD_SIZE_MB * 1024 * 1024
+    content, ext = await read_and_validate_stream(file, max_bytes)
     audio_info = save_upload_file(content, file.filename or "upload.wav")
 
     db_audio = AudioFileDB(
@@ -126,11 +124,12 @@ async def upload_recording(
     duration_estimate: float = Form(0.0),
     db: Session = Depends(get_db)
 ):
-    """Receive live audio recording from frontend microphone."""
-    content = await audio_blob.read()
-    file_size = len(content)
+    """Receive live audio recording from frontend microphone with streaming validation."""
+    max_bytes = settings.MAX_UPLOAD_SIZE_MB * 1024 * 1024
+    content, ext = await read_and_validate_stream(audio_blob, max_bytes)
     
-    filename = f"mic_recording_{datetime.utcnow().strftime('%Y%m%d_%H%M%S')}.wav"
+    timestamp = datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')
+    filename = f"mic_recording_{timestamp}.wav"
     audio_info = save_upload_file(content, filename)
     if duration_estimate > 0:
         audio_info["duration"] = round(duration_estimate, 2)
@@ -153,6 +152,17 @@ async def upload_recording(
         "filename": audio_info["original_filename"],
         "duration": audio_info["duration"],
         "size": audio_info["file_size"]
+    }
+
+@app.post("/api/v1/audio/purge-expired")
+def purge_expired_audio(db: Session = Depends(get_db)):
+    """Purge audio recordings older than the configured data retention window."""
+    purged = purge_expired_audio_files(db, settings.RETENTION_DAYS)
+    return {
+        "success": True,
+        "purged_count": purged,
+        "retention_days": settings.RETENTION_DAYS,
+        "message": f"Purged {purged} audio recordings past retention window."
     }
 
 @app.get("/api/v1/audio/{audio_id}")
@@ -512,7 +522,7 @@ def update_incident(
         )
         db.add(db_timeline)
 
-    inc.updated_at = datetime.utcnow()
+    inc.updated_at = datetime.now(timezone.utc)
     db.commit()
     return {"success": True, "message": "Incident updated successfully", "status": inc.status}
 
@@ -524,10 +534,10 @@ def add_incident_note(incident_id: str, notes: str = Form(...), db: Session = De
         raise HTTPException(status_code=404, detail="Incident not found")
 
     current_notes = inc.analyst_notes or ""
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     new_entry = f"[{timestamp}] {notes}"
     inc.analyst_notes = f"{current_notes}\n{new_entry}".strip()
-    inc.updated_at = datetime.utcnow()
+    inc.updated_at = datetime.now(timezone.utc)
 
     db_timeline = IncidentTimelineDB(
         id=str(uuid.uuid4()),

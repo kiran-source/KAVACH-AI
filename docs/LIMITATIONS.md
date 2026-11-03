@@ -27,3 +27,4 @@ In situations involving immediate financial fraud, active coercion, or physical 
 - Dial the **National Cyber Crime Helpline: 1930** (Government of India).
 - File an official complaint on the National Cyber Crime Reporting Portal: **https://cybercrime.gov.in**.
 - Report stolen cards or unauthorized transactions directly to your bank's 24/7 toll-free helpline.
+

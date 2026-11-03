@@ -1,8 +1,11 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import Column, Integer, String, Float, Text, DateTime, ForeignKey, Boolean
 from sqlalchemy.orm import relationship, declarative_base
 
 Base = declarative_base()
+
+def get_utc_now():
+    return datetime.now(timezone.utc)
 
 class UserDB(Base):
     __tablename__ = "users"
@@ -11,7 +14,7 @@ class UserDB(Base):
     username = Column(String, unique=True, index=True)
     email = Column(String, unique=True, index=True)
     password_hash = Column(String)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
 class AudioFileDB(Base):
     __tablename__ = "audio_files"
@@ -23,7 +26,7 @@ class AudioFileDB(Base):
     duration = Column(Float, default=0.0)
     format = Column(String)
     retention_status = Column(String, default="active")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
     
     transcripts = relationship("TranscriptDB", back_populates="audio_file", cascade="all, delete-orphan")
 
@@ -35,7 +38,7 @@ class TranscriptDB(Base):
     full_text = Column(Text)
     detected_language = Column(String, default="en")
     provider = Column(String, default="gnani_prisma")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
     
     audio_file = relationship("AudioFileDB", back_populates="transcripts")
     segments = relationship("TranscriptSegmentDB", back_populates="transcript", cascade="all, delete-orphan")
@@ -62,7 +65,7 @@ class AnalysisResultDB(Base):
     severity = Column(String) # Low, Guarded, Medium, High, Critical
     analysis_status = Column(String, default="completed")
     engine_version = Column(String, default="1.0.0")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
     
     transcript = relationship("TranscriptDB", back_populates="analyses")
     threats = relationship("DetectedThreatDB", back_populates="analysis", cascade="all, delete-orphan")
@@ -94,8 +97,8 @@ class IncidentDB(Base):
     status = Column(String, default="New") # New, Under Review, Confirmed Suspicious, False Positive, Resolved
     assigned_analyst = Column(String, default="SOC Analyst 1")
     analyst_notes = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
+    updated_at = Column(DateTime, default=get_utc_now, onupdate=get_utc_now)
     
     analysis = relationship("AnalysisResultDB", back_populates="incidents")
     timeline = relationship("IncidentTimelineDB", back_populates="incident", cascade="all, delete-orphan")
@@ -108,7 +111,7 @@ class IncidentTimelineDB(Base):
     incident_id = Column(String, ForeignKey("incidents.id"))
     event_type = Column(String)
     description = Column(Text)
-    event_time = Column(DateTime, default=datetime.utcnow)
+    event_time = Column(DateTime, default=get_utc_now)
     
     incident = relationship("IncidentDB", back_populates="timeline")
 
@@ -118,7 +121,7 @@ class ReportDB(Base):
     id = Column(String, primary_key=True, index=True)
     incident_id = Column(String, ForeignKey("incidents.id"))
     file_path = Column(String)
-    generated_at = Column(DateTime, default=datetime.utcnow)
+    generated_at = Column(DateTime, default=get_utc_now)
     
     incident = relationship("IncidentDB", back_populates="reports")
 
@@ -129,12 +132,11 @@ class FeedbackDB(Base):
     analysis_id = Column(String, ForeignKey("analysis_results.id"))
     feedback_type = Column(String) # accurate, false_positive, false_negative
     comments = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
 class SystemSettingsDB(Base):
     __tablename__ = "system_settings"
     
     key = Column(String, primary_key=True, index=True)
     value = Column(Text)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-
+    updated_at = Column(DateTime, default=get_utc_now, onupdate=get_utc_now)

@@ -46,3 +46,4 @@ Write-Host "  -> Open Browser: http://localhost:$FrontendPort" -ForegroundColor 
 Write-Host "  -> API Explorer: http://127.0.0.1:$BackendPort/docs" -ForegroundColor Cyan
 Write-Host "  -> Stop Services: .\scripts\stop.ps1" -ForegroundColor DarkGray
 Write-Host "==========================================================" -ForegroundColor Green
+

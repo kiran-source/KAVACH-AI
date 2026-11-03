@@ -97,3 +97,30 @@ def delete_audio_file(file_path: str) -> bool:
         logger.error(f"Error deleting audio file {file_path}: {e}")
     return False
 
+def purge_expired_audio_files(db, retention_days: int) -> int:
+    """
+    Purges audio files exceeding the retention window from disk to protect user privacy.
+    Updates retention_status in database to 'purged'.
+    """
+    from datetime import datetime, timezone, timedelta
+    from app.database.models import AudioFileDB
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=retention_days)
+    expired_files = db.query(AudioFileDB).filter(
+        AudioFileDB.created_at < cutoff,
+        AudioFileDB.retention_status == "active"
+    ).all()
+
+    purged_count = 0
+    for af in expired_files:
+        if delete_audio_file(af.stored_path):
+            af.retention_status = "purged"
+            purged_count += 1
+            
+    if purged_count > 0:
+        db.commit()
+        logger.info(f"Purged {purged_count} expired audio files beyond {retention_days} days retention limit.")
+        
+    return purged_count
+
+

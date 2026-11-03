@@ -168,3 +168,4 @@ Computes real-time SOC metrics directly from SQLite database records.
 
 ### `POST /evaluation/run`
 Executes evaluation pipeline on the 20-scenario synthetic dataset and returns Confusion Matrix, Precision, Recall, and F1 score.
+

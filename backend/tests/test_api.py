@@ -141,3 +141,60 @@ def test_evaluation_pipeline_metrics():
     assert res["metrics"]["precision"] >= 0.90
     assert res["metrics"]["recall"] >= 0.90
     assert res["confusion_matrix"]["false_positives"] == 0
+
+def test_audio_security_and_magic_bytes_validation():
+    from app.audio.validator import validate_audio_magic_bytes, sanitize_filename
+    
+    # 1. Path traversal and null byte stripping
+    malicious_input = "../../../etc/passwd\x00_call.wav"
+    clean_name = sanitize_filename(malicious_input)
+    assert ".." not in clean_name
+    assert "\x00" not in clean_name
+    assert "/" not in clean_name
+    assert "\\" not in clean_name
+
+    # 2. Magic byte validation
+    valid_wav_header = b"RIFF$   WAVEfmt "
+    assert validate_audio_magic_bytes(valid_wav_header, ".wav") is True
+
+    fake_text_in_wav = b"<html><script>alert(1)</script></html>"
+    assert validate_audio_magic_bytes(fake_text_in_wav, ".wav") is False
+
+    valid_mp3_id3 = b"ID3\x03\x00\x00\x00"
+    assert validate_audio_magic_bytes(valid_mp3_id3, ".mp3") is True
+
+    fake_binary_in_mp3 = b"\x7fELF\x02\x01\x01\x00"
+    assert validate_audio_magic_bytes(fake_binary_in_mp3, ".mp3") is False
+
+def test_data_retention_purge(db):
+    from app.audio.processor import purge_expired_audio_files
+    from datetime import datetime, timezone, timedelta
+    
+    # Create an artificially expired audio file record
+    old_audio_id = str(uuid.uuid4())
+    dummy_path = os.path.abspath(f"uploads/expired_dummy_{old_audio_id[:8]}.wav")
+    with open(dummy_path, "wb") as f:
+        f.write(b"RIFF$   WAVEfmt ")
+        
+    old_rec = AudioFileDB(
+        id=old_audio_id,
+        original_filename="old_call.wav",
+        stored_path=dummy_path,
+        file_size=16,
+        duration=1.0,
+        format="wav",
+        retention_status="active",
+        created_at=datetime.now(timezone.utc) - timedelta(days=30)
+    )
+    db.add(old_rec)
+    db.commit()
+
+    # Run purge for files older than 7 days
+    purged_count = purge_expired_audio_files(db=db, retention_days=7)
+    assert purged_count >= 1
+    assert not os.path.exists(dummy_path)
+    
+    # Verify retention status updated
+    db.refresh(old_rec)
+    assert old_rec.retention_status == "purged"
+

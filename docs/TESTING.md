@@ -49,3 +49,4 @@ npm run build --prefix frontend
 ```
 - **TypeScript**: `tsc` compiles clean with zero type errors.
 - **Vite**: Production bundle generated in `frontend/dist/`.
+

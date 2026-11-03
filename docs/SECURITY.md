@@ -39,3 +39,4 @@ KAVACH AI operates in a zero-trust, privacy-first cybersecurity operations envir
 - **Exception Boundaries**: All API routes and background operations feature bounded try-catch blocks returning standardized RFC 7807 JSON error schemas.
 - **Static Analysis Compliance**: Fully typed Python with Pydantic v2 schemas and strict TypeScript compiler settings (`tsc` with zero errors).
 - **Audit Logging**: All status transitions, case notes, and PDF generation events create immutable, timestamped entries in `IncidentTimelineDB`.
+

@@ -78,3 +78,4 @@
 ### NFR-3: Reliability & Testability
 - **NFR-3.1**: The codebase MUST provide automated Pytest integration tests with 100% pass rate.
 - **NFR-3.2**: A synthetic benchmark dataset of 20 scenarios (Telugu, Hindi, English, code-mixed) MUST evaluate precision, recall, F1, and confusion matrix.
+

@@ -18,13 +18,13 @@
     "te": 1.0
   },
   "per_category_coverage": {
-    "Digital Arrest Patterns": 1.0,
-    "Urgency and Threats": 0.6,
     "Authority Impersonation": 1.0,
+    "Urgency and Threats": 0.6,
+    "Digital Arrest Patterns": 1.0,
     "Psychological Manipulation & Isolation": 0.3333,
     "Credential Theft": 1.0,
-    "Remote Access Manipulation": 1.0,
     "Financial Fraud": 1.0,
+    "Remote Access Manipulation": 1.0,
     "Courier and Customs Fraud": 1.0
   },
   "detailed_results": [
@@ -36,10 +36,10 @@
       "predicted_score": 100.0,
       "predicted_severity": "Critical",
       "detected_categories": [
-        "Digital Arrest Patterns",
-        "Urgency and Threats",
         "Authority Impersonation",
-        "Credential Theft"
+        "Urgency and Threats",
+        "Credential Theft",
+        "Digital Arrest Patterns"
       ],
       "outcome": "TP"
     },
@@ -77,8 +77,8 @@
       "predicted_score": 53.0,
       "predicted_severity": "Medium",
       "detected_categories": [
-        "Remote Access Manipulation",
-        "Financial Fraud"
+        "Financial Fraud",
+        "Remote Access Manipulation"
       ],
       "outcome": "TP"
     },
@@ -90,9 +90,9 @@
       "predicted_score": 75.0,
       "predicted_severity": "High",
       "detected_categories": [
-        "Courier and Customs Fraud",
+        "Financial Fraud",
         "Authority Impersonation",
-        "Financial Fraud"
+        "Courier and Customs Fraud"
       ],
       "outcome": "TP"
     },
@@ -117,11 +117,11 @@
       "predicted_score": 100.0,
       "predicted_severity": "Critical",
       "detected_categories": [
-        "Urgency and Threats",
+        "Financial Fraud",
         "Authority Impersonation",
+        "Urgency and Threats",
         "Credential Theft",
-        "Psychological Manipulation & Isolation",
-        "Financial Fraud"
+        "Psychological Manipulation & Isolation"
       ],
       "outcome": "TP"
     },
@@ -133,8 +133,8 @@
       "predicted_score": 53.0,
       "predicted_severity": "Medium",
       "detected_categories": [
-        "Digital Arrest Patterns",
-        "Authority Impersonation"
+        "Authority Impersonation",
+        "Digital Arrest Patterns"
       ],
       "outcome": "TP"
     },
@@ -159,8 +159,8 @@
       "predicted_score": 80.0,
       "predicted_severity": "Critical",
       "detected_categories": [
-        "Urgency and Threats",
         "Remote Access Manipulation",
+        "Urgency and Threats",
         "Credential Theft"
       ],
       "outcome": "TP"
@@ -223,8 +223,8 @@
       "predicted_score": 8.3,
       "predicted_severity": "Low",
       "detected_categories": [
-        "Digital Arrest Patterns",
-        "Credential Theft"
+        "Credential Theft",
+        "Digital Arrest Patterns"
       ],
       "outcome": "TN"
     },

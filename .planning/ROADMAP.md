@@ -234,3 +234,4 @@ MILESTONE 4: Competition Packaging & Operational Delivery (Phase 14)
 - **Acceptance Criteria**:
   - Another developer can clone the repo and run `.\scripts\setup.ps1` followed by `.\scripts\start.ps1` to launch the full platform.
   - 75–90 second demo script aligned with challenge criteria.
+

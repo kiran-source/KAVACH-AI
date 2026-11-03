@@ -28,3 +28,4 @@ if (-not $stoppedAny) {
 } else {
     Write-Host "  All KAVACH AI services stopped successfully." -ForegroundColor Green
 }
+

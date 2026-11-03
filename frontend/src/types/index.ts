@@ -155,3 +155,4 @@ export interface SystemSettings {
   gnani_evon_connected: boolean;
   app_version: string;
 }
+

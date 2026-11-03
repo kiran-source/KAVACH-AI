@@ -49,3 +49,4 @@ Write-Host "`n==========================================================" -Foreg
 Write-Host "  KAVACH AI Setup Completed Successfully!" -ForegroundColor Green
 Write-Host "  Run .\scripts\start.ps1 to launch application." -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Green
+
