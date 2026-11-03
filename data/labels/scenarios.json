@@ -1,0 +1,223 @@
+[
+  {
+    "scenario_id": "SCAM-001",
+    "title": "Digital Arrest CBI Narcotics Threat",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Namaste. I am Inspector Sharma from CBI headquarters Delhi. Your Aadhaar number and mobile number are linked with international money laundering and drug racket. You are placed under digital arrest right now. Do not disconnect the video call or tell your family, otherwise police team will arrest you immediately.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Authority Impersonation", "Digital Arrest Patterns", "Urgency and Threats", "Psychological Manipulation & Isolation"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "telephone-band"
+  },
+  {
+    "scenario_id": "SCAM-002",
+    "title": "SBI KYC Verification and OTP Theft",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Sir your bank account KYC verification is pending today. If you do not update PAN card and ATM card right now, your account will be blocked permanently. Please tell me the 6 digit OTP received on your mobile number immediately.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Credential Theft", "Urgency and Threats"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "SCAM-003",
+    "title": "Telugu Bank Account Block and PIN Demand",
+    "language": "te",
+    "code_mixed": true,
+    "script": "నమస్కారం మీ బ్యాంకు అకౌంట్ బ్లాక్ అయింది. వెంటనే మీ ఏటీఎం పిన్ నంబర్ మరియు ఓటీపీ చెప్పండి లేదంటే మీ పై కేసు నమోదు అవుతుంది మరియు అరెస్ట్ చేస్తారు.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Credential Theft", "Urgency and Threats"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "low_noise"
+  },
+  {
+    "scenario_id": "SCAM-004",
+    "title": "Electricity Disconnection Threat",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Dear consumer, your electricity power connection will be disconnected tonight at 9:30 PM due to unpaid bill. Immediately install this QuickSupport APK file and pay verification fee of Rs 10 to update consumer ID.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Remote Access Manipulation", "Urgency and Threats", "Financial Fraud"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "moderate_noise"
+  },
+  {
+    "scenario_id": "SCAM-005",
+    "title": "FedEx Customs Narcotics Seizure",
+    "language": "en",
+    "code_mixed": false,
+    "script": "This is FedEx Customs Department Mumbai. A courier parcel containing MDMA narcotics and 5 fake passports sent to Taiwan in your name has been seized. Police arrest warrant is issued. Transfer money to safe government account for investigation clearance.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Courier and Customs Fraud", "Authority Impersonation", "Financial Fraud"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "telephone-band"
+  },
+  {
+    "scenario_id": "SCAM-006",
+    "title": "AnyDesk Remote Banking Access",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Sir main Bank Customer Support se baat kar raha hoon. Aapka refund fas gaya hai. Google Play Store se AnyDesk download kijiye aur screen share karke net banking password enter kijiye.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Remote Access Manipulation", "Credential Theft"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "SCAM-007",
+    "title": "Telugu Police Cyber Cell Arrest Threat",
+    "language": "te",
+    "code_mixed": true,
+    "script": "మేము సైబర్ క్రైమ్ పోలీసులము. మీ ఆధార్ నంబర్ పై అక్రమ కేసులు నమోదయ్యాయి. ఎవరికీ చెప్పకండి. వెంటనే రూ 50,000 సేఫ్ అకౌంట్ లో డిపాజిట్ చేయండి లేదంటే పోలీస్ టీమ్ మీ ఇంటికి వస్తుంది.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Authority Impersonation", "Financial Fraud", "Psychological Manipulation & Isolation"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "low_noise"
+  },
+  {
+    "scenario_id": "SCAM-008",
+    "title": "Supreme Court Warrant and Continuous Skype Monitoring",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Supreme Court of India has ordered digital custody. Stay on line and keep camera on. You are under digital arrest. Do not inform family or advocate. All accounts are subject to immediate freeze.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Digital Arrest Patterns", "Authority Impersonation", "Psychological Manipulation & Isolation"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "SCAM-009",
+    "title": "Fake Income Tax Refund with CVV Request",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Income Tax Department refund approval. Rs 24,500 refund has been approved for your PAN card. Please provide your debit card number, expiry date, and 3-digit CVV number on call to credit the amount.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Credential Theft", "Authority Impersonation"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "telephone-band"
+  },
+  {
+    "scenario_id": "SCAM-010",
+    "title": "Telugu Remote APK Install for Loan Approval",
+    "language": "te",
+    "code_mixed": true,
+    "script": "మీ లోన్ సాంక్షన్ అయింది సర్. వెంటనే మేము పంపిన ఏపీకే లింక్ డౌన్‌లోడ్ చేసి స్క్రీన్ షేర్ చేయండి. మీ మొబైల్ కి వచ్చిన ఓటీపీ చెప్పండి.",
+    "expected_classification": "scam",
+    "expected_threat_categories": ["Remote Access Manipulation", "Credential Theft"],
+    "expected_severity_range": ["High", "Critical"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "LEGIT-001",
+    "title": "Broadband Customer Service Resolution",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Hello, this is Airtel broadband technical support following up on ticket #4912. We have restarted your fiber line from the exchange. Could you check if your internet router LED light is solid green now?",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "LEGIT-002",
+    "title": "Doctor Appointment Rescheduling",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Good afternoon, calling from Apollo Hospital reception. Dr. Rao has an emergency surgery tomorrow morning. Would you like to reschedule your consultation to Thursday 4:00 PM?",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low"],
+    "noise_condition": "low_noise"
+  },
+  {
+    "scenario_id": "LEGIT-003",
+    "title": "E-Commerce Delivery Confirmation",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Namaste sir, main Flipkart delivery agent bol raha hoon. Aapka package deliver karne aaya hoon building gate par. Kya aap ghar par hain?",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low"],
+    "noise_condition": "moderate_noise"
+  },
+  {
+    "scenario_id": "LEGIT-004",
+    "title": "Telugu College Admission Inquiry",
+    "language": "te",
+    "code_mixed": true,
+    "script": "నమస్కారం, యూనివర్సిటీ అడ్మిషన్స్ ఆఫీస్ నుండి కాల్ చేస్తున్నాము. మీ అప్లికేషన్ ఫారమ్ లో సర్టిఫికెట్స్ సబ్మిట్ చేయాల్సి ఉంది. కాలేజీ వెబ్‌సైట్ లో లాగిన్ అయి అప్‌లోడ్ చేయండి.",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "LEGIT-005",
+    "title": "Airline Flight Schedule Update",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Indigo Airlines passenger advisory: Flight 6E 302 from Bengaluru to Hyderabad has been delayed by 25 minutes due to air traffic clearance. Boarding gate remains unchanged at Gate 14.",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low"],
+    "noise_condition": "telephone-band"
+  },
+  {
+    "scenario_id": "AMBIG-001",
+    "title": "Bank Security Awareness Advisory",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Dear customer, this is an official security awareness announcement from HDFC Bank. Please remember that our bank never asks for your OTP, UPI PIN, or passwords. Stay safe from scam calls and beware of digital arrest threats.",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low", "Guarded"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "AMBIG-002",
+    "title": "Urgent Family Hospital Bill Payment",
+    "language": "en",
+    "code_mixed": false,
+    "script": "Dad, my phone battery is dying and my friend is in the hospital emergency ward. Can you please transfer Rs 10000 directly to the hospital billing desk as soon as possible?",
+    "expected_classification": "ambiguous",
+    "expected_threat_categories": ["Urgency and Threats"],
+    "expected_severity_range": ["Guarded", "Medium"],
+    "noise_condition": "low_noise"
+  },
+  {
+    "scenario_id": "AMBIG-003",
+    "title": "Hindi Loan Agent Genuine Follow-up",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Sir aapne online personal loan ke liye enquiry kiya tha. Bank interest rate 10.5% hai. Aap apne documents bank branch me jakar jama kar sakte hain.",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low"],
+    "noise_condition": "telephone-band"
+  },
+  {
+    "scenario_id": "AMBIG-004",
+    "title": "Telugu Cyber Safety Notice",
+    "language": "te",
+    "code_mixed": true,
+    "script": "సైబర్ క్రైమ్ పోలీసుల హెచ్చరిక: ఓటీపీని ఎవరితోనూ పంచుకోవద్దు. గుర్తుతెలియని వ్యక్తులు బ్యాంకు అధికారులుగా మాట్లాడితే నమ్మవద్దు. మోసగాళ్ల పట్ల జాగ్రత్తగా ఉండండి.",
+    "expected_classification": "legitimate",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low", "Guarded"],
+    "noise_condition": "clean"
+  },
+  {
+    "scenario_id": "AMBIG-005",
+    "title": "Lost Wallet Friend Requesting Funds",
+    "language": "hi",
+    "code_mixed": true,
+    "script": "Bhai main railway station par hoon aur mera wallet chori ho gaya. Ticket counter par khada hoon, thode paise bhej sakta hai kya?",
+    "expected_classification": "ambiguous",
+    "expected_threat_categories": [],
+    "expected_severity_range": ["Low", "Guarded"],
+    "noise_condition": "moderate_noise"
+  }
+]
+

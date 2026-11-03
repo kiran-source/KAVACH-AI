@@ -1,0 +1,1 @@
+Hello, this is Airtel broadband technical support following up on ticket #4912. We have restarted your fiber line from the exchange. Could you check if your internet router LED light is solid green now?

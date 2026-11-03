@@ -1,0 +1,277 @@
+{
+  "dataset_size": 20,
+  "confusion_matrix": {
+    "true_positives": 10,
+    "true_negatives": 10,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+  },
+  "per_language_accuracy": {
+    "hi": 1.0,
+    "en": 1.0,
+    "te": 1.0
+  },
+  "per_category_coverage": {
+    "Digital Arrest Patterns": 1.0,
+    "Urgency and Threats": 0.6,
+    "Authority Impersonation": 1.0,
+    "Psychological Manipulation & Isolation": 0.3333,
+    "Credential Theft": 1.0,
+    "Remote Access Manipulation": 1.0,
+    "Financial Fraud": 1.0,
+    "Courier and Customs Fraud": 1.0
+  },
+  "detailed_results": [
+    {
+      "scenario_id": "SCAM-001",
+      "title": "Digital Arrest CBI Narcotics Threat",
+      "language": "hi",
+      "expected_classification": "scam",
+      "predicted_score": 100.0,
+      "predicted_severity": "Critical",
+      "detected_categories": [
+        "Digital Arrest Patterns",
+        "Urgency and Threats",
+        "Authority Impersonation",
+        "Credential Theft"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-002",
+      "title": "SBI KYC Verification and OTP Theft",
+      "language": "en",
+      "expected_classification": "scam",
+      "predicted_score": 53.0,
+      "predicted_severity": "Medium",
+      "detected_categories": [
+        "Urgency and Threats",
+        "Credential Theft"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-003",
+      "title": "Telugu Bank Account Block and PIN Demand",
+      "language": "te",
+      "expected_classification": "scam",
+      "predicted_score": 53.0,
+      "predicted_severity": "Medium",
+      "detected_categories": [
+        "Urgency and Threats",
+        "Credential Theft"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-004",
+      "title": "Electricity Disconnection Threat",
+      "language": "hi",
+      "expected_classification": "scam",
+      "predicted_score": 53.0,
+      "predicted_severity": "Medium",
+      "detected_categories": [
+        "Remote Access Manipulation",
+        "Financial Fraud"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-005",
+      "title": "FedEx Customs Narcotics Seizure",
+      "language": "en",
+      "expected_classification": "scam",
+      "predicted_score": 75.0,
+      "predicted_severity": "High",
+      "detected_categories": [
+        "Courier and Customs Fraud",
+        "Authority Impersonation",
+        "Financial Fraud"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-006",
+      "title": "AnyDesk Remote Banking Access",
+      "language": "hi",
+      "expected_classification": "scam",
+      "predicted_score": 58.0,
+      "predicted_severity": "Medium",
+      "detected_categories": [
+        "Remote Access Manipulation",
+        "Credential Theft"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-007",
+      "title": "Telugu Police Cyber Cell Arrest Threat",
+      "language": "te",
+      "expected_classification": "scam",
+      "predicted_score": 100.0,
+      "predicted_severity": "Critical",
+      "detected_categories": [
+        "Urgency and Threats",
+        "Authority Impersonation",
+        "Credential Theft",
+        "Psychological Manipulation & Isolation",
+        "Financial Fraud"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-008",
+      "title": "Supreme Court Warrant and Continuous Skype Monitoring",
+      "language": "en",
+      "expected_classification": "scam",
+      "predicted_score": 53.0,
+      "predicted_severity": "Medium",
+      "detected_categories": [
+        "Digital Arrest Patterns",
+        "Authority Impersonation"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-009",
+      "title": "Fake Income Tax Refund with CVV Request",
+      "language": "hi",
+      "expected_classification": "scam",
+      "predicted_score": 58.0,
+      "predicted_severity": "Medium",
+      "detected_categories": [
+        "Authority Impersonation",
+        "Credential Theft"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "SCAM-010",
+      "title": "Telugu Remote APK Install for Loan Approval",
+      "language": "te",
+      "expected_classification": "scam",
+      "predicted_score": 80.0,
+      "predicted_severity": "Critical",
+      "detected_categories": [
+        "Urgency and Threats",
+        "Remote Access Manipulation",
+        "Credential Theft"
+      ],
+      "outcome": "TP"
+    },
+    {
+      "scenario_id": "LEGIT-001",
+      "title": "Broadband Customer Service Resolution",
+      "language": "en",
+      "expected_classification": "legitimate",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "LEGIT-002",
+      "title": "Doctor Appointment Rescheduling",
+      "language": "en",
+      "expected_classification": "legitimate",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "LEGIT-003",
+      "title": "E-Commerce Delivery Confirmation",
+      "language": "hi",
+      "expected_classification": "legitimate",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "LEGIT-004",
+      "title": "Telugu College Admission Inquiry",
+      "language": "te",
+      "expected_classification": "legitimate",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "LEGIT-005",
+      "title": "Airline Flight Schedule Update",
+      "language": "en",
+      "expected_classification": "legitimate",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "AMBIG-001",
+      "title": "Bank Security Awareness Advisory",
+      "language": "en",
+      "expected_classification": "legitimate",
+      "predicted_score": 8.3,
+      "predicted_severity": "Low",
+      "detected_categories": [
+        "Digital Arrest Patterns",
+        "Credential Theft"
+      ],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "AMBIG-002",
+      "title": "Urgent Family Hospital Bill Payment",
+      "language": "en",
+      "expected_classification": "ambiguous",
+      "predicted_score": 25.0,
+      "predicted_severity": "Guarded",
+      "detected_categories": [
+        "Financial Fraud"
+      ],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "AMBIG-003",
+      "title": "Hindi Loan Agent Genuine Follow-up",
+      "language": "hi",
+      "expected_classification": "legitimate",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "AMBIG-004",
+      "title": "Telugu Cyber Safety Notice",
+      "language": "te",
+      "expected_classification": "legitimate",
+      "predicted_score": 7.5,
+      "predicted_severity": "Low",
+      "detected_categories": [
+        "Authority Impersonation",
+        "Credential Theft"
+      ],
+      "outcome": "TN"
+    },
+    {
+      "scenario_id": "AMBIG-005",
+      "title": "Lost Wallet Friend Requesting Funds",
+      "language": "hi",
+      "expected_classification": "ambiguous",
+      "predicted_score": 0.0,
+      "predicted_severity": "Low",
+      "detected_categories": [],
+      "outcome": "TN"
+    }
+  ]
+}
