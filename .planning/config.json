@@ -1,0 +1,21 @@
+{
+  "project_name": "KAVACH AI",
+  "version": "1.0.0",
+  "environment": "local_windows",
+  "mode": "mvp_prioritized",
+  "created_at": "2026-11-03T22:07:00+05:30",
+  "target_hardware": {
+    "ram_limit_gb": 16,
+    "cpu": "Intel Core i5 / AMD Ryzen 5 class",
+    "gpu_required": false,
+    "storage_limit_gb": 55,
+    "network_mode": "localhost_first"
+  },
+  "workflow": {
+    "gates": {
+      "require_review": true,
+      "verify_acceptance_criteria": true,
+      "atomic_commits": true
+    }
+  }
+}
