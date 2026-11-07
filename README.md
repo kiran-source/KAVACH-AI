@@ -14,7 +14,7 @@ It protects Indian citizens and enterprise SOCs against advanced voice social-en
 
 > 📄 **Executive Summary & Submission Pitch**:
 > - 📖 **[Read the 1-Page Solution Pitch (Markdown)](SOLUTION_PITCH.md)**
-> - 📥 **[Download the Official 1-Page Pitch (PDF)](submission/ONE_PAGE_SOLUTION_PITCH.pdf)**
+> - 📥 **[Download the Official 1-Page Pitch (PDF)](ONE_PAGE_SOLUTION_PITCH.pdf)**
 > - 📦 **[Submission Verification & Package Dossier](submission/SUBMISSION_DOSSIER.md)**
 
 ---

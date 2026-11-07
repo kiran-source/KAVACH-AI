@@ -3,7 +3,7 @@
 **Competition**: Great Indian AI Internship Challenge 2026 by Gnani AI  
 **Project**: KAVACH AI (కవచ్ / कवच) — Multilingual Voice Scam & Vishing Interception Platform  
 **Target Users**: Indian Citizens, Vulnerable Demographics, Banking & Enterprise SOC Teams  
-**Pitch PDF**: [Download Official 1-Page Pitch PDF](submission/ONE_PAGE_SOLUTION_PITCH.pdf)
+**Pitch PDF**: [Download Official 1-Page Pitch PDF](ONE_PAGE_SOLUTION_PITCH.pdf) (also in [`submission/ONE_PAGE_SOLUTION_PITCH.pdf`](submission/ONE_PAGE_SOLUTION_PITCH.pdf))
 
 ---
 
@@ -46,3 +46,4 @@ Phone-based cyber fraud in India has evolved into an industrialized threat costi
 - **CPU Inference Ready**: Fast path resolves in 4.29 ms; average selective per-turn latency is 498 ms on standard consumer CPU without requiring expensive GPUs.
 - **100% Test Pass Rate**: **78/78 automated backend tests passed**; frontend compiles with 0 errors.
 - **Genuine Technology Usage**: Full production integration of Gnani Prisma STT v3 and Gnani Timbre TTS v2.5.
+
