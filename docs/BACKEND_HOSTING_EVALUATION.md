@@ -73,3 +73,4 @@ When configuring any host environment (local or cloud):
 | `DATABASE_URL` | `sqlite:///./kavach.db` | Yes |
 | `UPLOAD_DIR` | `./uploads` | Yes |
 | `MAX_UPLOAD_SIZE_MB` | `25` | Yes |
+

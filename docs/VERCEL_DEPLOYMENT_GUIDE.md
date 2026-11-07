@@ -62,3 +62,4 @@ The FastAPI backend automatically permits Vercel preview and production domains 
 allow_origin_regex=r"https://.*\.vercel\.app"
 ```
 Custom domains can be added to the backend's `ALLOWED_ORIGINS` environment variable (comma-separated).
+
