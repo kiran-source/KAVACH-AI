@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0024
+Language: hi-en
+Scenario: Enforcement Directorate Illegal Foreign Currency Coercion (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, DIGITAL_ARREST, FINANCIAL_REDIRECTION
+
+[CALLER]: Yeh Enforcement Directorate se Assistant Director Verma bol raha hoon. Urgent investigation notice nikla hai regarding 70,000 USD foreign exchange FEMA violation.
+[RECIPIENT]: Wait a minute, 70,000 USD foreign exchange FEMA violation? Maine aisa koi transaction ya activity nahi ki. Who authorized this?
+[CALLER]: Server logs mein aapka IP trace hua hai. To cancel freezing of all domestic bank accounts, aapko turant ED safe reserve fund deposit karna hoga.
+[RECIPIENT]: Main bina formal written documentation ke koi action nahi loonga. Send official summon to my address.

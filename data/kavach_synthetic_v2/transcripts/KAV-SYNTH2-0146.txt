@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0146
+Language: en
+Scenario: Cyber Police Obscene Content Complaint Extortion (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Greetings, this is Officer Sengupta representing Cyber Crime Women Cell. Your file has been flagged for obscene video call complaint registered against your phone.
+[RECIPIENT]: Any official communication regarding obscene video call complaint registered against your phone must come via registered dispatch. Identify yourself.
+[CALLER]: We are ready to issue filing of non-bailable public defamation charge unless this inquiry is settled within the hour.
+[RECIPIENT]: How can this be settled without proper legal representation and court proceedings?
+[CALLER]: Under special statutory provisions, you can halt the escalation by completing case settlement fee to police welfare account right now.
+[RECIPIENT]: This exhibits classic scam patterns. Banks and police do not operate like this. I am hanging up.

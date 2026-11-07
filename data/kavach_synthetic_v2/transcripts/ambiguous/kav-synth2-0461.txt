@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0461 (en) ===
+Scenario: Bank Customer Care Callback Interrupted by Network Drop (EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, am I speaking with the primary resident? This is Caller Sudha from Union Bank Helpdesk regarding callback regarding earlier general inquiry on account interest.
+[RECIPIENT]: Yes speaking, but I am in the middle of a meeting. What exactly is this about?
+[CALLER]: We have an ongoing update concerning your profile, but we need to confirm a few initial personal details.
+[RECIPIENT]: Which company did you say you are calling from? Can you share your official registration number first? network drops before customer can explain query.
+[CALLER]: This is a courtesy inquiry from Union Bank Helpdesk. We are conducting general profile maintenance.
+[RECIPIENT]: Please send official correspondence in writing or by email. I do not discuss personal information over unsolicited calls.

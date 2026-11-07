@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0458 (te) ===
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (TE)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: హలో అండి, నేను Smart Mart Rewards నుండి Caller Varun ని. inquiry on redeeming 450 reward points on next grocery bill గురించి ఒక చిన్న సమాచారం కోసం కాల్ చేశాను.
+[RECIPIENT]: హలో, నేను ఇప్పుడు డ్రైవింగ్ లో ఉన్నాను. అసలు మీరు ఎవరు, ఎందుకు కాల్ చేశారు?
+[CALLER]: మీ ప్రొఫైల్ వివరాలను క్లారిఫై చేసుకోవడానికి కాల్ చేశాము. ఒకసారి మీ వివరాలు సరిచూస్తారా?
+[RECIPIENT]: మీ సంస్థ ఐడీ నంబర్ ఏంటి? recipient acknowledges message and will check in store.
+[CALLER]: ఇది Smart Mart Rewards నుండి ప్రాథమిక సమాచార సేకరణ మాత్రమే అండి.
+[RECIPIENT]: ఫోన్ లో నేను వివరాలు చెప్పలేను అండి. మీకు ఏమైనా ఉంటే అధికారిక ఈమెయిల్ లో పంపండి.

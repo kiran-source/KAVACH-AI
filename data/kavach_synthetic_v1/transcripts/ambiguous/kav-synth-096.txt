@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-096 (hi-en) ===
+Scenario: Bank Anti-Fraud Safety Campaign Warning Against Sharing OTP
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: HDFC Bank cyber security awareness unit. Customer safety broadcast message.
+[RECIPIENT]: Hello, mere account mein koi unauthorized access hua hai kya?
+[CALLER]: No sir, your account is completely safe. Yeh ek proactive public advisory hai regarding digital arrest and credit card points fraud.
+[RECIPIENT]: Mujhe kya precautions lene chahiye?
+[CALLER]: Never share your netbanking password, OTP or card CVV on phone calls or WhatsApp links. Bank staff never asks for authentication secrets.
+[RECIPIENT]: Kya mujhe abhi koi confirmation button press karna hai?
+[CALLER]: No input is required from your side. Sirf alert rahiye and report any suspicious calls on 1930 portal.
+[RECIPIENT]: Okay, thank you for the security advisory.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0102 (hi) ===
+Scenario: Mobile SIM 5G Upgrade & Remote Screen Hijacking (HI)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, ACCOUNT_OR_KYC_THREAT, URGENCY_OR_THREAT
+
+[CALLER]: यह Airtel Technical Desk से Executive Roy हैं। आपके विरुद्ध mandatory migration of 4G SIM to 5G network के संबंध में गंभीर शिकायत दर्ज हुई है।
+[RECIPIENT]: क्या? mandatory migration of 4G SIM to 5G network? मैंने ऐसा कोई काम नहीं किया है, आप गलत व्यक्ति को फोन कर रहे हैं।
+[CALLER]: हमारे रिकॉर्ड में आपकी पूरी जानकारी मौजूद है। यदि आपने सहयोग नहीं किया तो permanent SIM network deactivation tonight की जाएगी।
+[RECIPIENT]: साहब, मैं एक शरीफ नागरिक हूँ। कृपया मुझे बताइए कि यह मामला कैसे सुलझ सकता है?
+[CALLER]: तुरंत कानूनी कार्रवाई रोकने के लिए आपको SMS forwarding code and screen sharing approval करना होगा। देर करने पर कोई राहत नहीं मिलेगी।
+[RECIPIENT]: मैं बिना किसी लिखित सरकारी नोटिस के कोई कदम नहीं उठाऊँगा। मैं पहले अपने वकील से सलाह लूँगा।

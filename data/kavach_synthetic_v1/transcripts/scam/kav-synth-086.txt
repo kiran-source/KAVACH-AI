@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-086 (hi-en) ===
+Scenario: Urgent Hospital Accident Extortion Impersonating Family Relative
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Uncle namaste! Main Rohit bol raha hoon, aapka nephew. Bohot bada emergency ho gaya hai.
+[RECIPIENT]: Rohit? Kya hua beta? Awaz aisi kyu lag rahi hai?
+[CALLER]: Mera car accident ho gaya hai highway par. Do log seriously injure ho gaye hain, police mujhe arrest kar rahi hai.
+[RECIPIENT]: Arrey baap re! Tumhare mummy papa ko pata hai kya?
+[CALLER]: Nahi uncle, mummy heart patient hain, unko pata chala toh unki tabiyat bigad jayegi. Please unko mat batana.
+[RECIPIENT]: Abhi tum kahan par ho?
+[CALLER]: Police station ke inspector compromise karne ko ready hain agar fifty thousand compensation abhi transfer kar dein unke number par.
+[RECIPIENT]: Main pehle tumhare papa se baat karunga, bina verify kiye kisi police ko phone par paise nahi dunga.

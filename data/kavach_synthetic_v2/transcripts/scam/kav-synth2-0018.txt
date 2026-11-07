@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0018 (te) ===
+Scenario: State Cyber Crime Cell Section 420 Contempt Warrant (TE)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: ఇది Cyber Crime Branch నుండి Inspector Kulkarni మాట్లాడుతున్నాను. మీపై phishing portal operated using your registered IP కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? phishing portal operated using your registered IP గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే police patrol team dispatched to residence జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే confidential video link interrogation పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

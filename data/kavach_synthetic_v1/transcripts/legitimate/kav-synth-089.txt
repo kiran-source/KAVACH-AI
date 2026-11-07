@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-089 (hi-en) ===
+Scenario: E-Commerce Delivery Address Clarification & Safe Delivery PIN
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello sir, main BlueDart courier delivery executive bol raha hoon. Aapka Amazon parcel deliver karna hai.
+[RECIPIENT]: Haan bhaiya, aap kahan par pahunche hain?
+[CALLER]: Main aapke apartment ke main gate par hoon, lekin building number 4 clear nahi dikh raha hai.
+[RECIPIENT]: Main security cabin ke paas khada hoon, lift ke left side aayiye.
+[CALLER]: Theek hai sir, main lift ke paas aa gaya hoon. Box par physical damage check kar lijiye.
+[RECIPIENT]: Haan package sealed hai. Payment already UPI se ho chuka tha na?
+[CALLER]: Ji sir, pre-paid order hai. Handover complete karne ke liye delivery code bata dijiye jo app par aaya hai.
+[RECIPIENT]: Delivery code hai 4821. Thank you bhaiya.

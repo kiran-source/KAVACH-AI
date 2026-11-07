@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0165
+Language: te-en
+Scenario: Overseas University Visa Bond Emergency Transfer (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Nenu Consulate Visa Cell nunchi Officer David matladuthunnanu andi. Severe allegation vachindi regarding student visa documentation discrepancy for dependent child.
+[RECIPIENT]: What are you saying sir? student visa documentation discrepancy for dependent child aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop immediate deportation and visa cancellation, meeru ventane embassy security deposit transfer cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

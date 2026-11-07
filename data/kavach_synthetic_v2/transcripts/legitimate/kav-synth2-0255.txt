@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0255 (te-en) ===
+Scenario: Housing Society Annual General Body Meeting Agenda Circular (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Green Valley Co-op Society nunchi Secretary Manoj matladuthunnanu. Mee annual society general body meeting this Sunday at 10 AM gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo agenda copies available at society security office complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

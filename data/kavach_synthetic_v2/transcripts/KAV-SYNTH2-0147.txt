@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0147
+Language: hi
+Scenario: Cyber Police Obscene Content Complaint Extortion (HI)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: नमस्कार, Cyber Crime Women Cell से Officer Sengupta बात कर रहे हैं। आपके नाम पर obscene video call complaint registered against your phone का मामला सामने आया है।
+[RECIPIENT]: नमस्ते। obscene video call complaint registered against your phone के बारे में मुझे कोई जानकारी नहीं है। आपके पास इसका क्या कानूनी प्रमाण है?
+[CALLER]: यदि आपने अभी सहयोग नहीं दिया तो हमारे पास filing of non-bailable public defamation charge के आदेश तैयार हैं।
+[RECIPIENT]: अचानक ऐसे फोन पर कार्रवाई की धमकी देना गलत है। इसका कानूनी समाधान क्या है?
+[CALLER]: मामले को यहीं रोकने के लिए आपको तुरंत case settlement fee to police welfare account की प्रक्रिया पूरी करनी होगी।
+[RECIPIENT]: मैं आपके नाम और पद की जांच अपने नजदीकी थाने में करवाऊँगा। फोन पर कुछ नहीं होगा।

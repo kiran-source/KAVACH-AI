@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0306 (hi-en) ===
+Scenario: State Police Cyber Crime Unit Non-Bailable Warrant (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Dear customer, your bank account is under suspicious activity freeze. Turant OTP share karein to prevent permanent account suspension.
+[RECIPIENT]: I am extremely nervous. Can I consult my family lawyer before proceeding?
+[CALLER]: You are under immediate Digital Arrest. Room lock karein aur confidential video interrogation par connect rahein without hanging up.
+[RECIPIENT]: Alright, main link click kar raha hoon but please ensure my bank account is safe.
+[CALLER]: Security compliance ke liye Play Store se QuickSupport app download kijiye aur code hamein inform karein.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: To verify your funds, you must immediately transfer refundable security deposit to official government reserve account.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.

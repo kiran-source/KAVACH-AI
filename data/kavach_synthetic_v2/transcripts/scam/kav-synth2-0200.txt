@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0200 (te-en) ===
+Scenario: Telecom Tower Land Lease Advance Registration Fee Fraud (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Nenu Tower Infrastructure Cell nunchi Officer Kapoor matladuthunnanu andi. Mee credentials meeda monthly rent of 45,000 for vacant plot mobile tower installation detect ayindi.
+[RECIPIENT]: Enti sir, monthly rent of 45,000 for vacant plot mobile tower installation aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe forfeiture of commercial tower installation rights implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane 18,000 rupees structural survey clearance deposit cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

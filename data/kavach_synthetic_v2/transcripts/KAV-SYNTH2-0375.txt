@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0375
+Language: te-en
+Scenario: Bank Safe Deposit Locker Annual Physical Verification (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, Bank of Baroda customer relations nunchi Locker Incharge Neha ni.
+[RECIPIENT]: Good afternoon, cheppandi emiti vishayam?
+[CALLER]: Mee annual physical inspection of safe deposit locker process complete aindi ani inform cheyataniki call chesamu.
+[RECIPIENT]: Good to know. Next step enti sir?
+[CALLER]: Next step lo meeru direct ga visit branch during banking hours with locker key cheyali.
+[RECIPIENT]: Phone lo credentials confirm cheyalsina avasaram unda?
+[CALLER]: Ledu sir, phone meeda credentials eppudu share cheyakandi. Office lo direct ga complete cheyandi.
+[RECIPIENT]: Very reassuring sir. I will visit during normal working hours.

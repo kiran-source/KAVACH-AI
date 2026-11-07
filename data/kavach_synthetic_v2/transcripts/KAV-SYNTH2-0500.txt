@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0500
+Language: te-en
+Scenario: Health Insurance Claim Follow-up Lacking Claim Number (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu MediCare Assist Desk nunchi Caller Archana matladuthunnanu regarding follow-up inquiry on diagnostic test reimbursement status.
+[RECIPIENT]: Naku follow-up inquiry on diagnostic test reimbursement status tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. recipient asks for hospital claim reference which caller does not have. Cutting call.

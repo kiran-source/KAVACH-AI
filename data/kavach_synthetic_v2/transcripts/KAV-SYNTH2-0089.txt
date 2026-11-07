@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0089
+Language: hi-en
+Scenario: Work From Home YouTube Liking Deposit Scheme (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello, I am calling from Global Media Marketing, my name is Recruiter Sneha. Aapke profile par daily guaranteed earnings of 3,500 rupees for video likes flag hua hai.
+[RECIPIENT]: Good afternoon, but main shocked hoon regarding daily guaranteed earnings of 3,500 rupees for video likes. What is the exact reference number?
+[CALLER]: If you don't cooperate right now, hamare paas order hai for loss of assigned investment portfolio slot within two hours.
+[RECIPIENT]: Phone par bina advocate ke aisi legal threat dena is completely against the law.
+[CALLER]: Immediate relief ke liye aapko system mein 5,000 rupees VIP task security deposit execute karna padega immediately.
+[RECIPIENT]: Main direct police station jaakar inquire karoonga. I will not follow phone instructions blindly.

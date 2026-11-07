@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0414
+Language: hi-en
+Scenario: Job Placement Consultancy Walk-in Interview Query (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Greetings, this is Caller Vishal with Tech Careers Agency client outreach team.
+[RECIPIENT]: Yes hello, please state the purpose of this outreach.
+[CALLER]: Our system indicated you might be eligible for job profile match for mid-level administrative opening.
+[RECIPIENT]: Eligible? I haven't opted into any new program recently.
+[CALLER]: It is an automated recommendation based on active subscriber tiers.
+[RECIPIENT]: And what exactly do you need from me right now?
+[CALLER]: Just your confirmation on date of birth and area postal code.
+[RECIPIENT]: No, I never disclose date of birth or personal data on voice calls. recipient requests job description by email before committing.
+[CALLER]: We respect that sir. We can put this request on hold.
+[RECIPIENT]: Please remove it completely. I will check official websites if interested.

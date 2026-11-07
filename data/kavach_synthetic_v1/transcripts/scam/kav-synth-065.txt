@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-065 (te-en) ===
+Scenario: VIP Stock Market Trading WhatsApp Group Fraud
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Hello sir, Angel One VIP Institutional Trading desk nundi call chestunnamu.
+[RECIPIENT]: Yes, I have an active demat account. What is this about?
+[CALLER]: Mee portfolio returns double cheyadaniki ma institutional block trades WhatsApp channel lo exclusive access istunnamu.
+[RECIPIENT]: Which stocks do you recommend?
+[CALLER]: Pre-IPO shares and circuit stocks sir. Minimum twenty percent profit per trade guarantee.
+[RECIPIENT]: SEBI does not allow guaranteed stock returns.
+[CALLER]: Idi private institutional allocation sir. Fifty thousand ma manager personal account ki transfer chesi account open cheyandi.
+[RECIPIENT]: Brokers never ask money to personal bank accounts. You are running a fake trading scam.

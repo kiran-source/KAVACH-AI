@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0164
+Language: hi-en
+Scenario: Overseas University Visa Bond Emergency Transfer (HI-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Yeh Consulate Visa Cell se Officer David bol raha hoon. Urgent investigation notice nikla hai regarding student visa documentation discrepancy for dependent child.
+[RECIPIENT]: Wait a minute, student visa documentation discrepancy for dependent child? Maine aisa koi transaction ya activity nahi ki. Who authorized this?
+[CALLER]: Server logs mein aapka IP trace hua hai. To cancel immediate deportation and visa cancellation, aapko turant embassy security deposit transfer karna hoga.
+[RECIPIENT]: Main bina formal written documentation ke koi action nahi loonga. Send official summon to my address.

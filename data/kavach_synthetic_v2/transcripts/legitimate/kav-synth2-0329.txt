@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0329 (hi-en) ===
+Scenario: Airlines Web Check-in Reminder & Baggage Policy Advisory (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Air India Airport Operations se Ground Staff Tanvi bol raha hoon. Yeh call aapke scheduled flight departure tomorrow morning ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap complete web check-in and arrive two hours before departure complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

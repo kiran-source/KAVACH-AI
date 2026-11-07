@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0386
+Language: en
+Scenario: Pre-Approved Personal Loan Cold Call with Vague Terms (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, am I speaking with the primary resident? I am calling from Finance Telemarketing.
+[RECIPIENT]: Yes, speaking. What is this concerning?
+[CALLER]: We are conducting preliminary outreach regarding pre-approved low interest personal loan offer in your area.
+[RECIPIENT]: I am not familiar with your organization. Are you a government body or private agency?
+[CALLER]: We work in partnership with various service providers to facilitate these programs.
+[RECIPIENT]: That sounds very ambiguous. recipient asks for employee ID and official bank domain.
+[CALLER]: Sir, this is just routine market information gathering, no financial obligation exists.
+[RECIPIENT]: Even so, I do not participate in phone surveys or unclear offers. Please remove my number.

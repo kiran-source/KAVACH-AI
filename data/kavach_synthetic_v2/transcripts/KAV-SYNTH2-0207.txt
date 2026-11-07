@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0207
+Language: hi
+Scenario: Routine Outpatient Health Clinic Appointment Reminder (HI)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: शुभ प्रभात, मैं Apollo Clinic के सेवा केंद्र से Staff Sister Mary बात कर रहा हूँ।
+[RECIPIENT]: नमस्कार, क्या यह मेरे scheduled routine preventive health checkup tomorrow at 10 AM के आवेदन के बारे में है?
+[CALLER]: जी हाँ, आपके कागजात की जांच पूरी हो चुकी है। अब आपको fasting 8 hours prior to blood test।
+[RECIPIENT]: क्या इसके लिए मुझे कोई मूल पहचान पत्र या शुल्क साथ लाना होगा?
+[CALLER]: केवल मूल पहचान पत्र लाइए। इसके लिए कोई अतिरिक्त शुल्क या ऑनलाइन भुगतान नहीं लगता।
+[RECIPIENT]: स्पष्ट जानकारी देने के लिए बहुत धन्यवाद। मैं कल निर्धारित समय पर पहुँच जाऊँगा।

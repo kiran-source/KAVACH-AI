@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0375 (te-en) ===
+Scenario: Bank Safe Deposit Locker Annual Physical Verification (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Bank of Baroda nunchi Locker Incharge Neha matladuthunnanu. Mee annual physical inspection of safe deposit locker gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo visit branch during banking hours with locker key complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

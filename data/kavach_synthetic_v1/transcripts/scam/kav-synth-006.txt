@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-006 (en) ===
+Scenario: Electricity Meter Tampering Penalty Threat & Remote APK
+Primary Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, MALICIOUS_LINK_OR_APP, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Alert notice from State Electricity Board. Your smart meter has shown an irregular bypass signal today.
+[RECIPIENT]: Bypass signal? What does that mean?
+[CALLER]: It indicates power theft. A field inspection officer has been assigned to disconnect your line at seven PM tonight.
+[RECIPIENT]: We never touched the meter! It is sealed by the board.
+[CALLER]: You can resolve it by installing our diagnostic app from this direct link to submit your digital meter photograph.
+[RECIPIENT]: Can I submit the photo on the official utility website?
+[CALLER]: No, web server is under maintenance. If you don't install the APK within twenty minutes, line will be disconnected.
+[RECIPIENT]: Installing unknown APK files gives remote control. I will contact the substation manager directly.

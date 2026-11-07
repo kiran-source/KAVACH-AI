@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-085 (hi-en) ===
+Scenario: Customs Duty Fee Demand for International Gift Parcel
+Primary Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, this is Custom Clearance Officer Neha calling from Indira Gandhi International Airport cargo facility.
+[RECIPIENT]: Yes, kaun bol rahe hain?
+[CALLER]: Aapke name par London se ek diplomatic gift parcel arrive hua hai containing gold watch, iPhone 16 and twenty thousand UK pounds.
+[RECIPIENT]: Mujhe London se koi gift nahi bhejta. Yeh kisi aur ka hoga.
+[CALLER]: Box par aapka mobile number aur address clearly printed hai. Foreign currency illegal undeclared smuggling hai under FEMA Act.
+[RECIPIENT]: Maine koi parcel order nahi kiya!
+[CALLER]: FIR avoid karne ke liye custom clearance tax of thirty-eight thousand rupees transfer kijiye hamare RBI officer ke Google Pay par.
+[RECIPIENT]: Customs tax kabhi Google Pay par personal account mein nahi liya jata. Fraud call hai yeh.

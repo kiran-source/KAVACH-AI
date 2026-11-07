@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0499
+Language: hi-en
+Scenario: Health Insurance Claim Follow-up Lacking Claim Number (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, I am Caller Archana calling from MediCare Assist Desk regarding follow-up inquiry on diagnostic test reimbursement status.
+[RECIPIENT]: Mujhe follow-up inquiry on diagnostic test reimbursement status mein koi interest nahi hai. Where did you get my data?
+[CALLER]: Sir, this was shared through our partner portal for special customers.
+[RECIPIENT]: I don't entertain cold marketing calls. recipient asks for hospital claim reference which caller does not have. Bye.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0155 (te-en) ===
+Scenario: Cryptocurrency Investment Guaranteed Double Return Trap (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu BitPro Wealth Advisory nunchi Trader Aryan matladuthunnanu andi. Mee credentials meeda algorithmic Bitcoin trading giving 200% return in 24 hours detect ayindi.
+[RECIPIENT]: Enti sir, algorithmic Bitcoin trading giving 200% return in 24 hours aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe expiration of guaranteed profit multiplier window implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane initial investment deposit of 20,000 rupees cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

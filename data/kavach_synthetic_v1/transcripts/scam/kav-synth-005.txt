@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-005 (en) ===
+Scenario: Work-From-Home YouTube Rating Advance Fee Scam
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hi, I am HR executive Natasha from Global Digital Media Solutions. We saw your resume on Shine.com.
+[RECIPIENT]: Okay, which role is this regarding?
+[CALLER]: Part-time digital rating evaluator. You only need to like and subscribe to travel videos. Daily payout is three thousand rupees.
+[RECIPIENT]: Sounds very easy. How does payment work?
+[CALLER]: We already sent three hundred rupees trial bonus. To activate the VIP payroll gateway, you need to pay a refundable security deposit of two thousand rupees.
+[RECIPIENT]: Why should an employee pay money to start work?
+[CALLER]: It is standard company registration compliance. Once you transfer, your account will be activated instantly with your first salary.
+[RECIPIENT]: Legitimate employers never ask for registration fees. This is a task scam.

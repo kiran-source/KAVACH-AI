@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0466
+Language: en
+Scenario: Utility Water Billing Clarification Requesting Callback (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, am I speaking with the primary resident? I am calling from Municipal Water Cell.
+[RECIPIENT]: Yes, speaking. What is this concerning?
+[CALLER]: We are conducting preliminary outreach regarding water bill surcharge clarification needing reference number in your area.
+[RECIPIENT]: I am not familiar with your organization. Are you a government body or private agency?
+[CALLER]: We work in partnership with various service providers to facilitate these programs.
+[RECIPIENT]: That sounds very ambiguous. caller asks recipient to call official municipal board landline.
+[CALLER]: Sir, this is just routine market information gathering, no financial obligation exists.
+[RECIPIENT]: Even so, I do not participate in phone surveys or unclear offers. Please remove my number.

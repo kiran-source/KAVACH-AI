@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0021
+Language: en
+Scenario: Enforcement Directorate Illegal Foreign Currency Coercion (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, DIGITAL_ARREST, FINANCIAL_REDIRECTION
+
+[CALLER]: This is Assistant Director Verma calling urgently from Enforcement Directorate. We have initiated legal action regarding 70,000 USD foreign exchange FEMA violation.
+[RECIPIENT]: Wait, 70,000 USD foreign exchange FEMA violation? Who authorized this call? I have never been involved in anything like that.
+[CALLER]: Our system records are definitive. To avoid freezing of all domestic bank accounts, you must immediately comply with ED safe reserve fund deposit.
+[RECIPIENT]: I will not comply over an unsolicited phone call. Send an official notice in writing, or I am contacting police.

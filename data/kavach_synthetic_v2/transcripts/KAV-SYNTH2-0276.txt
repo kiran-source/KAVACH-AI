@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0276
+Language: en
+Scenario: Primary School Parent Teacher Conference Slot Confirmation (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good day. Am I speaking with the registered account holder?
+[RECIPIENT]: Yes, this is they. May I know the organization calling?
+[CALLER]: I am Class Teacher Sharma calling from Kendriya Vidyalaya. We are reviewing files concerning quarterly parent-teacher meeting regarding academic progress.
+[RECIPIENT]: Ah yes, I submitted my documentation regarding quarterly parent-teacher meeting regarding academic progress two weeks ago.
+[CALLER]: Our department has processed the paperwork, and we need your final acknowledgment.
+[RECIPIENT]: Certainly. Can this be finalized over the telephone right now?
+[CALLER]: For your security, we never process authorizations by voice. We request that you ten-minute interaction slot on Saturday at 11 AM.
+[RECIPIENT]: I appreciate your strict compliance with data security protocols.
+[CALLER]: Our premises are open from 9:30 AM to 4:30 PM on all working days. Our desk officers will assist you.
+[RECIPIENT]: Excellent. Thank you very much for the update, {c_name}. Have a pleasant day.

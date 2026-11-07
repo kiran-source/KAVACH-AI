@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Shield, Lock, ArrowRight, CheckCircle2, AlertTriangle,
-  Radio, PhoneCall, Cpu, Globe2, Sparkles
+  Radio, PhoneCall, Cpu, Globe2, Sparkles, ShieldAlert,
+  Terminal, Check
 } from 'lucide-react';
+import { Button } from '../components/common/Button';
+import { StatusIndicator } from '../components/common/StatusIndicator';
 
 export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -16,127 +19,148 @@ export const LandingPage: React.FC = () => {
   };
 
   const threatPillars = [
-    { title: 'Digital Arrest Scams', desc: 'Continuous video interrogation & simulated custody threats' },
-    { title: 'CBI & Police Impersonation', desc: 'Fake badges, manufactured narcotics warrants & legal panic' },
-    { title: 'Bank KYC & OTP Theft', desc: 'Account blocking ultimatums to extract UPI PINs & CVV numbers' },
-    { title: 'Remote Access APK Sideloading', desc: 'AnyDesk & TeamViewer installation commands targeting elderly' },
-    { title: 'Courier & Customs Contraband', desc: 'Fake drug seizure allegations by alleged FedEx / Customs officials' },
-    { title: 'Multilingual & Code-Mixed', desc: 'Native triage in Telugu (తెలుగు), Hindi (हिंदी) & English' }
+    { title: 'Digital Arrest Scams', desc: 'Simulated Supreme Court/CBI arrest warrants via Skype & WhatsApp' },
+    { title: 'Law Enforcement Impersonation', desc: 'Fabricated narcotics courier allegations & fake police badge intimidation' },
+    { title: 'Bank KYC & OTP Harvesting', desc: 'Urgent SIM deactivation warnings designed to extract UPI PINs & credentials' },
+    { title: 'Remote Access Sideloading', desc: 'AnyDesk & TeamViewer APK installation orders targeting elderly victims' },
+    { title: 'Customs & FedEx Contraband', desc: 'Unclaimed Taiwan package seizures with alleged illegal passports & MDMA' },
+    { title: 'Multilingual & Code-Mixed', desc: 'Native triage in Telugu (తెలుగు), Hindi (हिंदी) & Indian English' }
   ];
 
   return (
-    <div className="min-h-screen bg-[#070b14] text-slate-100 flex flex-col justify-between selection:bg-cyan-500 selection:text-white">
-      {/* Top Bar */}
-      <header className="border-b border-slate-800/80 px-8 py-4 flex items-center justify-between bg-[#0a0f1d]/80 backdrop-blur">
+    <div className="min-h-screen bg-navy-950 text-slate-100 flex flex-col justify-between selection:bg-cyan-500 selection:text-navy-950 relative overflow-hidden">
+      {/* Background glow effects */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
+
+      {/* Top Header Bar */}
+      <header className="border-b border-slate-800/80 px-6 sm:px-10 py-4 flex items-center justify-between bg-navy-950/80 backdrop-blur-xl relative z-10">
         <div className="flex items-center space-x-3">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-600 to-teal-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-            <Shield className="w-5 h-5 text-slate-950 stroke-[2.5]" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-teal-400 flex items-center justify-center shadow-glow-cyan">
+            <Shield className="w-5 h-5 text-navy-950 stroke-[2.5]" />
           </div>
           <div className="flex items-center space-x-2">
-            <span className="font-extrabold text-lg tracking-wider text-white">KAVACH</span>
-            <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 font-mono font-bold border border-cyan-500/30">AI</span>
+            <span className="font-extrabold text-xl tracking-wider text-white">KAVACH</span>
+            <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 font-mono font-bold border border-cyan-500/30">AI</span>
           </div>
         </div>
 
         <div className="flex items-center space-x-4">
-          <span className="text-xs font-mono text-slate-400 hidden sm:inline">
-            Organised for <b>Gnani AI Great Indian AI Challenge</b>
+          <span className="text-xs font-mono text-slate-400 hidden md:inline">
+            The Great Indian AI Challenge 2026
           </span>
-          <button
+          <Button
+            variant="outline"
+            size="sm"
             onClick={() => navigate('/dashboard')}
-            className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-cyan-800/40 text-xs font-semibold rounded-lg transition"
+            className="text-xs font-mono"
           >
-            Direct Console Access
-          </button>
+            <span>Launch SOC Console</span>
+            <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
+          </Button>
         </div>
       </header>
 
-      {/* Hero & Login Section */}
-      <main className="flex-1 flex items-center justify-center px-6 py-12">
-        <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Mission & Tactic Scope */}
+      {/* Main Hero & Console Login Section */}
+      <main className="flex-1 flex items-center justify-center px-6 py-12 relative z-10">
+        <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          {/* Left Column: Scope & Threat Vectors (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-300 text-xs font-mono">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-800/60 text-cyan-300 text-xs font-mono">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Next-Gen Voice Cyber Threat Neutralization</span>
+              <span>Next-Gen Voice Cyber Threat Neutralization Platform</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-              Multilingual Voice Scam Detection & Incident Response
+            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-[1.15]">
+              Defending India from <br />
+              <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
+                Voice Scam Networks
+              </span>
             </h1>
 
             <p className="text-sm text-slate-300 leading-relaxed max-w-xl">
-              Engineered to protect Indian citizens against digital arrest rackets, official impersonation,
-              and banking credential theft across <b>Telugu, Hindi, and English</b> code-mixed voice conversations.
+              Enterprise SOC incident response, automated forensic transcription, and real-time social-engineering defense
+              purpose-built for <b>Telugu, Hindi, and English</b> code-mixed telephony conversations.
             </p>
 
-            {/* AI Architecture highlight */}
-            <div className="p-4 rounded-xl bg-[#0c1324] border border-slate-800/80 space-y-2">
-              <div className="text-xs font-mono text-cyan-400 font-semibold uppercase">
-                Powered by Genuine Gnani AI Technologies
+            {/* Genuine Gnani AI Stack */}
+            <div className="p-4 rounded-xl bg-navy-900 border border-slate-800/80 space-y-2">
+              <div className="text-xs font-mono text-cyan-400 font-semibold uppercase tracking-wider">
+                Integrated with Genuine Gnani AI Engines
               </div>
-              <div className="grid grid-cols-2 gap-3 text-xs text-slate-300 font-sans">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300 font-sans">
                 <div className="flex items-start space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><b>Prisma v2.5:</b> Multilingual Speech-to-Text & LID</span>
+                  <span><b>Prisma v3:</b> Multilingual STT & Native LID</span>
                 </div>
                 <div className="flex items-start space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
-                  <span><b>Timbre v2.5:</b> Immediate Voice Safety Warnings</span>
+                  <span><b>Timbre v2.5:</b> Instant Acoustic Voice Advisories</span>
                 </div>
               </div>
             </div>
 
-            {/* 6 Key Threat Pillars */}
-            <div className="grid grid-cols-2 gap-3 pt-2">
+            {/* 6 Key Threat Pillar Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               {threatPillars.map((p, idx) => (
-                <div key={idx} className="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800/60 text-xs">
-                  <div className="font-semibold text-white">{p.title}</div>
-                  <p className="text-[11px] text-slate-400 mt-0.5">{p.desc}</p>
+                <div key={idx} className="p-3 rounded-xl bg-navy-900/60 border border-slate-800/70 text-xs space-y-1">
+                  <div className="font-bold text-white flex items-center space-x-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                    <span>{p.title}</span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 leading-normal">{p.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right Column: Local Demo Authentication Card */}
-          <div className="lg:col-span-5 bg-[#0c1220] p-7 rounded-2xl border border-slate-800 shadow-2xl space-y-6">
+          {/* Right Column: Console Sign-in Card (5 cols) */}
+          <div className="lg:col-span-5 bg-navy-900 p-8 rounded-2xl border border-slate-800/80 shadow-2xl space-y-6 relative">
+            <div className="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
+
             <div>
               <div className="flex items-center space-x-2 text-cyan-400 text-xs font-mono font-semibold uppercase tracking-wider">
-                <Lock className="w-4 h-4" />
+                <Terminal className="w-4 h-4" />
                 <span>SOC Analyst Workspace Access</span>
               </div>
-              <h2 className="text-lg font-bold text-white mt-1">Sign in to KAVACH Console</h2>
-              <p className="text-xs text-slate-400 mt-1">Single-user local demo session configured for evaluation.</p>
+              <h2 className="text-xl font-bold text-white mt-1.5">Sign in to KAVACH Console</h2>
+              <p className="text-xs text-slate-400 mt-1">Pre-configured local session for evaluation.</p>
             </div>
 
             <form onSubmit={handleDemoSignIn} className="space-y-4 text-xs">
               <div>
-                <label className="text-slate-300 font-medium block mb-1">Operator Identifier:</label>
+                <label className="text-slate-300 font-medium block mb-1.5 font-mono text-[11px]">
+                  OPERATOR IDENTIFIER
+                </label>
                 <input
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-200 focus:outline-none focus:border-cyan-500 font-mono"
+                  className="w-full bg-navy-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-slate-200 focus:outline-none focus:border-cyan-500 font-mono"
                 />
               </div>
 
               <div>
-                <label className="text-slate-300 font-medium block mb-1">Passphrase:</label>
+                <label className="text-slate-300 font-medium block mb-1.5 font-mono text-[11px]">
+                  PASSPHRASE
+                </label>
                 <input
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-200 focus:outline-none focus:border-cyan-500 font-mono"
+                  className="w-full bg-navy-950 border border-slate-700 rounded-lg px-3.5 py-2.5 text-slate-200 focus:outline-none focus:border-cyan-500 font-mono"
                 />
               </div>
 
-              <button
+              <Button
                 type="submit"
-                className="w-full py-2.5 bg-gradient-to-r from-cyan-600 to-teal-500 hover:from-cyan-500 hover:to-teal-400 text-slate-950 font-bold text-xs rounded-lg shadow-lg shadow-cyan-500/20 transition flex items-center justify-center space-x-2"
+                variant="primary"
+                size="lg"
+                className="w-full shadow-glow-cyan text-xs font-bold"
               >
-                <span>Launch Operational SOC Dashboard</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+                <span>Launch Operational SOC Console</span>
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
             </form>
 
             <div className="pt-4 border-t border-slate-800/80 text-[11px] text-slate-500 space-y-2">
@@ -144,17 +168,19 @@ export const LandingPage: React.FC = () => {
                 <span className="w-2 h-2 rounded-full bg-emerald-400" />
                 <span>Localhost 127.0.0.1 Binding Active</span>
               </div>
-              <p>Demo mode uses synthetic audio scenarios with 0 external network dependencies.</p>
+              <p className="leading-relaxed">
+                Zero external network requirements in local mode. 500-sample synthetic multilingual test suite pre-loaded.
+              </p>
             </div>
           </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-800/80 px-8 py-4 bg-[#0a0f1d] text-center text-xs text-slate-500 font-mono">
-        KAVACH AI — AI-assisted decision-support system, not a guaranteed fraud detector. National Cyber Helpline: 1930.
+      <footer className="border-t border-slate-800/80 px-6 sm:px-10 py-4 bg-navy-950/80 text-center text-xs text-slate-500 font-mono relative z-10 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <span>KAVACH AI — Multilingual Voice Threat Intelligence Platform</span>
+        <span className="text-cyan-400 font-semibold">National Cybercrime Helpline: 1930</span>
       </footer>
     </div>
   );
 };
-

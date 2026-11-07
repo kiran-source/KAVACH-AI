@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0480
+Language: te-en
+Scenario: E-Commerce Return Pickup Driver Seeking Security Gate Entry (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu Fast Track Logistics nunchi Driver Kanta matladuthunnanu regarding pickup van outside residential gated community.
+[RECIPIENT]: Naku pickup van outside residential gated community tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. recipient instructs driver to coordinate with security guard. Cutting call.

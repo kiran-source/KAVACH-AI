@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0175 (te-en) ===
+Scenario: Government Healthcare Subsidy Portal Fake App Trap (TE-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Nenu Ayushman Bharat Desk nunchi Officer Patel matladuthunnanu andi. Mee credentials meeda government health insurance reimbursement of 50,000 approved detect ayindi.
+[RECIPIENT]: Enti sir, government health insurance reimbursement of 50,000 approved aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe lapse of government medical subsidy funds implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane custom healthcare APK download from SMS cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

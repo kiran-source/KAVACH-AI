@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-007 (en) ===
+Scenario: Income Tax Refund Notice with Debit Card CVV Solicitation
+Primary Label: SCAM
+Tactics: OTP_PIN_CVV_THEFT, AUTHORITY_IMPERSONATION, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Hello, I am calling from the Central Board of Direct Taxes refund processing division.
+[RECIPIENT]: Yes, I was waiting for my assessment refund.
+[CALLER]: Your tax refund of thirty-four thousand rupees was processed, but the electronic mandate failed due to an outdated IFSC code.
+[RECIPIENT]: I can update my bank details on the e-filing portal.
+[CALLER]: Portal changes take ninety days. We can credit the amount directly to your debit card within ten minutes over our direct gateway.
+[RECIPIENT]: How do you credit to a debit card?
+[CALLER]: Please provide your sixteen digit card number, expiry date, and three digit CVV code on the back for authentication.
+[RECIPIENT]: CVV is only used for payments, never for receiving refunds. You are trying to steal my card details.

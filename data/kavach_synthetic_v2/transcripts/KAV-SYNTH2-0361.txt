@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0361
+Language: en
+Scenario: Community Charitable Eye Care Camp Invitation (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good afternoon, this is Coordinator Geetha calling from Lions Eye Institute regarding your free community vision and cataract screening camp on Sunday.
+[RECIPIENT]: Hello, thank you for reaching out. Yes, I was expecting a status update on that.
+[CALLER]: Please be advised to senior citizens welcome for free eye checkup. Kindly note we will never request your OTP, PIN, or net banking password.
+[RECIPIENT]: Understood and appreciated. I will complete this at the branch during normal business hours.

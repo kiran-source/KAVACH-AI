@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0300
+Language: te-en
+Scenario: Corporate HR Campus Placement Onboarding Details Follow-up (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, is this the registered account applicant?
+[RECIPIENT]: Yes speaking. Who is on the line please?
+[CALLER]: I am Talent Lead Ananya from Infosys HR Operations. Reaching out regarding your joining date scheduled for first week of next month.
+[RECIPIENT]: Yes sir, nenu 10 days back joining date scheduled for first week of next month submit chesanu.
+[CALLER]: The verification team cleared your file for the next phase.
+[RECIPIENT]: Can we authenticate this through an automated call?
+[CALLER]: No sir, for your account security we request that you complete background verification portal upload.
+[RECIPIENT]: Understood. Good that your institution maintains strict protocols.
+[CALLER]: Our facility is open on all business days until 5 PM.
+[RECIPIENT]: Thank you for the professional call. I will visit accordingly.

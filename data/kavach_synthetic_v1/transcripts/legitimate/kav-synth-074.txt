@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-074 (te-en) ===
+Scenario: Medical Diagnostic Sample Pickup Coordination
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello madam, Vijaya Diagnostic home collection technician Raju calling.
+[RECIPIENT]: Hello Raju, when will you arrive for blood sample collection?
+[CALLER]: Madam, I am ten minutes away from your apartment in Madhapur.
+[RECIPIENT]: My father is fasting as instructed. Will thyroid panel reports come today?
+[CALLER]: Yes madam, thyroid and lipid profile reports evening six PM lopu email and SMS link dwaara download cheskovachu.
+[RECIPIENT]: Can I pay via UPI scan at home?
+[CALLER]: Yes madam, company barcode scanner undi, sample sealed pack chesaka you can pay.
+[RECIPIENT]: Very good, gate security ki cheppi unchanu, come directly to flat 302.

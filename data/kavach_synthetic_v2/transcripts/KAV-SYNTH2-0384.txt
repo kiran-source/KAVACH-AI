@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0384
+Language: hi-en
+Scenario: Unverified Courier Delivery Incomplete Address Query (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hi sir, good afternoon. Main Express Parcel Service se Caller Vinod bol raha hoon regarding unmarked package with torn address slip requiring landmark.
+[RECIPIENT]: Hello, I am driving right now. Can you tell me if this is urgent or promotional?
+[CALLER]: It is an exclusive opportunity sir, but we need to verify basic eligibility first.
+[RECIPIENT]: Main unknown calls par details confirm nahi karta. recipient pushes back asking for tracking ID before confirming.
+[CALLER]: Sir we are not asking for financial details, just basic profile check.
+[RECIPIENT]: Send whatever brochure you have to my registered email. No phone confirmations.

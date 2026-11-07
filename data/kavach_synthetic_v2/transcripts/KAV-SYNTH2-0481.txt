@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0481
+Language: en
+Scenario: Mutual Fund KYC Verification Inquiry Lacking Folio Number (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Good afternoon, this is Caller Smita from Asset Care Registrar. I am reaching out regarding general inquiry on whether mutual fund KYC is updated.
+[RECIPIENT]: Hello, I am quite busy right now. Is this a sales pitch or a mandatory notice?
+[CALLER]: It is an advisory update that could be beneficial, but we need to verify a few details first.
+[RECIPIENT]: I don't verify personal details on unsolicited calls. recipient refuses to share details without caller stating folio.
+[CALLER]: We understand your caution, sir. We can send a reference brochure by email if you prefer.
+[RECIPIENT]: Yes, send it in writing. Do not call again without prior authorization.

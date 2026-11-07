@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0082
+Language: hi
+Scenario: Aadhaar PAN Linking Fine & Biometric Freeze Threat (HI)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: यह UIDAI Compliance Wing से Officer Hegde बोल रहे हैं। आपके खिलाफ Aadhaar PAN non-compliance penalty of 10,000 rupees की जांच शुरू की गई है।
+[RECIPIENT]: क्या? Aadhaar PAN non-compliance penalty of 10,000 rupees? मैंने ऐसा कुछ नहीं किया है, आप गलत व्यक्ति को कॉल कर रहे हैं।
+[CALLER]: रिकॉर्ड में आपका नाम दर्ज है। तुरंत कार्रवाई रोकने के लिए instant Aadhaar biometric unlocking fee करना आवश्यक है, वर्ना cancellation of PAN card and salary freeze होगी।
+[RECIPIENT]: मैं फोन पर कोई भुगतान या जानकारी नहीं दूँगा। लिखित सरकारी नोटिस भेजिए, मैं थाने में आकर बात करूँगा।

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0234 (te) ===
+Scenario: Lottery Winner KBC Prize Processing Charge Scam (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Mee bank account 24 hours lo block avthundi. Immediate ga KYC verify chesukondi, lekapothe legal action untundi.
+[RECIPIENT]: Enti saar? Nenu em tappu cheyaledu! Naku ee parcel tho em sambandham ledu.
+[CALLER]: Mee paina Digital Arrest order undi. Evaritho matladakunda confidential Skype call lo live connect avvandi.
+[RECIPIENT]: Nenu regular ga tax pay chese citizen ni. Na pai ilanti case enduku peduthunnaru?
+[CALLER]: QuickSupport application download chesi ma officer ki remote screen access ivvandi.
+[RECIPIENT]: Dayachesi current cut cheyakandi saar. Nenu em cheyalo cheppandi.
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Bank vallu eppudu OTP share cheyavaddhu ani cheptharu kada? Nenu ela ivvali?

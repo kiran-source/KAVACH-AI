@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0319 (hi-en) ===
+Scenario: Cryptocurrency Investment Guaranteed Return Scheme (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Good afternoon, this is Customs Clearance Cargo Office. Aapka international courier packet parcel Singapore route par drugs ke saath intercept hua hai.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: Urgent alert from Electricity Board. Aapka electricity bill payment update nahi hua hai, connection within 1 hour disconnect ho jayega.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.
+[CALLER]: Dear customer, your bank account is under suspicious activity freeze. Turant OTP share karein to prevent permanent account suspension.
+[RECIPIENT]: Please connection cut mat kijiye! Mere exams chal rahe hain. Tell me what is the solution.
+[CALLER]: You are under immediate Digital Arrest. Room lock karein aur confidential video interrogation par connect rahein without hanging up.
+[RECIPIENT]: Bank policy strictly says never share OTP on call. Main OTP kaise de sakta hoon?

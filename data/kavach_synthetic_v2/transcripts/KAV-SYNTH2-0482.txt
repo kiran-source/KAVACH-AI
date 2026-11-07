@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0482
+Language: hi
+Scenario: Mutual Fund KYC Verification Inquiry Lacking Folio Number (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्कार, Asset Care Registrar की तरफ से Caller Smita बात कर रहा हूँ general inquiry on whether mutual fund KYC is updated के संबंध में।
+[RECIPIENT]: नमस्ते, मैं अभी थोड़ा व्यस्त हूँ। क्या यह कोई विज्ञापन कॉल है?
+[CALLER]: यह एक महत्वपूर्ण पेशकश है, पर पहले हमें आपकी पात्रता की जांच करनी होगी।
+[RECIPIENT]: फोन पर मैं कोई विवरण साझा नहीं करता। recipient refuses to share details without caller stating folio।
+[CALLER]: सर, हम केवल सामान्य जानकारी ले रहे हैं, कोई गोपनीय डाटा नहीं चाहिए।
+[RECIPIENT]: फिर भी, आप लिखित विवरण ईमेल पर भेजिए। फोन पर कोई पुष्टि नहीं होगी।

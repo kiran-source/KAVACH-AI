@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0080
+Language: te-en
+Scenario: Family Member Police Custody Emergency Bail Trap (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Hello, is this the registered account user speaking?
+[RECIPIENT]: Yes speaking. May I know who is on the call and what is the matter?
+[CALLER]: This is Sub-Inspector Pandey from City Police Station investigation desk. A complaint was logged regarding nephew arrested in hit-and-run accident with injuries.
+[RECIPIENT]: nephew arrested in hit-and-run accident with injuries aa? That is impossible. I am a law-abiding citizen. Meeru verify chesara?
+[CALLER]: Forensic team verified all telemetry logs. Your Aadhaar linked SIM is implicated.
+[RECIPIENT]: If my SIM was duplicated, I am the victim! Why are you threatening me instead of helping?
+[CALLER]: Because statutory protocol mandates immediate transfer to central prison unless cleared immediately.
+[RECIPIENT]: Clear cheyataniki lawful procedure emundhi?
+[CALLER]: Department clear chit ravalante, right now meeru 35,000 rupees cash bail to officer UPI perform cheyalsi untundi.
+[RECIPIENT]: This sounds like cyber fraud extortion. Genuine police never ask for money or remote control. Disconnecting.

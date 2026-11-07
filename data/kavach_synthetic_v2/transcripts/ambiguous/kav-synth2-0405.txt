@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0405 (te-en) ===
+Scenario: Wrong Number Callback from Unknown Distant Person (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Unknown Private Caller nunchi Caller Harish matladuthunnanu regarding inquiry looking for someone named Mr. Raghunath.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient confirms wrong number and ends call.
+[CALLER]: Idi Unknown Private Caller direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0238
+Language: te
+Scenario: University Admissions Counter Document Verification Schedule (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: హలో, ఖాతాదారుతో మాట్లాడుతున్నానా అండి?
+[RECIPIENT]: అవును, నేనే మాట్లాడుతున్నాను. ఎక్కడి నుండి కాల్ అండి?
+[CALLER]: నేను Osmania University Admissions నుండి ప్రతినిధి Coordinator Lakshmi. మీ verification of postgraduate application marksheets పురోగతి గురించి మాట్లాడుతున్నాను.
+[RECIPIENT]: అవును, రెండు వారాల క్రితం నేను verification of postgraduate application marksheets కోసం దరఖాస్తు ఇచ్చాను.
+[CALLER]: మీ దరఖాస్తు ప్రాథమికంగా ఆమోదించబడింది.
+[RECIPIENT]: దీన్ని ఫోన్ లోనే పూర్తి చేసుకోవచ్చా అండి?
+[CALLER]: భద్రతా కారణాల వల్ల ఫోన్ లో లావాదేవీలు చేయము. మీరు నేరుగా వచ్చి report to administrative building counter 4 with originals.
+[RECIPIENT]: భద్రతా నిబంధనలను పాటించడం చాలా మంచి పద్ధతి అండి.
+[CALLER]: మా కార్యాలయం ఉదయం 10 నుండి సాయంత్రం 5 గంటల వరకు తెరిచి ఉంటుంది.
+[RECIPIENT]: సరేనండి, సమయానికి వచ్చి ప్రక్రియ ముగిస్తాను. ధన్యవాదాలు.

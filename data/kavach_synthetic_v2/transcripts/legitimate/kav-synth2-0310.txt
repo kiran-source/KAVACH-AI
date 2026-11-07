@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0310 (te-en) ===
+Scenario: Local Public Library Book Return & Digital Renewal Guide (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Central Library nunchi Librarian Murthy matladuthunnanu. Mee two borrowed books due for return on Friday gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo option to renew online via official library portal complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

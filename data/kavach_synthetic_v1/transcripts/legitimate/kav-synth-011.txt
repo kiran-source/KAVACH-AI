@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-011 (en) ===
+Scenario: Airline Flight Delay Rescheduling Assistance
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello Mr. Sen, this is IndiGo special assistance desk regarding your flight 6E-204 from Delhi to Mumbai tomorrow.
+[RECIPIENT]: Yes, is there any schedule change?
+[CALLER]: Due to runway maintenance at Mumbai airport, your departure time has been moved from two PM to four fifteen PM.
+[RECIPIENT]: That might affect my evening meeting. Are there earlier options available?
+[CALLER]: Yes sir, we have a flight departing at eleven thirty AM with available seats. We can transfer you at zero rescheduling charge.
+[RECIPIENT]: Eleven thirty AM works much better for me. Please change it to that flight.
+[CALLER]: Done sir. Your new boarding pass has been issued and sent to your airline mobile app and registered email.
+[RECIPIENT]: Thank you so much for the proactive assistance.

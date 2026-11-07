@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0336 (hi-en) ===
+Scenario: Defence Personnel OLX Vehicle Advance Token Fraud (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello sir, I am Senior Inspector Ajay Verma from Mumbai Cyber Crime Branch calling. Aapke Aadhaar card ke against money laundering FIR register hui hai.
+[RECIPIENT]: I am extremely nervous. Can I consult my family lawyer before proceeding?
+[CALLER]: Good afternoon, this is Customs Clearance Cargo Office. Aapka international courier packet parcel Singapore route par drugs ke saath intercept hua hai.
+[RECIPIENT]: Alright, main link click kar raha hoon but please ensure my bank account is safe.
+[CALLER]: Urgent alert from Electricity Board. Aapka electricity bill payment update nahi hua hai, connection within 1 hour disconnect ho jayega.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: Dear customer, your bank account is under suspicious activity freeze. Turant OTP share karein to prevent permanent account suspension.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.

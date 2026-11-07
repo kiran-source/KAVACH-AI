@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0366
+Language: en
+Scenario: Broadband Optical Fiber Upgrade Neighborhood Notice (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, I am Technician Santosh from the customer support division at ACT Fibernet Tech Desk.
+[RECIPIENT]: Hello, is this regarding my recent inquiry about scheduled fiber optic speed upgrade in neighborhood?
+[CALLER]: Yes, exactly. We have reviewed your record and request you to maintenance window between 2 PM and 4 PM with minimal downtime.
+[RECIPIENT]: Are there any specific original identity documents or receipts I should carry with me?
+[CALLER]: Just carry your government photo ID and reference docket. No payment or confidential credentials are required.
+[RECIPIENT]: Thank you for the clear instructions and safety notice. I will visit as advised.

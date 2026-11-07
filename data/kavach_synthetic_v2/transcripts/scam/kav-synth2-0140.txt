@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0140 (te-en) ===
+Scenario: Interpol Red Corner Notice Digital Custody Extortion (TE-EN)
+Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Nenu Interpol Liaison Unit nunchi Officer Mukherjee matladuthunnanu andi. Mee credentials meeda international arrest warrant for offshore data theft detect ayindi.
+[RECIPIENT]: Enti sir, international arrest warrant for offshore data theft aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe immediate extradition and airport detention implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane confidential video interrogation and clearance bond cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

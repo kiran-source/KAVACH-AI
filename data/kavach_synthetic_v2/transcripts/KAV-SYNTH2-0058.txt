@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0058
+Language: te
+Scenario: Income Tax Department Tax Evasion & Bank Seizure (TE)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: హలో, ఈ నంబర్ లో నమోదైన వ్యక్తితో మాట్లాడుతున్నానా?
+[RECIPIENT]: అవును, నేనే మాట్లాడుతున్నాను. మీరు ఎవరు? ఎక్కడి నుంచి మాట్లాడుతున్నారు?
+[CALLER]: నేను Income Tax Central Circle సీనియర్ అధికారి Commissioner Saxena. మీపై discrepancy of 18 lakhs in cash deposits కి సంబంధించి తీవ్రమైన ఆరోపణలు ఉన్నాయి.
+[RECIPIENT]: discrepancy of 18 lakhs in cash deposits ఆ? నా జీవితంలో నేను ఎప్పుడూ ఎలాంటి చట్టవ్యతిరేక పనులు చేయలేదు. ఆధారాలు ఏమున్నాయి?
+[CALLER]: కేంద్ర నిఘా విభాగం రికార్డుల్లో స్పష్టమైన ఆధారాలు ఉన్నాయి. మీ నిర్లక్ష్యం మీకు చేటు తెస్తుంది.
+[RECIPIENT]: నిజమైన ప్రభుత్వ విచారణ అయితే నా చిరునామాకు రిజిస్టర్డ్ పోస్ట్ లో సమన్లు రావాలి కదా?
+[CALLER]: ఇది ప్రత్యేక అత్యవసర ఆదేశం. సహకరించకపోతే ఇప్పుడే immediate attachment of commercial bank accounts జరుగుతుంది.
+[RECIPIENT]: అసలు దీనికి అధికారిక పరిష్కార మార్గం ఏమిటి?
+[CALLER]: మీ నిర్దోషిత్వాన్ని రుజువు చేసుకోవడానికి వెంటనే tax dispute settlement gateway payment పూర్తి చేయండి.
+[RECIPIENT]: ఇది మోసపూరితమైన కాల్ అని నాకు స్పష్టంగా అర్థమైంది. నేను 1930 కి కాల్ చేసి ఫిర్యాదు చేస్తాను.

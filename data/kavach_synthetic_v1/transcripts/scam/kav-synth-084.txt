@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-084 (hi-en) ===
+Scenario: SBI YONO Account Deactivation Phishing Link Fraud
+Primary Label: SCAM
+Tactics: ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT, MALICIOUS_LINK_OR_APP
+
+[CALLER]: State Bank of India YONO digital cell. Sir aapka YONO banking app account permanently expire ho gaya hai.
+[RECIPIENT]: YONO expire ho gaya? Par main toh kal hi use kar raha tha.
+[CALLER]: Mandatory PAN card re-verification mandate launch hua hai. Agar update nahi karenge toh accounts freeze ho jayenge.
+[RECIPIENT]: Kahan se update karna hai?
+[CALLER]: Humne aapko SMS par link bheja hai 'sbi-kyc-update.online'. Uspar click karke netbanking password aur profile password enter kijiye.
+[RECIPIENT]: Yeh link official onlinesbi.com toh nahi hai!
+[CALLER]: High traffic server load ki wajah se temporary fast-track portal banaya gaya hai. Jaldi kijiye warna card block ho jayega.
+[RECIPIENT]: Bank kabhi unofficial domain par password nahi mangta. Phishing link hai yeh.

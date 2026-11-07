@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0113
+Language: te
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (TE)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: అత్యవసర సమాచారం. Army Cantonment Wing విచారణ విభాగం నుండి Subedar Major Gill మాట్లాడుతున్నాను.
+[RECIPIENT]: హలో, ఏంటి అత్యవసర సమాచారం? ఎందుకు కాల్ చేశారు?
+[CALLER]: మీ మొబైల్ కనెక్షన్ ద్వారా urgent sale of military certified vehicle at low price జరిగిందని సైబర్ నిఘాలో తేలింది. క్రైమ్ డైరీ 58 నమోదు చేశాం.
+[RECIPIENT]: క్రైమ్ డైరీ 58 ఆ? నా నంబర్ నుంచి అలాంటి పనులు ఎవరూ చేయలేదు. ఇది ఏదో పొరపాటు.
+[CALLER]: ఇది పొరపాటు కాదు. గంటలో స్పందించకపోతే sale to competing buyer waiting at depot చేయడానికి పోలీసులు బయలుదేరారు.
+[RECIPIENT]: నేను నేరుగా పోలీస్ స్టేషన్ కి వెళ్లి మాట్లాడుకుంటాను. ఫోన్ లో ఎందుకు పరిష్కరించాలి?
+[CALLER]: స్టేషన్ వరకు వెళ్లకుండా ఉండాలంటే తక్షణమే 15,000 rupees military gate pass token ద్వారా వెరిఫికేషన్ చేయించుకోండి.
+[RECIPIENT]: ఫోన్ లో డిజిటల్ వెరిఫికేషన్ పేరుతో డబ్బులు అడగడం చట్టవిరుద్ధం. నేను స్థానిక పోలీసులనే ఆశ్రయిస్తాను.

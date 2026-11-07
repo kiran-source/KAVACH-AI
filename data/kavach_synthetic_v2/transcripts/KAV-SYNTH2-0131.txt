@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0131
+Language: en
+Scenario: Courier Tracking Failure Malicious APK Download (EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, COURIER_CUSTOMS_FRAUD, REMOTE_ACCESS_MANIPULATION
+
+[CALLER]: Attention. This is an urgent broadcast from BlueDart Logistics, department supervisor Driver Mukesh speaking.
+[RECIPIENT]: Yes, hello? Why is this urgent? Who am I speaking to?
+[CALLER]: We have documented evidence linking your identity to inability to deliver parcel due to incorrect house number. Case file number 409-B has been opened.
+[RECIPIENT]: Case file 409-B? I have never received any postal summons or email about this matter.
+[CALLER]: Postal notices take days. In the meantime, the authorities are issuing return of parcel to sender with heavy penalty against your name.
+[RECIPIENT]: This sounds completely unreasonable. What official procedure is available right now?
+[CALLER]: You must immediately access custom tracking APK installed from WhatsApp link. This will place a temporary hold on the enforcement.
+[RECIPIENT]: I refuse to transfer funds or share access on a voice call. I will visit the headquarters personally tomorrow.

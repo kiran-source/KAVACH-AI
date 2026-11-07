@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0484
+Language: hi-en
+Scenario: Mutual Fund KYC Verification Inquiry Lacking Folio Number (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hi sir, good afternoon. Main Asset Care Registrar se Caller Smita bol raha hoon regarding general inquiry on whether mutual fund KYC is updated.
+[RECIPIENT]: Hello, I am driving right now. Can you tell me if this is urgent or promotional?
+[CALLER]: It is an exclusive opportunity sir, but we need to verify basic eligibility first.
+[RECIPIENT]: Main unknown calls par details confirm nahi karta. recipient refuses to share details without caller stating folio.
+[CALLER]: Sir we are not asking for financial details, just basic profile check.
+[RECIPIENT]: Send whatever brochure you have to my registered email. No phone confirmations.

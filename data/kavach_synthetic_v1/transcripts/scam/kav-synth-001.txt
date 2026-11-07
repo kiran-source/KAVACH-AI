@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-001 (en) ===
+Scenario: International Courier Narcotics Seizure & Extortion Scam
+Primary Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Good afternoon, this is Officer Vikram Rathore from DHL Customs clearance department, Mumbai Cargo terminal.
+[RECIPIENT]: Hello? Why are you calling me? I didn't send any package.
+[CALLER]: A consignment containing five fake passports, expired credit cards, and 140 grams of narcotics was booked under your Aadhaar details to Singapore.
+[RECIPIENT]: What? That is completely false! Someone must have stolen my identity.
+[CALLER]: The narcotics control bureau has initiated an arrest warrant. To establish your innocence, you must immediately connect to our confidential Skype channel.
+[RECIPIENT]: I will contact my local police station in Bangalore first.
+[CALLER]: If you disconnect this call, a police squad will be dispatched to your residence within thirty minutes. You must immediately transfer the verification fee to our RBI clearing account.
+[RECIPIENT]: No, this sounds like extortion. I am hanging up and filing a cybercrime report.

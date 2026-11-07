@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0495 (te-en) ===
+Scenario: Courier Delivery Driver Lost in Neighborhood Seeking Directions (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, City Parcel Drop nunchi Driver Jagdish matladuthunnanu regarding driver confused between cross road 4 and cross road 5.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient gives clear directional landmarks near bakery.
+[CALLER]: Idi City Parcel Drop direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

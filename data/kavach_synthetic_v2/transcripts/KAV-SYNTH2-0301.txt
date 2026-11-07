@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0301
+Language: en
+Scenario: Veterinary Hospital Pet Annual Vaccination Due Reminder (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good afternoon, this is Dr. George calling from Cessna Pet Hospital regarding your annual rabies and DHLPP booster due for pet dog.
+[RECIPIENT]: Hello, thank you for reaching out. Yes, I was expecting a status update on that.
+[CALLER]: Please be advised to book convenient slot between 10 AM and 6 PM. Kindly note we will never request your OTP, PIN, or net banking password.
+[RECIPIENT]: Understood and appreciated. I will complete this at the branch during normal business hours.

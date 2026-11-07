@@ -1,0 +1,58 @@
+{
+  "dataset_name": "KAVACH-AI Multilingual Synthetic Dataset v1.0",
+  "generated_at": "2026-11-04T13:17:50Z",
+  "last_validated_at": "2026-11-04T19:25:00Z",
+  "status": "VALIDATED_PASS",
+  "total_conversations": 100,
+  "total_audio_samples": 20,
+  "total_measured_audio_duration_seconds": 331.84,
+  "class_distribution": {
+    "SCAM": 40,
+    "LEGITIMATE": 35,
+    "AMBIGUOUS": 25
+  },
+  "language_distribution": {
+    "en": 20,
+    "hi": 20,
+    "te": 20,
+    "te-en": 20,
+    "hi-en": 20
+  },
+  "language_class_distribution": {
+    "te-en": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "en": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "hi": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "te": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "hi-en": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    }
+  },
+  "splits": {
+    "train": 70,
+    "validation": 15,
+    "test": 15
+  },
+  "tts_model": "Gnani Timbre v2.5",
+  "stt_validation_model": "Gnani Prisma v3.0",
+  "text_generation_engine": "KAVACH Domain-Curated Multilingual Scenario Engine",
+  "storage_budget_mb": 500,
+  "pii_automated_scan_passed": true
+}

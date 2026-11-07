@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0414 (te-en) ===
+Scenario: EPFO Provident Fund Pension Release Impersonation (Variant 1)
+Label: SCAM
+Tactics: OTP_PIN_CVV_THEFT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Verification complete avvalante Google Play Store nundi AnyDesk application install chesi screen share cheyandi.
+[RECIPIENT]: Please power cut cheyakandi sir! What should I do right now to pay the bill?
+[CALLER]: Case drop avvalante Court security deposit account lo immediate ga fifty thousand rupees UPI transfer cheyandi.
+[RECIPIENT]: Bank eppudu OTP adagadhu ani message vasthundi kada? Why are you asking for my OTP?
+[CALLER]: Good afternoon sir, this is Cyber Crime Police Department Hyderabad. Mee Aadhaar details meeda illegal money laundering investigation start ayindi.
+[RECIPIENT]: Naku chala fear ga undi sir. Can I please call my family lawyer first?
+[CALLER]: Calling from Mumbai International Cargo Customs. Mee name meeda Singapore velle parcel lo narcotics drugs seize chesaru.
+[RECIPIENT]: Okay sir, application download chesthunnanu, please don't arrest me.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0186
+Language: en
+Scenario: School Tuition Fee Payment Gateway Interception Trap (EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Greetings, this is Cashier Mohan representing Delhi Public School Accounts. Your file has been flagged for pending school tuition installment for current semester.
+[RECIPIENT]: I am in the middle of office hours. Email me the case summary regarding pending school tuition installment for current semester.
+[CALLER]: We are ready to issue removal of student name from examination roster unless this inquiry is settled within the hour.
+[RECIPIENT]: How can this be settled without proper legal representation and court proceedings?
+[CALLER]: Under special statutory provisions, you can halt the escalation by completing direct transfer to private accountant UPI handle right now.
+[RECIPIENT]: Send an official email to my verified corporate ID. I do not entertain legal matters over phone.

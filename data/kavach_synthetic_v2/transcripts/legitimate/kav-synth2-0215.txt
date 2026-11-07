@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0215 (te-en) ===
+Scenario: E-Commerce Logistics Package Out for Delivery Confirmation (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, BlueDart Logistics nunchi Courier Ramesh matladuthunnanu. Mee Amazon delivery out for delivery today gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo leave parcel with building security guard complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

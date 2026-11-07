@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0394 (hi-en) ===
+Scenario: Real Estate Commercial Property Cold Investment Pitch (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Apex Realty Holdings se Caller Vikas bol raha hoon regarding commercial office space investment opportunity.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient declines investment calls during business hours.
+[CALLER]: Sir yeh Apex Realty Holdings ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

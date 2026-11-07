@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-071 (te-en) ===
+Scenario: Apartment Fiber Broadband Installation Schedule
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello, calling from Airtel Xstream Fiber installation team. Am I speaking with Mr. Charan?
+[RECIPIENT]: Yes Charan speaking.
+[CALLER]: Sir, mee apartment My Home Bhooja lo new fiber optic connection installation kosam engineer allocate ayyaru.
+[RECIPIENT]: Eppudu vastaru engineer?
+[CALLER]: Today evening four to six PM slot lo visit chestharu. Router and optical terminal unit free of cost deliver avtundi.
+[RECIPIENT]: Installation fee evarikaina cash ga ivvala?
+[CALLER]: No cash payments sir. Any advance charges your first monthly bill lo Airtel Thanks app lo direct ga pay cheskovachu.
+[RECIPIENT]: Perfect, evening four PM ki intlo untanu, send the engineer.

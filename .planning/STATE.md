@@ -4,7 +4,7 @@
 - **Project**: KAVACH AI (Multilingual Voice Scam Detection & Security Incident Response Platform)
 - **Challenge**: Great Indian AI Internship Challenge (Gnani AI)
 - **Architecture**: React 18 + Vite + TypeScript Frontend | Python 3.12+ FastAPI Backend | SQLite Database
-- **AI Technologies**: Gnani Prisma v2.5 (STT), Gnani Timbre v2.5 (TTS), Evon v3.3 (Reasoning)
+- **AI Technologies**: Gnani Prisma v3 (STT), Gnani Timbre v2.5 (TTS), Evon v3.3 (Reasoning)
 
 ---
 
@@ -16,7 +16,7 @@
 | **Phase 2: Backend Architecture & DB** | FastAPI, SQLite, SQLAlchemy models, health APIs | **COMPLETE** | Verified |
 | **Phase 3: Frontend Architecture** | React 18, Vite, TS, Tailwind, Layout | **COMPLETE** | Verified |
 | **Phase 4: Audio Ingestion Engine** | File upload, MIME check, metadata, sanitization | **COMPLETE** | Verified |
-| **Phase 5: Gnani Prisma Integration** | Prisma v2.5 STT, LID, segment extraction | **COMPLETE** | Verified |
+| **Phase 5: Gnani Prisma Integration** | Prisma v3 STT, LID, segment extraction | **COMPLETE** | Verified |
 | **Phase 6: Multilingual Threat Detection** | 8 Threat categories, negative context guard | **COMPLETE** | Verified |
 | **Phase 7: Explainable Risk Scoring** | 0-100 score, synergy, severity mapping | **COMPLETE** | Verified |
 | **Phase 8: Gnani Timbre Integration** | Multilingual voice warnings (TE, HI, EN), local TTS | **COMPLETE** | Verified |

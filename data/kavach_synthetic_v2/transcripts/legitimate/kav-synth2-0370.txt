@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0370 (te-en) ===
+Scenario: Broadband Optical Fiber Upgrade Neighborhood Notice (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, ACT Fibernet Tech Desk nunchi Technician Santosh matladuthunnanu. Mee scheduled fiber optic speed upgrade in neighborhood gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo maintenance window between 2 PM and 4 PM with minimal downtime complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

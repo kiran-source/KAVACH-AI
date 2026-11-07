@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0461 (te-en) ===
+Scenario: Bank Fraud Monitoring Division Educational Advisory on Cyber Security (Variant 1)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, calling from SBI Banjara Hills branch regarding your annual KYC documentation review.
+[RECIPIENT]: Hello andi, thanks for the reminder. Nenu tomorrow branch ki vachi forms submit chesthanu.
+[CALLER]: Hello, calling from Apollo Hospitals regarding your routine health checkup appointment tomorrow.
+[RECIPIENT]: Yes, tomorrow 10:30 AM appointment time confirm andi. I will be there.
+[CALLER]: BlueDart Logistics courier delivery call andi, mee Amazon parcel out for delivery undi.
+[RECIPIENT]: Thank you andi, parcel flat security daggara hand over cheyandi.
+[CALLER]: Public awareness message from RBI: Never share your OTP, ATM PIN, or passwords with anyone on phone.
+[RECIPIENT]: Yes, I know very well about cyber safety. Thank you for the reminder.

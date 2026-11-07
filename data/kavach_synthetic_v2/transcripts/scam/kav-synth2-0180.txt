@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0180 (te-en) ===
+Scenario: Insurance Bonus Settlement AnyDesk Verification Scam (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu LIC Claims Division nunchi Officer Tripathi matladuthunnanu andi. Mee credentials meeda accrued life insurance loyalty bonus of 2.1 lakhs detect ayindi.
+[RECIPIENT]: Enti sir, accrued life insurance loyalty bonus of 2.1 lakhs aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe forfeiture of accumulated policy maturity bonus implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane AnyDesk code sharing to verify bank passbook cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

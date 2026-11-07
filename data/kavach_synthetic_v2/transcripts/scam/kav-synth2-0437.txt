@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0437 (te-en) ===
+Scenario: School Tuition Fee Payment Gateway Interception (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Urgent notification from Electricity Department. Unpaid power bill dues valla 30 minutes lo supply disconnect chestham.
+[RECIPIENT]: What is this sir? Nenu eppudu ilanti illegal activities lo participate cheyaledu. It's a mistake!
+[CALLER]: Alert from Bank Security Team. Mee debit card temporarily restrict ayindi, immediate ga OTP share chesi verify chesukondi.
+[RECIPIENT]: Singapore ki courier entra babu? Nenu asalu passport kooda ekkada ivvaledu.
+[CALLER]: You are placed under 24-hour Digital Arrest. Do not disconnect the call and stay on continuous video surveillance.
+[RECIPIENT]: Please power cut cheyakandi sir! What should I do right now to pay the bill?
+[CALLER]: Verification complete avvalante Google Play Store nundi AnyDesk application install chesi screen share cheyandi.
+[RECIPIENT]: Bank eppudu OTP adagadhu ani message vasthundi kada? Why are you asking for my OTP?

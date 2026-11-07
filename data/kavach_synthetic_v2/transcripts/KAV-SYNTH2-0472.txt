@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0472
+Language: hi
+Scenario: Event Concert Ticket Reservation Query Disconnecting (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्ते जी, मैं Showtime Tickets से Caller Tanya बात कर रहा हूँ।
+[RECIPIENT]: नमस्ते। किस कारण से संपर्क किया गया है?
+[CALLER]: आपके खाते के लिए inquiry regarding pending ticket payment for music festival का एक विशेष अवसर उपलब्ध हुआ है।
+[RECIPIENT]: मैंने तो कभी इसके लिए कोई आवेदन नहीं दिया था।
+[CALLER]: यह चुनिंदा उपभोक्ताओं को स्वतः ही ऑफर किया जाता है।
+[RECIPIENT]: इसके लिए आपको मुझसे क्या जानकारी चाहिए?
+[CALLER]: केवल आपकी जन्मतिथि और वर्तमान पते का सामान्य मिलान करना है।
+[RECIPIENT]: मैं फोन पर निजी जन्मतिथि या पता नहीं बताता। recipient states they did not book tickets and call ends।
+[CALLER]: ठीक है सर, यदि आप असहज हैं तो हम इसे बाद के लिए स्थगित कर देते हैं।
+[RECIPIENT]: जी हाँ, कृपया इसे बंद ही रखिए। मुझे इसकी आवश्यकता नहीं है।

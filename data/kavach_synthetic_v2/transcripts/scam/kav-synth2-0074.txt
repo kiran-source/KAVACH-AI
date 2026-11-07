@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0074 (hi-en) ===
+Scenario: Credit Card Reward Points Expiry Phishing APK (HI-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, OTP_PIN_CVV_THEFT, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Yeh ICICI Bank Rewards Cell se Officer Mehra bol raha hoon. Aapke khilaf accumulated reward points worth 14,200 rupees expiring ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? accumulated reward points worth 14,200 rupees expiring? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh forfeiture of loyalty reward cash balance hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi custom APK installation to claim cash fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

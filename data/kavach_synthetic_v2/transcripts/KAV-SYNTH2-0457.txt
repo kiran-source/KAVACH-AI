@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0457
+Language: hi
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्ते, मैं Smart Mart Rewards से Caller Varun बोल रहा हूँ। inquiry on redeeming 450 reward points on next grocery bill के बारे में एक विशेष जानकारी है।
+[RECIPIENT]: मुझे inquiry on redeeming 450 reward points on next grocery bill में कोई दिलचस्पी नहीं है। आपको मेरा नंबर कहाँ से मिला?
+[CALLER]: सर, हमारे सहयोगी डेटाबेस से आपका नाम चयनित हुआ है।
+[RECIPIENT]: बिना पहचान के मैं बात नहीं करता। recipient acknowledges message and will check in store। धन्यवाद।

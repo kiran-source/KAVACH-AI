@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0215
+Language: te-en
+Scenario: E-Commerce Logistics Package Out for Delivery Confirmation (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, BlueDart Logistics customer relations nunchi Courier Ramesh ni.
+[RECIPIENT]: Good afternoon, cheppandi emiti vishayam?
+[CALLER]: Mee Amazon delivery out for delivery today process complete aindi ani inform cheyataniki call chesamu.
+[RECIPIENT]: Good to know. Next step enti sir?
+[CALLER]: Next step lo meeru direct ga leave parcel with building security guard cheyali.
+[RECIPIENT]: Phone lo credentials confirm cheyalsina avasaram unda?
+[CALLER]: Ledu sir, phone meeda credentials eppudu share cheyakandi. Office lo direct ga complete cheyandi.
+[RECIPIENT]: Very reassuring sir. I will visit during normal working hours.

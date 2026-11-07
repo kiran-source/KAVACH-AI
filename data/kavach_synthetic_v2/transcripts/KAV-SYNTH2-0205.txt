@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0205
+Language: te-en
+Scenario: Bank Official Branch Visit Invitation for Annual KYC Review (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello andi, nenu HDFC Bank MG Road nunchi Priya ni. Regarding your annual KYC document verification at branch update.
+[RECIPIENT]: Hello, thank you for reaching out. Ee updates kosam nenu waiting.
+[CALLER]: Meeru bring original Aadhaar and PAN to branch counter cheyalsi untundi. Note that we never ask for OTP or passwords on call.
+[RECIPIENT]: Sure andi, I will personally visit the official center tomorrow.

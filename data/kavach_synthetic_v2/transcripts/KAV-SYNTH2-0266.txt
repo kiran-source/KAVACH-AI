@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0266
+Language: en
+Scenario: Blood Bank Rare Blood Group Voluntary Donation Inquiry (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, I am Coordinator Swathi from the customer support division at Red Cross Blood Center.
+[RECIPIENT]: Hello, is this regarding my recent inquiry about shortage of O negative blood group for scheduled surgeries?
+[CALLER]: Yes, exactly. We have reviewed your record and request you to voluntary blood donation at clinic if healthy and available.
+[RECIPIENT]: Are there any specific original identity documents or receipts I should carry with me?
+[CALLER]: Just carry your government photo ID and reference docket. No payment or confidential credentials are required.
+[RECIPIENT]: Thank you for the clear instructions and safety notice. I will visit as advised.

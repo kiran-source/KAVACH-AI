@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0005
+Language: te-en
+Scenario: CBI Money Laundering & Digital Arrest (TE-EN)
+Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu CBI Headquarters nunchi Inspector Raman matladuthunnanu andi. Severe allegation vachindi regarding 4.2 crore illegal Hawala laundering.
+[RECIPIENT]: What are you saying sir? 4.2 crore illegal Hawala laundering aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop Aadhaar non-bailable arrest warrant, meeru ventane RBI security verification account cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

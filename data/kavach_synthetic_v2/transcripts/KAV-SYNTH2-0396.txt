@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0396
+Language: en
+Scenario: Vague Consumer Insurance Survey Inquiring on Family Size (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, I am Caller Monica calling on behalf of National Market Survey regarding demographic research survey on life insurance ownership.
+[RECIPIENT]: I didn't request any call regarding demographic research survey on life insurance ownership. Where did you obtain my contact?
+[CALLER]: Our partner database indicated you might qualify for this exclusive opportunity.
+[RECIPIENT]: I do not entertain unverified telephone pitches. recipient declines to disclose household financial information. Goodbye.

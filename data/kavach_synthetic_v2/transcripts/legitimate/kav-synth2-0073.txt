@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0073 (en) ===
+Scenario: Corporate HR Department Campus Interview Onboarding Details Follow-up (Variant 1)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good afternoon, this is BlueDart logistics. Your Amazon package is out for delivery today.
+[RECIPIENT]: Thank you. Please leave the package with the building security guard.
+[CALLER]: This is an automated educational alert from SBI: please remember our bank never asks for your PIN or OTP.
+[RECIPIENT]: Thank you for the advisory. I always keep my security credentials safe.
+[CALLER]: Hello sir, I am calling from Tata Motors service center to confirm your car regular servicing appointment.
+[RECIPIENT]: Yes, I will drop the car off tomorrow morning by 9 AM.
+[CALLER]: Good morning, this is Priya calling from HDFC Bank customer relations, MG Road branch.
+[RECIPIENT]: Yes, good morning Priya. I received the email about the annual review.

@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0390
+Language: te-en
+Scenario: Pre-Approved Personal Loan Cold Call with Vague Terms (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, is this the primary account contact? Calling from Finance Telemarketing.
+[RECIPIENT]: Yes speaking. Enti vishayam?
+[CALLER]: Mee region lo pre-approved low interest personal loan offer rollout gurinchi information ivvataniki call chesamu.
+[RECIPIENT]: Mee organization name nenu eppudu vinaledu. Are you authorized?
+[CALLER]: Memu partner network tho kalisi ee service operate chesthunnamu.
+[RECIPIENT]: Idhi clear ga ledu, konchem suspicious ga undi. recipient asks for employee ID and official bank domain.
+[CALLER]: Miku elanti risk ledu sir, just feedback matrame tesukuntunnamu.
+[RECIPIENT]: Official verification lekunda nenu information ivvanu. Please don't call again.

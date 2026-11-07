@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0402
+Language: hi
+Scenario: Wrong Number Callback from Unknown Distant Person (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्कार, Unknown Private Caller की तरफ से Caller Harish बात कर रहा हूँ inquiry looking for someone named Mr. Raghunath के संबंध में।
+[RECIPIENT]: नमस्ते, मैं अभी थोड़ा व्यस्त हूँ। क्या यह कोई विज्ञापन कॉल है?
+[CALLER]: यह एक महत्वपूर्ण पेशकश है, पर पहले हमें आपकी पात्रता की जांच करनी होगी।
+[RECIPIENT]: फोन पर मैं कोई विवरण साझा नहीं करता। recipient confirms wrong number and ends call।
+[CALLER]: सर, हम केवल सामान्य जानकारी ले रहे हैं, कोई गोपनीय डाटा नहीं चाहिए।
+[RECIPIENT]: फिर भी, आप लिखित विवरण ईमेल पर भेजिए। फोन पर कोई पुष्टि नहीं होगी।

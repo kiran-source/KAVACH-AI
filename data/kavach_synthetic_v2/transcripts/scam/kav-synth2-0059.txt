@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0059 (hi-en) ===
+Scenario: Income Tax Department Tax Evasion & Bank Seizure (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Yeh Income Tax Central Circle se Commissioner Saxena bol raha hoon. Aapke khilaf discrepancy of 18 lakhs in cash deposits ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? discrepancy of 18 lakhs in cash deposits? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh immediate attachment of commercial bank accounts hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi tax dispute settlement gateway payment fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

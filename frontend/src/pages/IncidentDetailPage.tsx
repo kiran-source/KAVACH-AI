@@ -3,10 +3,16 @@ import { useParams, useNavigate } from 'react-router-dom';
 import {
   ShieldAlert, ArrowLeft, Download, FileText, Clock,
   Volume2, UserCheck, AlertTriangle, CheckCircle, RefreshCw,
-  ExternalLink, Send
+  ExternalLink, Send, Shield, Copy, Check, Headphones,
+  AlertOctagon, Info
 } from 'lucide-react';
 import { api } from '../services/api';
 import { IncidentDetail } from '../types';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/common/Card';
+import { SeverityBadge, StatusBadge } from '../components/common/Badge';
+import { Button } from '../components/common/Button';
+import { StatusIndicator } from '../components/common/StatusIndicator';
+import { AudioWaveform } from '../components/common/AudioWaveform';
 
 export const IncidentDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -17,6 +23,8 @@ export const IncidentDetailPage: React.FC = () => {
   const [newNote, setNewNote] = useState<string>('');
   const [statusUpdating, setStatusUpdating] = useState<boolean>(false);
   const [generatingReport, setGeneratingReport] = useState<boolean>(false);
+  const [copiedId, setCopiedId] = useState<boolean>(false);
+  const [copiedTranscript, setCopiedTranscript] = useState<boolean>(false);
 
   const fetchDetail = () => {
     if (!id) return;
@@ -72,233 +80,378 @@ export const IncidentDetailPage: React.FC = () => {
     }
   };
 
+  const copyIncidentId = () => {
+    if (incident?.incident_number) {
+      navigator.clipboard.writeText(incident.incident_number);
+      setCopiedId(true);
+      setTimeout(() => setCopiedId(false), 2000);
+    }
+  };
+
+  const copyTranscriptText = () => {
+    if (incident?.transcript_text) {
+      navigator.clipboard.writeText(incident.transcript_text);
+      setCopiedTranscript(true);
+      setTimeout(() => setCopiedTranscript(false), 2000);
+    }
+  };
+
   if (loading || !incident) {
     return (
-      <div className="flex items-center justify-center h-full">
-        <div className="flex items-center space-x-2 text-cyan-400 font-mono text-sm">
-          <RefreshCw className="w-4 h-4 animate-spin" />
-          <span>Loading Incident Dossier...</span>
+      <div className="flex flex-col items-center justify-center min-h-[60vh] space-y-4">
+        <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center animate-pulse">
+          <RefreshCw className="w-6 h-6 text-cyan-400 animate-spin" />
+        </div>
+        <div className="text-center">
+          <p className="text-sm font-semibold text-white">Loading Incident Dossier</p>
+          <p className="text-xs text-slate-500 font-mono mt-1">Retrieving forensic transcript and evidence logs...</p>
         </div>
       </div>
     );
   }
 
+  const getLanguageName = (lang: string) => {
+    const l = lang.toLowerCase();
+    if (l === 'te') return 'Telugu (తెలుగు)';
+    if (l === 'hi') return 'Hindi (हिंदी)';
+    return 'English';
+  };
+
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
-      {/* Back button & Action Header */}
+    <div className="space-y-6 max-w-7xl mx-auto pb-12">
+      {/* Top Breadcrumb & Action Navigation */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <button
           onClick={() => navigate('/incidents')}
-          className="flex items-center space-x-1.5 text-xs text-slate-400 hover:text-white transition font-mono self-start"
+          className="inline-flex items-center space-x-2 text-xs font-mono text-slate-400 hover:text-cyan-400 transition-colors focus:outline-none"
         >
-          <ArrowLeft className="w-3.5 h-3.5" />
-          <span>Back to Incident Queue</span>
+          <ArrowLeft className="w-4 h-4" />
+          <span>Return to Triage Queue</span>
         </button>
 
         <div className="flex items-center space-x-3">
-          <button
-            onClick={handleGenerateReport}
-            disabled={generatingReport}
-            className="px-4 py-2 bg-gradient-to-r from-cyan-600 to-teal-500 hover:from-cyan-500 hover:to-teal-400 text-slate-950 font-bold text-xs rounded-lg shadow-md transition flex items-center space-x-2"
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={copyIncidentId}
+            className="font-mono text-xs"
           >
-            {generatingReport ? (
-              <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-            ) : (
-              <FileText className="w-3.5 h-3.5" />
-            )}
-            <span>Export Official SOC PDF Report</span>
-          </button>
+            {copiedId ? <Check className="w-3.5 h-3.5 text-emerald-400 mr-1.5" /> : <Copy className="w-3.5 h-3.5 mr-1.5" />}
+            <span>{copiedId ? 'Copied ID' : 'Copy Incident ID'}</span>
+          </Button>
+
+          <Button
+            variant="primary"
+            size="sm"
+            onClick={handleGenerateReport}
+            isLoading={generatingReport}
+            className="shadow-glow-cyan text-xs"
+          >
+            <FileText className="w-4 h-4 mr-1.5" />
+            <span>Export Official SOC PDF</span>
+          </Button>
         </div>
       </div>
 
-      {/* Incident Overview Card */}
-      <div className="bg-[#0c1220] p-6 rounded-xl border border-slate-800 space-y-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
-          <div>
-            <div className="flex items-center space-x-2 font-mono text-xs text-cyan-400 font-bold">
-              <span>{incident.incident_number}</span>
-              <span className="text-slate-600">•</span>
-              <span className="text-slate-400">{new Date(incident.created_at).toUTCString()}</span>
+      {/* Main Dossier Header Banner */}
+      <div className="relative overflow-hidden rounded-2xl bg-navy-900 border border-slate-800/80 p-6 shadow-2xl backdrop-blur-xl">
+        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+          <div className="space-y-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-mono font-bold text-sm text-cyan-400 bg-cyan-950/80 border border-cyan-800/60 px-2.5 py-0.5 rounded-md">
+                {incident.incident_number}
+              </span>
+              <SeverityBadge severity={incident.severity} size="sm" />
+              <StatusBadge status={incident.status} size="sm" />
+              <span className="text-xs font-mono text-slate-500 hidden sm:inline">
+                Logged: {new Date(incident.created_at).toUTCString()}
+              </span>
             </div>
-            <h1 className="text-xl font-bold text-white mt-1">{incident.title}</h1>
+
+            <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+              {incident.title}
+            </h1>
+            <p className="text-xs text-slate-400 max-w-3xl leading-relaxed">
+              Forensic audio incident analyzed by KAVACH hybrid engine. Preserving chain of custody,
+              acoustic metadata, and explainable rule trigger proofs.
+            </p>
           </div>
 
-          <div className="flex items-center space-x-3">
+          {/* Quick Threat Score Pill */}
+          <div className="flex items-center space-x-4 p-4 rounded-xl bg-navy-950/80 border border-slate-800/90 shrink-0">
             <div className="text-right">
-              <div className="text-[10px] font-mono text-slate-400">RISK ASSESSMENT</div>
-              <div className="text-xl font-mono font-bold text-white">{incident.risk_score} / 100</div>
+              <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400">Hybrid Risk Score</div>
+              <div className="flex items-baseline justify-end space-x-1 mt-0.5">
+                <span className={`text-3xl font-black font-mono tracking-tight ${
+                  incident.risk_score >= 80 ? 'text-red-400' :
+                  incident.risk_score >= 60 ? 'text-amber-400' :
+                  incident.risk_score >= 30 ? 'text-cyan-400' : 'text-emerald-400'
+                }`}>
+                  {incident.risk_score}
+                </span>
+                <span className="text-xs text-slate-500 font-mono">/ 100</span>
+              </div>
             </div>
-            <div
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold font-mono border ${
-                incident.severity === 'Critical' || incident.severity === 'High'
-                  ? 'bg-red-500/20 text-red-400 border-red-500/40'
-                  : 'bg-amber-500/20 text-amber-400 border-amber-500/40'
-              }`}
-            >
-              {incident.severity}
+            <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
+              <ShieldAlert className={`w-6 h-6 ${
+                incident.risk_score >= 80 ? 'text-red-400' :
+                incident.risk_score >= 60 ? 'text-amber-400' : 'text-emerald-400'
+              }`} />
             </div>
           </div>
         </div>
 
-        {/* Status Transition Row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-xs">
+        {/* Operational Metadata Bar */}
+        <div className="mt-6 pt-4 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs font-sans">
           <div>
-            <span className="text-slate-400 block mb-1">Investigation Status:</span>
+            <span className="text-slate-500 block mb-1 font-mono uppercase text-[10px]">Triage Workflow Status</span>
             <select
               value={incident.status}
               onChange={(e) => handleStatusChange(e.target.value)}
               disabled={statusUpdating}
-              className="bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-cyan-400 font-semibold w-full focus:outline-none"
+              className="w-full bg-navy-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-cyan-300 font-semibold focus:outline-none focus:border-cyan-500"
             >
-              <option value="New">New</option>
+              <option value="New">New (Pending Triage)</option>
               <option value="Under Review">Under Review</option>
               <option value="Confirmed Suspicious">Confirmed Suspicious</option>
               <option value="False Positive">False Positive</option>
-              <option value="Resolved">Resolved</option>
+              <option value="Resolved">Resolved & Closed</option>
             </select>
           </div>
 
           <div>
-            <span className="text-slate-400 block mb-1">Assigned SOC Analyst:</span>
-            <div className="p-1.5 rounded bg-slate-900 border border-slate-800 text-slate-200 font-medium">
-              {incident.assigned_analyst || 'SOC Analyst 1'}
+            <span className="text-slate-500 block mb-1 font-mono uppercase text-[10px]">Assigned SOC Analyst</span>
+            <div className="px-3 py-1.5 rounded-lg bg-navy-950 border border-slate-800 text-slate-200 font-medium truncate flex items-center space-x-1.5">
+              <UserCheck className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+              <span>{incident.assigned_analyst || 'SOC Analyst 1'}</span>
             </div>
           </div>
 
           <div>
-            <span className="text-slate-400 block mb-1">Audio Source File:</span>
-            <div className="p-1.5 rounded bg-slate-900 border border-slate-800 text-slate-300 font-mono text-[11px] truncate">
-              {incident.audio_filename}
+            <span className="text-slate-500 block mb-1 font-mono uppercase text-[10px]">Audio Ingestion File</span>
+            <div className="px-3 py-1.5 rounded-lg bg-navy-950 border border-slate-800 text-slate-300 font-mono text-[11px] truncate flex items-center space-x-1.5">
+              <Headphones className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+              <span title={incident.audio_filename}>{incident.audio_filename}</span>
+            </div>
+          </div>
+
+          <div>
+            <span className="text-slate-500 block mb-1 font-mono uppercase text-[10px]">Language Detected</span>
+            <div className="px-3 py-1.5 rounded-lg bg-navy-950 border border-slate-800 text-cyan-400 font-mono text-[11px] font-bold">
+              {getLanguageName(incident.detected_language)}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Audio Playback & Transcript */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Full Transcript */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 space-y-3">
-          <div className="flex items-center justify-between text-xs font-semibold text-slate-300">
-            <span>Prisma v2.5 Audio Transcript</span>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-400">
-              LANG: {incident.detected_language.toUpperCase()}
-            </span>
-          </div>
-          <div className="bg-[#070b14] p-4 rounded-lg border border-slate-800 text-xs text-slate-200 leading-relaxed max-h-56 overflow-y-auto italic font-sans">
-            "{incident.transcript_text}"
-          </div>
-          {incident.audio_id && (
-            <div className="pt-2 flex items-center justify-between text-xs text-slate-400">
-              <span>Original Audio Stream:</span>
-              <audio src={`/api/v1/audio/${incident.audio_id}`} controls className="h-7 w-56" />
-            </div>
-          )}
-        </div>
-
-        {/* Incident Timeline Audit Log */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 space-y-3">
-          <div className="text-xs font-semibold text-slate-300 flex items-center space-x-1.5">
-            <Clock className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Chronological Incident Audit Timeline</span>
-          </div>
-          <div className="bg-[#070b14] p-4 rounded-lg border border-slate-800 text-xs space-y-3 max-h-56 overflow-y-auto font-sans">
-            {incident.timeline && incident.timeline.length > 0 ? (
-              incident.timeline.map((tm, idx) => (
-                <div key={idx} className="border-l-2 border-cyan-500/60 pl-3 space-y-0.5">
-                  <div className="flex items-center space-x-2">
-                    <span className="font-semibold text-cyan-300 text-[11px]">{tm.event_type}</span>
-                    <span className="text-[10px] font-mono text-slate-500">
-                      {new Date(tm.event_time).toLocaleTimeString()}
-                    </span>
-                  </div>
-                  <p className="text-slate-300 text-[11px]">{tm.description}</p>
+      {/* Two Column Investigation Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Left Column: Audio & Transcript (7 cols) */}
+        <div className="lg:col-span-7 space-y-6">
+          {/* Audio Evidence Container with Waveform */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                  <Headphones className="w-4 h-4 text-cyan-400" />
+                  <CardTitle>Acoustic Forensics & Audio Playback</CardTitle>
                 </div>
-              ))
-            ) : (
-              <p className="text-slate-500 italic">No timeline entries.</p>
-            )}
-          </div>
-        </div>
-      </div>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
+                  {incident.audio_filename.split('.').pop()?.toUpperCase() || 'WAV'} • RAW STREAM
+                </span>
+              </div>
+              <CardDescription>
+                Synchronized acoustic stream preserved under continuous SHA-256 chain of custody.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="p-4 rounded-xl bg-navy-950 border border-slate-800/80 space-y-3">
+                <AudioWaveform isRecording={false} height={64} />
+                {incident.audio_id && (
+                  <div className="pt-2 flex items-center justify-between gap-4">
+                    <audio
+                      src={`/api/v1/audio/${incident.audio_id}`}
+                      controls
+                      className="w-full h-8 rounded-lg filter invert-[0.85] hue-rotate-180"
+                    />
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
 
-      {/* Threat Evidence Table */}
-      <div className="bg-[#0c1220] rounded-xl border border-slate-800 overflow-hidden">
-        <div className="p-4 border-b border-slate-800">
-          <h2 className="text-sm font-semibold text-white flex items-center space-x-2">
-            <AlertTriangle className="w-4 h-4 text-amber-400" />
-            <span>Forensic Evidence & Triggered Scam Tactics</span>
-          </h2>
+          {/* Verbatim Transcript with Threat Highlighting */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                  <FileText className="w-4 h-4 text-cyan-400" />
+                  <CardTitle>Prisma v3 Verbatim Speech Transcript</CardTitle>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={copyTranscriptText}
+                  className="text-xs font-mono h-7 px-2"
+                >
+                  {copiedTranscript ? <Check className="w-3.5 h-3.5 text-emerald-400 mr-1" /> : <Copy className="w-3.5 h-3.5 mr-1" />}
+                  <span>{copiedTranscript ? 'Copied' : 'Copy'}</span>
+                </Button>
+              </div>
+              <CardDescription>
+                High-fidelity automatic speech recognition with native code-mixed Indian accent support.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="p-4 rounded-xl bg-navy-950 border border-slate-800/90 max-h-72 overflow-y-auto">
+                <p className="text-xs text-slate-200 leading-relaxed font-sans whitespace-pre-wrap selection:bg-cyan-500 selection:text-navy-950">
+                  "{incident.transcript_text}"
+                </p>
+              </div>
+              <div className="mt-3 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+                <span>Recognized by Gnani Prisma v3</span>
+                <span>Language: {incident.detected_language.toUpperCase()}</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Chronological Audit Timeline */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4 text-cyan-400" />
+                <CardTitle>Chronological Incident Audit Timeline</CardTitle>
+              </div>
+              <CardDescription>
+                Immutable chronological event trail from ingestion to analyst disposition.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {incident.timeline && incident.timeline.length > 0 ? (
+                  <div className="relative pl-6 space-y-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-800">
+                    {incident.timeline.map((tm, idx) => (
+                      <div key={idx} className="relative">
+                        <div className="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-navy-900" />
+                        <div className="flex items-center space-x-2">
+                          <span className="text-xs font-bold text-white">{tm.event_type}</span>
+                          <span className="text-[10px] font-mono text-slate-500">
+                            {new Date(tm.event_time).toLocaleTimeString()}
+                          </span>
+                        </div>
+                        <p className="text-xs text-slate-400 mt-1">{tm.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-xs text-slate-500 italic">No timeline entries recorded.</p>
+                )}
+              </div>
+            </CardContent>
+          </Card>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs text-slate-300">
-            <thead className="bg-[#090d16] text-slate-400 font-mono uppercase text-[10px]">
-              <tr>
-                <th className="py-3 px-4">Threat Category</th>
-                <th className="py-3 px-4">Matched Forensic Excerpt</th>
-                <th className="py-3 px-4">Contribution</th>
-                <th className="py-3 px-4">Detailed Rule Tactic Explanation</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-800/60 font-sans">
+
+        {/* Right Column: Threats & Notes (5 cols) */}
+        <div className="lg:col-span-5 space-y-6">
+          {/* Matched Threat Tactics & Evidence */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center space-x-2">
+                <AlertOctagon className="w-4 h-4 text-red-400" />
+                <CardTitle>Triggered Scam Tactics & Evidence</CardTitle>
+              </div>
+              <CardDescription>
+                Deterministic rule matches and weighted threat contribution breakdown.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3">
               {incident.threats && incident.threats.length > 0 ? (
                 incident.threats.map((th, i) => (
-                  <tr key={i} className="hover:bg-slate-800/30">
-                    <td className="py-3 px-4 font-semibold text-white">{th.category}</td>
-                    <td className="py-3 px-4 font-mono text-cyan-300 text-[11px]">
-                      <span className="bg-cyan-950/40 px-2 py-0.5 rounded border border-cyan-800/30">
-                        "{th.matched_text}"
+                  <div
+                    key={i}
+                    className="p-3.5 rounded-xl bg-navy-950 border border-slate-800/80 hover:border-slate-700 transition space-y-2"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-white flex items-center space-x-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                        <span>{th.category}</span>
                       </span>
-                    </td>
-                    <td className="py-3 px-4 font-mono font-bold text-red-400">+{th.contribution}</td>
-                    <td className="py-3 px-4 text-slate-300 text-[11px] leading-relaxed">{th.explanation}</td>
-                  </tr>
+                      <span className="font-mono text-xs font-bold text-red-400 bg-red-950/60 border border-red-800/40 px-2 py-0.5 rounded">
+                        +{th.contribution} pts
+                      </span>
+                    </div>
+
+                    <div className="p-2 rounded bg-navy-900 border border-slate-800/60 font-mono text-[11px] text-cyan-300">
+                      "{th.matched_text}"
+                    </div>
+
+                    <p className="text-[11px] text-slate-400 leading-relaxed">
+                      {th.explanation}
+                    </p>
+                  </div>
                 ))
               ) : (
-                <tr>
-                  <td colSpan={4} className="py-4 text-center text-slate-500">
-                    No specific threat patterns flagged.
-                  </td>
-                </tr>
+                <div className="p-6 text-center text-slate-500 text-xs">
+                  <Shield className="w-8 h-8 text-emerald-500/40 mx-auto mb-2" />
+                  <p>No deterministic scam patterns violated.</p>
+                  <p className="text-[11px] text-slate-600 mt-1">Classified as benign or below risk threshold.</p>
+                </div>
               )}
-            </tbody>
-          </table>
+            </CardContent>
+          </Card>
+
+          {/* Analyst Case Notes & Journal */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center space-x-2">
+                <UserCheck className="w-4 h-4 text-cyan-400" />
+                <CardTitle>Analyst Notes & Case Journal</CardTitle>
+              </div>
+              <CardDescription>
+                Record investigation findings, caller CLI lookups, and mitigation steps taken.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {incident.analyst_notes ? (
+                <div className="p-3.5 rounded-xl bg-navy-950 border border-slate-800/80 text-xs font-mono text-slate-300 whitespace-pre-wrap leading-relaxed max-h-48 overflow-y-auto">
+                  {incident.analyst_notes}
+                </div>
+              ) : (
+                <div className="p-4 rounded-xl bg-navy-950/50 border border-slate-800/50 text-center text-slate-500 text-xs">
+                  No analyst notes logged for this incident yet.
+                </div>
+              )}
+
+              {/* Add Note Input */}
+              <form onSubmit={handleAddNote} className="space-y-2">
+                <div className="relative">
+                  <textarea
+                    rows={3}
+                    placeholder="Append observation (e.g., 'Checked caller number with TRAI DND database; victim advised to report on 1930 portal')..."
+                    value={newNote}
+                    onChange={(e) => setNewNote(e.target.value)}
+                    className="w-full bg-navy-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500 font-sans resize-none"
+                  />
+                </div>
+                <div className="flex justify-end">
+                  <Button
+                    type="submit"
+                    variant="secondary"
+                    size="sm"
+                    disabled={!newNote.trim()}
+                    className="text-xs"
+                  >
+                    <Send className="w-3.5 h-3.5 mr-1.5" />
+                    <span>Add Note</span>
+                  </Button>
+                </div>
+              </form>
+            </CardContent>
+          </Card>
         </div>
-      </div>
-
-      {/* Analyst Investigation Notes Section */}
-      <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 space-y-4">
-        <h2 className="text-sm font-semibold text-white flex items-center space-x-2">
-          <UserCheck className="w-4 h-4 text-cyan-400" />
-          <span>Analyst Case Notes & Investigation Journal</span>
-        </h2>
-
-        {incident.analyst_notes ? (
-          <div className="bg-[#070b14] p-4 rounded-lg border border-slate-800 text-xs font-mono text-slate-300 whitespace-pre-wrap leading-relaxed">
-            {incident.analyst_notes}
-          </div>
-        ) : (
-          <p className="text-xs text-slate-500 italic">No notes recorded yet for this case.</p>
-        )}
-
-        {/* Append Note Form */}
-        <form onSubmit={handleAddNote} className="flex gap-2">
-          <input
-            type="text"
-            placeholder="Append observation (e.g., 'Checked caller CLI with TRAI database', 'Victim did not transfer funds')..."
-            value={newNote}
-            onChange={(e) => setNewNote(e.target.value)}
-            className="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-cyan-500"
-          />
-          <button
-            type="submit"
-            className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-cyan-800/40 font-semibold text-xs rounded-lg transition flex items-center space-x-1.5"
-          >
-            <Send className="w-3.5 h-3.5" />
-            <span>Add Note</span>
-          </button>
-        </form>
       </div>
     </div>
   );
 };
-

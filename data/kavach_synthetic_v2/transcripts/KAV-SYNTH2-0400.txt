@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0400
+Language: te-en
+Scenario: Vague Consumer Insurance Survey Inquiring on Family Size (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu National Market Survey nunchi Caller Monica matladuthunnanu regarding demographic research survey on life insurance ownership.
+[RECIPIENT]: Naku demographic research survey on life insurance ownership tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. recipient declines to disclose household financial information. Cutting call.

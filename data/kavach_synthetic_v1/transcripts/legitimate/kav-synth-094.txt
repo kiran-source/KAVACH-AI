@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-094 (hi-en) ===
+Scenario: Bank Home Loan Document Verification In-Person Visit Schedule
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello Mr. Malhotra, ICICI Bank retail home loan processing team se loan officer Deepak bol raha hoon.
+[RECIPIENT]: Haan Deepak ji, hamare home loan application ka kya status hai?
+[CALLER]: Sir aapki property legal title search clear ho chuki hai. Final sanction se pehle mandatory physical residence verification karna hai.
+[RECIPIENT]: Verification ke liye kab aana chahte hain?
+[CALLER]: Tomorrow afternoon three PM ka time convenient rahega kya sir?
+[RECIPIENT]: Haan, main aur meri wife dono ghar par rahenge. Kya documents check karenge?
+[CALLER]: Bas original salary slip aur electricity bill physical copy check karenge. Kisi bhi officer ko cash ya processing fees bilkul nahi deni hai.
+[RECIPIENT]: Theek hai Deepak ji, kal 3 PM par milte hain.

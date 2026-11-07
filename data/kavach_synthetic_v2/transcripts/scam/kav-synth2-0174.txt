@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0174 (hi-en) ===
+Scenario: Government Healthcare Subsidy Portal Fake App Trap (HI-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Yeh Ayushman Bharat Desk se Officer Patel bol raha hoon. Aapke khilaf government health insurance reimbursement of 50,000 approved ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? government health insurance reimbursement of 50,000 approved? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh lapse of government medical subsidy funds hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi custom healthcare APK download from SMS fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

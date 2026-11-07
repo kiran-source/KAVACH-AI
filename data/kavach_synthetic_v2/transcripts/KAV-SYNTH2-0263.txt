@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0263
+Language: te
+Scenario: Income Tax Department Official E-Filing Acknowledgment (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: నమస్కారం, నేను Income Tax Department నుండి E-Filing Desk మాట్లాడుతున్నాను. మీ acknowledgment of assessment year income tax e-return కోసం కాల్ చేశాను.
+[RECIPIENT]: నమస్కారం అండి, అవును నేను దీని అప్‌డేట్ కోసం ఎదురుచూస్తున్నాను.
+[CALLER]: దయచేసి మీరు no further action required, refund processed to bank. మేము ఫోన్ లో ఎప్పుడూ ఓటీపీ లేదా పిన్ అడగము.
+[RECIPIENT]: ధన్యవాదాలు అండి, నేను నేరుగా కార్యాలయానికి వచ్చి పని పూర్తి చేసుకుంటాను.

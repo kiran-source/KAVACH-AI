@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0173 (te) ===
+Scenario: Government Healthcare Subsidy Portal Fake App Trap (TE)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: ఇది Ayushman Bharat Desk నుండి Officer Patel మాట్లాడుతున్నాను. మీపై government health insurance reimbursement of 50,000 approved కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? government health insurance reimbursement of 50,000 approved గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే lapse of government medical subsidy funds జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే custom healthcare APK download from SMS పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

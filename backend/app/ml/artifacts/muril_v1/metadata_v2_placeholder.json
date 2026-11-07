@@ -1,0 +1,15 @@
+{
+  "model_name": "KAVACH-AI-MuRIL-Classifier-v1.0",
+  "base_checkpoint": "google/muril-base-cased",
+  "architecture": "BertForSequenceClassification (MuRIL-base)",
+  "num_parameters": 110000000,
+  "max_length": 256,
+  "training_dataset": "data/kavach_synthetic_v2/splits/train.jsonl (350 samples)",
+  "validation_dataset": "data/kavach_synthetic_v2/splits/validation.jsonl (75 samples)",
+  "test_dataset": "data/kavach_synthetic_v2/splits/test.jsonl (75 samples)",
+  "review_status": "pending_review",
+  "training_environment": "Google Colab (T4 GPU Recommended)",
+  "execution_status": "PENDING_COLAB_EXECUTION",
+  "execution_instructions": "Execute notebooks/KAVACH_AI_MuRIL_Colab_Training.ipynb on Google Colab and place exported weights in this directory.",
+  "production_baseline": "backend/app/ml/artifacts/v1/ (TF-IDF + Calibrated Logistic Regression, active default)"
+}

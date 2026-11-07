@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0150
+Language: te-en
+Scenario: Cyber Police Obscene Content Complaint Extortion (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, this is Officer Sengupta calling from Cyber Crime Women Cell. We detected suspicious records of obscene video call complaint registered against your phone.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. obscene video call complaint registered against your phone gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour filing of non-bailable public defamation charge process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo case settlement fee to police welfare account submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

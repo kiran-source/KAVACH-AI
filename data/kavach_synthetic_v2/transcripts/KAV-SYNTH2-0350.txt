@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0350
+Language: te-en
+Scenario: Courier Delivery Address Landmark Clarification Call (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, DTDC Courier Service support desk nunchi Delivery Agent Imran matladuthunnanu.
+[RECIPIENT]: Hello sir, idhi na clarification of apartment building wing name for envelope related update aa?
+[CALLER]: Yes exactly. Mee application approval vachindi. You just need to confirm landmark near residential entrance.
+[RECIPIENT]: What physical documents should I bring along?
+[CALLER]: Original photo ID card okati tesukoni randi. Online payment emi avasaram ledu.
+[RECIPIENT]: Thanks a lot for the clarity. I will visit the authorized counter.

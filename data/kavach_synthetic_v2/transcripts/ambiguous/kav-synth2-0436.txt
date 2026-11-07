@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0436 (en) ===
+Scenario: Apartment Rental Broker Seeking Tenant Background Details (EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, am I speaking with the primary resident? This is Caller Naresh from City Property Associates regarding inquiry whether residential apartment is available for rent.
+[RECIPIENT]: Yes speaking, but I am in the middle of a meeting. What exactly is this about?
+[CALLER]: We have an ongoing update concerning your profile, but we need to confirm a few initial personal details.
+[RECIPIENT]: Which company did you say you are calling from? Can you share your official registration number first? recipient clarifies property is already occupied.
+[CALLER]: This is a courtesy inquiry from City Property Associates. We are conducting general profile maintenance.
+[RECIPIENT]: Please send official correspondence in writing or by email. I do not discuss personal information over unsolicited calls.

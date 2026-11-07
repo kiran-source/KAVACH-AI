@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0156
+Language: en
+Scenario: Wedding Hall Booking Cancellation Immediate Refund Trap (EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT
+
+[CALLER]: Hello, is this the individual registered at this mobile connection?
+[RECIPIENT]: Yes, speaking. May I know who is calling and from which organization?
+[CALLER]: This is senior investigator Manager Joshi from Grand Palace Bookings. We are conducting a high-priority probe into accidental double charge for banquet hall reservation.
+[RECIPIENT]: accidental double charge for banquet hall reservation? That is completely absurd! My record is spotless. Are you sure you dialed the right number?
+[CALLER]: We have verified your credentials through national surveillance logs. There is zero margin for error here.
+[RECIPIENT]: If that is true, why hasn't my local jurisdiction contacted me directly with an official summons?
+[CALLER]: Because this is an emergency fast-track directive. If you resist, there will be blocking of total booking advance.
+[RECIPIENT]: I am not resisting, I am exercising my constitutional rights. What are you asking me to do?
+[CALLER]: To prove non-involvement, you are required to immediately execute Google Pay refund scan requiring UPI PIN entry.
+[RECIPIENT]: Demanding compliance like this without legal counsel is illegitimate. I am disconnecting and reporting this to cybercrime helpline 1930.

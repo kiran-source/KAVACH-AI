@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-003 (en) ===
+Scenario: Supreme Court Warrant & Continuous Surveillance Threat
+Primary Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE, URGENCY_OR_THREAT
+
+[CALLER]: This is Advocate Suresh Menon calling from the Supreme Court e-Courts administrative cell.
+[RECIPIENT]: Supreme Court? Why are you contacting me?
+[CALLER]: A non-bailable arrest warrant has been signed by the bench regarding an unpaid loan fraud committed with your identity credentials.
+[RECIPIENT]: I have never taken any such loan! This must be identity theft.
+[CALLER]: To obtain an emergency stay order before police dispatch, you must remain on this line under virtual court custody.
+[RECIPIENT]: I need to call my family lawyer right now.
+[CALLER]: Any external call is a violation of judicial secrecy and will trigger immediate seizure of all your family bank accounts.
+[RECIPIENT]: This is completely absurd. Courts do not conduct virtual custody over phone calls. I am hanging up.

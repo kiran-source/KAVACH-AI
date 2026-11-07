@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-069 (te-en) ===
+Scenario: Software Engineer Onboarding Laptop Courier Tracking
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello Sravani, I am calling from Infosys IT Logistics desk, Bangalore campus.
+[RECIPIENT]: Hi sir! Regarding my work-from-home onboarding kit?
+[CALLER]: Yes Sravani, mee company laptop and welcome kit BlueDart courier dwaara dispatch chesamu.
+[RECIPIENT]: Tracking number generate ainda sir?
+[CALLER]: Yes, tracking AWB number mee personal email ki share chesamu. Expected delivery is tomorrow by two PM.
+[RECIPIENT]: Do I need to sign any document during delivery?
+[CALLER]: Yes, package unbox chesi external damage ledu ani acknowledgment slip sign cheyali. No payment is required.
+[RECIPIENT]: Sure sir, I will receive it and inform the onboarding team. Thank you.

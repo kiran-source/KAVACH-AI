@@ -1,0 +1,86 @@
+{
+  "dataset_name": "KAVACH-AI Multilingual Synthetic Dataset v1.0",
+  "validation_version": "2.0_stage3_final",
+  "validated_at": "2026-11-04T19:25:00Z",
+  "stage": "STAGE_3_FINAL_100",
+  "validation_status": "PASS",
+  "total_conversations": 100,
+  "expected_conversations": 100,
+  "class_distribution": {
+    "SCAM": 40,
+    "LEGITIMATE": 35,
+    "AMBIGUOUS": 25
+  },
+  "language_distribution": {
+    "en": 20,
+    "hi": 20,
+    "te": 20,
+    "te-en": 20,
+    "hi-en": 20
+  },
+  "language_class_distribution": {
+    "te-en": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "en": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "hi": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "te": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    },
+    "hi-en": {
+      "SCAM": 8,
+      "LEGITIMATE": 7,
+      "AMBIGUOUS": 5
+    }
+  },
+  "dialogue_turns_stats": {
+    "min_turns": 8,
+    "max_turns": 8,
+    "mean_turns": 8.0
+  },
+  "transcript_inventory": {
+    "total_transcript_files": 100,
+    "missing_transcripts_count": 0,
+    "orphan_transcripts_count": 0,
+    "matching_perfect": true
+  },
+  "audio_inventory": {
+    "total_audio_samples": 20,
+    "missing_audio_files": [],
+    "all_audio_files_exist_on_disk": true,
+    "total_measured_audio_seconds": 331.84,
+    "all_headers_valid_canonical": true
+  },
+  "split_integrity": {
+    "split_ratio": "70/15/15",
+    "train_samples": 70,
+    "validation_samples": 15,
+    "test_samples": 15,
+    "has_scenario_leakage": false,
+    "has_cid_leakage": false
+  },
+  "automated_pii_scan": {
+    "scan_method": "Automated regex pattern matching (16-digit card numbers, 12-digit Aadhaar, 10-digit Indian phone numbers)",
+    "pii_patterns_detected_count": 0,
+    "disclaimer": "Automated regex pattern scans verify the absence of standardized credit card and Aadhaar patterns. This represents automated verification, not manual human legal certification."
+  },
+  "provenance_and_ethics": {
+    "synthetic_only_compliance": true,
+    "zero_real_customer_recordings": true,
+    "human_review_status": "All conversations generated via domain-curated multilingual templates; review_status strictly marked 'pending_review' per prompt rules."
+  },
+  "errors": {},
+  "warnings": {}
+}

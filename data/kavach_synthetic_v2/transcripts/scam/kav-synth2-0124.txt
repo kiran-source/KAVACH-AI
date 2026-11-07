@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0124 (hi-en) ===
+Scenario: Gold Loan Default Imminent Auction Settlement Coercion (HI-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Yeh Muthoot Asset Desk se Manager Nair bol raha hoon. Aapke khilaf pending interest default on pawned gold ornaments ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? pending interest default on pawned gold ornaments? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh public auction of family gold jewelry tomorrow hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi immediate UPI transfer of overdue interest fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

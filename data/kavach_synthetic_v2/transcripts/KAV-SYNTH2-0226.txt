@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0226
+Language: en
+Scenario: Indian Railways Official PNR Seat Confirmation Status (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, I am Helpdesk Sunita from the customer support division at IRCTC Support.
+[RECIPIENT]: Hello, is this regarding my recent inquiry about confirmation of train 12724 seat allotment in B2 coach?
+[CALLER]: Yes, exactly. We have reviewed your record and request you to travel with valid government photo ID.
+[RECIPIENT]: Are there any specific original identity documents or receipts I should carry with me?
+[CALLER]: Just carry your government photo ID and reference docket. No payment or confidential credentials are required.
+[RECIPIENT]: Thank you for the clear instructions and safety notice. I will visit as advised.

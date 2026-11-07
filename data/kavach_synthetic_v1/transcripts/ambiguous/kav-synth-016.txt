@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-016 (en) ===
+Scenario: Bank Security Advisory on Phishing Links (Negative Context)
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Important advisory from Axis Bank security operations. This is an informational customer announcement.
+[RECIPIENT]: Has there been any fraudulent attempt on my account?
+[CALLER]: No sir, your account is secure. We are informing all customers regarding fake APK links and lottery fraud SMS.
+[RECIPIENT]: What precautions should I take?
+[CALLER]: Never enter your OTP, password or debit card CVV on any link sent via SMS or WhatsApp, even if the sender claims to be a bank officer.
+[RECIPIENT]: Do you need me to verify any security questions?
+[CALLER]: No verification is required. This is purely an advisory notification. Stay vigilant against cybercrime.
+[RECIPIENT]: Thank you for the security advisory.

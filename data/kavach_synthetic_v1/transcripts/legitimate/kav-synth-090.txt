@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-090 (hi-en) ===
+Scenario: Food Delivery App Order Location Coordination
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Bhaiya namaste, Swiggy delivery partner bol raha hoon. Aapka food order pick kar liya hai.
+[RECIPIENT]: Haan bhaiya, location sahi dikh raha hai na GPS par?
+[CALLER]: Sir aapke society ke main gate par security guard entry nahi de rahe hain without visitor pass.
+[RECIPIENT]: Main MyGate app par entry approve kar deta hoon, do minute rukiye.
+[CALLER]: Theek hai sir, entry milte hi main C-block lift se 4th floor aa raha hoon.
+[RECIPIENT]: Haan flat 404 hai. Doorbell baja dena.
+[CALLER]: Ji sir, order bag hot-case mein sealed hai. Main five minutes mein deliver kar raha hoon.
+[RECIPIENT]: Okay thank you bhaiya.

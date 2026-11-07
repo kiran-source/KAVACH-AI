@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0254
+Language: hi-en
+Scenario: Housing Society Annual General Body Meeting Agenda Circular (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, this is Secretary Manoj reaching out from Green Valley Co-op Society.
+[RECIPIENT]: Good afternoon, how can I help you today?
+[CALLER]: Sir, I am calling with an update regarding your pending annual society general body meeting this Sunday at 10 AM.
+[RECIPIENT]: Oh great! Has the administrative clearance been issued?
+[CALLER]: Yes sir, all checks passed. We request you to agenda copies available at society security office.
+[RECIPIENT]: Can I do this online through net banking or some link?
+[CALLER]: No sir, please do not click unknown links. Secure verification requires physical presence at our counter.
+[RECIPIENT]: Understood. That is safe practice. I will visit in person.

@@ -34,6 +34,15 @@ uploads/*
 temp/*
 !temp/.gitkeep
 
+# Model weights & large archives (files > 100MB blocked by GitHub)
+*.safetensors
+*.bin
+*.zip
+*.tar.gz
+release/
+.playwright-mcp/
+.pytest_cache/
+
 # Environment
 .env
 .env.local
@@ -51,6 +60,8 @@ pnpm-debug.log*
 # Reports output
 generated_reports/*
 !generated_reports/.gitkeep
+dist_submission/
+scratch/
 
 # IDE & OS
 .idea/

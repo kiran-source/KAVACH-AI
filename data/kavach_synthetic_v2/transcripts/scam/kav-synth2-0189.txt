@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0189 (hi-en) ===
+Scenario: School Tuition Fee Payment Gateway Interception Trap (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh Delhi Public School Accounts se Cashier Mohan bol raha hoon. Aapke khilaf pending school tuition installment for current semester ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? pending school tuition installment for current semester? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh removal of student name from examination roster hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi direct transfer to private accountant UPI handle fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

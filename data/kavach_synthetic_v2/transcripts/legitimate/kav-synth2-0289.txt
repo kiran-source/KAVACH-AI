@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0289 (hi-en) ===
+Scenario: Bank Home Loan Clearance Certificate Dispatch Notice (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main ICICI Home Finance se Officer Kavita bol raha hoon. Yeh call aapke final loan clearance certificate dispatched via Speed Post ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap tracking number sent by official email complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0437 (hi) ===
+Scenario: Apartment Rental Broker Seeking Tenant Background Details (HI)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: नमस्कार, क्या मेरी बात खाताधारक से हो रही है? मैं City Property Associates से Caller Naresh बोल रहा हूँ, inquiry whether residential apartment is available for rent के संबंध में।
+[RECIPIENT]: हाँ, लेकिन मैं अभी थोड़ा व्यस्त हूँ। आप किस कार्य के लिए संपर्क कर रहे हैं?
+[CALLER]: हम आपके विवरण का प्रारंभिक सत्यापन कर रहे हैं। क्या आप अपने पते की पुष्टि कर सकते हैं?
+[RECIPIENT]: आप पहले यह बताइए कि आपको मेरा नंबर कहाँ से मिला? recipient clarifies property is already occupied।
+[CALLER]: हम City Property Associates के अधिकृत टेलीकॉलिंग डेस्क से हैं, सामान्य जानकारी के लिए कॉल किया गया है।
+[RECIPIENT]: फोन पर मैं कोई निजी जानकारी साझा नहीं करता। कृपया आधिकारिक ईमेल भेजिए।

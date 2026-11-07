@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0146 (en) ===
+Scenario: Cyber Police Obscene Content Complaint Extortion (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: This is Officer Sengupta calling from Cyber Crime Women Cell. We are conducting an urgent investigation regarding obscene video call complaint registered against your phone.
+[RECIPIENT]: Hello? I have no knowledge of any obscene video call complaint registered against your phone. What is this regarding?
+[CALLER]: A formal case file has been registered. If you do not resolve this immediately, there will be filing of non-bailable public defamation charge.
+[RECIPIENT]: Please, this is a serious misunderstanding! I am a law-abiding citizen. How can this be cleared?
+[CALLER]: You must immediately comply with case settlement fee to police welfare account. Failure to do so will result in non-bailable enforcement.
+[RECIPIENT]: I will not comply blindly without official documentation. Let me consult my advocate and local police first.

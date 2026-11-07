@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0464 (hi-en) ===
+Scenario: Bank Customer Care Callback Interrupted by Network Drop (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Union Bank Helpdesk se Caller Sudha bol raha hoon regarding callback regarding earlier general inquiry on account interest.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. network drops before customer can explain query.
+[CALLER]: Sir yeh Union Bank Helpdesk ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0397
+Language: hi
+Scenario: Vague Consumer Insurance Survey Inquiring on Family Size (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्ते, मैं National Market Survey से Caller Monica बोल रहा हूँ। demographic research survey on life insurance ownership के बारे में एक विशेष जानकारी है।
+[RECIPIENT]: मुझे demographic research survey on life insurance ownership में कोई दिलचस्पी नहीं है। आपको मेरा नंबर कहाँ से मिला?
+[CALLER]: सर, हमारे सहयोगी डेटाबेस से आपका नाम चयनित हुआ है।
+[RECIPIENT]: बिना पहचान के मैं बात नहीं करता। recipient declines to disclose household financial information। धन्यवाद।

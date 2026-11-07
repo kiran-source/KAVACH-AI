@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0424 (hi-en) ===
+Scenario: Online Electronics Extended Warranty Renewal Inquiry (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Gadget Protect Desk se Caller Preeti bol raha hoon regarding warranty extension inquiry for washing machine purchased 2 years ago.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient asks caller to verify invoice number first.
+[CALLER]: Sir yeh Gadget Protect Desk ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

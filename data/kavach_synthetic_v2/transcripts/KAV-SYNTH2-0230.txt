@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0230
+Language: te-en
+Scenario: Indian Railways Official PNR Seat Confirmation Status (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, IRCTC Support support desk nunchi Helpdesk Sunita matladuthunnanu.
+[RECIPIENT]: Hello sir, idhi na confirmation of train 12724 seat allotment in B2 coach related update aa?
+[CALLER]: Yes exactly. Mee application approval vachindi. You just need to travel with valid government photo ID.
+[RECIPIENT]: What physical documents should I bring along?
+[CALLER]: Original photo ID card okati tesukoni randi. Online payment emi avasaram ledu.
+[RECIPIENT]: Thanks a lot for the clarity. I will visit the authorized counter.

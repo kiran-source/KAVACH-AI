@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0478
+Language: te
+Scenario: E-Commerce Return Pickup Driver Seeking Security Gate Entry (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: హలో అండి, నేను Fast Track Logistics నుండి Driver Kanta ని. pickup van outside residential gated community గురించి మాట్లాడుతున్నాను.
+[RECIPIENT]: నాకు pickup van outside residential gated community గురించి ఎటువంటి అవసరం లేదు. నా నంబర్ ఎవరిచ్చారు?
+[CALLER]: సిస్టమ్ ప్రమోషనల్ లిస్ట్ ద్వారా మీ నంబర్ సెలెక్ట్ అయింది అండి.
+[RECIPIENT]: పరిచయం లేని కాల్స్ లో నేను మాట్లాడను. recipient instructs driver to coordinate with security guard.

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0345
+Language: te-en
+Scenario: State Bank Customer Service Experience Feedback Survey (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello andi, nenu Canara Bank Quality Desk nunchi Survey Officer Divya ni. Regarding your routine feedback on recent bank branch visit experience update.
+[RECIPIENT]: Hello, thank you for reaching out. Ee updates kosam nenu waiting.
+[CALLER]: Meeru rate service quality on scale of 1 to 5 cheyalsi untundi. Note that we never ask for OTP or passwords on call.
+[RECIPIENT]: Sure andi, I will personally visit the official center tomorrow.

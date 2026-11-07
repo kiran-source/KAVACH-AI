@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0379 (hi-en) ===
+Scenario: Credit Card Limit Upgrade Pitch Interrupted by Network Drop (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Banking Sales Desk se Caller Arvind bol raha hoon regarding complimentary credit card credit limit increase offer.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. call dropped mid-sentence before financial details.
+[CALLER]: Sir yeh Banking Sales Desk ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0429 (hi-en) ===
+Scenario: Domestic Vacation Tour Package Telemarketing Follow-up (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Holiday Paradise Tours se Caller Naveen bol raha hoon regarding discounted Goa holiday resort package offer.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient states they have no vacation travel plans.
+[CALLER]: Sir yeh Holiday Paradise Tours ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

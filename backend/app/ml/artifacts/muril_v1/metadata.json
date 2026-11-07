@@ -1,0 +1,12 @@
+{
+  "model_name": "KAVACH-AI-MuRIL-Classifier-v1.0",
+  "base_checkpoint": "google/muril-base-cased",
+  "architecture": "BertForSequenceClassification (MuRIL-base)",
+  "num_parameters": 237558531,
+  "max_length": 256,
+  "training_samples": 2100,
+  "validation_samples": 450,
+  "test_samples": 450,
+  "review_status": "pending_review",
+  "evaluation_scope": "Synthetic multilingual held-out test split (does not establish wild telephony accuracy)"
+}

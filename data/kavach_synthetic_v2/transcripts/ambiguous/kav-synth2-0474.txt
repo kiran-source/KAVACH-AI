@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0474 (hi-en) ===
+Scenario: Event Concert Ticket Reservation Query Disconnecting (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Showtime Tickets se Caller Tanya bol raha hoon regarding inquiry regarding pending ticket payment for music festival.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient states they did not book tickets and call ends.
+[CALLER]: Sir yeh Showtime Tickets ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

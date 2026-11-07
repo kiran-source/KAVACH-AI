@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0009
+Language: hi-en
+Scenario: Customs Narcotics International Parcel Confiscation (HI-EN)
+Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, I am calling from Mumbai Airport Customs, my name is Officer Deshmukh. Aapke profile par FedEx carton seized with MDMA drugs flag hua hai.
+[RECIPIENT]: Good afternoon, but main shocked hoon regarding FedEx carton seized with MDMA drugs. What is the exact reference number?
+[CALLER]: If you don't cooperate right now, hamare paas order hai for Anti-Narcotics Bureau immediate remand within two hours.
+[RECIPIENT]: Phone par bina advocate ke aisi legal threat dena is completely against the law.
+[CALLER]: Immediate relief ke liye aapko system mein provisional customs clearance bond execute karna padega immediately.
+[RECIPIENT]: Main direct police station jaakar inquire karoonga. I will not follow phone instructions blindly.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0090
+Language: te-en
+Scenario: Work From Home YouTube Liking Deposit Scheme (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello, this is Recruiter Sneha calling from Global Media Marketing. We detected suspicious records of daily guaranteed earnings of 3,500 rupees for video likes.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. daily guaranteed earnings of 3,500 rupees for video likes gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour loss of assigned investment portfolio slot process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo 5,000 rupees VIP task security deposit submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

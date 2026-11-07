@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-067 (te-en) ===
+Scenario: Fake UPI Scratch Card Cashback Claim Link
+Primary Label: SCAM
+Tactics: OTP_PIN_CVV_THEFT, MALICIOUS_LINK_OR_APP, AUTHORITY_IMPERSONATION
+
+[CALLER]: Congratulations sir, PhonePe festive season reward program lo meeku three thousand nine hundred cashback vachindi.
+[RECIPIENT]: Cashback na PhonePe wallet lo direct ga credit avtunda?
+[CALLER]: Yes sir, kani meeru scratch card claim cheyali. Nenu mee WhatsApp ki official link send chesanu.
+[RECIPIENT]: Link click cheste em cheyali?
+[CALLER]: Link open chesi mee bank select chesi, pay button click chesi mee UPI PIN enter cheyandi, money credit avtundi.
+[RECIPIENT]: Pay button nokki PIN kodithe naku dabbu raadu, na account nundi debit avtundi!
+[CALLER]: No sir, idi receiving gateway reverse protocol. PIN enter cheyakapothe cashback bounce avtundi.
+[RECIPIENT]: UPI lo receive cheskodaniki PIN avasaram ledu. Stop trying to scam me.

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0224
+Language: hi-en
+Scenario: Automobile Service Center Scheduled Maintenance Readiness (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, this is Advisor Sunil from Tata Motors Service. Calling you regarding your regular vehicle periodic servicing ready for inspection.
+[RECIPIENT]: Hi, yes thank you for calling. I was waiting for an official update on this.
+[CALLER]: Please note that you need to drop vehicle at workshop tomorrow morning. As a security policy, hum kabhi OTP ya PIN nahi maangte.
+[RECIPIENT]: Great, thanks for the reminder. I will visit the branch counter during working hours.

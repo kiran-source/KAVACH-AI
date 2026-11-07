@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-013 (en) ===
+Scenario: Bank Credit Card International Roaming Activation
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good afternoon, calling from ICICI Bank credit card customer support. Am I speaking with Dr. Nair?
+[RECIPIENT]: Yes, I requested international usage enablement on my card yesterday.
+[CALLER]: I am confirming your service request for your upcoming travel to the United Kingdom from tenth to twenty-fifth.
+[RECIPIENT]: Yes, that is accurate. Will contactless chip transactions work at London terminals?
+[CALLER]: Yes sir, international contactless and POS limits are now activated as per your requested ten day window.
+[RECIPIENT]: Do you need my card details to finalize the activation?
+[CALLER]: No sir, we never ask for your card number, CVV or OTP. Your request was already authenticated via your mobile banking app.
+[RECIPIENT]: Excellent, thank you for confirming.

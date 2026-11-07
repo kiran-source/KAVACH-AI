@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0288 (te) ===
+Scenario: Bank Home Loan Clearance Certificate Dispatch Notice (TE)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: నమస్కారం అండి, ICICI Home Finance నుండి Officer Kavita ని. మీ final loan clearance certificate dispatched via Speed Post కి సంబంధించి ఈ ఫోన్ కాల్ చేస్తున్నాము.
+[RECIPIENT]: నమస్కారం అండి, చెప్పండి. దీని గురించిన అధికారిక వివరాల కోసం నేను కూడా ఎదురుచూస్తున్నాను.
+[CALLER]: మీరు వీలు చూసుకుని tracking number sent by official email పూర్తి చేయవలసిందిగా కోరుతున్నాము. మా కౌంటర్ సాధారణ సమయాల్లో పనిచేస్తుంది.
+[RECIPIENT]: సరేనండి, దీని కోసం నేను ఏమైనా ఒరిజినల్ డాక్యుమెంట్లు లేదా కార్డులు తీసుకురావాలా?
+[CALLER]: మీ గుర్తింపు కార్డు కాపీ తెస్తే చాలు అండి. మేము ఫోన్ లో ఎప్పుడూ ఓటీపీలు లేదా పాస్‌వర్డ్‌లు అడగము.
+[RECIPIENT]: చాలా స్పష్టంగా వివరించినందుకు ధన్యవాదాలు అండి. నేను రేపు కార్యాలయానికి వస్తాను.

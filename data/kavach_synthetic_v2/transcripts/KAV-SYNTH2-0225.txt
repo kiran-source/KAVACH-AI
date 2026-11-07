@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0225
+Language: te-en
+Scenario: Automobile Service Center Scheduled Maintenance Readiness (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello andi, nenu Tata Motors Service nunchi Advisor Sunil ni. Regarding your regular vehicle periodic servicing ready for inspection update.
+[RECIPIENT]: Hello, thank you for reaching out. Ee updates kosam nenu waiting.
+[CALLER]: Meeru drop vehicle at workshop tomorrow morning cheyalsi untundi. Note that we never ask for OTP or passwords on call.
+[RECIPIENT]: Sure andi, I will personally visit the official center tomorrow.

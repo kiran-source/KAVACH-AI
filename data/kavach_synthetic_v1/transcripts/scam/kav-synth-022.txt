@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-022 (hi) ===
+Scenario: Fake Electricity Power Disconnection Tonight Notice
+Primary Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: बिजली विभाग कंट्रोल रूम से सूचना। आज रात नौ बजे आपका घरेलू बिजली कनेक्शन काट दिया जाएगा।
+[RECIPIENT]: अरे भाई क्यों काटोगे? मैंने तो पिछले हफ्ते ही पूरा बिल भरा है।
+[CALLER]: सर आपके पुराने बिल का तीन सौ पचास रुपये का बकाया हमारे मेन सर्वर में अपडेट नहीं हुआ है।
+[RECIPIENT]: तो मैं कल सुबह बिजली दफ्तर जाकर रसीद दिखा दूंगा।
+[CALLER]: कल सुबह तक लाइन कटी रहेगी। अगर तुरंत चालू रखना है तो हमारे अधिकारी के नंबर पर दस रुपये का अपडेट चार्ज भेजो।
+[RECIPIENT]: दस रुपये कैसे भेजना है?
+[CALLER]: हम एक ऐप का लिंक भेज रहे हैं। उसे फोन में खोलकर अपना बैंक यूपीआई पिन दर्ज करो।
+[RECIPIENT]: पिन डालने से तो पैसे कटते हैं। तुम फर्जी कॉल कर रहे हो, मैं 1930 पर रिपोर्ट करूंगा।

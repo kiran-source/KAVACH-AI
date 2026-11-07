@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0088 (te) ===
+Scenario: Work From Home YouTube Liking Deposit Scheme (TE)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: ఇది Global Media Marketing నుండి Recruiter Sneha మాట్లాడుతున్నాను. మీపై daily guaranteed earnings of 3,500 rupees for video likes కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? daily guaranteed earnings of 3,500 rupees for video likes గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే loss of assigned investment portfolio slot జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే 5,000 rupees VIP task security deposit పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

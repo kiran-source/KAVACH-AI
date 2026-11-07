@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0467
+Language: hi
+Scenario: Utility Water Billing Clarification Requesting Callback (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: हेलो, क्या मेरी बात इस नंबर के मुख्य उपयोगकर्ता से हो रही है? मैं Municipal Water Cell से हूँ।
+[RECIPIENT]: हाँ, बोलिए। क्या बात है?
+[CALLER]: हम आपके क्षेत्र में water bill surcharge clarification needing reference number के लिए एक सर्वेक्षण और सेवा विस्तार कर रहे हैं।
+[RECIPIENT]: आपकी संस्था सरकारी है या निजी? मुझे इसके बारे में पहले कोई जानकारी नहीं है।
+[CALLER]: हम अधिकृत सेवा प्रदाताओं के साथ मिलकर यह कार्य कर रहे हैं।
+[RECIPIENT]: यह बात स्पष्ट नहीं लग रही है। caller asks recipient to call official municipal board landline।
+[CALLER]: सर, इसमें कोई शुल्क या जोखिम नहीं है, बस प्रारंभिक सत्यापन है।
+[RECIPIENT]: बिना आधिकारिक पुष्टि के मैं फोन पर समय नहीं दे सकता। कृपया दोबारा कॉल न करें।

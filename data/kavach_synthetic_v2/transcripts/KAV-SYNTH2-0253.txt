@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0253
+Language: te
+Scenario: Housing Society Annual General Body Meeting Agenda Circular (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: హలో అండి, నేను Green Valley Co-op Society అధికారిక డెస్క్ నుండి Secretary Manoj మాట్లాడుతున్నాను.
+[RECIPIENT]: నమస్కారం అండి, చెప్పండి విషయం ఏమిటి?
+[CALLER]: మీరు నమోదు చేసుకున్న annual society general body meeting this Sunday at 10 AM సమాచారం తెలియజేయడానికి కాల్ చేశాను.
+[RECIPIENT]: థాంక్స్ అండి. నా దరఖాస్తు ఆమోదం పొందిందా?
+[CALLER]: అవునండి, వివరాలు సరిగ్గా ఉన్నాయి. చివరిగా మీరు agenda copies available at society security office.
+[RECIPIENT]: ఫోన్ లోనే ఏదైనా వివరాలు లేదా కోడ్ చెప్పాలా అండి?
+[CALLER]: వద్దండి, ఎవరికీ ఫోన్ లో వ్యక్తిగత పిన్ లేదా ఓటీపీలు చెప్పకండి. పని మొత్తం కార్యాలయంలోనే జరుగుతుంది.
+[RECIPIENT]: చాలా సంతోషం అండి. నేను పనివేళల్లో వచ్చి కలుస్తాను.

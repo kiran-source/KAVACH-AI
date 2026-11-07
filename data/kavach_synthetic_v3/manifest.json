@@ -1,0 +1,50 @@
+{
+  "dataset_name": "KAVACH Multilingual Synthetic Voice Scam/Vishing Dataset v3",
+  "dataset_version": "v3.0",
+  "release_timestamp": "2026-11-07T13:30:00+05:30",
+  "total_records": 3000,
+  "provenance": {
+    "v2_records_migrated_and_validated": 500,
+    "new_records_synthesized": 2500,
+    "annotation_status": "pending_review",
+    "generation_pipeline": "KAVACH Scenario Family Synthesis Engine v3.0",
+    "human_review_required": true
+  },
+  "class_distribution": {
+    "SCAM": 1200,
+    "LEGITIMATE": 900,
+    "AMBIGUOUS": 900
+  },
+  "language_distribution": {
+    "en": 600,
+    "hi": 600,
+    "te": 600,
+    "hi-en": 600,
+    "te-en": 600
+  },
+  "split_distribution": {
+    "train": 2100,
+    "validation": 450,
+    "test": 450
+  },
+  "scenario_family_counts": {
+    "total_families": 600,
+    "scam_families": 240,
+    "legitimate_families": 180,
+    "ambiguous_families": 180,
+    "records_per_family": 5
+  },
+  "split_file_hashes_sha256": {
+    "train": "20fc80fee8c023a4025545d0975c4b4b96def750673b5ca4e2be406f504c7f41",
+    "validation": "bb2ec1f112d1fb9c9d1317399e4c719e962ddf854328b79da0dc33e22fb9acc6",
+    "test": "083b5e16de89bde54108706e91119dc345f44fca0648d2b60b3ec5adf2ce38f0"
+  },
+  "validation_summary": {
+    "jsonl_parsing": "PASS",
+    "schema_conformance": "PASS",
+    "exact_duplicate_dialogue_texts": 0,
+    "scenario_family_cross_split_leakage": 0,
+    "cid_cross_split_leakage": 0,
+    "text_hash_cross_split_leakage": 0
+  }
+}

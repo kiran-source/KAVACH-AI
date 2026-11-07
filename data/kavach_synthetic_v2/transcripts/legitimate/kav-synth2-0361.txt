@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0361 (en) ===
+Scenario: Community Charitable Eye Care Camp Invitation (EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, this is Coordinator Geetha calling from Lions Eye Institute. I am reaching out regarding your free community vision and cataract screening camp on Sunday.
+[RECIPIENT]: Hello, yes thank you for calling. I was expecting an official update regarding this.
+[CALLER]: We would like to request that you senior citizens welcome for free eye checkup. Our authorized counter is open during normal working hours.
+[RECIPIENT]: Understood. Are there any specific reference documents or identity proofs I need to carry?
+[CALLER]: Just carry your standard photo ID and previous receipt copy. No financial payment or OTP is requested on this call.
+[RECIPIENT]: Thank you for the clear information and safety reminder. I will visit tomorrow as advised.

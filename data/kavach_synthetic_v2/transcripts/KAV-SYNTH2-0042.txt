@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0042
+Language: hi
+Scenario: KBC Lucky Draw Processing Fee Advance Fraud (HI)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: यह KBC Lottery Office से Officer Rana Pratap बोल रहे हैं। आपके खिलाफ 25 Lakhs cash prize in national SIM draw की जांच शुरू की गई है।
+[RECIPIENT]: क्या? 25 Lakhs cash prize in national SIM draw? मैंने ऐसा कुछ नहीं किया है, आप गलत व्यक्ति को कॉल कर रहे हैं।
+[CALLER]: रिकॉर्ड में आपका नाम दर्ज है। तुरंत कार्रवाई रोकने के लिए 12,500 rupees GST processing charge करना आवश्यक है, वर्ना cancellation of winning check होगी।
+[RECIPIENT]: मैं फोन पर कोई भुगतान या जानकारी नहीं दूँगा। लिखित सरकारी नोटिस भेजिए, मैं थाने में आकर बात करूँगा।

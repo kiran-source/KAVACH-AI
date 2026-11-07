@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0264
+Language: hi-en
+Scenario: Income Tax Department Official E-Filing Acknowledgment (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, this is E-Filing Desk from Income Tax Department. Calling you regarding your acknowledgment of assessment year income tax e-return.
+[RECIPIENT]: Hi, yes thank you for calling. I was waiting for an official update on this.
+[CALLER]: Please note that you need to no further action required, refund processed to bank. As a security policy, hum kabhi OTP ya PIN nahi maangte.
+[RECIPIENT]: Great, thanks for the reminder. I will visit the branch counter during working hours.

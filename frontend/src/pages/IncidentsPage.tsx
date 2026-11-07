@@ -2,26 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   ShieldAlert, Filter, Search, ArrowUpRight,
-  RefreshCw, CheckCircle, Clock, AlertTriangle
+  RefreshCw, CheckCircle, Clock, AlertTriangle, ShieldCheck,
+  ChevronRight, ArrowRight
 } from 'lucide-react';
 import { api } from '../services/api';
 import { IncidentSummary } from '../types';
-
-const SEVERITY_BADGES: Record<string, string> = {
-  Critical: 'bg-red-500/20 text-red-400 border-red-500/40',
-  High: 'bg-orange-500/20 text-orange-400 border-orange-500/40',
-  Medium: 'bg-amber-500/20 text-amber-400 border-amber-500/40',
-  Guarded: 'bg-blue-500/20 text-blue-400 border-blue-500/40',
-  Low: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40',
-};
-
-const STATUS_BADGES: Record<string, string> = {
-  New: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
-  'Under Review': 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-  'Confirmed Suspicious': 'bg-red-500/10 text-red-400 border-red-500/30',
-  'False Positive': 'bg-slate-700/40 text-slate-400 border-slate-600',
-  Resolved: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
-};
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/common/Card';
+import { SeverityBadge, StatusBadge } from '../components/common/Badge';
+import { Button } from '../components/common/Button';
+import { SearchInput } from '../components/common/SearchInput';
+import { EmptyState } from '../components/common/EmptyState';
 
 export const IncidentsPage: React.FC = () => {
   const navigate = useNavigate();
@@ -55,97 +45,129 @@ export const IncidentsPage: React.FC = () => {
     );
   });
 
+  const criticalCount = incidents.filter((i) => i.severity === 'Critical').length;
+  const highCount = incidents.filter((i) => i.severity === 'High').length;
+  const underReviewCount = incidents.filter((i) => i.status === 'Under Review' || i.status === 'INVESTIGATING').length;
+  const resolvedCount = incidents.filter((i) => i.status === 'Resolved' || i.status === 'RESOLVED').length;
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 max-w-7xl mx-auto">
       {/* Top Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-800">
         <div>
-          <h1 className="text-xl font-bold text-white flex items-center space-x-2">
-            <ShieldAlert className="w-5 h-5 text-red-400" />
-            <span>Security Incident Triage & Management</span>
+          <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs mb-1">
+            <ShieldAlert className="w-4 h-4" />
+            <span>KAVACH AI INCIDENT MANAGEMENT CONSOLE</span>
+          </div>
+          <h1 className="text-2xl font-bold tracking-tight text-slate-100 flex items-center space-x-3">
+            <span>Security Incidents Triage Queue</span>
           </h1>
-          <p className="text-xs text-slate-400 mt-1">
-            Investigate, review and manage voice scam detections with full evidentiary audit trails.
+          <p className="text-xs text-slate-400 mt-1 max-w-2xl">
+            Triage, investigate, and resolve voice scam security incidents with verified evidentiary audio transcripts and threat rule logs.
           </p>
         </div>
 
-        <button
-          onClick={fetchIncidents}
-          className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs rounded-lg border border-slate-700 flex items-center space-x-1.5 self-start sm:self-auto"
-        >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Refresh Queue</span>
-        </button>
+        <div className="flex items-center space-x-3">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={fetchIncidents}
+            isLoading={loading}
+            leftIcon={<RefreshCw className="w-3.5 h-3.5" />}
+          >
+            Refresh Queue
+          </Button>
+        </div>
+      </div>
+
+      {/* Queue Stat Counters */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="bg-[#0d1424] p-3.5 rounded-xl border border-slate-800">
+          <div className="text-[10px] font-mono text-slate-400 uppercase tracking-wider mb-1">Total Incidents</div>
+          <div className="text-2xl font-mono font-bold text-slate-100">{incidents.length}</div>
+        </div>
+        <div className="bg-[#0d1424] p-3.5 rounded-xl border border-red-900/40">
+          <div className="text-[10px] font-mono text-red-400 uppercase tracking-wider mb-1">Critical & High</div>
+          <div className="text-2xl font-mono font-bold text-red-400">{criticalCount + highCount}</div>
+        </div>
+        <div className="bg-[#0d1424] p-3.5 rounded-xl border border-amber-900/40">
+          <div className="text-[10px] font-mono text-amber-400 uppercase tracking-wider mb-1">Under Review</div>
+          <div className="text-2xl font-mono font-bold text-amber-400">{underReviewCount}</div>
+        </div>
+        <div className="bg-[#0d1424] p-3.5 rounded-xl border border-emerald-900/40">
+          <div className="text-[10px] font-mono text-emerald-400 uppercase tracking-wider mb-1">Resolved Cases</div>
+          <div className="text-2xl font-mono font-bold text-emerald-400">{resolvedCount}</div>
+        </div>
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="bg-[#0c1220] p-4 rounded-xl border border-slate-800 flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center space-x-2 flex-1 min-w-[240px]">
-          <Search className="w-4 h-4 text-slate-500" />
-          <input
-            type="text"
-            placeholder="Search by incident #, tactic, analyst..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="bg-slate-900 border border-slate-700/80 rounded-lg px-3 py-1.5 text-xs text-slate-200 w-full focus:outline-none focus:border-cyan-500"
-          />
-        </div>
-
-        <div className="flex items-center space-x-3">
-          <div className="flex items-center space-x-1.5 text-xs text-slate-400">
-            <Filter className="w-3.5 h-3.5 text-slate-500" />
-            <span>Status:</span>
-            <select
-              value={statusFilter}
-              onChange={(e) => setStatusFilter(e.target.value)}
-              className="bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200"
-            >
-              <option value="All">All Statuses</option>
-              <option value="New">New</option>
-              <option value="Under Review">Under Review</option>
-              <option value="Confirmed Suspicious">Confirmed Suspicious</option>
-              <option value="False Positive">False Positive</option>
-              <option value="Resolved">Resolved</option>
-            </select>
+      <Card className="bg-[#0d1424] p-4">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className="w-full lg:w-96">
+            <SearchInput
+              value={searchQuery}
+              onChangeValue={setSearchQuery}
+              placeholder="Search by incident ref, threat keyword, analyst..."
+            />
           </div>
 
-          <div className="flex items-center space-x-1.5 text-xs text-slate-400">
-            <span>Severity:</span>
-            <select
-              value={severityFilter}
-              onChange={(e) => setSeverityFilter(e.target.value)}
-              className="bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200"
-            >
-              <option value="All">All Severities</option>
-              <option value="Critical">Critical</option>
-              <option value="High">High</option>
-              <option value="Medium">Medium</option>
-              <option value="Low">Low</option>
-            </select>
+          <div className="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+            {/* Status Selector */}
+            <div className="flex items-center space-x-1.5 text-xs text-slate-400">
+              <span className="font-mono text-[11px]">STATUS:</span>
+              <select
+                value={statusFilter}
+                onChange={(e) => setStatusFilter(e.target.value)}
+                className="bg-[#070b14] border border-slate-700/80 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500 font-sans"
+              >
+                <option value="All">All Statuses</option>
+                <option value="New">New</option>
+                <option value="Under Review">Under Review</option>
+                <option value="Confirmed Suspicious">Confirmed Suspicious</option>
+                <option value="False Positive">False Positive</option>
+                <option value="Resolved">Resolved</option>
+              </select>
+            </div>
+
+            {/* Severity Selector */}
+            <div className="flex items-center space-x-1.5 text-xs text-slate-400">
+              <span className="font-mono text-[11px]">SEVERITY:</span>
+              <select
+                value={severityFilter}
+                onChange={(e) => setSeverityFilter(e.target.value)}
+                className="bg-[#070b14] border border-slate-700/80 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500 font-sans"
+              >
+                <option value="All">All Severities</option>
+                <option value="Critical">Critical</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
+      </Card>
 
       {/* Incidents Table */}
-      <div className="bg-[#0c1220] rounded-xl border border-slate-800 overflow-hidden">
+      <Card elevated className="overflow-hidden">
         {loading ? (
-          <div className="p-8 text-center text-xs text-cyan-400 font-mono flex items-center justify-center space-x-2">
+          <div className="p-12 text-center text-xs text-cyan-400 font-mono flex items-center justify-center space-x-2">
             <RefreshCw className="w-4 h-4 animate-spin" />
             <span>Loading security incident queue...</span>
           </div>
         ) : filtered.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs text-slate-300">
-              <thead className="bg-[#090d16] text-slate-400 font-mono uppercase text-[10px]">
+              <thead className="bg-[#090e1a] text-slate-400 font-mono uppercase text-[10px] border-b border-slate-800">
                 <tr>
-                  <th className="py-3 px-4">Incident ID</th>
-                  <th className="py-3 px-4">Title / Primary Threat</th>
-                  <th className="py-3 px-4">Risk Score</th>
-                  <th className="py-3 px-4">Severity</th>
-                  <th className="py-3 px-4">Investigation Status</th>
-                  <th className="py-3 px-4">Assigned SOC Analyst</th>
-                  <th className="py-3 px-4">Created Time</th>
-                  <th className="py-3 px-4 text-right">Inspect</th>
+                  <th className="py-3.5 px-5">Incident ID</th>
+                  <th className="py-3.5 px-5">Threat Category / Title</th>
+                  <th className="py-3.5 px-5">Risk Score</th>
+                  <th className="py-3.5 px-5">Severity</th>
+                  <th className="py-3.5 px-5">Investigation Status</th>
+                  <th className="py-3.5 px-5">Assigned Analyst</th>
+                  <th className="py-3.5 px-5">Timestamp (UTC)</th>
+                  <th className="py-3.5 px-5 text-right">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/60 font-sans">
@@ -153,27 +175,41 @@ export const IncidentsPage: React.FC = () => {
                   <tr
                     key={inc.id}
                     onClick={() => navigate(`/incidents/${inc.id}`)}
-                    className="hover:bg-slate-800/40 cursor-pointer transition"
+                    className="hover:bg-slate-800/40 cursor-pointer transition-colors"
                   >
-                    <td className="py-3 px-4 font-mono font-bold text-cyan-400">{inc.incident_number}</td>
-                    <td className="py-3 px-4 text-white font-medium">{inc.title}</td>
-                    <td className="py-3 px-4 font-mono font-bold text-white">{inc.risk_score} / 100</td>
-                    <td className="py-3 px-4">
-                      <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${SEVERITY_BADGES[inc.severity] || 'bg-slate-800 text-slate-400'}`}>
-                        {inc.severity}
-                      </span>
+                    <td className="py-3.5 px-5 font-mono font-bold text-cyan-400">
+                      {inc.incident_number}
                     </td>
-                    <td className="py-3 px-4">
-                      <span className={`px-2 py-0.5 rounded text-[10px] font-semibold border ${STATUS_BADGES[inc.status] || 'bg-slate-800 text-slate-300'}`}>
-                        {inc.status}
-                      </span>
+                    <td className="py-3.5 px-5 text-slate-100 font-medium max-w-sm truncate">
+                      {inc.title}
                     </td>
-                    <td className="py-3 px-4 text-slate-300">{inc.assigned_analyst || 'Unassigned'}</td>
-                    <td className="py-3 px-4 text-slate-400 text-[11px] font-mono">
+                    <td className="py-3.5 px-5 font-mono font-bold text-slate-100">
+                      {inc.risk_score} / 100
+                    </td>
+                    <td className="py-3.5 px-5">
+                      <SeverityBadge severity={inc.severity} size="xs" />
+                    </td>
+                    <td className="py-3.5 px-5">
+                      <StatusBadge status={inc.status} size="xs" />
+                    </td>
+                    <td className="py-3.5 px-5 text-slate-300 font-mono text-[11px]">
+                      {inc.assigned_analyst || 'SecOps Pool'}
+                    </td>
+                    <td className="py-3.5 px-5 text-slate-400 text-[11px] font-mono">
                       {new Date(inc.created_at).toLocaleString()}
                     </td>
-                    <td className="py-3 px-4 text-right">
-                      <ArrowUpRight className="w-4 h-4 text-slate-400 hover:text-cyan-400 inline" />
+                    <td className="py-3.5 px-5 text-right">
+                      <Button
+                        variant="secondary"
+                        size="xs"
+                        rightIcon={<ArrowRight className="w-3 h-3" />}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          navigate(`/incidents/${inc.id}`);
+                        }}
+                      >
+                        Inspect
+                      </Button>
                     </td>
                   </tr>
                 ))}
@@ -181,12 +217,21 @@ export const IncidentsPage: React.FC = () => {
             </table>
           </div>
         ) : (
-          <div className="p-8 text-center text-slate-500 text-xs">
-            <p>No incidents match the active filter criteria.</p>
+          <div className="p-8">
+            <EmptyState
+              icon={ShieldAlert}
+              title="No incidents match filter"
+              description="No security incidents match the selected severity, status, or search query. Reset filters to view all cases."
+              actionLabel="Reset Filters"
+              onAction={() => {
+                setStatusFilter('All');
+                setSeverityFilter('All');
+                setSearchQuery('');
+              }}
+            />
           </div>
         )}
-      </div>
+      </Card>
     </div>
   );
 };
-

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-063 (te-en) ===
+Scenario: Fake Credit Card Limit Enhancement OTP Theft
+Primary Label: SCAM
+Tactics: OTP_PIN_CVV_THEFT, ACCOUNT_OR_KYC_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Good morning sir, calling from HDFC Bank credit card operations department.
+[RECIPIENT]: Hello, yes tell me.
+[CALLER]: Sir, mee Regalia credit card limit two lakhs nundi five lakhs ki upgrade cheyadaniki approval vachindi.
+[RECIPIENT]: Any additional annual charges for limit increase?
+[CALLER]: Zero annual charges sir, it is a lifetime free upgrade. Just card verification process complete cheyali.
+[RECIPIENT]: Okay, process enti?
+[CALLER]: Mee registered mobile number ki six digit OTP send chesamu, limit upgrade kosam aa code cheppandi.
+[RECIPIENT]: Message lo transaction OTP ani undi! Bank credit limit ki OTP adagadu. You are trying to steal my money.

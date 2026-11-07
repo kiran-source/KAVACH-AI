@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0040
+Language: te-en
+Scenario: AnyDesk Tech Support NetBanking Trojan Hijacking (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Hello, is this the registered account user speaking?
+[RECIPIENT]: Yes speaking. May I know who is on the call and what is the matter?
+[CALLER]: This is Supervisor Vikram from HDFC Digital Security investigation desk. A complaint was logged regarding unauthorized Russian IP breach on netbanking.
+[RECIPIENT]: unauthorized Russian IP breach on netbanking aa? That is impossible. I am a law-abiding citizen. Meeru verify chesara?
+[CALLER]: Forensic team verified all telemetry logs. Your Aadhaar linked SIM is implicated.
+[RECIPIENT]: If my SIM was duplicated, I am the victim! Why are you threatening me instead of helping?
+[CALLER]: Because statutory protocol mandates total account drain within minutes unless cleared immediately.
+[RECIPIENT]: Clear cheyataniki lawful procedure emundhi?
+[CALLER]: Department clear chit ravalante, right now meeru AnyDesk 9-digit remote control code perform cheyalsi untundi.
+[RECIPIENT]: This sounds like cyber fraud extortion. Genuine police never ask for money or remote control. Disconnecting.

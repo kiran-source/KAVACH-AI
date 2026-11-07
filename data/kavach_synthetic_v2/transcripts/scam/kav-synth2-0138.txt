@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0138 (te) ===
+Scenario: Interpol Red Corner Notice Digital Custody Extortion (TE)
+Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: ఇది Interpol Liaison Unit నుండి Officer Mukherjee మాట్లాడుతున్నాను. మీపై international arrest warrant for offshore data theft కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? international arrest warrant for offshore data theft గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే immediate extradition and airport detention జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే confidential video interrogation and clearance bond పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

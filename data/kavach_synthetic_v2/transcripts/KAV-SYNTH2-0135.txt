@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0135
+Language: te-en
+Scenario: Courier Tracking Failure Malicious APK Download (TE-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, COURIER_CUSTOMS_FRAUD, REMOTE_ACCESS_MANIPULATION
+
+[CALLER]: Urgent security dispatch. Nenu BlueDart Logistics monitoring team lead Driver Mukesh ni.
+[RECIPIENT]: Hello? Em jarigindi? Why are you calling with urgent tone?
+[CALLER]: Mee identity credentials tho inability to deliver parcel due to incorrect house number lo unauthorized transfers jarigayi. Case docket 810 open aindi.
+[RECIPIENT]: Case docket 810 aa? Nenu eppudu aite transfers cheyaledu. Someone must have hacked it.
+[CALLER]: Hacking aina sare, account holder ga return of parcel to sender with heavy penalty enforce avthundi legally.
+[RECIPIENT]: Daaniki remedy enti mari? How can I prove my innocence to the authorities?
+[CALLER]: Right now emergency portal lo meeru custom tracking APK installed from WhatsApp link complete chesi verify cheyali.
+[RECIPIENT]: Phone call meeda remote actions cheyatam safe kaadu. I will visit bank branch and cyber cell tomorrow.

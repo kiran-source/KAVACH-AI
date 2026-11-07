@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0479 (hi-en) ===
+Scenario: E-Commerce Return Pickup Driver Seeking Security Gate Entry (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Fast Track Logistics se Driver Kanta bol raha hoon regarding pickup van outside residential gated community.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient instructs driver to coordinate with security guard.
+[CALLER]: Sir yeh Fast Track Logistics ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

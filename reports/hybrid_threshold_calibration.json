@@ -1,0 +1,99 @@
+{
+  "calibration_dataset": "data/kavach_synthetic_v3/splits/validation.jsonl",
+  "validation_samples": 450,
+  "selected_operating_point": {
+    "confidence_threshold": 0.6,
+    "escalated_count": 136,
+    "escalation_percentage": 30.22,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "scam_recall": 1.0,
+    "ambiguous_recall": 1.0,
+    "legitimate_recall": 1.0,
+    "scam_false_negatives": 0
+  },
+  "all_threshold_experiments": [
+    {
+      "confidence_threshold": 0.6,
+      "escalated_count": 136,
+      "escalation_percentage": 30.22,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    },
+    {
+      "confidence_threshold": 0.7,
+      "escalated_count": 136,
+      "escalation_percentage": 30.22,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    },
+    {
+      "confidence_threshold": 0.75,
+      "escalated_count": 136,
+      "escalation_percentage": 30.22,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    },
+    {
+      "confidence_threshold": 0.8,
+      "escalated_count": 136,
+      "escalation_percentage": 30.22,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    },
+    {
+      "confidence_threshold": 0.85,
+      "escalated_count": 138,
+      "escalation_percentage": 30.67,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    },
+    {
+      "confidence_threshold": 0.9,
+      "escalated_count": 140,
+      "escalation_percentage": 31.11,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    },
+    {
+      "confidence_threshold": 0.95,
+      "escalated_count": 149,
+      "escalation_percentage": 33.11,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "scam_recall": 1.0,
+      "ambiguous_recall": 1.0,
+      "legitimate_recall": 1.0,
+      "scam_false_negatives": 0
+    }
+  ],
+  "precompute_timings_sec": {
+    "tfidf_v3": 0.46,
+    "muril_v1": 162.48
+  },
+  "timestamp": "2026-11-07T09:28:03Z"
+}

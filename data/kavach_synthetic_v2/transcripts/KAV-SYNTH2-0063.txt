@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0063
+Language: te
+Scenario: EPFO Pension Release & NetBanking Credential Phishing (TE)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, OTP_PIN_CVV_THEFT, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: ఇది EPFO Regional Cell నుండి Officer Srivastava మాట్లాడుతున్నాను. మీ పేరు మీద pension arrears of 1.4 lakhs pending release గురించి తక్షణ కేసు నమోదైంది.
+[RECIPIENT]: ఏంటి? pension arrears of 1.4 lakhs pending release నా? నాకు దీనితో ఎటువంటి సంబంధం లేదు, మీరు రాంగ్ నంబర్ కి కాల్ చేశారు.
+[CALLER]: సిస్టమ్ లో మీ ఆధార్ రికార్డు ఉంది. వెంటనే lapse of provident fund interest benefits జరగకుండా ఉండాలంటే మీరు net banking user ID and OTP verification చేయాలి.
+[RECIPIENT]: ఫోన్ కాల్ లో నేను ఏ వివరాలు ఇవ్వను, డబ్బులు పంపను. అధికారిక నోటీసు పంపితే పోలీస్ స్టేషన్ లో కలుస్తాను.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0389 (hi-en) ===
+Scenario: Pre-Approved Personal Loan Cold Call with Vague Terms (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Finance Telemarketing se Caller Rohini bol raha hoon regarding pre-approved low interest personal loan offer.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient asks for employee ID and official bank domain.
+[CALLER]: Sir yeh Finance Telemarketing ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

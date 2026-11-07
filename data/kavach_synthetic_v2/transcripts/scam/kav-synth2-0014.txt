@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0014 (hi-en) ===
+Scenario: TRAI Mobile SIM Disconnection & Fake Aadhaar Abuse (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, ACCOUNT_OR_KYC_THREAT, URGENCY_OR_THREAT, OTP_PIN_CVV_THEFT
+
+[CALLER]: Yeh Telecom Regulatory Authority se Officer Mathur bol raha hoon. Aapke khilaf 9 unauthorized SIM cards sending abusive fraud messages ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? 9 unauthorized SIM cards sending abusive fraud messages? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh nationwide mobile connection block within 2 hours hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi Aadhaar verification OTP code fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

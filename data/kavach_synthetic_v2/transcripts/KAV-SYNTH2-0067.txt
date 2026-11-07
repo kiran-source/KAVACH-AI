@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0067
+Language: hi
+Scenario: FASTag Toll Blacklisting & Security Deposit Theft (HI)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, MALICIOUS_LINK_OR_APP
+
+[CALLER]: नमस्कार, FASTag Operations Unit से Officer Chopra बात कर रहे हैं। आपके नाम पर blacklisting of highway toll tag due to KYC lapse का मामला सामने आया है।
+[RECIPIENT]: सरकारी विभाग फोन पर ऐसे आरोप नहीं लगाते। पहले अपनी पहचान का आधिकारिक सत्यापन करवाइए।
+[CALLER]: यदि आपने अभी सहयोग नहीं दिया तो हमारे पास penalty of 10,000 rupees at toll plazas के आदेश तैयार हैं।
+[RECIPIENT]: अचानक ऐसे फोन पर कार्रवाई की धमकी देना गलत है। इसका कानूनी समाधान क्या है?
+[CALLER]: मामले को यहीं रोकने के लिए आपको तुरंत FASTag reactivation UPI PIN transfer की प्रक्रिया पूरी करनी होगी।
+[RECIPIENT]: यह साफ तौर पर धोखाधड़ी लग रही है। सरकारी एजेंसियां फोन पर ऐसे निर्देश नहीं देतीं। मैं कॉल काट रहा हूँ।

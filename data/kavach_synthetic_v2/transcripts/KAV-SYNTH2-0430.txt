@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0430
+Language: te-en
+Scenario: Domestic Vacation Tour Package Telemarketing Follow-up (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, is this the primary account contact? Calling from Holiday Paradise Tours.
+[RECIPIENT]: Yes speaking. Enti vishayam?
+[CALLER]: Mee region lo discounted Goa holiday resort package offer rollout gurinchi information ivvataniki call chesamu.
+[RECIPIENT]: Mee organization name nenu eppudu vinaledu. Are you authorized?
+[CALLER]: Memu partner network tho kalisi ee service operate chesthunnamu.
+[RECIPIENT]: Idhi clear ga ledu, konchem suspicious ga undi. recipient states they have no vacation travel plans.
+[CALLER]: Miku elanti risk ledu sir, just feedback matrame tesukuntunnamu.
+[RECIPIENT]: Official verification lekunda nenu information ivvanu. Please don't call again.

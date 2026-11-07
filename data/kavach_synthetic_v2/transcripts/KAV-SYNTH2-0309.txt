@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0309
+Language: hi-en
+Scenario: Local Public Library Book Return & Digital Renewal Guide (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, main Central Library customer support team se Librarian Murthy bol raha hoon.
+[RECIPIENT]: Hello, is this regarding my application for two borrowed books due for return on Friday?
+[CALLER]: Yes absolutely. Verification complete ho chuka hai, now you need to option to renew online via official library portal.
+[RECIPIENT]: Do I need to carry original KYC documents or receipt copies?
+[CALLER]: Just carry your original Aadhaar or PAN card. Koi payment ya OTP call par required nahi hai.
+[RECIPIENT]: Thank you for the guidance. I will come to the branch tomorrow morning.

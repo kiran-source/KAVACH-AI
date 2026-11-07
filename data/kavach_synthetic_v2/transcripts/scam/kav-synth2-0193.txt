@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0193 (te) ===
+Scenario: Fake Anti-Virus Subscription Renewal & Remote Refund Scam (TE)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: ఇది Global Cyber Defender నుండి Tech Lead Peter మాట్లాడుతున్నాను. మీపై automatic annual renewal fee of 24,000 charged to account కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? automatic annual renewal fee of 24,000 charged to account గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే non-refundable auto-debit if not cancelled in 1 hour జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే TeamViewer remote connection to process refund పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

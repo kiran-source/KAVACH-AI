@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-068 (te-en) ===
+Scenario: Federal Express Customs Clearance Verification Threat
+Primary Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Federal Express international cargo clearance department. Am I speaking with Karthik?
+[RECIPIENT]: Yes, Karthik speaking.
+[CALLER]: Mee name and PAN card tho Taipei nundi Hyderabad ki vachina courier box lo military-grade communication chips unnai.
+[RECIPIENT]: Military chips? I work in sales, naaku hardware import tho em relation ledu.
+[CALLER]: Customs enforcement team FIR lodge chesindi. To prevent immediate blacklisting and passport seizure, video interrogation attend avvali.
+[RECIPIENT]: Can I visit Hyderabad airport customs office directly?
+[CALLER]: Airport ki velthe arrest chestharu. Just pay thirty thousand clearance clearance guarantee right now on our portal.
+[RECIPIENT]: Customs never demands online bail guarantees over calls. I am contacting cybercrime division.

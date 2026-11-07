@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-079 (te-en) ===
+Scenario: Freelance Web Development Project Advance Dispute
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello Pradeep, this is Client Services Manager John from CloudScale Technologies.
+[RECIPIENT]: Yes John, react frontend project milestones gurincha?
+[CALLER]: Mee code pull request quality audit lo test cases fail ayyayi. Second milestone milestone payout thirty thousand release cheyadam hold lo pettam.
+[RECIPIENT]: Scope of work lo automated unit test coverage mention cheyaledu kadandi.
+[CALLER]: Standard delivery terms lo code coverage mandatory. Advance payout unlock cheyadaniki security escrow deposit ten thousand pay cheyali.
+[RECIPIENT]: Developer advance escrow enduku pay cheyali? This sounds very suspicious.
+[CALLER]: Contract clause 4.2 review cheyandi. If not comfortable, we can do a joint Zoom meeting with management on Monday.
+[RECIPIENT]: Yes, let us schedule the formal Zoom meeting with the contract copy.

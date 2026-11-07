@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0321
+Language: en
+Scenario: Mutual Fund Annual Portfolio Review Branch Invitation (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good afternoon, this is Advisor Nikhil calling from SBI Mutual Fund regarding your scheduled annual review of equity mutual fund scheme.
+[RECIPIENT]: Hello, thank you for reaching out. Yes, I was expecting a status update on that.
+[CALLER]: Please be advised to visit nearest branch at your convenience for discussion. Kindly note we will never request your OTP, PIN, or net banking password.
+[RECIPIENT]: Understood and appreciated. I will complete this at the branch during normal business hours.

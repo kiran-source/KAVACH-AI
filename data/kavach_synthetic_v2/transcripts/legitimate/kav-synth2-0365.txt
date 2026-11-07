@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0365 (te-en) ===
+Scenario: Community Charitable Eye Care Camp Invitation (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Lions Eye Institute nunchi Coordinator Geetha matladuthunnanu. Mee free community vision and cataract screening camp on Sunday gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo senior citizens welcome for free eye checkup complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-015 (en) ===
+Scenario: University Alumni Meetup Registration Confirmation
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello Ananya, this is Divya from the BITS Pilani Alumni Relations office.
+[RECIPIENT]: Hi Divya, nice to hear from the alumni team!
+[CALLER]: Calling to confirm your attendance for the Bangalore chapter annual reunion next Saturday at five PM.
+[RECIPIENT]: Yes, I registered on the alumni portal last week.
+[CALLER]: Great! Entry badge will be available at the registration desk. Dinner is sponsored by the association.
+[RECIPIENT]: Are plus ones permitted for the dinner session?
+[CALLER]: Yes, spouses are welcome. You can add guest details on the official alumni website anytime before Thursday.
+[RECIPIENT]: Wonderful, looking forward to meeting everyone.

@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0395
+Language: te-en
+Scenario: Real Estate Commercial Property Cold Investment Pitch (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, this is Caller Vikas from Apex Realty Holdings team.
+[RECIPIENT]: Hello, please state why you are contacting me.
+[CALLER]: Mee mobile tier ki commercial office space investment opportunity benefit apply cheyavachu ani update vachindi.
+[RECIPIENT]: Nenu eppudu ee service request pettaledu kada?
+[CALLER]: Idi selected premium numbers ki direct ga system allocate chesindi.
+[RECIPIENT]: Daaniki na nunchi em details kavali?
+[CALLER]: Just mee date of birth and pincode confirm chesthe activate chesthamu.
+[RECIPIENT]: Phone call meeda date of birth cheppanu sir. recipient declines investment calls during business hours.
+[CALLER]: Miku doubt unte we will pause this offer for now sir.
+[RECIPIENT]: Yes, pause it permanently. I will check verified web portals directly.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-066 (te-en) ===
+Scenario: Overseas Student Visa Processing Urgent Fee Fraud
+Primary Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello Sumanth, calling from Canadian Immigration Consulate and Global Visa Desk, Hyderabad.
+[RECIPIENT]: Yes madam, na student visa application stage enti?
+[CALLER]: Mee visa file biometric review lo hold lo pettaru due to university tuition fee verification mismatch.
+[RECIPIENT]: University lo fee already pay chesanu kadandi, GIC account kuda active ga undi.
+[CALLER]: Ottawa embassy high commission nundi notice vachindi. Ee roju evening lopu verification bond pay cheyakapothe visa reject avtundi.
+[RECIPIENT]: How much is the verification bond?
+[CALLER]: Forty-five thousand rupees immediately ma official immigration officer UPI handle ki transfer cheyandi.
+[RECIPIENT]: Canadian embassy eppudu UPI dwara fees tiskodu. Everything goes through VFS Global portal. This is fake.

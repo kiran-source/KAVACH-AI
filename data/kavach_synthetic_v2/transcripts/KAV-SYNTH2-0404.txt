@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0404
+Language: hi-en
+Scenario: Wrong Number Callback from Unknown Distant Person (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hi sir, good afternoon. Main Unknown Private Caller se Caller Harish bol raha hoon regarding inquiry looking for someone named Mr. Raghunath.
+[RECIPIENT]: Hello, I am driving right now. Can you tell me if this is urgent or promotional?
+[CALLER]: It is an exclusive opportunity sir, but we need to verify basic eligibility first.
+[RECIPIENT]: Main unknown calls par details confirm nahi karta. recipient confirms wrong number and ends call.
+[CALLER]: Sir we are not asking for financial details, just basic profile check.
+[RECIPIENT]: Send whatever brochure you have to my registered email. No phone confirmations.

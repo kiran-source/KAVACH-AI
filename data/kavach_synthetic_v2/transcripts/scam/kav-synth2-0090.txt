@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0090 (te-en) ===
+Scenario: Work From Home YouTube Liking Deposit Scheme (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu Global Media Marketing nunchi Recruiter Sneha matladuthunnanu andi. Mee credentials meeda daily guaranteed earnings of 3,500 rupees for video likes detect ayindi.
+[RECIPIENT]: Enti sir, daily guaranteed earnings of 3,500 rupees for video likes aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe loss of assigned investment portfolio slot implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane 5,000 rupees VIP task security deposit cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

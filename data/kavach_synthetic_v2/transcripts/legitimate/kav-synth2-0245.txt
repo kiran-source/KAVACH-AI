@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0245 (te-en) ===
+Scenario: Public Health Clinic Routine Child Vaccination Camp Invitation (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Primary Health Center nunchi Nurse Anjali matladuthunnanu. Mee free pulse polio and MMR booster vaccination camp this Sunday gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo bring child immunization yellow book complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

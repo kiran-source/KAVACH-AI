@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0446
+Language: en
+Scenario: Educational Course Certificate Courier Address Recheck (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, am I speaking with the primary resident? I am calling from Skill India Academy.
+[RECIPIENT]: Yes, speaking. What is this concerning?
+[CALLER]: We are conducting preliminary outreach regarding dispatch confirmation for digital marketing course certificate in your area.
+[RECIPIENT]: I am not familiar with your organization. Are you a government body or private agency?
+[CALLER]: We work in partnership with various service providers to facilitate these programs.
+[RECIPIENT]: That sounds very ambiguous. recipient says they never enrolled in any marketing course.
+[CALLER]: Sir, this is just routine market information gathering, no financial obligation exists.
+[RECIPIENT]: Even so, I do not participate in phone surveys or unclear offers. Please remove my number.

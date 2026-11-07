@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0295 (te-en) ===
+Scenario: Passport Seva Kendra Document Submission Slot Reminder (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Passport Seva Kendra nunchi Helpdesk Officer matladuthunnanu. Mee appointment tomorrow at 9:15 AM at Regional Passport Office gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo carry original birth certificate and address proof complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

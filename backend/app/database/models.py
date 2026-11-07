@@ -64,7 +64,13 @@ class AnalysisResultDB(Base):
     risk_score = Column(Float)
     severity = Column(String) # Low, Guarded, Medium, High, Critical
     analysis_status = Column(String, default="completed")
-    engine_version = Column(String, default="1.0.0")
+    engine_version = Column(String, default="2.0.0-hybrid")
+    detection_mode = Column(String, default="RULE_ONLY") # HYBRID or RULE_ONLY
+    ml_predicted_class = Column(String, nullable=True)
+    ml_confidence = Column(Float, nullable=True)
+    ml_model_version = Column(String, nullable=True)
+    rule_score = Column(Float, nullable=True)
+    ml_score = Column(Float, nullable=True)
     created_at = Column(DateTime, default=get_utc_now)
     
     transcript = relationship("TranscriptDB", back_populates="analyses")

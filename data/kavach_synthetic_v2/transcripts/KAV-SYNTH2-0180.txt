@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0180
+Language: te-en
+Scenario: Insurance Bonus Settlement AnyDesk Verification Scam (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, is this the registered account user speaking?
+[RECIPIENT]: Yes speaking. May I know who is on the call and what is the matter?
+[CALLER]: This is Officer Tripathi from LIC Claims Division investigation desk. A complaint was logged regarding accrued life insurance loyalty bonus of 2.1 lakhs.
+[RECIPIENT]: accrued life insurance loyalty bonus of 2.1 lakhs aa? That is impossible. I am a law-abiding citizen. Meeru verify chesara?
+[CALLER]: Forensic team verified all telemetry logs. Your Aadhaar linked SIM is implicated.
+[RECIPIENT]: If my SIM was duplicated, I am the victim! Why are you threatening me instead of helping?
+[CALLER]: Because statutory protocol mandates forfeiture of accumulated policy maturity bonus unless cleared immediately.
+[RECIPIENT]: Clear cheyataniki lawful procedure emundhi?
+[CALLER]: Department clear chit ravalante, right now meeru AnyDesk code sharing to verify bank passbook perform cheyalsi untundi.
+[RECIPIENT]: This sounds like cyber fraud extortion. Genuine police never ask for money or remote control. Disconnecting.

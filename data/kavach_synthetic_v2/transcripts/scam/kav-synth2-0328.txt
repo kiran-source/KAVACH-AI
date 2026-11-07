@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0328 (hi-en) ===
+Scenario: Airline Flight Reschedule Remote Screen Sharing Trap (Variant 1)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Security compliance ke liye Play Store se QuickSupport app download kijiye aur code hamein inform karein.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: To verify your funds, you must immediately transfer refundable security deposit to official government reserve account.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.
+[CALLER]: Hello sir, I am Senior Inspector Ajay Verma from Mumbai Cyber Crime Branch calling. Aapke Aadhaar card ke against money laundering FIR register hui hai.
+[RECIPIENT]: Please connection cut mat kijiye! Mere exams chal rahe hain. Tell me what is the solution.
+[CALLER]: Good afternoon, this is Customs Clearance Cargo Office. Aapka international courier packet parcel Singapore route par drugs ke saath intercept hua hai.
+[RECIPIENT]: Bank policy strictly says never share OTP on call. Main OTP kaise de sakta hoon?

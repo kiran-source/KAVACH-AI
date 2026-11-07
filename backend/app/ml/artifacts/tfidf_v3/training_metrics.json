@@ -1,0 +1,19 @@
+{
+  "model_version": "tfidf_v3.0",
+  "train_samples": 2100,
+  "validation_samples": 450,
+  "validation_accuracy": 1.0,
+  "validation_macro_f1": 1.0,
+  "validation_macro_precision": 1.0,
+  "validation_macro_recall": 1.0,
+  "validation_weighted_f1": 1.0,
+  "class_recall": {
+    "LEGITIMATE": 1.0,
+    "AMBIGUOUS": 1.0,
+    "SCAM": 1.0
+  },
+  "model_size_bytes": {
+    "model_joblib": 362829,
+    "vectorizer_joblib": 203845
+  }
+}

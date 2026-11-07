@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0028 (te) ===
+Scenario: Debit Card Expiry & Urgent OTP Harvest Phishing (TE)
+Label: SCAM
+Tactics: ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: ఇది SBI Card Operations నుండి Manager Rajesh మాట్లాడుతున్నాను. మీపై global chip debit card expiration tonight at midnight కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? global chip debit card expiration tonight at midnight గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే permanent suspension of Google Pay and ATM జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే 6-digit card renewal authorization OTP పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

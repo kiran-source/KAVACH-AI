@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0204 (te) ===
+Scenario: TRAI Telecom Disconnection & Identity Fraud (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Enti saar? Nenu em tappu cheyaledu! Naku ee parcel tho em sambandham ledu.
+[CALLER]: Namaskaram, nenu Hyderabad Cyber Crime Police Station nundi Inspector Ramesh Kumar matladuthunnanu. Mee Aadhaar card pai arrest warrant issue ayindi.
+[RECIPIENT]: Nenu regular ga tax pay chese citizen ni. Na pai ilanti case enduku peduthunnaru?
+[CALLER]: Mumbai Customs nundi customs officer matladuthunnanu. Singapore velle mee parcel lo narcotics drug dorikayi.
+[RECIPIENT]: Dayachesi current cut cheyakandi saar. Nenu em cheyalo cheppandi.
+[CALLER]: Electricity department nundi urgent notice. Ee roju rathri lopala bill kattakapothe power supply cut chestham.
+[RECIPIENT]: Bank vallu eppudu OTP share cheyavaddhu ani cheptharu kada? Nenu ela ivvali?

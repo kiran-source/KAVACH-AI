@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0415
+Language: te-en
+Scenario: Job Placement Consultancy Walk-in Interview Query (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, this is Caller Vishal from Tech Careers Agency team.
+[RECIPIENT]: Hello, please state why you are contacting me.
+[CALLER]: Mee mobile tier ki job profile match for mid-level administrative opening benefit apply cheyavachu ani update vachindi.
+[RECIPIENT]: Nenu eppudu ee service request pettaledu kada?
+[CALLER]: Idi selected premium numbers ki direct ga system allocate chesindi.
+[RECIPIENT]: Daaniki na nunchi em details kavali?
+[CALLER]: Just mee date of birth and pincode confirm chesthe activate chesthamu.
+[RECIPIENT]: Phone call meeda date of birth cheppanu sir. recipient requests job description by email before committing.
+[CALLER]: Miku doubt unte we will pause this offer for now sir.
+[RECIPIENT]: Yes, pause it permanently. I will check verified web portals directly.

@@ -1,17 +1,19 @@
 # KAVACH AI — System Architecture & Technical Specification
 
 ## 1. Executive Summary
-**KAVACH AI** (కవచ్ / कवच) is a specialized, privacy-preserving, AI-assisted security decision-support platform designed to protect Indian citizens and institutions against phone-based voice social-engineering attacks. It ingests voice conversations, utilizes **Gnani Prisma v2.5** for multilingual speech-to-text transcription, runs a deterministic and explainable multi-factor threat detection engine, computes a transparent 0–100 risk score, generates actionable safety voice advisories using **Gnani Timbre v2.5**, and manages security incidents with SOC-grade auditing and ReportLab PDF reporting.
+**KAVACH AI** (కవచ్ / कवच) is a specialized, privacy-preserving, AI-assisted security decision-support platform designed to protect Indian citizens and institutions against phone-based voice social-engineering attacks (vishing, digital arrest, and financial fraud). 
+
+The platform accepts uploaded audio and consent-based microphone recordings, utilizes **Gnani Prisma v3.0** for multilingual speech-to-text transcription across Indian languages, evaluates transcripts using a **Hybrid Risk Engine** fusing an explainable 8-pillar deterministic threat engine with a **Calibrated Multilingual Machine Learning Classifier**, synthesizes immediate defensive voice warnings using **Gnani Timbre v2.5**, and powers a comprehensive SOC incident management dashboard with ReportLab PDF audit export.
 
 ---
 
 ## 2. Target Deployment & Hardware Profile
-KAVACH AI is optimized to execute entirely on a standard consumer/enterprise workstation without requiring dedicated GPUs:
-- **Host OS**: Windows 10/11 (64-bit)
-- **CPU**: Intel Core i5 (8th Gen+) / AMD Ryzen 5 class
-- **Memory**: 16 GB RAM (Application uses < 600 MB total)
-- **Local Storage**: SQLite zero-configuration database, under 1 GB footprint
-- **Network**: Localhost 127.0.0.1 default binding; secure outbound HTTPS to Gnani AI endpoints for cloud inference.
+KAVACH AI is optimized to execute reliably on standard consumer or enterprise developer workstations without requiring local GPUs:
+- **Host OS**: Windows 10/11 (64-bit), macOS, or Linux
+- **Python Runtime**: Python 3.10–3.13 (FastAPI, scikit-learn, SQLAlchemy, ReportLab)
+- **Node.js Runtime**: Node.js 18+ LTS (React, TypeScript, Vite, Tailwind CSS)
+- **Local Storage**: Zero-configuration SQLite (`kavach.db`), total local memory footprint < 600 MB
+- **Network**: Bound to `127.0.0.1` localhost; outbound HTTPS to Gnani AI endpoints (`api.vachana.ai`) for speech inference.
 
 ---
 
@@ -21,6 +23,9 @@ KAVACH AI is optimized to execute entirely on a standard consumer/enterprise wor
        +-----------------------------------------------------------+
        |                     REACT FRONTEND                        |
        |  Vite + TypeScript + Tailwind CSS + Lucide + Recharts    |
+       |  - Audio Upload & Near-Realtime Microphone Recording      |
+       |  - Real-time Threat Badges & Severity Gauge               |
+       |  - SOC Incident Workbench & Timeline Audit                |
        +-----------------------------+-----------------------------+
                                      |
                                      | REST API (HTTP/JSON + Multipart)
@@ -29,33 +34,51 @@ KAVACH AI is optimized to execute entirely on a standard consumer/enterprise wor
 |                          FASTAPI BACKEND SERVICE                         |
 |                                                                          |
 |  +--------------------------+          +------------------------------+  |
-|  |  AUDIO INGESTION ENGINE  |          |   GNANI PRISMA v2.5 STT      |  |
-|  |  - Format Validation     | -------> |   - Multilingual ASR         |  |
-|  |  - Magic-byte integrity  |          |   - Language Identification  |  |
+|  |  AUDIO INGESTION ENGINE  |          |    GNANI PRISMA v3.0 STT     |  |
+|  |  - Magic-Byte Validation | -------> |   - Multilingual ASR (v3)    |  |
+|  |  - Audio Conversion      |          |   - Language Identification  |  |
 |  |  - Wave/SoundFile Meta   |          |   - Timestamped Segments     |  |
 |  |  - Path Traversal Guard  |          |   - Bounded Exponential Retry|  |
 |  +--------------------------+          +--------------+---------------+  |
 |                                                       |                  |
 |                                                       v                  |
+|  +--------------------------------------------------------------------+  |
+|  |                       HYBRID RISK FUSION ENGINE                    |  |
+|  |                                                                    |  |
+|  |  +-----------------------------+    +---------------------------+  |  |
+|  |  |  8-PILLAR RULE ENGINE       |    | CALIBRATED ML CLASSIFIER  |  |  |
+|  |  |  - Authority Impersonation  |    | - TF-IDF (1-2 word ngrams)|  |  |
+|  |  |  - Digital Arrest Patterns  |    | - Platt Scaled LogReg     |  |  |
+|  |  |  - Credential Theft (OTP)   |    | - Uncertainty & Abstain   |  |  |
+|  |  |  - Remote Control (AnyDesk) |    | - Measured CPU (~10ms)    |  |  |
+|  |  |  - Negative Context Guard   |    +-------------+-------------+  |  |
+|  |  +--------------+--------------+                  |                |  |
+|  |                 |                                 |                |  |
+|  |                 +----------------+----------------+                |  |
+|  |                                  v                                 |  |
+|  |                 +--------------------------------+                 |  |
+|  |                 |      RULE-PRIORITY SHIELD      |                 |  |
+|  |                 |  - Disallow ML false negatives |                 |  |
+|  |                 |  - Conflict & Divergence Flag  |                 |  |
+|  |                 |  - Graceful RULE_ONLY Fallback |                 |  |
+|  |                 +----------------+---------------+                 |  |
+|  +----------------------------------+---------------------------------+  |
+|                                     |                                    |
+|                                     v                                    |
 |  +--------------------------+          +------------------------------+  |
-|  |  GNANI TIMBRE v2.5 TTS   |          |    THREAT DETECTION ENGINE   |  |
-|  |  - Multilingual Advisory | <------- |    - 8 Threat Category Rules |  |
-|  |  - Telugu, Hindi, English|          |    - Negative Context Guard  |  |
-|  |  - SAPI / WAV Fallback   |          |    - Multi-tactic Synergy    |  |
+|  |  GNANI TIMBRE v2.5 TTS   |          |     INCIDENT MANAGEMENT      |  |
+|  |  - Multilingual Advisory | <------- |     - State Transitions      |  |
+|  |  - Telugu, Hindi, English|          |     - Audit Timeline Log     |  |
+|  |  - SAPI / WAV Fallback   |          |     - SOC Analyst Notes      |  |
 |  +--------------------------+          +--------------+---------------+  |
 |                                                       |                  |
 |                                                       v                  |
 |  +--------------------------+          +------------------------------+  |
-|  |   SOC PDF GENERATOR      |          |     INCIDENT MANAGEMENT      |  |
-|  |   - ReportLab Engine     | <------- |     - State Transitions      |  |
-|  |   - Forensic Dossiers    |          |     - Audit Timeline Log     |  |
-|  +--------------------------+          |     - Analyst Case Journal   |  |
-|                                        +--------------+---------------+  |
-|                                                       |                  |
-|                                                       v                  |
-|                               +-------------------------------+          |
-|                               |     SQLITE DB (SQLAlchemy)    |          |
-|                               +-------------------------------+          |
+|  |   SOC PDF GENERATOR      |          |     SQLITE DB (SQLAlchemy)   |  |
+|  |   - ReportLab Engine     | <------- |     - Audio, Transcripts     |  |
+|  |   - Hybrid Decision Data |          |     - Hybrid Results         |  |
+|  |   - Forensic Dossiers    |          |     - Incidents & Audit Log  |  |
+|  +--------------------------+          +------------------------------+  |
 +--------------------------------------------------------------------------+
 ```
 
@@ -63,40 +86,32 @@ KAVACH AI is optimized to execute entirely on a standard consumer/enterprise wor
 
 ## 4. Subsystem Modules
 
-### 4.1 Audio Ingestion & Processing Module (`app/audio/`)
-- **File Integrity & Format Validation**: Ensures extension belongs to whitelist (`.wav`, `.mp3`, `.m4a`, `.flac`, `.ogg`, `.webm`) and matches payload size constraints (default 25 MB max).
-- **Security Sanitization**: Strips path traversal sequences (`../`, null bytes, illegal characters) via `sanitize_filename()`.
-- **Acoustic Metadata Extraction**: Utilizes `soundfile` and standard library `wave` to extract exact sample rate, channel count, duration, and encoding frames.
+### 4.1 Audio Ingestion & Acoustic Verification (`app/audio/`)
+- **Magic-Byte Integrity**: Verifies true container format via initial header bytes (RIFF/WAVE, ID3/Sync MP3, ftyp M4A, OggS, Matroska/WebM). Rejects mislabeled files (e.g. WebM renamed as `.wav`).
+- **Path Traversal Protection**: Strips relative paths, null bytes, and non-whitelisted characters via strict sanitization.
+- **Acoustic Profiling**: Extracts channels, sample rate, bit depth, and duration via `soundfile` and `wave`.
 
-### 4.2 Gnani Prisma v2.5 Speech-to-Text Module (`app/gnani/prisma_client.py`)
-- **Language Identification**: Detects whether incoming speech is in Telugu (`te`), Hindi (`hi`), or English (`en`), including code-mixed patterns.
-- **Normalization Engine**: Converts vendor responses into a standardized application schema:
-  - `transcript_id`: Unique identifier
-  - `language`: Primary language tag
-  - `detected_languages`: Multilingual token distribution
-  - `segments`: Start time, end time, segment text, segment language
-  - `full_text`: Verbatim transcript preserving unredacted evidence
-- **Resilience**: Features bounded retries with exponential backoff on HTTP 429 / 5xx errors and transparent simulated demo mode when credentials are not configured.
+### 4.2 Gnani Prisma v3.0 STT Client (`app/gnani/prisma_client.py`)
+- **Endpoint**: `POST https://api.vachana.ai/stt/v3`
+- **Authentication**: Sent via `token: {GNANI_API_KEY}` header.
+- **Format Delivery**: Multipart form with `audio` binary stream and JSON config payload.
+- **Timestamp Integrity**: Preserves verbatim vendor segment timestamps; never fabricates dummy timestamps.
+- **Resilience**: Backoff retries on rate limits; falls back gracefully to simulated mode in development if keys are absent.
 
-### 4.3 Multilingual Threat Detection & Risk Scoring (`app/detection/`)
-- Evaluates 8 distinct cyber social-engineering threat categories:
-  1. **Authority Impersonation** (Police, CBI, Customs, Supreme Court, TRAI, ED)
-  2. **Urgency & Coercive Threats** (Immediate arrest, account blocking, electricity termination)
-  3. **Credential Theft** (OTP, UPI PIN, CVV, ATM passwords, net banking credentials)
-  4. **Remote Access Manipulation** (AnyDesk, TeamViewer, QuickSupport, APK sideloading)
-  5. **Financial Redirection Fraud** (Safe accounts, verification deposits, tax refund fees)
-  6. **Psychological Manipulation & Secrecy** (Commands to isolate, lock doors, conceal from family)
-  7. **Courier & Customs Parcel Fraud** (FedEx narcotics confiscation, fake passport seizures)
-  8. **Digital Arrest Patterns** (Continuous video surveillance, Zoom/Skype interrogation)
-- **Negative Context Analysis**: Automatically detects security awareness campaigns, bank advisories, and educational reminders to eliminate false positives on legitimate safety notices.
-- **Explainable Scoring**: Calculates weighted contributions capped at 100 with dynamic synergy modifiers for coordinated multi-vector attacks.
+### 4.3 Machine Learning Pipeline & Hybrid Intelligence Engine (`app/ml/`)
+- **Production Baseline v1.0** (`backend/app/ml/artifacts/v1/`): Platt-calibrated Logistic Regression baseline trained locally on Dataset v2 (350 train). Active production default. Measured CPU latency: Mean: 11.68 ms, P50: 10.27 ms, P95: 23.06 ms.
+- **TF-IDF v3 Fast-Path Classifier** (`backend/app/ml/artifacts/tfidf_v3/`): Subword and character n-gram calibrated classifier trained on Dataset v3 (2,100 train). Measured CPU latency: **4.29 ms** (~42 MB footprint).
+- **Google MuRIL v1 Transformer** (`backend/app/ml/artifacts/muril_v1/`): Fine-tuned `google/muril-base-cased` transformer (237M parameters) for deep contextual and code-mixed threat comprehension across 17 Indian languages. CPU latency: ~1,543 ms.
+- **Cascaded Three-Stage Pipeline** (`POST /api/v1/hybrid/analyze`):
+  $$\text{Stage 0: Rule Shield} \longrightarrow \text{Stage 1: TF-IDF v3 (Fast Path)} \longrightarrow \text{Stage 2: Selective MuRIL v1 (Deep Path)}$$
+  Under validation-calibrated operating threshold ($\tau = 0.85$), TF-IDF resolves ~68% of calls in <5 ms, invoking MuRIL for only ~32% of ambiguous or code-mixed calls. Reduces transformer compute overhead by **68%** while achieving 100% accuracy and 0 false negatives on the held-out test partition.
 
-### 4.4 Gnani Timbre v2.5 Voice Advisory Module (`app/gnani/timbre_client.py`)
-- Synthesizes immediate, localized safety instructions in Telugu, Hindi, and English.
-- Dispatches emergency defensive advisories directing victims to end the call, contact their bank branch, and dial **1930** (Indian Cybercrime Helpline).
-- Provides offline SAPI5 speech synthesis fallback when cloud APIs are unconfigured.
+### 4.4 Rule-Priority Shield & Safety Decision Fusion (`app/detection/` & `app/ml/hybrid_engine.py`)
+- **Rule-Priority Shield**: Enforces domain safety: if deterministic rules detect critical indicators (CBI/ED Digital Arrest, OTP extraction, active extortion), statistical models cannot downgrade risk. Enforces a permanent risk floor of $\ge 85.0$ and severity `Critical`.
+- **Conservative Disagreement Resolution**: If TF-IDF and MuRIL diverge (e.g. TF-IDF predicts `LEGITIMATE`, MuRIL detects `SCAM`), the conservative safety policy routes to `NEEDS_REVIEW` or `SCAM`, never `LEGITIMATE`.
+- **Fallback Guarantee**: In the absence of transformer model weights or upon forward-pass exceptions, transitions smoothly to Stage 1 TF-IDF and deterministic rules without throwing runtime errors.
 
-### 4.5 Security Incident Response & Forensics (`app/incidents/` & `app/reports/`)
-- Automatically opens security incidents when risk scores cross the Medium threshold (>= 40.0).
-- Tracks status transitions through a strict lifecycle: `New` -> `Under Review` -> `Confirmed Suspicious` / `False Positive` -> `Resolved`.
-- Generates professional forensic incident dossiers in PDF format utilizing ReportLab.
+### 4.5 SOC Incident Management & Forensic Reporting (`app/incidents/` & `app/reports/`)
+- **Automated Incident Creation**: Escalates high-risk transcripts into actionable SOC cases.
+- **Audit Logging**: Maintains chronological event timelines for analyst review and forensic reconstruction.
+- **ReportLab PDF Generator**: Dynamically renders formal incident dossiers with detection mode breakdown (`HYBRID` vs `RULE_ONLY`), rule/ML scores, category badges, and actionable guidance.

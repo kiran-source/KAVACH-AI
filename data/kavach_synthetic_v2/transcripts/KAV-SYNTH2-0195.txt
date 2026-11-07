@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0195
+Language: te-en
+Scenario: Fake Anti-Virus Subscription Renewal & Remote Refund Scam (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Urgent security dispatch. Nenu Global Cyber Defender monitoring team lead Tech Lead Peter ni.
+[RECIPIENT]: Hello? Em jarigindi? Why are you calling with urgent tone?
+[CALLER]: Mee identity credentials tho automatic annual renewal fee of 24,000 charged to account lo unauthorized transfers jarigayi. Case docket 810 open aindi.
+[RECIPIENT]: Case docket 810 aa? Nenu eppudu aite transfers cheyaledu. Someone must have hacked it.
+[CALLER]: Hacking aina sare, account holder ga non-refundable auto-debit if not cancelled in 1 hour enforce avthundi legally.
+[RECIPIENT]: Daaniki remedy enti mari? How can I prove my innocence to the authorities?
+[CALLER]: Right now emergency portal lo meeru TeamViewer remote connection to process refund complete chesi verify cheyali.
+[RECIPIENT]: Phone call meeda remote actions cheyatam safe kaadu. I will visit bank branch and cyber cell tomorrow.

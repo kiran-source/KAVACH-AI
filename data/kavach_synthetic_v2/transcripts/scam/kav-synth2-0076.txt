@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0076 (en) ===
+Scenario: Family Member Police Custody Emergency Bail Trap (EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: This is Sub-Inspector Pandey calling from City Police Station. We are conducting an urgent investigation regarding nephew arrested in hit-and-run accident with injuries.
+[RECIPIENT]: Hello? I have no knowledge of any nephew arrested in hit-and-run accident with injuries. What is this regarding?
+[CALLER]: A formal case file has been registered. If you do not resolve this immediately, there will be immediate transfer to central prison.
+[RECIPIENT]: Please, this is a serious misunderstanding! I am a law-abiding citizen. How can this be cleared?
+[CALLER]: You must immediately comply with 35,000 rupees cash bail to officer UPI. Failure to do so will result in non-bailable enforcement.
+[RECIPIENT]: I will not comply blindly without official documentation. Let me consult my advocate and local police first.

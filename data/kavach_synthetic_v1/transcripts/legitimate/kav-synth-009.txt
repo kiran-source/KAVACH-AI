@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-009 (en) ===
+Scenario: Broadband Internet Plan Speed Upgrade Confirmation
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good afternoon, calling from ACT Fibernet customer relationship desk. Am I speaking with Mr. Arvind?
+[RECIPIENT]: Yes, Arvind speaking. How can I help you?
+[CALLER]: We noticed your fiber connection has completed two years. We have an annual loyalty upgrade offering two hundred megabits per second at your current bill amount.
+[RECIPIENT]: Will there be any hidden installation or router charges?
+[CALLER]: No extra charges sir. Your existing dual-band router supports this speed automatically. It simply updates your profile on your next billing cycle.
+[RECIPIENT]: That sounds great. Do I need to fill out any form?
+[CALLER]: No forms or documents needed. I have updated your account request. You will receive an official confirmation SMS on your registered number.
+[RECIPIENT]: Thank you for the prompt assistance.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0459 (hi-en) ===
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Smart Mart Rewards se Caller Varun bol raha hoon regarding inquiry on redeeming 450 reward points on next grocery bill.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient acknowledges message and will check in store.
+[CALLER]: Sir yeh Smart Mart Rewards ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0435 (te-en) ===
+Scenario: Mobile Broadband Speed Diagnostic Disconnecting Mid-Call (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Telecom Network Support nunchi Caller Ravi matladuthunnanu regarding routine network diagnostic following slow speed report.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? call disconnects abruptly due to cellular signal drop.
+[CALLER]: Idi Telecom Network Support direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

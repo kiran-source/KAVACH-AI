@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0060 (te-en) ===
+Scenario: Income Tax Department Tax Evasion & Bank Seizure (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu Income Tax Central Circle nunchi Commissioner Saxena matladuthunnanu andi. Mee credentials meeda discrepancy of 18 lakhs in cash deposits detect ayindi.
+[RECIPIENT]: Enti sir, discrepancy of 18 lakhs in cash deposits aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe immediate attachment of commercial bank accounts implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane tax dispute settlement gateway payment cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

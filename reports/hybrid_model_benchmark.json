@@ -1,0 +1,470 @@
+{
+  "benchmark_name": "KAVACH AI \u2014 Fair Head-to-Head 6-Configuration Benchmark",
+  "dataset": "data/kavach_synthetic_v3/splits/test.jsonl",
+  "sample_count": 450,
+  "configurations": {
+    "A_tfidf_v3_only": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "scam_false_negatives": 0,
+      "per_class": {
+        "LEGITIMATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "AMBIGUOUS": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "SCAM": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 180.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          135,
+          0,
+          0
+        ],
+        [
+          0,
+          135,
+          0
+        ],
+        [
+          0,
+          0,
+          180
+        ]
+      ],
+      "per_language": {
+        "en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "mean_latency_ms": 4.29,
+      "p50_latency_ms": 4.22,
+      "p95_latency_ms": 5.74,
+      "throughput_inf_sec": 233.1,
+      "muril_invocation_pct": 0.0
+    },
+    "B_muril_v1_only": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "scam_false_negatives": 0,
+      "per_class": {
+        "LEGITIMATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "AMBIGUOUS": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "SCAM": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 180.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          135,
+          0,
+          0
+        ],
+        [
+          0,
+          135,
+          0
+        ],
+        [
+          0,
+          0,
+          180
+        ]
+      ],
+      "per_language": {
+        "en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "mean_latency_ms": 1543.21,
+      "p50_latency_ms": 1454.09,
+      "p95_latency_ms": 2289.55,
+      "throughput_inf_sec": 0.6,
+      "muril_invocation_pct": 100.0
+    },
+    "C_hybrid_selective": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "scam_false_negatives": 0,
+      "per_class": {
+        "LEGITIMATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "AMBIGUOUS": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "SCAM": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 180.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          135,
+          0,
+          0
+        ],
+        [
+          0,
+          135,
+          0
+        ],
+        [
+          0,
+          0,
+          180
+        ]
+      ],
+      "per_language": {
+        "en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "mean_latency_ms": 498.12,
+      "p50_latency_ms": 4.29,
+      "p95_latency_ms": 1547.5,
+      "throughput_inf_sec": 2.0,
+      "muril_invocation_pct": 32.0
+    },
+    "D_hybrid_always": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "scam_false_negatives": 0,
+      "per_class": {
+        "LEGITIMATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "AMBIGUOUS": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "SCAM": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 180.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          135,
+          0,
+          0
+        ],
+        [
+          0,
+          135,
+          0
+        ],
+        [
+          0,
+          0,
+          180
+        ]
+      ],
+      "per_language": {
+        "en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "mean_latency_ms": 1547.5,
+      "p50_latency_ms": 1458.31,
+      "p95_latency_ms": 2295.29,
+      "throughput_inf_sec": 0.6,
+      "muril_invocation_pct": 100.0
+    },
+    "E_rule_priority_shield_only": {
+      "accuracy": 0.5867,
+      "macro_precision": 0.6185,
+      "macro_recall": 0.5753,
+      "macro_f1": 0.5844,
+      "weighted_f1": 0.6075,
+      "scam_false_negatives": 56,
+      "per_class": {
+        "LEGITIMATE": {
+          "precision": 0.3734,
+          "recall": 0.437,
+          "f1_score": 0.4027,
+          "support": 135.0
+        },
+        "AMBIGUOUS": {
+          "precision": 0.4821,
+          "recall": 0.6,
+          "f1_score": 0.5347,
+          "support": 135.0
+        },
+        "SCAM": {
+          "precision": 1.0,
+          "recall": 0.6889,
+          "f1_score": 0.8158,
+          "support": 180.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          59,
+          76,
+          0
+        ],
+        [
+          54,
+          81,
+          0
+        ],
+        [
+          45,
+          11,
+          124
+        ]
+      ],
+      "per_language": {
+        "en": {
+          "samples": 90,
+          "accuracy": 0.4222,
+          "macro_f1": 0.3843
+        },
+        "hi": {
+          "samples": 90,
+          "accuracy": 0.6,
+          "macro_f1": 0.5969
+        },
+        "te": {
+          "samples": 90,
+          "accuracy": 0.6556,
+          "macro_f1": 0.6421
+        },
+        "hi-en": {
+          "samples": 90,
+          "accuracy": 0.6,
+          "macro_f1": 0.5969
+        },
+        "te-en": {
+          "samples": 90,
+          "accuracy": 0.6556,
+          "macro_f1": 0.6497
+        }
+      },
+      "mean_latency_ms": 0.85,
+      "p50_latency_ms": 0.72,
+      "p95_latency_ms": 1.45,
+      "throughput_inf_sec": 1176.5,
+      "muril_invocation_pct": 0.0
+    },
+    "F_full_hybrid_system": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "scam_false_negatives": 0,
+      "per_class": {
+        "LEGITIMATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "AMBIGUOUS": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 135.0
+        },
+        "SCAM": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "support": 180.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          135,
+          0,
+          0
+        ],
+        [
+          0,
+          135,
+          0
+        ],
+        [
+          0,
+          0,
+          180
+        ]
+      ],
+      "per_language": {
+        "en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "hi-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "te-en": {
+          "samples": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "mean_latency_ms": 498.97,
+      "p50_latency_ms": 5.01,
+      "p95_latency_ms": 1548.95,
+      "throughput_inf_sec": 2.0,
+      "muril_invocation_pct": 32.0
+    }
+  },
+  "timestamp": "2026-11-07T09:32:31Z"
+}

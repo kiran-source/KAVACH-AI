@@ -1,0 +1,12 @@
+{
+  "label2id": {
+    "LEGITIMATE": 0,
+    "AMBIGUOUS": 1,
+    "SCAM": 2
+  },
+  "id2label": {
+    "0": "LEGITIMATE",
+    "1": "AMBIGUOUS",
+    "2": "SCAM"
+  }
+}

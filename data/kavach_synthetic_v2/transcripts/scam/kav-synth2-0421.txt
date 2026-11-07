@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0421 (te-en) ===
+Scenario: Electricity Department QuickSupport APK Sideloading (Variant 1)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, MALICIOUS_LINK_OR_APP, URGENCY_OR_THREAT
+
+[CALLER]: Verification complete avvalante Google Play Store nundi AnyDesk application install chesi screen share cheyandi.
+[RECIPIENT]: Naku chala fear ga undi sir. Can I please call my family lawyer first?
+[CALLER]: Case drop avvalante Court security deposit account lo immediate ga fifty thousand rupees UPI transfer cheyandi.
+[RECIPIENT]: Okay sir, application download chesthunnanu, please don't arrest me.
+[CALLER]: Good afternoon sir, this is Cyber Crime Police Department Hyderabad. Mee Aadhaar details meeda illegal money laundering investigation start ayindi.
+[RECIPIENT]: What is this sir? Nenu eppudu ilanti illegal activities lo participate cheyaledu. It's a mistake!
+[CALLER]: Calling from Mumbai International Cargo Customs. Mee name meeda Singapore velle parcel lo narcotics drugs seize chesaru.
+[RECIPIENT]: Singapore ki courier entra babu? Nenu asalu passport kooda ekkada ivvaledu.

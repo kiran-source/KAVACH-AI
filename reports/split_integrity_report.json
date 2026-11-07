@@ -1,0 +1,303 @@
+{
+  "report_name": "KAVACH AI - Dataset Split Integrity & Leakage Report",
+  "timestamp": "2026-11-05T09:48:00Z",
+  "audited_datasets": {
+    "kavach_synthetic_v2": {
+      "dataset_name": "kavach_synthetic_v2",
+      "total_records": 500,
+      "expected_total": 500,
+      "splits": {
+        "train": {
+          "total_records": 350,
+          "class_distribution": {
+            "SCAM": 140,
+            "LEGITIMATE": 120,
+            "AMBIGUOUS": 90
+          },
+          "language_distribution": {
+            "en": 70,
+            "hi": 70,
+            "te": 70,
+            "hi-en": 70,
+            "te-en": 70
+          },
+          "unique_conversations": 350,
+          "unique_scenarios": 70,
+          "unique_dialogue_hashes": 350
+        },
+        "validation": {
+          "total_records": 75,
+          "class_distribution": {
+            "SCAM": 30,
+            "LEGITIMATE": 25,
+            "AMBIGUOUS": 20
+          },
+          "language_distribution": {
+            "en": 15,
+            "hi": 15,
+            "te": 15,
+            "hi-en": 15,
+            "te-en": 15
+          },
+          "unique_conversations": 75,
+          "unique_scenarios": 15,
+          "unique_dialogue_hashes": 75
+        },
+        "test": {
+          "total_records": 75,
+          "class_distribution": {
+            "SCAM": 30,
+            "LEGITIMATE": 30,
+            "AMBIGUOUS": 15
+          },
+          "language_distribution": {
+            "en": 15,
+            "hi": 15,
+            "te": 15,
+            "hi-en": 15,
+            "te-en": 15
+          },
+          "unique_conversations": 75,
+          "unique_scenarios": 15,
+          "unique_dialogue_hashes": 75
+        }
+      },
+      "leakage_audit": {
+        "conversation_id_leakage": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "scenario_family_leakage": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "exact_dialogue_text_leakage": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "has_cid_leakage": false,
+        "has_scenario_leakage": false,
+        "has_dialogue_leakage": false
+      },
+      "coverage": {
+        "unresolved_cids": 0,
+        "missing_cids": 0,
+        "pending_review_status_count": 500,
+        "all_pending_review_truthful": true
+      },
+      "near_duplicate_diagnostics": {
+        "metrics_by_split_pair": {
+          "train_val": {
+            "char_3_5_gram_cosine": {
+              "min": 0.462,
+              "mean": 0.6853,
+              "p50": 0.7125,
+              "p90": 0.8008,
+              "p95": 0.8215,
+              "max": 0.8332
+            },
+            "word_1_2_gram_cosine": {
+              "min": 0.26,
+              "mean": 0.5799,
+              "p50": 0.5926,
+              "p90": 0.7404,
+              "p95": 0.7594,
+              "max": 0.8072
+            }
+          },
+          "train_test": {
+            "char_3_5_gram_cosine": {
+              "min": 0.4296,
+              "mean": 0.6974,
+              "p50": 0.7278,
+              "p90": 0.7965,
+              "p95": 0.8029,
+              "max": 0.8343
+            },
+            "word_1_2_gram_cosine": {
+              "min": 0.2759,
+              "mean": 0.605,
+              "p50": 0.6219,
+              "p90": 0.73,
+              "p95": 0.7698,
+              "max": 0.791
+            }
+          },
+          "val_test": {
+            "char_3_5_gram_cosine": {
+              "min": 0.3949,
+              "mean": 0.6748,
+              "p50": 0.7121,
+              "p90": 0.7803,
+              "p95": 0.7923,
+              "max": 0.8167
+            },
+            "word_1_2_gram_cosine": {
+              "min": 0.2485,
+              "mean": 0.576,
+              "p50": 0.5942,
+              "p90": 0.7164,
+              "p95": 0.7475,
+              "max": 0.781
+            }
+          }
+        },
+        "methodology": "TF-IDF Sublinear Vectorization with Cosine Similarity. Target splits evaluate maximum nearest-neighbor similarity against reference split.",
+        "threshold_and_limitations": "LIMITATION AND INTERPRETATION NOTICE: Lexical and n-gram similarity measures shared institutional and conversational vocabulary inherent to telephony dialogues (e.g. greetings, institutional names, telecom/banking terminology). A high or moderate similarity score alone neither proves nor disproves data leakage. True data leakage is strictly evaluated through: (1) scenario-family isolation, (2) exact dialogue text hash overlap, and (3) conversation ID partitioning, all of which are verified at exactly 0% overlap."
+      },
+      "status": "PASS"
+    },
+    "kavach_synthetic_v1": {
+      "dataset_name": "kavach_synthetic_v1",
+      "total_records": 100,
+      "expected_total": 100,
+      "splits": {
+        "train": {
+          "total_records": 70,
+          "class_distribution": {
+            "SCAM": 30,
+            "LEGITIMATE": 25,
+            "AMBIGUOUS": 15
+          },
+          "language_distribution": {
+            "en": 14,
+            "hi": 14,
+            "te": 14,
+            "te-en": 14,
+            "hi-en": 14
+          },
+          "unique_conversations": 70,
+          "unique_scenarios": 70,
+          "unique_dialogue_hashes": 70
+        },
+        "validation": {
+          "total_records": 15,
+          "class_distribution": {
+            "SCAM": 5,
+            "LEGITIMATE": 5,
+            "AMBIGUOUS": 5
+          },
+          "language_distribution": {
+            "en": 3,
+            "hi": 3,
+            "te": 3,
+            "te-en": 3,
+            "hi-en": 3
+          },
+          "unique_conversations": 15,
+          "unique_scenarios": 15,
+          "unique_dialogue_hashes": 15
+        },
+        "test": {
+          "total_records": 15,
+          "class_distribution": {
+            "SCAM": 5,
+            "LEGITIMATE": 5,
+            "AMBIGUOUS": 5
+          },
+          "language_distribution": {
+            "en": 3,
+            "hi": 3,
+            "te": 3,
+            "te-en": 3,
+            "hi-en": 3
+          },
+          "unique_conversations": 15,
+          "unique_scenarios": 15,
+          "unique_dialogue_hashes": 15
+        }
+      },
+      "leakage_audit": {
+        "conversation_id_leakage": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "scenario_family_leakage": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "exact_dialogue_text_leakage": {
+          "train_val": [],
+          "train_test": [],
+          "val_test": []
+        },
+        "has_cid_leakage": false,
+        "has_scenario_leakage": false,
+        "has_dialogue_leakage": false
+      },
+      "coverage": {
+        "unresolved_cids": 0,
+        "missing_cids": 0,
+        "pending_review_status_count": 100,
+        "all_pending_review_truthful": true
+      },
+      "near_duplicate_diagnostics": {
+        "metrics_by_split_pair": {
+          "train_val": {
+            "char_3_5_gram_cosine": {
+              "min": 0.1566,
+              "mean": 0.1817,
+              "p50": 0.1833,
+              "p90": 0.1994,
+              "p95": 0.2029,
+              "max": 0.2051
+            },
+            "word_1_2_gram_cosine": {
+              "min": 0.071,
+              "mean": 0.1173,
+              "p50": 0.1058,
+              "p90": 0.1581,
+              "p95": 0.1721,
+              "max": 0.2005
+            }
+          },
+          "train_test": {
+            "char_3_5_gram_cosine": {
+              "min": 0.1553,
+              "mean": 0.1876,
+              "p50": 0.1834,
+              "p90": 0.2158,
+              "p95": 0.2351,
+              "max": 0.2656
+            },
+            "word_1_2_gram_cosine": {
+              "min": 0.0649,
+              "mean": 0.1276,
+              "p50": 0.1349,
+              "p90": 0.163,
+              "p95": 0.1783,
+              "max": 0.2139
+            }
+          },
+          "val_test": {
+            "char_3_5_gram_cosine": {
+              "min": 0.0969,
+              "mean": 0.149,
+              "p50": 0.1455,
+              "p90": 0.174,
+              "p95": 0.191,
+              "max": 0.2147
+            },
+            "word_1_2_gram_cosine": {
+              "min": 0.0438,
+              "mean": 0.0946,
+              "p50": 0.0858,
+              "p90": 0.1361,
+              "p95": 0.1484,
+              "max": 0.1762
+            }
+          }
+        },
+        "methodology": "TF-IDF Sublinear Vectorization with Cosine Similarity. Target splits evaluate maximum nearest-neighbor similarity against reference split.",
+        "threshold_and_limitations": "LIMITATION AND INTERPRETATION NOTICE: Lexical and n-gram similarity measures shared institutional and conversational vocabulary inherent to telephony dialogues (e.g. greetings, institutional names, telecom/banking terminology). A high or moderate similarity score alone neither proves nor disproves data leakage. True data leakage is strictly evaluated through: (1) scenario-family isolation, (2) exact dialogue text hash overlap, and (3) conversation ID partitioning, all of which are verified at exactly 0% overlap."
+      },
+      "status": "PASS"
+    }
+  },
+  "overall_status": "PASS"
+}

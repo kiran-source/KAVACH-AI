@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-073 (te-en) ===
+Scenario: Passport Seva Kendra Document Checklist Inquiry
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good afternoon, calling from Passport Seva Kendra enquiry desk, Begumpet.
+[RECIPIENT]: Yes sir, regarding my appointment tomorrow morning?
+[CALLER]: Yes, mee appointment slot tomorrow ten fifteen AM ki undి. Document checklist remind cheyadaniki call chesamu.
+[RECIPIENT]: Which original documents should I carry?
+[CALLER]: Original Aadhaar card, matriculation certificate, and current address proof utility bill compulsory ga carry cheyali.
+[RECIPIENT]: Are photocopies accepted?
+[CALLER]: One set of self-attested photocopies tho patu original documents verify chestaru. No agent payments are entertained.
+[RECIPIENT]: Understood sir, I have all the originals ready. Thank you.

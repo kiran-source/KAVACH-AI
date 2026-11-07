@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0100 (te-en) ===
+Scenario: Instant Personal Loan Approval Processing Fee Extortion (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu QuickFin Lending Desk nunchi Officer Agarwal matladuthunnanu andi. Mee credentials meeda pre-approved unsecured loan of 5 lakhs sanctioned detect ayindi.
+[RECIPIENT]: Enti sir, pre-approved unsecured loan of 5 lakhs sanctioned aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe forfeiture of zero percent interest loan approval implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane 9,800 rupees insurance stamp duty fee cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

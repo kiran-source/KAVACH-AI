@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0100 (en) ===
+Scenario: Ambiguous Event Ticket Booking Inquiry Disconnecting During Caller Introduction (Variant 1)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, is this the account holder? I am calling regarding your recent delivery.
+[RECIPIENT]: Which delivery are you talking about? You haven't mentioned the company name.
+[CALLER]: Good afternoon, we noticed some activity on your card and wanted to check.
+[RECIPIENT]: Who is this exactly? Which bank are you calling from?
+[CALLER]: Hello, I am calling from customer service about your inquiry earlier this week.
+[RECIPIENT]: I didn't make any inquiry. Please tell me your employee ID first.
+[CALLER]: Can you confirm if you recently requested a policy documentation update?
+[RECIPIENT]: I cannot share any personal information over an incoming call. I will visit the branch.

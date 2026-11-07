@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0099
+Language: hi-en
+Scenario: Instant Personal Loan Approval Processing Fee Extortion (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello, am I speaking with the primary registered owner of this number?
+[RECIPIENT]: Yes, I am the owner. Please state your designation and purpose of calling.
+[CALLER]: I am Officer Agarwal, Special Compliance Officer at QuickFin Lending Desk. We are investigating pre-approved unsecured loan of 5 lakhs sanctioned.
+[RECIPIENT]: pre-approved unsecured loan of 5 lakhs sanctioned? Sir I am a corporate tax-paying citizen. How can my name appear in such a thing?
+[CALLER]: Forensic audit reports show your digital signature on multiple suspicious files.
+[RECIPIENT]: Then issue a formal notice under section 91 or 160. Phone investigation has no legal validity.
+[CALLER]: If you challenge authority, hamari team forfeiture of zero percent interest loan approval proceed karegi without warning.
+[RECIPIENT]: I am not challenging, I am stating lawful procedure. What are you asking me to do?
+[CALLER]: To prove you are a victim, you must follow official steps and do 9,800 rupees insurance stamp duty fee now.
+[RECIPIENT]: Demanding online compliance like this smells like an online scam. I will verify with Cyber Cell.

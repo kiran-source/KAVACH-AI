@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0419 (hi-en) ===
+Scenario: Restaurant Food Delivery Order Quantity Discrepancy (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Swiggy Delivery Hub se Caller Sonu bol raha hoon regarding clarification on whether order had two biryanis or three.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient confirms correct item count from mobile app.
+[CALLER]: Sir yeh Swiggy Delivery Hub ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

@@ -1,0 +1,35 @@
+{
+  "dataset_name": "KAVACH-AI Multilingual Synthetic Dataset v2.0 (Remediated)",
+  "total_conversations": 500,
+  "total_audio_files": 20,
+  "class_distribution": {
+    "SCAM": 200,
+    "LEGITIMATE": 175,
+    "AMBIGUOUS": 125
+  },
+  "language_distribution": {
+    "en": 100,
+    "hi": 100,
+    "te": 100,
+    "hi-en": 100,
+    "te-en": 100
+  },
+  "splits": {
+    "train": 350,
+    "validation": 75,
+    "test": 75
+  },
+  "review_status_distribution": {
+    "pending_review": 500
+  },
+  "generation_provenance": "KAVACH Domain-Curated Multilingual Scenario Engine v2.0",
+  "diversity_metrics": {
+    "turn_length_distribution": {
+      "4": 130,
+      "6": 125,
+      "8": 125,
+      "10": 120
+    },
+    "scenario_families_count": 100
+  }
+}

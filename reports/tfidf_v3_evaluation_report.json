@@ -1,0 +1,173 @@
+{
+  "evaluation_name": "KAVACH-AI TF-IDF v3 Held-Out Test Evaluation",
+  "dataset": "data/kavach_synthetic_v3/splits/test.jsonl",
+  "dataset_sample_count": 450,
+  "evaluation_timestamp": "2026-11-07T08:55:21Z",
+  "model_version": "tfidf_v3.0",
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "LEGITIMATE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 135.0
+      },
+      "AMBIGUOUS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 135.0
+      },
+      "SCAM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 180.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        135,
+        0,
+        0
+      ],
+      [
+        0,
+        135,
+        0
+      ],
+      [
+        0,
+        0,
+        180
+      ]
+    ],
+    "per_language_metrics": {
+      "en": {
+        "samples_count": 90,
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "LEGITIMATE": 1.0,
+          "AMBIGUOUS": 1.0,
+          "SCAM": 1.0
+        }
+      },
+      "hi": {
+        "samples_count": 90,
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "LEGITIMATE": 1.0,
+          "AMBIGUOUS": 1.0,
+          "SCAM": 1.0
+        }
+      },
+      "te": {
+        "samples_count": 90,
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "LEGITIMATE": 1.0,
+          "AMBIGUOUS": 1.0,
+          "SCAM": 1.0
+        }
+      },
+      "hi-en": {
+        "samples_count": 90,
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "LEGITIMATE": 1.0,
+          "AMBIGUOUS": 1.0,
+          "SCAM": 1.0
+        }
+      },
+      "te-en": {
+        "samples_count": 90,
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "per_class_f1": {
+          "LEGITIMATE": 1.0,
+          "AMBIGUOUS": 1.0,
+          "SCAM": 1.0
+        }
+      }
+    }
+  },
+  "rule_engine_benchmark": {
+    "accuracy": 0.5867,
+    "macro_precision": 0.6185,
+    "macro_recall": 0.5753,
+    "macro_f1": 0.5844,
+    "per_class": {
+      "LEGITIMATE": {
+        "precision": 0.3734,
+        "recall": 0.437,
+        "f1_score": 0.4027,
+        "support": 135.0
+      },
+      "AMBIGUOUS": {
+        "precision": 0.4821,
+        "recall": 0.6,
+        "f1_score": 0.5347,
+        "support": 135.0
+      },
+      "SCAM": {
+        "precision": 1.0,
+        "recall": 0.6889,
+        "f1_score": 0.8158,
+        "support": 180.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        59,
+        76,
+        0
+      ],
+      [
+        54,
+        81,
+        0
+      ],
+      [
+        45,
+        11,
+        124
+      ]
+    ]
+  },
+  "cpu_latency_benchmark_ms": {
+    "iterations": 200,
+    "mean": 4.27,
+    "p50": 3.77,
+    "p95": 7.08,
+    "throughput_inferences_per_sec": 234.4
+  },
+  "disk_footprint_kb": {
+    "vectorizer": 199.07,
+    "model": 354.33,
+    "total": 553.39
+  },
+  "honest_disclosures": {
+    "synthetic_corpus_scope": "Benchmark metrics reflect performance on synthetic domain scenarios; wild telephony calls with 8kHz codec compression and background noise require field validation.",
+    "annotation_status": "All 450 test records carry annotation_status: pending_review.",
+    "baseline_comparability": "Historical TF-IDF v2 evaluated on 75 samples (v2 test) is non-comparable to v3 (450 samples)."
+  }
+}

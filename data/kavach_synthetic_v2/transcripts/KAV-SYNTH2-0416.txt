@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0416
+Language: en
+Scenario: Restaurant Food Delivery Order Quantity Discrepancy (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, I am Caller Sonu calling on behalf of Swiggy Delivery Hub regarding clarification on whether order had two biryanis or three.
+[RECIPIENT]: I didn't request any call regarding clarification on whether order had two biryanis or three. Where did you obtain my contact?
+[CALLER]: Our partner database indicated you might qualify for this exclusive opportunity.
+[RECIPIENT]: I do not entertain unverified telephone pitches. recipient confirms correct item count from mobile app. Goodbye.

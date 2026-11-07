@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0391 (en) ===
+Scenario: Real Estate Commercial Property Cold Investment Pitch (EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, am I speaking with the primary resident? This is Caller Vikas from Apex Realty Holdings regarding commercial office space investment opportunity.
+[RECIPIENT]: Yes speaking, but I am in the middle of a meeting. What exactly is this about?
+[CALLER]: We have an ongoing update concerning your profile, but we need to confirm a few initial personal details.
+[RECIPIENT]: Which company did you say you are calling from? Can you share your official registration number first? recipient declines investment calls during business hours.
+[CALLER]: This is a courtesy inquiry from Apex Realty Holdings. We are conducting general profile maintenance.
+[RECIPIENT]: Please send official correspondence in writing or by email. I do not discuss personal information over unsolicited calls.

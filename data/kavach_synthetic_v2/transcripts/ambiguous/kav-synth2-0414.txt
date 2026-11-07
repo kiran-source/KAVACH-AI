@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0414 (hi-en) ===
+Scenario: Job Placement Consultancy Walk-in Interview Query (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Tech Careers Agency se Caller Vishal bol raha hoon regarding job profile match for mid-level administrative opening.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient requests job description by email before committing.
+[CALLER]: Sir yeh Tech Careers Agency ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

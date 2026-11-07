@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0468
+Language: te
+Scenario: Utility Water Billing Clarification Requesting Callback (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: హలో, నివాసితులతో మాట్లాడుతున్నానా? నేను Municipal Water Cell సంస్థ నుండి కాల్ చేస్తున్నాను.
+[RECIPIENT]: అవును, మాట్లాడండి. విషయం ఏమిటి?
+[CALLER]: మీ పరిసర ప్రాంతాలలో water bill surcharge clarification needing reference number అమలు కోసం సంప్రదిస్తున్నాము.
+[RECIPIENT]: మీ సంస్థ గురించి నాకు తెలియదు. ఇది ప్రైవేట్ సంస్థా లేక ప్రభుత్వానిదా?
+[CALLER]: మేము అనుబంధ భాగస్వాములతో కలిసి ఈ ప్రాజెక్ట్ చేస్తున్నాము.
+[RECIPIENT]: ఇది చాలా గందరగోళంగా ఉంది. caller asks recipient to call official municipal board landline.
+[CALLER]: సార్, ఇందులో ఎటువంటి ఆర్థిక లావాదేవీలు లేవు, కేవలం సమాచారం మాత్రమే.
+[RECIPIENT]: అయినా కూడా అధికారిక పత్రాలు లేకుండా నేను పాల్గొనను. కాల్ ముగించండి.

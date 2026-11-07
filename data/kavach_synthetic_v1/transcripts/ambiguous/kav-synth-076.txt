@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-076 (te-en) ===
+Scenario: Unverified University Semester Fee Clarification
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello Srinivas garu, నేను university accounts section నుండి రమేష్ మాట్లాడుతున్నాను.
+[RECIPIENT]: Yes Ramesh garu, చెప్పండి, ఏంటి విషయం?
+[CALLER]: మీ third semester tuition fee payment transaction portal లో reconcile అవ్వలేదు.
+[RECIPIENT]: Portal లో success అని వచ్చింది కదా? Bank account లో కూడా debit అయింది.
+[CALLER]: UTR number match అవ్వడం లేదు. మీ fee receipt copy ని admin office email కి forward చేయగలరా?
+[RECIPIENT]: Sure, ఏ email address కి పంపించాలి? WhatsApp లో పంపించమంటారా?
+[CALLER]: No WhatsApp. కేవలం official university portal లోని accounts@university.edu.in కి మాత్రమే పంపించండి.
+[RECIPIENT]: Okay, transaction reference number తో ఇప్పుడే email చేస్తాను, verify చేయండి.

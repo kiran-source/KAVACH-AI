@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0346
+Language: en
+Scenario: Courier Delivery Address Landmark Clarification Call (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, I am Delivery Agent Imran from the customer support division at DTDC Courier Service.
+[RECIPIENT]: Hello, is this regarding my recent inquiry about clarification of apartment building wing name for envelope?
+[CALLER]: Yes, exactly. We have reviewed your record and request you to confirm landmark near residential entrance.
+[RECIPIENT]: Are there any specific original identity documents or receipts I should carry with me?
+[CALLER]: Just carry your government photo ID and reference docket. No payment or confidential credentials are required.
+[RECIPIENT]: Thank you for the clear instructions and safety notice. I will visit as advised.

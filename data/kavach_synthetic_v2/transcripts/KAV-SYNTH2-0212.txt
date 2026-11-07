@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0212
+Language: hi
+Scenario: E-Commerce Logistics Package Out for Delivery Confirmation (HI)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: नमस्कार, मैं BlueDart Logistics से Courier Ramesh बोल रहा हूँ।
+[RECIPIENT]: नमस्कार जी, बताइए किस कार्य हेतु कॉल किया गया है?
+[CALLER]: हम आपके Amazon delivery out for delivery today की स्थिति साझा करने के लिए संपर्क कर रहे हैं।
+[RECIPIENT]: जी, क्या मेरा रिकॉर्ड सिस्टम में अपडेट हो गया है?
+[CALLER]: जी हाँ, सब कुछ सही है। अंतिम चरण के रूप में आपको leave parcel with building security guard।
+[RECIPIENT]: क्या फोन पर कोई कोड या जानकारी देने की आवश्यकता है?
+[CALLER]: बिल्कुल नहीं। फोन पर कभी किसी को ओटीपी या पिन न दें। सभी काम केवल कार्यालय में होते हैं।
+[RECIPIENT]: बहुत अच्छी बात है। मैं व्यक्तिगत रूप से कार्यालय आकर प्रक्रिया पूरी करूँगा।

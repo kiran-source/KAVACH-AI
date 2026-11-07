@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0444 (hi-en) ===
+Scenario: Medical Insurance Cashless Hospitalization Network Inquiry (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Health First TPA se Caller Shalini bol raha hoon regarding general inquiry regarding preferred local hospital network.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient asks caller to send policy brochure by post.
+[CALLER]: Sir yeh Health First TPA ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

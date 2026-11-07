@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0410 (te-en) ===
+Scenario: Charity Fundraiser Inquiring for Donation Without Reg ID (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Child Hope Foundation nunchi Caller Karuna matladuthunnanu regarding appeal for donations to help underprivileged children.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient asks for official 80G tax exemption number and website.
+[CALLER]: Idi Child Hope Foundation direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

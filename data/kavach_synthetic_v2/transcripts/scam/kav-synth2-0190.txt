@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0190 (te-en) ===
+Scenario: School Tuition Fee Payment Gateway Interception Trap (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu Delhi Public School Accounts nunchi Cashier Mohan matladuthunnanu andi. Mee credentials meeda pending school tuition installment for current semester detect ayindi.
+[RECIPIENT]: Enti sir, pending school tuition installment for current semester aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe removal of student name from examination roster implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane direct transfer to private accountant UPI handle cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

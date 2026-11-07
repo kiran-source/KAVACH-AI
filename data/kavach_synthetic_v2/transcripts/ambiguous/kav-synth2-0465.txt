@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0465 (te-en) ===
+Scenario: Bank Customer Care Callback Interrupted by Network Drop (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Union Bank Helpdesk nunchi Caller Sudha matladuthunnanu regarding callback regarding earlier general inquiry on account interest.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? network drops before customer can explain query.
+[CALLER]: Idi Union Bank Helpdesk direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

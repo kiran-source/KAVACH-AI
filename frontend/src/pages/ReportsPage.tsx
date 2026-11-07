@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FileText, Download, Search, RefreshCw, ExternalLink } from 'lucide-react';
+import {
+  FileText, Download, Search, RefreshCw, ExternalLink,
+  ShieldAlert, CheckCircle, FileCheck, Calendar, ArrowRight,
+  Filter, FileSpreadsheet, Lock
+} from 'lucide-react';
 import { api } from '../services/api';
 import { ReportItem } from '../types';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/common/Card';
+import { SeverityBadge } from '../components/common/Badge';
+import { Button } from '../components/common/Button';
+import { SearchInput } from '../components/common/SearchInput';
+import { EmptyState } from '../components/common/EmptyState';
 
 export const ReportsPage: React.FC = () => {
   const navigate = useNavigate();
   const [reports, setReports] = useState<ReportItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [severityFilter, setSeverityFilter] = useState<string>('all');
 
   const fetchReports = () => {
     setLoading(true);
@@ -23,100 +33,181 @@ export const ReportsPage: React.FC = () => {
   }, []);
 
   const filtered = reports.filter((r) => {
-    if (!searchQuery) return true;
-    const q = searchQuery.toLowerCase();
-    return (
-      r.incident_number.toLowerCase().includes(q) ||
-      r.title.toLowerCase().includes(q) ||
-      r.severity.toLowerCase().includes(q)
-    );
+    const matchesSearch =
+      !searchQuery ||
+      r.incident_number.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      r.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      r.severity.toLowerCase().includes(searchQuery.toLowerCase());
+
+    const matchesSeverity =
+      severityFilter === 'all' ||
+      r.severity.toLowerCase() === severityFilter.toLowerCase();
+
+    return matchesSearch && matchesSeverity;
   });
 
+  const criticalCount = reports.filter(r => r.severity === 'Critical' || r.severity === 'High').length;
+
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
-      {/* Header */}
+    <div className="space-y-6 max-w-7xl mx-auto pb-12">
+      {/* Page Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-xl font-bold text-white flex items-center space-x-2">
-            <FileText className="w-5 h-5 text-cyan-400" />
-            <span>Generated SOC Incident Reports (PDF Archive)</span>
-          </h1>
-          <p className="text-xs text-slate-400 mt-1">
-            Downloadable official security incident dossiers formatted for legal and cybersecurity forensic handoff.
-          </p>
+          <div className="flex items-center space-x-2">
+            <span className="p-2 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+              <FileText className="w-5 h-5" />
+            </span>
+            <div>
+              <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                Forensic Incident Reports Archive
+              </h1>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Officially formatted PDF dossiers, chain of custody logs, and threat intelligence exports for law enforcement.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <button
-          onClick={fetchReports}
-          className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs rounded-lg border border-slate-700 flex items-center space-x-1.5 self-start sm:self-auto"
-        >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Refresh Reports</span>
-        </button>
+        <div className="flex items-center space-x-3">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={fetchReports}
+            isLoading={loading}
+            className="text-xs"
+          >
+            <RefreshCw className="w-3.5 h-3.5 mr-1.5" />
+            <span>Refresh Archive</span>
+          </Button>
+        </div>
       </div>
 
-      {/* Search Bar */}
-      <div className="bg-[#0c1220] p-4 rounded-xl border border-slate-800 flex items-center space-x-2">
-        <Search className="w-4 h-4 text-slate-500" />
-        <input
-          type="text"
-          placeholder="Filter reports by incident #, title, or severity..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="bg-transparent text-xs text-slate-200 w-full focus:outline-none"
-        />
+      {/* KPI Overview Strip */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <Card className="bg-navy-900/60">
+          <CardContent className="p-4 flex items-center justify-between">
+            <div>
+              <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400">Total PDF Dossiers</div>
+              <div className="text-2xl font-extrabold font-mono text-white mt-1">{reports.length}</div>
+              <div className="text-[11px] text-slate-500 mt-0.5">Stored in local vault</div>
+            </div>
+            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+              <FileCheck className="w-5 h-5" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-navy-900/60">
+          <CardContent className="p-4 flex items-center justify-between">
+            <div>
+              <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400">Critical / High Severity</div>
+              <div className="text-2xl font-extrabold font-mono text-red-400 mt-1">{criticalCount}</div>
+              <div className="text-[11px] text-slate-500 mt-0.5">Mandatory escalation cases</div>
+            </div>
+            <div className="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400">
+              <ShieldAlert className="w-5 h-5" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-navy-900/60">
+          <CardContent className="p-4 flex items-center justify-between">
+            <div>
+              <div className="text-[10px] font-mono uppercase tracking-wider text-slate-400">Export Compliance</div>
+              <div className="text-sm font-bold text-emerald-400 mt-1 flex items-center space-x-1">
+                <CheckCircle className="w-4 h-4 mr-1 text-emerald-400" />
+                <span>CERT-In & 1930 Portal</span>
+              </div>
+              <div className="text-[11px] text-slate-500 mt-0.5">Section 65B IT Act ready</div>
+            </div>
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+              <Lock className="w-5 h-5" />
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
-      {/* Reports List */}
-      <div className="bg-[#0c1220] rounded-xl border border-slate-800 overflow-hidden">
+      {/* Filter and Search Bar */}
+      <Card className="p-3">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="w-full sm:w-96">
+            <SearchInput
+              value={searchQuery}
+              onChangeValue={setSearchQuery}
+              placeholder="Filter by report ID, incident #, or threat type..."
+            />
+          </div>
+
+          <div className="flex items-center space-x-1.5 self-end sm:self-auto overflow-x-auto w-full sm:w-auto">
+            {['all', 'critical', 'high', 'medium', 'low'].map((sev) => (
+              <button
+                key={sev}
+                onClick={() => setSeverityFilter(sev)}
+                className={`px-2.5 py-1 rounded-lg text-xs font-mono font-medium capitalize transition ${
+                  severityFilter === sev
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    : 'text-slate-400 hover:text-white bg-slate-900/40 border border-transparent'
+                }`}
+              >
+                {sev}
+              </button>
+            ))}
+          </div>
+        </div>
+      </Card>
+
+      {/* Reports Data Table */}
+      <Card className="overflow-hidden">
         {loading ? (
-          <div className="p-8 text-center text-xs text-cyan-400 font-mono flex items-center justify-center space-x-2">
-            <RefreshCw className="w-4 h-4 animate-spin" />
-            <span>Retrieving SOC reports repository...</span>
+          <div className="p-12 text-center text-xs text-cyan-400 font-mono flex flex-col items-center justify-center space-y-3">
+            <RefreshCw className="w-6 h-6 animate-spin text-cyan-400" />
+            <span>Decrypting SOC reports repository...</span>
           </div>
         ) : filtered.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs text-slate-300">
-              <thead className="bg-[#090d16] text-slate-400 font-mono uppercase text-[10px]">
+              <thead className="bg-navy-950 text-slate-400 font-mono uppercase text-[10px] border-b border-slate-800">
                 <tr>
-                  <th className="py-3 px-4">Report Reference</th>
-                  <th className="py-3 px-4">Incident Number</th>
-                  <th className="py-3 px-4">Title / Threat</th>
-                  <th className="py-3 px-4">Severity</th>
-                  <th className="py-3 px-4">Generated Time</th>
-                  <th className="py-3 px-4 text-right">Download PDF</th>
+                  <th className="py-3.5 px-4 font-semibold">Report Reference</th>
+                  <th className="py-3.5 px-4 font-semibold">Incident Identifier</th>
+                  <th className="py-3.5 px-4 font-semibold">Incident Title / Scam Vector</th>
+                  <th className="py-3.5 px-4 font-semibold">Severity</th>
+                  <th className="py-3.5 px-4 font-semibold">Generated Timestamp</th>
+                  <th className="py-3.5 px-4 text-right font-semibold">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/60 font-sans">
                 {filtered.map((rep) => (
-                  <tr key={rep.report_id} className="hover:bg-slate-800/30 transition">
-                    <td className="py-3 px-4 font-mono font-medium text-slate-400 text-[11px]">
-                      {rep.report_id.slice(0, 16)}...
-                    </td>
-                    <td className="py-3 px-4 font-mono font-bold text-cyan-400">
-                      <button
-                        onClick={() => navigate(`/incidents/${rep.incident_id}`)}
-                        className="hover:underline flex items-center space-x-1"
-                      >
-                        <span>{rep.incident_number}</span>
-                        <ExternalLink className="w-3 h-3 text-slate-500" />
-                      </button>
-                    </td>
-                    <td className="py-3 px-4 text-white font-medium">{rep.title}</td>
-                    <td className="py-3 px-4">
-                      <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-amber-400 border border-slate-700">
-                        {rep.severity}
+                  <tr key={rep.report_id} className="hover:bg-slate-800/30 transition group">
+                    <td className="py-3.5 px-4 font-mono font-medium text-slate-400 text-[11px]">
+                      <span className="bg-slate-900 px-2 py-1 rounded border border-slate-800">
+                        {rep.report_id.slice(0, 14)}...
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-slate-400 text-[11px] font-mono">
+                    <td className="py-3.5 px-4 font-mono font-bold text-cyan-400">
+                      <button
+                        onClick={() => navigate(`/incidents/${rep.incident_id}`)}
+                        className="hover:text-cyan-300 hover:underline flex items-center space-x-1.5 focus:outline-none"
+                      >
+                        <span>{rep.incident_number}</span>
+                        <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-cyan-400" />
+                      </button>
+                    </td>
+                    <td className="py-3.5 px-4 text-white font-medium max-w-xs truncate">
+                      {rep.title}
+                    </td>
+                    <td className="py-3.5 px-4">
+                      <SeverityBadge severity={rep.severity} size="sm" />
+                    </td>
+                    <td className="py-3.5 px-4 text-slate-400 text-[11px] font-mono">
                       {new Date(rep.generated_at).toLocaleString()}
                     </td>
-                    <td className="py-3 px-4 text-right">
+                    <td className="py-3.5 px-4 text-right">
                       <a
                         href={rep.download_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center space-x-1 px-3 py-1 bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-400 border border-cyan-500/40 rounded text-xs font-semibold transition"
+                        className="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-cyan-600/10 hover:bg-cyan-600/20 text-cyan-400 border border-cyan-500/30 hover:border-cyan-500/60 rounded-lg text-xs font-semibold transition active:scale-[0.98]"
                       >
                         <Download className="w-3.5 h-3.5" />
                         <span>Download PDF</span>
@@ -128,13 +219,19 @@ export const ReportsPage: React.FC = () => {
             </table>
           </div>
         ) : (
-          <div className="p-8 text-center text-slate-500 text-xs">
-            <p>No PDF reports generated yet.</p>
-            <p className="mt-1">Go to any incident dossier and click "Export Official SOC PDF Report".</p>
-          </div>
+          <EmptyState
+            icon={FileText}
+            title="No Incident Reports Found"
+            description={
+              searchQuery || severityFilter !== 'all'
+                ? "No reports match your current filter parameters. Try resetting filters."
+                : "No official PDF dossiers have been generated yet. Open any incident in the Triage Queue and click 'Export Official SOC PDF'."
+            }
+            actionLabel="View Incident Triage Queue"
+            onAction={() => navigate('/incidents')}
+          />
         )}
-      </div>
+      </Card>
     </div>
   );
 };
-

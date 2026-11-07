@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-100 (hi-en) ===
+Scenario: Freelance Web Design Client Scope Clarification & Payment Delay
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hi Varun, this is Siddharth from FinTech Ventures. Regarding our corporate landing page project.
+[RECIPIENT]: Hi Siddharth, maine final Figma designs deliver kar diye the on Friday.
+[CALLER]: Figma design looks clean, but our marketing team wants responsive dark mode and animation effects also included.
+[RECIPIENT]: Dark mode original milestone scope mein included nahi tha. Uske liye extra billing hours lagenge.
+[CALLER]: Agar extra budget chahiye toh hamare finance portal par scope amendment form submit kijiye with Revised Invoice.
+[RECIPIENT]: Current milestone ka payment kab release hoga?
+[CALLER]: Current milestone fifty thousand approved hai, Friday tak bank transfer ho jayega as per standard net-7 payment cycle.
+[RECIPIENT]: Okay Siddharth, main updated scope document aur invoice email par share kar deta hoon.

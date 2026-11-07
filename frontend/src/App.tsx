@@ -10,6 +10,8 @@ import { IncidentDetailPage } from './pages/IncidentDetailPage';
 import { ReportsPage } from './pages/ReportsPage';
 import { EvaluationPage } from './pages/EvaluationPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { ThreatIntelligencePage } from './pages/ThreatIntelligencePage';
+import { EvidencePage } from './pages/EvidencePage';
 
 export const App: React.FC = () => {
   return (
@@ -22,8 +24,10 @@ export const App: React.FC = () => {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/analyze" element={<AudioAnalysisPage />} />
           <Route path="/live" element={<LiveAnalysisPage />} />
+          <Route path="/threats" element={<ThreatIntelligencePage />} />
           <Route path="/incidents" element={<IncidentsPage />} />
           <Route path="/incidents/:id" element={<IncidentDetailPage />} />
+          <Route path="/evidence" element={<EvidencePage />} />
           <Route path="/reports" element={<ReportsPage />} />
           <Route path="/evaluation" element={<EvaluationPage />} />
           <Route path="/settings" element={<SettingsPage />} />

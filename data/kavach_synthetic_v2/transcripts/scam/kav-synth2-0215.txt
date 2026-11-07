@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0215 (te) ===
+Scenario: Electricity Board Meter Disconnection Emergency Notice (Variant 1)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Namaskaram, nenu Hyderabad Cyber Crime Police Station nundi Inspector Ramesh Kumar matladuthunnanu. Mee Aadhaar card pai arrest warrant issue ayindi.
+[RECIPIENT]: Naku chala bayamga undi. Nenu ma lawyer tho matladocha?
+[CALLER]: Mumbai Customs nundi customs officer matladuthunnanu. Singapore velle mee parcel lo narcotics drug dorikayi.
+[RECIPIENT]: Meeru cheppina app install chesthunnanu, dayachesi ma intiki police ni pampinchakandi.
+[CALLER]: Electricity department nundi urgent notice. Ee roju rathri lopala bill kattakapothe power supply cut chestham.
+[RECIPIENT]: Enti saar? Nenu em tappu cheyaledu! Naku ee parcel tho em sambandham ledu.
+[CALLER]: Mee bank account 24 hours lo block avthundi. Immediate ga KYC verify chesukondi, lekapothe legal action untundi.
+[RECIPIENT]: Nenu regular ga tax pay chese citizen ni. Na pai ilanti case enduku peduthunnaru?

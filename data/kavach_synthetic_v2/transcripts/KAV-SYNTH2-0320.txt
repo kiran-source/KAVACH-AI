@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0320
+Language: te-en
+Scenario: Life Insurance Annual Premium Receipt Confirmation Notice (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, is this the registered account applicant?
+[RECIPIENT]: Yes speaking. Who is on the line please?
+[CALLER]: I am Agent Suresh from Life Insurance Corp of India. Reaching out regarding your annual life insurance premium receipt processed.
+[RECIPIENT]: Yes sir, nenu 10 days back annual life insurance premium receipt processed submit chesanu.
+[CALLER]: The verification team cleared your file for the next phase.
+[RECIPIENT]: Can we authenticate this through an automated call?
+[CALLER]: No sir, for your account security we request that you physical premium receipt sent to registered postal address.
+[RECIPIENT]: Understood. Good that your institution maintains strict protocols.
+[CALLER]: Our facility is open on all business days until 5 PM.
+[RECIPIENT]: Thank you for the professional call. I will visit accordingly.

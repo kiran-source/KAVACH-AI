@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0232 (te) ===
+Scenario: Relative Police Custody Bail Bond Extortion (Variant 1)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Dayachesi current cut cheyakandi saar. Nenu em cheyalo cheppandi.
+[CALLER]: Namaskaram, nenu Hyderabad Cyber Crime Police Station nundi Inspector Ramesh Kumar matladuthunnanu. Mee Aadhaar card pai arrest warrant issue ayindi.
+[RECIPIENT]: Bank vallu eppudu OTP share cheyavaddhu ani cheptharu kada? Nenu ela ivvali?
+[CALLER]: Mumbai Customs nundi customs officer matladuthunnanu. Singapore velle mee parcel lo narcotics drug dorikayi.
+[RECIPIENT]: Naku chala bayamga undi. Nenu ma lawyer tho matladocha?
+[CALLER]: Electricity department nundi urgent notice. Ee roju rathri lopala bill kattakapothe power supply cut chestham.
+[RECIPIENT]: Meeru cheppina app install chesthunnanu, dayachesi ma intiki police ni pampinchakandi.

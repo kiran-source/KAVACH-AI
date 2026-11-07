@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0017 (hi) ===
+Scenario: State Cyber Crime Cell Section 420 Contempt Warrant (HI)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: यह Cyber Crime Branch से Inspector Kulkarni हैं। आपके विरुद्ध phishing portal operated using your registered IP के संबंध में गंभीर शिकायत दर्ज हुई है।
+[RECIPIENT]: क्या? phishing portal operated using your registered IP? मैंने ऐसा कोई काम नहीं किया है, आप गलत व्यक्ति को फोन कर रहे हैं।
+[CALLER]: हमारे रिकॉर्ड में आपकी पूरी जानकारी मौजूद है। यदि आपने सहयोग नहीं किया तो police patrol team dispatched to residence की जाएगी।
+[RECIPIENT]: साहब, मैं एक शरीफ नागरिक हूँ। कृपया मुझे बताइए कि यह मामला कैसे सुलझ सकता है?
+[CALLER]: तुरंत कानूनी कार्रवाई रोकने के लिए आपको confidential video link interrogation करना होगा। देर करने पर कोई राहत नहीं मिलेगी।
+[RECIPIENT]: मैं बिना किसी लिखित सरकारी नोटिस के कोई कदम नहीं उठाऊँगा। मैं पहले अपने वकील से सलाह लूँगा।

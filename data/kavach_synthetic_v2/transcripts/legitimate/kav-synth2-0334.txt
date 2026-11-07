@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0334 (hi-en) ===
+Scenario: Automobile Emission Test Renewal Courtesy Reminder (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Regional Transport Office se Automated Notice bol raha hoon. Yeh call aapke pollution under control certificate expiring next week ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap visit any authorized testing booth for renewal complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

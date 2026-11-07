@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0228
+Language: te
+Scenario: Indian Railways Official PNR Seat Confirmation Status (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: శుభోదయం, నేను IRCTC Support సేవా విభాగం నుండి Helpdesk Sunita ని.
+[RECIPIENT]: నమస్కారం, నా confirmation of train 12724 seat allotment in B2 coach దరఖాస్తు గురించేనా ఈ కాల్?
+[CALLER]: అవునండి, మీ పత్రాల పరిశీలన పూర్తయింది. తదుపరి ప్రక్రియ కోసం travel with valid government photo ID.
+[RECIPIENT]: నేను వెంట ఏమైనా ఒరిజినల్ ఐడీ కార్డులు లేదా ఫీజు రశీదులు తీసుకురావాలా?
+[CALLER]: మీ గుర్తింపు కార్డు సరిపోతుంది. దీనికి ఎలాంటి ఆన్‌లైన్ రుసుము చెల్లించాల్సిన అవసరం లేదు.
+[RECIPIENT]: స్పష్టమైన వివరాలు ఇచ్చినందుకు చాలా ధన్యవాదాలు. నేను రేపు వస్తాను.

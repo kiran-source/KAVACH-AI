@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0210 (te-en) ===
+Scenario: Routine Outpatient Health Clinic Appointment Reminder (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Apollo Clinic nunchi Staff Sister Mary matladuthunnanu. Mee scheduled routine preventive health checkup tomorrow at 10 AM gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo fasting 8 hours prior to blood test complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0460
+Language: te-en
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu Smart Mart Rewards nunchi Caller Varun matladuthunnanu regarding inquiry on redeeming 450 reward points on next grocery bill.
+[RECIPIENT]: Naku inquiry on redeeming 450 reward points on next grocery bill tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. recipient acknowledges message and will check in store. Cutting call.

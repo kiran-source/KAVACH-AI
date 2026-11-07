@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0350 (te-en) ===
+Scenario: Courier Delivery Address Landmark Clarification Call (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, DTDC Courier Service nunchi Delivery Agent Imran matladuthunnanu. Mee clarification of apartment building wing name for envelope gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo confirm landmark near residential entrance complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

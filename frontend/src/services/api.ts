@@ -11,7 +11,8 @@ import {
   SystemSettings
 } from '../types';
 
-const API_BASE = '/api/v1';
+const RAW_BASE = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || '').trim();
+const API_BASE = RAW_BASE ? (RAW_BASE.endsWith('/api/v1') ? RAW_BASE : `${RAW_BASE.replace(/\/+$/, '')}/api/v1`) : '/api/v1';
 
 export const api = {
   // Health
@@ -64,6 +65,13 @@ export const api = {
   // Threat Analysis
   analyzeTranscript: async (transcriptId: string): Promise<AnalysisResponse> => {
     const res = await axios.post(`${API_BASE}/analysis/${transcriptId}`);
+    return res.data;
+  },
+  analyzeText: async (text: string, language: string = 'en'): Promise<AnalysisResponse> => {
+    const formData = new FormData();
+    formData.append('text', text);
+    formData.append('language', language);
+    const res = await axios.post(`${API_BASE}/analysis/text`, formData);
     return res.data;
   },
   getAnalysis: async (analysisId: string) => {

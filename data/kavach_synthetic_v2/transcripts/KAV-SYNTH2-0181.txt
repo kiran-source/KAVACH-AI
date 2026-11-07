@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0181
+Language: en
+Scenario: Gas Cylinder Booking Express Verification Fee Fraud (EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: This is Officer Yadav calling urgently from HP Gas Distributor. We have initiated legal action regarding cylinder delivery delayed due to pending safety verification.
+[RECIPIENT]: Wait, cylinder delivery delayed due to pending safety verification? Who authorized this call? I have never been involved in anything like that.
+[CALLER]: Our system records are definitive. To avoid permanent suspension of residential gas connection, you must immediately comply with advance safety token payment via unknown link.
+[RECIPIENT]: I will not comply over an unsolicited phone call. Send an official notice in writing, or I am contacting police.

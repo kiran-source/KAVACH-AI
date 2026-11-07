@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-010 (en) ===
+Scenario: Diagnostic Laboratory Blood Test Appointment Booking
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning, this is Priya from SRL Diagnostics customer care. I am following up on your online health checkup booking.
+[RECIPIENT]: Yes, I booked a home sample collection for tomorrow morning.
+[CALLER]: Our phlebotomist Ramesh will visit your residence between seven thirty and eight AM. Please ensure ten hours of fasting before the test.
+[RECIPIENT]: Understood. Can I drink water during fasting?
+[CALLER]: Plain water is perfectly fine sir. How would you prefer to receive the test results?
+[RECIPIENT]: Please send the soft copy report to my registered email address.
+[CALLER]: Sure, your reports will be emailed within twenty-four hours. You can pay the standard fee directly to the technician by cash or card upon arrival.
+[RECIPIENT]: Perfect, thank you for confirming.

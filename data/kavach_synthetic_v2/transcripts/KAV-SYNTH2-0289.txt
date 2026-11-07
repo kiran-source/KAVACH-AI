@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0289
+Language: hi-en
+Scenario: Bank Home Loan Clearance Certificate Dispatch Notice (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, main ICICI Home Finance customer support team se Officer Kavita bol raha hoon.
+[RECIPIENT]: Hello, is this regarding my application for final loan clearance certificate dispatched via Speed Post?
+[CALLER]: Yes absolutely. Verification complete ho chuka hai, now you need to tracking number sent by official email.
+[RECIPIENT]: Do I need to carry original KYC documents or receipt copies?
+[CALLER]: Just carry your original Aadhaar or PAN card. Koi payment ya OTP call par required nahi hai.
+[RECIPIENT]: Thank you for the guidance. I will come to the branch tomorrow morning.

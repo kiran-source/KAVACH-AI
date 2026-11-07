@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0141 (en) ===
+Scenario: National Highway Toll Penalty & Vehicle Confiscation (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: This is Inspector Tiwari calling from NHAI Legal Enforcement. We are conducting an urgent investigation regarding toll gate sensor evasion and unpaid toll fine of 8,500.
+[RECIPIENT]: Hello? I have no knowledge of any toll gate sensor evasion and unpaid toll fine of 8,500. What is this regarding?
+[CALLER]: A formal case file has been registered. If you do not resolve this immediately, there will be impounding of vehicle at next police barrier.
+[RECIPIENT]: Please, this is a serious misunderstanding! I am a law-abiding citizen. How can this be cleared?
+[CALLER]: You must immediately comply with urgent penalty payment through unofficial link. Failure to do so will result in non-bailable enforcement.
+[RECIPIENT]: I will not comply blindly without official documentation. Let me consult my advocate and local police first.

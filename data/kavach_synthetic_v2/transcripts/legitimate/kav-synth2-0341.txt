@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0341 (en) ===
+Scenario: State Bank Customer Service Experience Feedback Survey (EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, this is Survey Officer Divya calling from Canara Bank Quality Desk. I am reaching out regarding your routine feedback on recent bank branch visit experience.
+[RECIPIENT]: Hello, yes thank you for calling. I was expecting an official update regarding this.
+[CALLER]: We would like to request that you rate service quality on scale of 1 to 5. Our authorized counter is open during normal working hours.
+[RECIPIENT]: Understood. Are there any specific reference documents or identity proofs I need to carry?
+[CALLER]: Just carry your standard photo ID and previous receipt copy. No financial payment or OTP is requested on this call.
+[RECIPIENT]: Thank you for the clear information and safety reminder. I will visit tomorrow as advised.

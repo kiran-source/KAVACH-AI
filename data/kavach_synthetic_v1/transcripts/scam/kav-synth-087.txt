@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-087 (hi-en) ===
+Scenario: Credit Card Reward Points Expiry Redemption Scam
+Primary Label: SCAM
+Tactics: OTP_PIN_CVV_THEFT, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Good afternoon, calling from HDFC credit card reward redemption loyalty department.
+[RECIPIENT]: Yes, reward points ke baare mein?
+[CALLER]: Sir aapke card par twelve thousand reward points expire hone wale hain tonight at midnight. Unka cash value six thousand rupees banta hai.
+[RECIPIENT]: Cash value statement mein adjust ho sakta hai kya?
+[CALLER]: Yes sir, direct bank credit ho jayega. Bas card details verify karwa dijiye.
+[RECIPIENT]: Aapke paas toh card details already hongi?
+[CALLER]: Security policy ke according aapka sixteen digit card number, expiry date aur card ke peeche likha CVV code batana hoga to initiate credit.
+[RECIPIENT]: CVV sirf payment ke liye hota hai, credit ke liye nahi. Card details chori karne ka tareeka hai yeh.

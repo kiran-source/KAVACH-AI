@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0454 (hi-en) ===
+Scenario: Vehicle Insurance Renewal Inquiry with Misstated Expiry (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Policy Hub Direct se Caller Tarun bol raha hoon regarding car insurance policy allegedly expiring in three days.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient checks document and confirms policy is valid for 6 months.
+[CALLER]: Sir yeh Policy Hub Direct ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

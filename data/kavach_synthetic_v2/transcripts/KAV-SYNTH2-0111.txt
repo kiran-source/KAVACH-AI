@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0111
+Language: en
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Attention. This is an urgent broadcast from Army Cantonment Wing, department supervisor Subedar Major Gill speaking.
+[RECIPIENT]: Yes, hello? Why is this urgent? Who am I speaking to?
+[CALLER]: We have documented evidence linking your identity to urgent sale of military certified vehicle at low price. Case file number 409-B has been opened.
+[RECIPIENT]: Case file 409-B? I have never received any postal summons or email about this matter.
+[CALLER]: Postal notices take days. In the meantime, the authorities are issuing sale to competing buyer waiting at depot against your name.
+[RECIPIENT]: This sounds completely unreasonable. What official procedure is available right now?
+[CALLER]: You must immediately access 15,000 rupees military gate pass token. This will place a temporary hold on the enforcement.
+[RECIPIENT]: I refuse to transfer funds or share access on a voice call. I will visit the headquarters personally tomorrow.

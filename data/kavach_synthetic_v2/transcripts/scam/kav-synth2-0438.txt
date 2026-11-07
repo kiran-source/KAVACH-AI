@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0438 (te-en) ===
+Scenario: Wedding Hall Booking Cancellation Immediate Refund Trap (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT
+
+[CALLER]: You are placed under 24-hour Digital Arrest. Do not disconnect the call and stay on continuous video surveillance.
+[RECIPIENT]: Please power cut cheyakandi sir! What should I do right now to pay the bill?
+[CALLER]: Verification complete avvalante Google Play Store nundi AnyDesk application install chesi screen share cheyandi.
+[RECIPIENT]: Bank eppudu OTP adagadhu ani message vasthundi kada? Why are you asking for my OTP?
+[CALLER]: Case drop avvalante Court security deposit account lo immediate ga fifty thousand rupees UPI transfer cheyandi.
+[RECIPIENT]: Naku chala fear ga undi sir. Can I please call my family lawyer first?
+[CALLER]: Good afternoon sir, this is Cyber Crime Police Department Hyderabad. Mee Aadhaar details meeda illegal money laundering investigation start ayindi.
+[RECIPIENT]: Okay sir, application download chesthunnanu, please don't arrest me.

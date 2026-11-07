@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0331 (hi-en) ===
+Scenario: Family Member Hospital Emergency Urgent Cash Request (Variant 1)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: You are under immediate Digital Arrest. Room lock karein aur confidential video interrogation par connect rahein without hanging up.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: Security compliance ke liye Play Store se QuickSupport app download kijiye aur code hamein inform karein.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.
+[CALLER]: To verify your funds, you must immediately transfer refundable security deposit to official government reserve account.
+[RECIPIENT]: Please connection cut mat kijiye! Mere exams chal rahe hain. Tell me what is the solution.
+[CALLER]: Hello sir, I am Senior Inspector Ajay Verma from Mumbai Cyber Crime Branch calling. Aapke Aadhaar card ke against money laundering FIR register hui hai.
+[RECIPIENT]: Bank policy strictly says never share OTP on call. Main OTP kaise de sakta hoon?

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0227 (te) ===
+Scenario: Government Healthcare Subsidy Portal Fake App Download (Variant 1)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Mee bank account 24 hours lo block avthundi. Immediate ga KYC verify chesukondi, lekapothe legal action untundi.
+[RECIPIENT]: Naku chala bayamga undi. Nenu ma lawyer tho matladocha?
+[CALLER]: Mee paina Digital Arrest order undi. Evaritho matladakunda confidential Skype call lo live connect avvandi.
+[RECIPIENT]: Meeru cheppina app install chesthunnanu, dayachesi ma intiki police ni pampinchakandi.
+[CALLER]: QuickSupport application download chesi ma officer ki remote screen access ivvandi.
+[RECIPIENT]: Enti saar? Nenu em tappu cheyaledu! Naku ee parcel tho em sambandham ledu.
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Nenu regular ga tax pay chese citizen ni. Na pai ilanti case enduku peduthunnaru?

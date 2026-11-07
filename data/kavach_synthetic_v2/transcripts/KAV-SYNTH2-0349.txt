@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0349
+Language: hi-en
+Scenario: Courier Delivery Address Landmark Clarification Call (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, main DTDC Courier Service customer support team se Delivery Agent Imran bol raha hoon.
+[RECIPIENT]: Hello, is this regarding my application for clarification of apartment building wing name for envelope?
+[CALLER]: Yes absolutely. Verification complete ho chuka hai, now you need to confirm landmark near residential entrance.
+[RECIPIENT]: Do I need to carry original KYC documents or receipt copies?
+[CALLER]: Just carry your original Aadhaar or PAN card. Koi payment ya OTP call par required nahi hai.
+[RECIPIENT]: Thank you for the guidance. I will come to the branch tomorrow morning.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0250
+Language: te-en
+Scenario: Laptop Service Center Warranty Part Replacement Readiness (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, Lenovo Authorized Service support desk nunchi Engineer Deepak matladuthunnanu.
+[RECIPIENT]: Hello sir, idhi na replacement laptop screen arrived under warranty related update aa?
+[CALLER]: Yes exactly. Mee application approval vachindi. You just need to bring original service job-sheet to collect laptop.
+[RECIPIENT]: What physical documents should I bring along?
+[CALLER]: Original photo ID card okati tesukoni randi. Online payment emi avasaram ledu.
+[RECIPIENT]: Thanks a lot for the clarity. I will visit the authorized counter.

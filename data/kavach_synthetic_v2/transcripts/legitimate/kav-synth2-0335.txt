@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0335 (te-en) ===
+Scenario: Automobile Emission Test Renewal Courtesy Reminder (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Regional Transport Office nunchi Automated Notice matladuthunnanu. Mee pollution under control certificate expiring next week gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo visit any authorized testing booth for renewal complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0176 (hi) ===
+Scenario: Unverified Courier Delivery Incomplete Address Verification Query (Variant 1)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, kya meri baat account holder se ho rahi hai? Ek zaroori verification call hai.
+[RECIPIENT]: Aap kis bank ya company se bol rahe hain? Pehle apna naam aur branch batayein.
+[CALLER]: Namaste, aapka ek parcel delivery address incomplete hone ki wajah se ruka hua hai.
+[RECIPIENT]: Maine koi parcel order nahi kiya hai. Aapko mera number kisne diya?
+[CALLER]: Main customer service se bol raha hoon aapke credit card reward points ke baare mein.
+[RECIPIENT]: Main phone par koi personal jaankari nahi deta. Main seedhe helpline par call karunga.
+[CALLER]: Hello, kya meri baat account holder se ho rahi hai? Ek zaroori verification call hai.
+[RECIPIENT]: Aap kis bank ya company se bol rahe hain? Pehle apna naam aur branch batayein.

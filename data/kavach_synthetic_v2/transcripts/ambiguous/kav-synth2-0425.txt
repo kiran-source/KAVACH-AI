@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0425 (te-en) ===
+Scenario: Online Electronics Extended Warranty Renewal Inquiry (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Gadget Protect Desk nunchi Caller Preeti matladuthunnanu regarding warranty extension inquiry for washing machine purchased 2 years ago.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient asks caller to verify invoice number first.
+[CALLER]: Idi Gadget Protect Desk direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0430 (te-en) ===
+Scenario: Insurance Bonus Settlement AnyDesk Verification Scam (Variant 1)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, FINANCIAL_REDIRECTION
+
+[CALLER]: Urgent notification from Electricity Department. Unpaid power bill dues valla 30 minutes lo supply disconnect chestham.
+[RECIPIENT]: Naku chala fear ga undi sir. Can I please call my family lawyer first?
+[CALLER]: Alert from Bank Security Team. Mee debit card temporarily restrict ayindi, immediate ga OTP share chesi verify chesukondi.
+[RECIPIENT]: Okay sir, application download chesthunnanu, please don't arrest me.
+[CALLER]: You are placed under 24-hour Digital Arrest. Do not disconnect the call and stay on continuous video surveillance.
+[RECIPIENT]: What is this sir? Nenu eppudu ilanti illegal activities lo participate cheyaledu. It's a mistake!
+[CALLER]: Verification complete avvalante Google Play Store nundi AnyDesk application install chesi screen share cheyandi.
+[RECIPIENT]: Singapore ki courier entra babu? Nenu asalu passport kooda ekkada ivvaledu.

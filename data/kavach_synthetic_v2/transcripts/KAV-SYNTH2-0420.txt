@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0420
+Language: te-en
+Scenario: Restaurant Food Delivery Order Quantity Discrepancy (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu Swiggy Delivery Hub nunchi Caller Sonu matladuthunnanu regarding clarification on whether order had two biryanis or three.
+[RECIPIENT]: Naku clarification on whether order had two biryanis or three tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. recipient confirms correct item count from mobile app. Cutting call.

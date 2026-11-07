@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0453
+Language: te
+Scenario: Vehicle Insurance Renewal Inquiry with Misstated Expiry (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: నమస్కారం అండి, Policy Hub Direct డెస్క్ నుండి Caller Tarun ని.
+[RECIPIENT]: నమస్కారం. దేని గురించి ఈ కాల్ అండి?
+[CALLER]: మీ ప్రొఫైల్ కి car insurance policy allegedly expiring in three days సదుపాయం కల్పించవచ్చని మాకు సమాచారం వచ్చింది.
+[RECIPIENT]: నేను దీని కోసం ఎక్కడా దరఖాస్తు చేయలేదే?
+[CALLER]: ఎంపిక చేసిన వినియోగదారులకు ప్రాధాన్యత ప్రకారం ఈ సదుపాయం ఇస్తున్నాం.
+[RECIPIENT]: దీని కోసం నేను ఏమి చేయాలి?
+[CALLER]: మీ పిన్‌కోడ్ మరియు ప్రస్తుత సేవా వివరాలను నిర్ధారిస్తే చాలు.
+[RECIPIENT]: అపరిచితులకు ఫోన్ లో నా సమాచారం ఇవ్వడం ఇష్టం లేదు. recipient checks document and confirms policy is valid for 6 months.
+[CALLER]: మీరు ఇష్టపడకపోతే మేము బలవంతం చేయము అండి.
+[RECIPIENT]: సరేనండి, నా నంబర్ కు ఇలాంటి కాల్స్ చేయకండి. ధన్యవాదాలు.

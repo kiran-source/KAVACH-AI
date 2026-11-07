@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0455
+Language: te-en
+Scenario: Vehicle Insurance Renewal Inquiry with Misstated Expiry (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, this is Caller Tarun from Policy Hub Direct team.
+[RECIPIENT]: Hello, please state why you are contacting me.
+[CALLER]: Mee mobile tier ki car insurance policy allegedly expiring in three days benefit apply cheyavachu ani update vachindi.
+[RECIPIENT]: Nenu eppudu ee service request pettaledu kada?
+[CALLER]: Idi selected premium numbers ki direct ga system allocate chesindi.
+[RECIPIENT]: Daaniki na nunchi em details kavali?
+[CALLER]: Just mee date of birth and pincode confirm chesthe activate chesthamu.
+[RECIPIENT]: Phone call meeda date of birth cheppanu sir. recipient checks document and confirms policy is valid for 6 months.
+[CALLER]: Miku doubt unte we will pause this offer for now sir.
+[RECIPIENT]: Yes, pause it permanently. I will check verified web portals directly.

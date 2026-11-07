@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0485 (te-en) ===
+Scenario: Mutual Fund KYC Verification Inquiry Lacking Folio Number (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Asset Care Registrar nunchi Caller Smita matladuthunnanu regarding general inquiry on whether mutual fund KYC is updated.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient refuses to share details without caller stating folio.
+[CALLER]: Idi Asset Care Registrar direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

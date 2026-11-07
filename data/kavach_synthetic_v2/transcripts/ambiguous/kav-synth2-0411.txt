@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0411 (en) ===
+Scenario: Job Placement Consultancy Walk-in Interview Query (EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, am I speaking with the primary resident? This is Caller Vishal from Tech Careers Agency regarding job profile match for mid-level administrative opening.
+[RECIPIENT]: Yes speaking, but I am in the middle of a meeting. What exactly is this about?
+[CALLER]: We have an ongoing update concerning your profile, but we need to confirm a few initial personal details.
+[RECIPIENT]: Which company did you say you are calling from? Can you share your official registration number first? recipient requests job description by email before committing.
+[CALLER]: This is a courtesy inquiry from Tech Careers Agency. We are conducting general profile maintenance.
+[RECIPIENT]: Please send official correspondence in writing or by email. I do not discuss personal information over unsolicited calls.

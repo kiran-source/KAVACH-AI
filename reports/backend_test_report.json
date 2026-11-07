@@ -1,0 +1,55 @@
+{
+  "report_name": "KAVACH AI - Automated Backend Test Suite Report",
+  "timestamp": "2026-11-04T19:30:00Z",
+  "test_framework": "pytest 9.1.1",
+  "python_version": "3.13.5 (win32)",
+  "total_tests": 36,
+  "test_runs": {
+    "test_run_1_clean_environment": {
+      "description": "Clean environment with no GNANI_API_KEY and DEMO_MODE=true",
+      "total_collected": 36,
+      "passed": 36,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 2.87,
+      "exit_code": 0
+    },
+    "test_run_2_mock_services": {
+      "description": "Explicit test configuration with mocked external Gnani APIs",
+      "total_collected": 36,
+      "passed": 36,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 5.7,
+      "exit_code": 0
+    }
+  },
+  "modules_tested": [
+    {
+      "module": "backend/tests/test_api.py",
+      "tests_count": 11,
+      "status": "ALL_PASSED"
+    },
+    {
+      "module": "backend/tests/test_backend.py",
+      "tests_count": 5,
+      "status": "ALL_PASSED"
+    },
+    {
+      "module": "backend/tests/test_dataset_generator.py",
+      "tests_count": 7,
+      "status": "ALL_PASSED"
+    },
+    {
+      "module": "backend/tests/test_gnani_integration.py",
+      "tests_count": 7,
+      "status": "ALL_PASSED"
+    },
+    {
+      "module": "backend/tests/test_recording_format.py",
+      "tests_count": 6,
+      "status": "ALL_PASSED"
+    }
+  ],
+  "overall_status": "PASS"
+}

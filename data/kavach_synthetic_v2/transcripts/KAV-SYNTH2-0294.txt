@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0294
+Language: hi-en
+Scenario: Passport Seva Kendra Document Submission Slot Reminder (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, this is Helpdesk Officer reaching out from Passport Seva Kendra.
+[RECIPIENT]: Good afternoon, how can I help you today?
+[CALLER]: Sir, I am calling with an update regarding your pending appointment tomorrow at 9:15 AM at Regional Passport Office.
+[RECIPIENT]: Oh great! Has the administrative clearance been issued?
+[CALLER]: Yes sir, all checks passed. We request you to carry original birth certificate and address proof.
+[RECIPIENT]: Can I do this online through net banking or some link?
+[CALLER]: No sir, please do not click unknown links. Secure verification requires physical presence at our counter.
+[RECIPIENT]: Understood. That is safe practice. I will visit in person.

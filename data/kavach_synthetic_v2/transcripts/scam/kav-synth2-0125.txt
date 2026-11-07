@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0125 (te-en) ===
+Scenario: Gold Loan Default Imminent Auction Settlement Coercion (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Nenu Muthoot Asset Desk nunchi Manager Nair matladuthunnanu andi. Mee credentials meeda pending interest default on pawned gold ornaments detect ayindi.
+[RECIPIENT]: Enti sir, pending interest default on pawned gold ornaments aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe public auction of family gold jewelry tomorrow implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane immediate UPI transfer of overdue interest cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

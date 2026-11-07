@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0119 (hi-en) ===
+Scenario: Fake Job Appointment Letter Registration Fee Advance (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh Tata Tech Recruitment se HR Lead Nambiar bol raha hoon. Aapke khilaf selection as Senior Systems Engineer with 12 LPA package ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? selection as Senior Systems Engineer with 12 LPA package? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh cancellation of appointment offer letter hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi 8,500 rupees document verification charge fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

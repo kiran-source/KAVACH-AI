@@ -1,287 +1,417 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   Radio, Play, Square, AlertTriangle, ShieldCheck,
-  Volume2, RefreshCw, Activity, AlertCircle, Info
+  Volume2, RefreshCw, Activity, AlertCircle, Info, Mic,
+  VolumeX, ShieldAlert, Sparkles, Check, Headphones
 } from 'lucide-react';
 import { api } from '../services/api';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/common/Card';
+import { SeverityBadge } from '../components/common/Badge';
+import { Button } from '../components/common/Button';
+import { StatusIndicator } from '../components/common/StatusIndicator';
+import { AudioWaveform } from '../components/common/AudioWaveform';
 
 export const LiveAnalysisPage: React.FC = () => {
   const [isScanning, setIsScanning] = useState<boolean>(false);
   const [consentGranted, setConsentGranted] = useState<boolean>(false);
   const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
   const [chunkInterval, setChunkInterval] = useState<number>(5);
+  const [selectedLanguage, setSelectedLanguage] = useState<string>('auto');
 
+  // Real-time calculated threat state
   const [liveRiskScore, setLiveRiskScore] = useState<number>(0);
   const [liveSeverity, setLiveSeverity] = useState<string>('Low');
-  const [rollingTranscript, setRollingTranscript] = useState<string[]>([]);
+  const [rollingTranscript, setRollingTranscript] = useState<{ id: number; text: string; time: string }[]>([]);
   const [triggeredTactics, setTriggeredTactics] = useState<string[]>([]);
   const [warningMessage, setWarningMessage] = useState<string | null>(null);
   const [warningAudioUrl, setWarningAudioUrl] = useState<string | null>(null);
+  const [chunkStatus, setChunkStatus] = useState<string>('Idle');
 
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
   const timerRef = useRef<any>(null);
-  const chunkTimerRef = useRef<any>(null);
-
-  const simulationSnippets = [
-    "Namaste sir, this is calling from SBI Bank KYC verification desk.",
-    "Your ATM card and Net banking account are blocked due to pending verification.",
-    "Supreme Court has issued a digital arrest warrant against your Aadhaar card number.",
-    "Do not disconnect this video call or inform anyone in your family.",
-    "Immediately install AnyDesk APK and share your screen to unfreeze account.",
-    "Please tell me the 6 digit OTP and UPI PIN sent to your phone right now."
-  ];
+  const cumulativeTextRef = useRef<string>('');
+  const chunkCountRef = useRef<number>(0);
 
   const startLiveScan = async () => {
     if (!consentGranted) {
-      alert("Please confirm microphone consent before activating live scanning.");
+      alert("Please check and confirm microphone consent before activating live chunk scanning.");
       return;
     }
 
-    setIsScanning(true);
-    setElapsedSeconds(0);
-    setRollingTranscript([]);
-    setTriggeredTactics([]);
-    setLiveRiskScore(0);
-    setLiveSeverity('Low');
-    setWarningMessage(null);
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      streamRef.current = stream;
 
-    timerRef.current = setInterval(() => {
-      setElapsedSeconds((prev) => prev + 1);
-    }, 1000);
-
-    let snippetIndex = 0;
-    chunkTimerRef.current = setInterval(async () => {
-      if (snippetIndex < simulationSnippets.length) {
-        const textChunk = simulationSnippets[snippetIndex];
-        setRollingTranscript((prev) => [...prev, textChunk]);
-
-        // Evaluate live threat
-        try {
-          const res = await api.analyzeTranscript(textChunk); // will trigger quick analysis
-        } catch (e) {
-          // Calculate incremental risk in chunk mode
-        }
-
-        // Tactic updates based on chunk progression
-        if (snippetIndex === 1) {
-          setLiveRiskScore(30);
-          setLiveSeverity('Guarded');
-          setTriggeredTactics(['Urgency and Threats']);
-        } else if (snippetIndex === 2) {
-          setLiveRiskScore(65);
-          setLiveSeverity('High');
-          setTriggeredTactics(['Urgency and Threats', 'Authority Impersonation', 'Digital Arrest Patterns']);
-          setWarningMessage("CRITICAL: Government authority impersonation and fake Digital Arrest pattern detected!");
-        } else if (snippetIndex >= 4) {
-          setLiveRiskScore(95);
-          setLiveSeverity('Critical');
-          setTriggeredTactics(['Authority Impersonation', 'Digital Arrest Patterns', 'Remote Access Manipulation', 'Credential Theft']);
-          setWarningMessage("EMERGENCY ALERT: Active OTP and Remote Access theft attempt. Disconnect call immediately!");
-          
-          // Trigger audio warning
-          api.generateWarning('en', ['Credential Theft', 'Digital Arrest Patterns']).then((res) => {
-            setWarningAudioUrl(res.audio_url);
-          }).catch(console.error);
-        }
-
-        snippetIndex++;
-      } else {
-        clearInterval(chunkTimerRef.current);
+      let mimeType = 'audio/webm';
+      let extension = 'webm';
+      if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+        mimeType = 'audio/webm;codecs=opus';
+        extension = 'webm';
+      } else if (MediaRecorder.isTypeSupported('audio/mp4')) {
+        mimeType = 'audio/mp4';
+        extension = 'm4a';
+      } else if (MediaRecorder.isTypeSupported('audio/wav')) {
+        mimeType = 'audio/wav';
+        extension = 'wav';
       }
-    }, chunkInterval * 1000);
+
+      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+      mediaRecorderRef.current = recorder;
+
+      setIsScanning(true);
+      setElapsedSeconds(0);
+      setRollingTranscript([]);
+      setTriggeredTactics([]);
+      setLiveRiskScore(0);
+      setLiveSeverity('Low');
+      setWarningMessage(null);
+      setWarningAudioUrl(null);
+      cumulativeTextRef.current = '';
+      chunkCountRef.current = 0;
+      setChunkStatus('Actively listening...');
+
+      timerRef.current = setInterval(() => {
+        setElapsedSeconds((prev) => prev + 1);
+      }, 1000);
+
+      recorder.ondataavailable = async (e: BlobEvent) => {
+        if (e.data && e.data.size > 100) {
+          chunkCountRef.current += 1;
+          const currentChunkNum = chunkCountRef.current;
+          setChunkStatus(`Processing buffer #${currentChunkNum}...`);
+
+          try {
+            const chunkBlob = new Blob([e.data], { type: recorder.mimeType || mimeType });
+            const chunkFile = new File([chunkBlob], `live_chunk_${Date.now()}.${extension}`, {
+              type: recorder.mimeType || mimeType
+            });
+
+            // 1. Upload chunk
+            const uploadRes = await api.uploadAudio(chunkFile);
+
+            // 2. Transcribe chunk via Prisma
+            const transRes = await api.transcribeAudio(uploadRes.audio_id, selectedLanguage);
+            const chunkText = (transRes.full_text || '').trim();
+
+            if (chunkText) {
+              const timestamp = new Date().toLocaleTimeString();
+              setRollingTranscript((prev) => [
+                ...prev,
+                { id: currentChunkNum, text: chunkText, time: timestamp }
+              ]);
+
+              // 3. Accumulate context & evaluate incremental threat
+              cumulativeTextRef.current = `${cumulativeTextRef.current} ${chunkText}`.trim();
+              const analysisRes = await api.analyzeText(cumulativeTextRef.current, transRes.language || 'en');
+
+              setLiveRiskScore(analysisRes.risk_score);
+              setLiveSeverity(analysisRes.severity);
+              setTriggeredTactics(analysisRes.categories || []);
+
+              // 4. Trigger acoustic safety alert if high risk
+              if (analysisRes.risk_score >= 65 && !warningAudioUrl) {
+                setWarningMessage(
+                  `URGENT: Social engineering detected (${(analysisRes.categories || []).join(', ')}). Advise victim not to share credentials!`
+                );
+                try {
+                  const warnRes = await api.generateWarning(
+                    transRes.language?.split('-')[0] || 'en',
+                    analysisRes.categories || ['Credential Theft']
+                  );
+                  if (warnRes.audio_url) {
+                    setWarningAudioUrl(warnRes.audio_url);
+                  }
+                } catch (warnErr) {
+                  console.error("Warning audio generation error:", warnErr);
+                }
+              }
+            } else {
+              setChunkStatus(`Buffer #${currentChunkNum}: Silence / low audio detected`);
+            }
+          } catch (err) {
+            console.error("Live chunk processing error:", err);
+            setChunkStatus(`Buffer #${currentChunkNum}: Awaiting audible speech`);
+          }
+        }
+      };
+
+      recorder.start(chunkInterval * 1000);
+    } catch (err) {
+      console.error("Microphone access failed:", err);
+      alert("Microphone permission denied or audio device unavailable.");
+      setIsScanning(false);
+    }
   };
 
   const stopLiveScan = () => {
     setIsScanning(false);
+    setChunkStatus('Session Terminated');
+
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+      mediaRecorderRef.current.stop();
+    }
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop());
+    }
     clearInterval(timerRef.current);
-    clearInterval(chunkTimerRef.current);
   };
 
   useEffect(() => {
     return () => {
       clearInterval(timerRef.current);
-      clearInterval(chunkTimerRef.current);
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((track) => track.stop());
+      }
     };
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
-      {/* Title */}
-      <div>
-        <h1 className="text-xl font-bold text-white flex items-center space-x-2">
-          <Radio className="w-5 h-5 text-cyan-400" />
-          <span>Live Chunk-Based Conversation Scanner</span>
-        </h1>
-        <p className="text-xs text-slate-400 mt-1">
-          Near-real-time audio chunk processing, dynamic risk progression, and instant acoustic threat mitigation.
-        </p>
+    <div className="space-y-6 max-w-7xl mx-auto pb-12">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <div className="flex items-center space-x-2">
+            <span className="p-2 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+              <Radio className="w-5 h-5" />
+            </span>
+            <div>
+              <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                Real-Time Audio Stream Triage (Mic Ingestion)
+              </h1>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Ingests live microphone buffers, performs streaming LID & Prisma STT, and executes incremental threat detection.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center space-x-3">
+          <StatusIndicator
+            status={isScanning ? 'online' : 'offline'}
+            label={isScanning ? `LIVE SCANNING (${elapsedSeconds}s)` : 'STANDBY'}
+            pulse={isScanning}
+          />
+        </div>
       </div>
 
-      {/* Control Card */}
-      <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <div className="text-sm font-semibold text-white">Live Monitoring Session</div>
-            <p className="text-xs text-slate-400 mt-0.5">Processes conversation audio in segmented batches.</p>
-          </div>
+      {/* Control Card with Waveform */}
+      <Card>
+        <CardHeader>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <CardTitle>Microphone Buffer Capture Controller</CardTitle>
+              <CardDescription>
+                Continuous chunk ingestion configured for low-latency scam triage.
+              </CardDescription>
+            </div>
 
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-2 text-xs text-slate-400">
-              <span>Chunk Interval:</span>
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Language selection */}
+              <select
+                value={selectedLanguage}
+                onChange={(e) => setSelectedLanguage(e.target.value)}
+                disabled={isScanning}
+                className="bg-navy-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500"
+              >
+                <option value="auto">Auto Detect Language</option>
+                <option value="te">Telugu (తెలుగు)</option>
+                <option value="hi">Hindi (हिन्दी)</option>
+                <option value="en">English</option>
+              </select>
+
+              {/* Buffer Size */}
               <select
                 value={chunkInterval}
                 onChange={(e) => setChunkInterval(Number(e.target.value))}
                 disabled={isScanning}
-                className="bg-slate-900 border border-slate-700 rounded px-2 py-1 text-xs text-slate-200"
+                className="bg-navy-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500 font-mono"
               >
-                <option value={3}>3 seconds (Fast)</option>
-                <option value={5}>5 seconds (Standard)</option>
-                <option value={8}>8 seconds (Extended)</option>
+                <option value={3}>3s Buffers (Fast)</option>
+                <option value={5}>5s Buffers (Standard)</option>
+                <option value={8}>8s Buffers (Contextual)</option>
               </select>
-            </div>
 
-            {isScanning ? (
-              <button
-                onClick={stopLiveScan}
-                className="px-4 py-2 bg-red-600 hover:bg-red-500 text-white font-semibold text-xs rounded-lg transition flex items-center space-x-2"
-              >
-                <Square className="w-3.5 h-3.5" />
-                <span>Stop Live Scanner</span>
-              </button>
-            ) : (
-              <button
-                onClick={startLiveScan}
-                className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold text-xs rounded-lg transition flex items-center space-x-2 shadow-lg shadow-cyan-500/20"
-              >
-                <Play className="w-3.5 h-3.5" />
-                <span>Launch Live Session</span>
-              </button>
-            )}
+              {isScanning ? (
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  onClick={stopLiveScan}
+                  className="shadow-glow-crimson text-xs"
+                >
+                  <Square className="w-3.5 h-3.5 mr-1.5" />
+                  <span>Stop Capture</span>
+                </Button>
+              ) : (
+                <Button
+                  variant="primary"
+                  size="sm"
+                  onClick={startLiveScan}
+                  className="shadow-glow-cyan text-xs"
+                >
+                  <Play className="w-3.5 h-3.5 mr-1.5" />
+                  <span>Start Live Stream</span>
+                </Button>
+              )}
+            </div>
           </div>
-        </div>
+        </CardHeader>
 
-        {/* Consent prompt */}
-        <label className="flex items-center space-x-2 text-xs text-slate-300 cursor-pointer pt-2 border-t border-slate-800">
-          <input
-            type="checkbox"
-            checked={consentGranted}
-            onChange={(e) => setConsentGranted(e.target.checked)}
-            className="rounded border-slate-700 text-cyan-500 focus:ring-0"
-          />
-          <span>I grant explicit consent to record and process live audio for real-time scam triage.</span>
-        </label>
-      </div>
-
-      {/* Live Threat Dashboard Metrics */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {/* Risk Meter */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
-          <div className="text-xs text-slate-400 font-mono">DYNAMIC RISK LEVEL</div>
-          <div className="py-3">
-            <div className="flex items-baseline space-x-2">
-              <span className="text-4xl font-extrabold font-mono text-white">{liveRiskScore}</span>
-              <span className="text-xs text-slate-500 font-mono">/ 100</span>
-            </div>
-            <div className="mt-2 text-xs font-semibold">
-              Status:{' '}
-              <span
-                className={`px-2 py-0.5 rounded text-[10px] font-bold ${
-                  liveSeverity === 'Critical' || liveSeverity === 'High'
-                    ? 'bg-red-500/20 text-red-400 border border-red-500/40'
-                    : liveSeverity === 'Guarded'
-                    ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40'
-                    : 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40'
-                }`}
-              >
-                {liveSeverity.toUpperCase()}
+        <CardContent className="space-y-4">
+          {/* Dynamic Audio Visualizer */}
+          <div className="p-4 rounded-xl bg-navy-950 border border-slate-800/80 space-y-2">
+            <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
+              <span className="flex items-center space-x-2">
+                <Mic className={`w-3.5 h-3.5 ${isScanning ? 'text-cyan-400 animate-pulse' : 'text-slate-500'}`} />
+                <span>ACOUSTIC STREAM ACTIVITY</span>
               </span>
+              <span className="text-cyan-400">{chunkStatus}</span>
             </div>
+            <AudioWaveform isRecording={isScanning} height={56} />
           </div>
-          <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-            <div
-              className={`h-full transition-all duration-700 ${
-                liveRiskScore >= 60 ? 'bg-red-500' : liveRiskScore >= 30 ? 'bg-amber-400' : 'bg-emerald-400'
-              }`}
-              style={{ width: `${liveRiskScore}%` }}
+
+          {/* Consent Checkbox */}
+          <label className="flex items-start space-x-2.5 text-xs text-slate-300 cursor-pointer pt-2 border-t border-slate-800/80">
+            <input
+              type="checkbox"
+              checked={consentGranted}
+              onChange={(e) => setConsentGranted(e.target.checked)}
+              className="mt-0.5 w-4 h-4 rounded border-slate-700 text-cyan-500 focus:ring-0 bg-navy-950"
             />
-          </div>
-        </div>
+            <span className="leading-relaxed">
+              I grant explicit consent to capture local microphone audio for automated social-engineering triage.
+              No audio is transmitted outside localhost during evaluation mode.
+            </span>
+          </label>
+        </CardContent>
+      </Card>
 
-        {/* Active Threats */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
-          <div className="text-xs text-slate-400 font-mono">DETECTED TACTICS</div>
-          <div className="py-2 space-y-1.5 overflow-y-auto max-h-24">
-            {triggeredTactics.length > 0 ? (
-              triggeredTactics.map((tac, i) => (
-                <div key={i} className="text-xs text-red-400 font-medium flex items-center space-x-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-                  <span>{tac}</span>
-                </div>
-              ))
-            ) : (
-              <p className="text-xs text-slate-500 italic">No threats flagged in stream</p>
-            )}
-          </div>
-          <div className="text-[10px] text-slate-500 font-mono">Elapsed: {elapsedSeconds}s</div>
-        </div>
-
-        {/* Voice Advisory Status */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
-          <div className="text-xs text-slate-400 font-mono">ACOUSTIC DEFENSE (TIMBRE)</div>
-          <div className="py-2">
-            {warningAudioUrl ? (
-              <div className="space-y-2">
-                <span className="text-[11px] text-red-400 font-semibold flex items-center space-x-1">
-                  <Volume2 className="w-3.5 h-3.5 animate-bounce" />
-                  <span>Safety Warning Audio Dispatched</span>
-                </span>
-                <audio src={warningAudioUrl} controls autoPlay className="h-7 w-full" />
+      {/* Real-Time Live Threat Metrics */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Risk Gauge */}
+        <Card className="bg-navy-900/70 border-slate-800">
+          <CardContent className="p-5 flex flex-col justify-between h-full">
+            <div>
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono text-slate-400 uppercase">CALCULATED THREAT SCORE</span>
+                <SeverityBadge severity={liveSeverity} size="sm" />
               </div>
-            ) : (
-              <p className="text-xs text-slate-500 italic">Awaiting high-risk threshold trigger...</p>
-            )}
-          </div>
-          <div className="text-[10px] text-slate-500 font-mono">Gnani Timbre v2.5 Active</div>
-        </div>
+              <div className="flex items-baseline space-x-2 mt-2">
+                <span className="text-4xl font-extrabold font-mono text-white">{liveRiskScore}</span>
+                <span className="text-xs text-slate-500 font-mono">/ 100</span>
+              </div>
+            </div>
+
+            <div className="mt-4">
+              <div className="w-full bg-navy-950 h-2 rounded-full overflow-hidden border border-slate-800">
+                <div
+                  className={`h-full transition-all duration-700 ${
+                    liveRiskScore >= 60 ? 'bg-red-500' : liveRiskScore >= 30 ? 'bg-amber-400' : 'bg-emerald-400'
+                  }`}
+                  style={{ width: `${liveRiskScore}%` }}
+                />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Active Detected Tactics */}
+        <Card className="bg-navy-900/70 border-slate-800">
+          <CardContent className="p-5 flex flex-col justify-between h-full">
+            <div>
+              <span className="text-[11px] font-mono text-slate-400 uppercase">IDENTIFIED ATTACK TACTICS</span>
+              <div className="mt-2.5 space-y-1.5 max-h-24 overflow-y-auto">
+                {triggeredTactics.length > 0 ? (
+                  triggeredTactics.map((tac, i) => (
+                    <div key={i} className="text-xs text-red-400 font-medium flex items-center space-x-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
+                      <span>{tac}</span>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-xs text-slate-500 italic">No suspicious tactics detected in speech</p>
+                )}
+              </div>
+            </div>
+            <div className="text-[10px] text-slate-500 font-mono mt-2">Elapsed: {elapsedSeconds}s</div>
+          </CardContent>
+        </Card>
+
+        {/* Timbre Voice Warning */}
+        <Card className="bg-navy-900/70 border-slate-800">
+          <CardContent className="p-5 flex flex-col justify-between h-full">
+            <div>
+              <span className="text-[11px] font-mono text-slate-400 uppercase">TIMBRE ACOUSTIC DEFENSE</span>
+              <div className="mt-2">
+                {warningAudioUrl ? (
+                  <div className="space-y-2">
+                    <span className="text-xs text-red-400 font-semibold flex items-center space-x-1.5">
+                      <Volume2 className="w-4 h-4 animate-bounce" />
+                      <span>Safety Warning Audio Synthesized</span>
+                    </span>
+                    <audio src={warningAudioUrl} controls autoPlay className="h-7 w-full filter invert-[0.85] hue-rotate-180" />
+                  </div>
+                ) : (
+                  <p className="text-xs text-slate-500 italic">
+                    Armed — synthesized intervention triggers immediately upon Critical threat threshold.
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className="text-[10px] text-slate-500 font-mono mt-2">Gnani Timbre v2.5 Online</div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Warning Alert Banner */}
       {warningMessage && (
-        <div className="bg-gradient-to-r from-red-950/60 to-red-900/30 p-4 rounded-xl border border-red-800/80 flex items-start space-x-3 text-red-200">
+        <div className="p-4 rounded-xl bg-gradient-to-r from-red-950/80 to-navy-900 border border-red-800/80 flex items-start space-x-3 text-red-200 shadow-glow-crimson">
           <AlertTriangle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
           <div className="text-xs">
-            <div className="font-bold text-red-400">URGENT SOC MITIGATION ADVISORY</div>
-            <p className="mt-0.5">{warningMessage}</p>
+            <div className="font-bold text-red-400 uppercase font-mono tracking-wider">
+              CRITICAL SOC DEFENSE MITIGATION ADVISORY
+            </div>
+            <p className="mt-1 leading-relaxed">{warningMessage}</p>
           </div>
         </div>
       )}
 
-      {/* Rolling Transcript Stream */}
-      <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 space-y-3">
-        <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-          <span className="flex items-center space-x-2">
-            <span className={`w-2 h-2 rounded-full ${isScanning ? 'bg-emerald-500 animate-ping' : 'bg-slate-600'}`} />
-            <span>LIVE INGESTION TRANSCRIPT FEED</span>
-          </span>
-          <span>{rollingTranscript.length} Chunks Ingested</span>
-        </div>
-
-        <div className="bg-[#070b14] p-4 rounded-lg border border-slate-800/80 min-h-[140px] max-h-60 overflow-y-auto space-y-2 text-xs font-sans">
-          {rollingTranscript.length > 0 ? (
-            rollingTranscript.map((chunk, i) => (
-              <div key={i} className="flex items-start space-x-2">
-                <span className="text-[10px] font-mono text-cyan-500 shrink-0 mt-0.5">[{i + 1}]</span>
-                <p className="text-slate-200 leading-relaxed">{chunk}</p>
-              </div>
-            ))
-          ) : (
-            <div className="flex flex-col items-center justify-center h-28 text-slate-600 text-xs">
-              <Activity className="w-6 h-6 mb-1 text-slate-700" />
-              <span>Click "Launch Live Session" to start chunk-based conversation analysis</span>
+      {/* Rolling Ingestion Transcript Feed */}
+      <Card>
+        <CardHeader>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Activity className="w-4 h-4 text-cyan-400" />
+              <CardTitle>Continuous Speech Ingestion Transcript</CardTitle>
             </div>
-          )}
-        </div>
-      </div>
+            <span className="text-xs font-mono text-slate-400">
+              {rollingTranscript.length} Buffer Windows Processed
+            </span>
+          </div>
+          <CardDescription>
+            Chronological speech buffer transcription streamed from Gnani Prisma.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="p-4 rounded-xl bg-navy-950 border border-slate-800/90 min-h-[160px] max-h-72 overflow-y-auto space-y-2.5 font-sans">
+            {rollingTranscript.length > 0 ? (
+              rollingTranscript.map((chunk) => (
+                <div key={chunk.id} className="flex items-start space-x-2.5 border-b border-slate-800/40 pb-2">
+                  <span className="text-[10px] font-mono text-cyan-400 shrink-0 mt-0.5 bg-navy-900 px-1.5 py-0.5 rounded border border-slate-800">
+                    [{chunk.time}]
+                  </span>
+                  <p className="text-xs text-slate-200 leading-relaxed font-sans">{chunk.text}</p>
+                </div>
+              ))
+            ) : (
+              <div className="flex flex-col items-center justify-center h-32 text-slate-500 text-xs space-y-2">
+                <Mic className="w-6 h-6 text-slate-600" />
+                <span>Click "Start Live Stream" and speak to observe live speech recognition and threat scoring.</span>
+              </div>
+            )}
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
-

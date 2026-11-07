@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-020 (en) ===
+Scenario: Pre-Approved Personal Loan Offer with Incomplete Verification
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Congratulations sir, you have been shortlisted for an instant pre-approved personal loan of five lakh rupees from Bajaj Finserv.
+[RECIPIENT]: I did not apply for any personal loan.
+[CALLER]: It is based on your healthy banking transactions. Interest rate is only nine point five percent with zero documentation.
+[RECIPIENT]: Nine point five percent for personal loan is unusually low. What are the terms?
+[CALLER]: We just need your verbal confirmation to generate the e-mandate agreement letter.
+[RECIPIENT]: Do you need my debit card or netbanking details?
+[CALLER]: Our backend executive will call you tomorrow for formal verification. No passwords will be requested.
+[RECIPIENT]: Do not generate any agreement without sending the terms and conditions to my email first.

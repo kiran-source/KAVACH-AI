@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0484 (hi-en) ===
+Scenario: Mutual Fund KYC Verification Inquiry Lacking Folio Number (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Asset Care Registrar se Caller Smita bol raha hoon regarding general inquiry on whether mutual fund KYC is updated.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient refuses to share details without caller stating folio.
+[CALLER]: Sir yeh Asset Care Registrar ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

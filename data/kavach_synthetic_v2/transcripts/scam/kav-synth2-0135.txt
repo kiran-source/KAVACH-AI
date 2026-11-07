@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0135 (te-en) ===
+Scenario: Courier Tracking Failure Malicious APK Download (TE-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, COURIER_CUSTOMS_FRAUD, REMOTE_ACCESS_MANIPULATION
+
+[CALLER]: Nenu BlueDart Logistics nunchi Driver Mukesh matladuthunnanu andi. Mee credentials meeda inability to deliver parcel due to incorrect house number detect ayindi.
+[RECIPIENT]: Enti sir, inability to deliver parcel due to incorrect house number aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe return of parcel to sender with heavy penalty implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane custom tracking APK installed from WhatsApp link cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

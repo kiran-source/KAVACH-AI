@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0164 (hi-en) ===
+Scenario: Overseas University Visa Bond Emergency Transfer (HI-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Yeh Consulate Visa Cell se Officer David bol raha hoon. Aapke khilaf student visa documentation discrepancy for dependent child ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? student visa documentation discrepancy for dependent child? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh immediate deportation and visa cancellation hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi embassy security deposit transfer fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

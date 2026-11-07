@@ -33,7 +33,9 @@ def test_provider_health():
     res = provider_health()
     assert "gnani_prisma" in res
     assert "gnani_timbre" in res
-    assert res["gnani_prisma"]["version"] == "v2.5"
+    assert res["gnani_prisma"]["version"] == "v3.0"
+    assert res["gnani_prisma"]["status"] in ["verified_in_session", "configured_ready_for_inference", "simulated_demo_mode", "unavailable_missing_credentials"]
+    assert res["gnani_timbre"]["status"] in ["verified_in_session", "configured_ready_for_inference", "local_tts_fallback", "unavailable_missing_credentials"]
 
 def test_threat_detection_engine_credential_theft():
     text = "Sir please tell me your 6 digit OTP and UPI PIN immediately or your account will be blocked."
@@ -90,8 +92,14 @@ def test_end_to_end_incident_and_report_flow(db):
     db.add(audio_rec)
     db.commit()
 
-    # 2. Transcribe
-    tr_res = process_transcription(audio_rec.stored_path, language="auto")
+    # 2. Transcribe (mocked for credit protection & offline CI)
+    tr_res = {
+        "transcript_id": f"TR-{uuid.uuid4().hex[:8].upper()}",
+        "language": "hi",
+        "full_text": "I am Inspector Sharma from CBI. You are under digital arrest warrant.",
+        "provider": "gnani_prisma_v3.0 (Test Mock)",
+        "segments": [{"start": 0.0, "end": 5.0, "text": "I am Inspector Sharma from CBI. You are under digital arrest warrant.", "language": "hi"}]
+    }
     tr_id = tr_res["transcript_id"]
     tr_rec = TranscriptDB(
         id=tr_id,
@@ -172,7 +180,9 @@ def test_data_retention_purge(db):
     
     # Create an artificially expired audio file record
     old_audio_id = str(uuid.uuid4())
-    dummy_path = os.path.abspath(f"uploads/expired_dummy_{old_audio_id[:8]}.wav")
+    dummy_dir = os.path.abspath("uploads")
+    os.makedirs(dummy_dir, exist_ok=True)
+    dummy_path = os.path.join(dummy_dir, f"expired_dummy_{old_audio_id[:8]}.wav")
     with open(dummy_path, "wb") as f:
         f.write(b"RIFF$   WAVEfmt ")
         

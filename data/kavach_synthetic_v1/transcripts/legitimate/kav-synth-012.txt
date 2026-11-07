@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-012 (en) ===
+Scenario: Life Insurance Annual Policy Renewal Reminder
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, calling from HDFC Life Insurance service desk. Am I speaking with Mrs. Mehra?
+[RECIPIENT]: Yes speaking. What is this regarding?
+[CALLER]: This is a courtesy reminder that your Click 2 Protect life insurance policy annual premium is due on the twenty-fifth of this month.
+[RECIPIENT]: Right, I remember. Can I pay it through netbanking?
+[CALLER]: Yes madam, you can log in directly to our official portal at hdfclife.com or use your bank auto-debit facility.
+[RECIPIENT]: Is there any change in the premium amount this year?
+[CALLER]: No change madam, it remains exactly the same as last year. We advise customers to never share policy login OTPs with anyone over the phone.
+[RECIPIENT]: Thank you for the security advice. I will pay it on the official portal tonight.

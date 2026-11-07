@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0066 (en) ===
+Scenario: FASTag Toll Blacklisting & Security Deposit Theft (EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, MALICIOUS_LINK_OR_APP
+
+[CALLER]: This is Officer Chopra calling from FASTag Operations Unit. We are conducting an urgent investigation regarding blacklisting of highway toll tag due to KYC lapse.
+[RECIPIENT]: Hello? I have no knowledge of any blacklisting of highway toll tag due to KYC lapse. What is this regarding?
+[CALLER]: A formal case file has been registered. If you do not resolve this immediately, there will be penalty of 10,000 rupees at toll plazas.
+[RECIPIENT]: Please, this is a serious misunderstanding! I am a law-abiding citizen. How can this be cleared?
+[CALLER]: You must immediately comply with FASTag reactivation UPI PIN transfer. Failure to do so will result in non-bailable enforcement.
+[RECIPIENT]: I will not comply blindly without official documentation. Let me consult my advocate and local police first.

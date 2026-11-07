@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0169 (hi-en) ===
+Scenario: Toll Plaza Dispute Settlement Screen Control Coercion (HI-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh FASTag Dispute Cell se Officer Kapoor bol raha hoon. Aapke khilaf double deduction dispute at toll plaza requiring refund ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? double deduction dispute at toll plaza requiring refund? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh forfeiture of disputed amount and toll fine hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi AnyDesk remote screen inspection to verify wallet fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

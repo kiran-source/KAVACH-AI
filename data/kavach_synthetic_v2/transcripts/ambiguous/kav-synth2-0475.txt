@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0475 (te-en) ===
+Scenario: Event Concert Ticket Reservation Query Disconnecting (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Showtime Tickets nunchi Caller Tanya matladuthunnanu regarding inquiry regarding pending ticket payment for music festival.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient states they did not book tickets and call ends.
+[CALLER]: Idi Showtime Tickets direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

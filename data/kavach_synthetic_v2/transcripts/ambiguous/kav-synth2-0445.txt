@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0445 (te-en) ===
+Scenario: Medical Insurance Cashless Hospitalization Network Inquiry (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Health First TPA nunchi Caller Shalini matladuthunnanu regarding general inquiry regarding preferred local hospital network.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient asks caller to send policy brochure by post.
+[CALLER]: Idi Health First TPA direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

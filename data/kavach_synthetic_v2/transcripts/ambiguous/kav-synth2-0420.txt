@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0420 (te-en) ===
+Scenario: Restaurant Food Delivery Order Quantity Discrepancy (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Swiggy Delivery Hub nunchi Caller Sonu matladuthunnanu regarding clarification on whether order had two biryanis or three.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient confirms correct item count from mobile app.
+[CALLER]: Idi Swiggy Delivery Hub direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

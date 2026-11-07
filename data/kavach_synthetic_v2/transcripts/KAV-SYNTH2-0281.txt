@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0281
+Language: en
+Scenario: Municipal Drinking Water Pipeline Maintenance Supply Notice (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good afternoon, this is Officer Reddy calling from Water Supply Board regarding your temporary water supply shutdown on Thursday for valve repair.
+[RECIPIENT]: Hello, thank you for reaching out. Yes, I was expecting a status update on that.
+[CALLER]: Please be advised to store necessary drinking water for one day. Kindly note we will never request your OTP, PIN, or net banking password.
+[RECIPIENT]: Understood and appreciated. I will complete this at the branch during normal business hours.

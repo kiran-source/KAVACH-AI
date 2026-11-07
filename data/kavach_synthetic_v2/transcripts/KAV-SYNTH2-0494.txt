@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0494
+Language: hi-en
+Scenario: Courier Delivery Driver Lost in Neighborhood Seeking Directions (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Greetings, this is Driver Jagdish with City Parcel Drop client outreach team.
+[RECIPIENT]: Yes hello, please state the purpose of this outreach.
+[CALLER]: Our system indicated you might be eligible for driver confused between cross road 4 and cross road 5.
+[RECIPIENT]: Eligible? I haven't opted into any new program recently.
+[CALLER]: It is an automated recommendation based on active subscriber tiers.
+[RECIPIENT]: And what exactly do you need from me right now?
+[CALLER]: Just your confirmation on date of birth and area postal code.
+[RECIPIENT]: No, I never disclose date of birth or personal data on voice calls. recipient gives clear directional landmarks near bakery.
+[CALLER]: We respect that sir. We can put this request on hold.
+[RECIPIENT]: Please remove it completely. I will check official websites if interested.

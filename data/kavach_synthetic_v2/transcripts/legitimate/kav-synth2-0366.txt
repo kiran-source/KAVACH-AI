@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0366 (en) ===
+Scenario: Broadband Optical Fiber Upgrade Neighborhood Notice (EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, this is Technician Santosh calling from ACT Fibernet Tech Desk. I am reaching out regarding your scheduled fiber optic speed upgrade in neighborhood.
+[RECIPIENT]: Hello, yes thank you for calling. I was expecting an official update regarding this.
+[CALLER]: We would like to request that you maintenance window between 2 PM and 4 PM with minimal downtime. Our authorized counter is open during normal working hours.
+[RECIPIENT]: Understood. Are there any specific reference documents or identity proofs I need to carry?
+[CALLER]: Just carry your standard photo ID and previous receipt copy. No financial payment or OTP is requested on this call.
+[RECIPIENT]: Thank you for the clear information and safety reminder. I will visit tomorrow as advised.

@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0134
+Language: hi-en
+Scenario: Courier Tracking Failure Malicious APK Download (HI-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, COURIER_CUSTOMS_FRAUD, REMOTE_ACCESS_MANIPULATION
+
+[CALLER]: Attention please. This is Driver Mukesh from BlueDart Logistics central monitoring unit.
+[RECIPIENT]: Yes speaking, what is this call about? Please be quick as I am driving.
+[CALLER]: Aapke ID documents misuse hue hain in inability to deliver parcel due to incorrect house number. State enforcement team has registered file 904.
+[RECIPIENT]: File 904? Sir mera ID kabhi kisi illicit activity mein use nahi hua. Someone must have forged it.
+[CALLER]: Forged ho ya real, system is preparing return of parcel to sender with heavy penalty unless cleared before 5 PM.
+[RECIPIENT]: Toh legal clearing process kya hai? Can I visit the nearest office?
+[CALLER]: Office aane ka time nahi hai. You must immediately connect and perform custom tracking APK installed from WhatsApp link.
+[RECIPIENT]: No, this is completely unsafe. Any legitimate inquiry requires physical presence. I am cutting the call.

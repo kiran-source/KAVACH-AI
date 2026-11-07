@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0283
+Language: te
+Scenario: Municipal Drinking Water Pipeline Maintenance Supply Notice (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: నమస్కారం, నేను Water Supply Board నుండి Officer Reddy మాట్లాడుతున్నాను. మీ temporary water supply shutdown on Thursday for valve repair కోసం కాల్ చేశాను.
+[RECIPIENT]: నమస్కారం అండి, అవును నేను దీని అప్‌డేట్ కోసం ఎదురుచూస్తున్నాను.
+[CALLER]: దయచేసి మీరు store necessary drinking water for one day. మేము ఫోన్ లో ఎప్పుడూ ఓటీపీ లేదా పిన్ అడగము.
+[RECIPIENT]: ధన్యవాదాలు అండి, నేను నేరుగా కార్యాలయానికి వచ్చి పని పూర్తి చేసుకుంటాను.

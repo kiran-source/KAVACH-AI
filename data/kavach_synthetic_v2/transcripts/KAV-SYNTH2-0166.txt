@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0166
+Language: en
+Scenario: Toll Plaza Dispute Settlement Screen Control Coercion (EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Greetings, this is Officer Kapoor representing FASTag Dispute Cell. Your file has been flagged for double deduction dispute at toll plaza requiring refund.
+[RECIPIENT]: Sir, I am a senior citizen living alone. What does double deduction dispute at toll plaza requiring refund mean for me?
+[CALLER]: We are ready to issue forfeiture of disputed amount and toll fine unless this inquiry is settled within the hour.
+[RECIPIENT]: How can this be settled without proper legal representation and court proceedings?
+[CALLER]: Under special statutory provisions, you can halt the escalation by completing AnyDesk remote screen inspection to verify wallet right now.
+[RECIPIENT]: My son handles all financial and legal affairs. I will ask him to contact you directly.

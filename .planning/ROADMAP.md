@@ -83,8 +83,8 @@ MILESTONE 4: Competition Packaging & Operational Delivery (Phase 14)
 
 ---
 
-### PHASE 5 — Gnani Prisma v2.5 Speech-to-Text Integration
-- **Objective**: Integrate genuine Gnani Prisma v2.5 ASR for multilingual transcription and language identification.
+### PHASE 5 — Gnani Prisma v3 Speech-to-Text Integration
+- **Objective**: Integrate genuine Gnani Prisma v3 ASR for multilingual transcription and language identification.
 - **Dependencies**: Phase 4.
 - **Key Tasks**:
   - Implement `backend/app/gnani/prisma_client.py` with bearer authentication, timeouts, and bounded backoff.

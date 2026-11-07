@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0473
+Language: te
+Scenario: Event Concert Ticket Reservation Query Disconnecting (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: నమస్కారం అండి, Showtime Tickets డెస్క్ నుండి Caller Tanya ని.
+[RECIPIENT]: నమస్కారం. దేని గురించి ఈ కాల్ అండి?
+[CALLER]: మీ ప్రొఫైల్ కి inquiry regarding pending ticket payment for music festival సదుపాయం కల్పించవచ్చని మాకు సమాచారం వచ్చింది.
+[RECIPIENT]: నేను దీని కోసం ఎక్కడా దరఖాస్తు చేయలేదే?
+[CALLER]: ఎంపిక చేసిన వినియోగదారులకు ప్రాధాన్యత ప్రకారం ఈ సదుపాయం ఇస్తున్నాం.
+[RECIPIENT]: దీని కోసం నేను ఏమి చేయాలి?
+[CALLER]: మీ పిన్‌కోడ్ మరియు ప్రస్తుత సేవా వివరాలను నిర్ధారిస్తే చాలు.
+[RECIPIENT]: అపరిచితులకు ఫోన్ లో నా సమాచారం ఇవ్వడం ఇష్టం లేదు. recipient states they did not book tickets and call ends.
+[CALLER]: మీరు ఇష్టపడకపోతే మేము బలవంతం చేయము అండి.
+[RECIPIENT]: సరేనండి, నా నంబర్ కు ఇలాంటి కాల్స్ చేయకండి. ధన్యవాదాలు.

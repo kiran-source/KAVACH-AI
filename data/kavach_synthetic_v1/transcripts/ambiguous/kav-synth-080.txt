@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-080 (te-en) ===
+Scenario: Cloud Infrastructure Subscription Auto-Renewal Notice
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, AWS billing support desk representative calling. Is this Mr. Nikhil?
+[RECIPIENT]: Yes Nikhil speaking.
+[CALLER]: Mee EC2 compute instances auto-renewal monthly charge one hundred and twenty dollars credit card failure chupistundi.
+[RECIPIENT]: My card was renewed last month, so old card might have failed.
+[CALLER]: If payment is not cleared in twelve hours, your production cloud database snapshot will be permanently purged.
+[RECIPIENT]: Permanent purge in twelve hours? That is extremely abrupt. AWS usually provides fifteen days grace period.
+[CALLER]: System policy rules sir. You can update your payment method directly inside your AWS root console.
+[RECIPIENT]: I am logging into my official AWS console directly to inspect the billing tab.

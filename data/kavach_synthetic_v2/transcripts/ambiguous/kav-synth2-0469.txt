@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0469 (hi-en) ===
+Scenario: Utility Water Billing Clarification Requesting Callback (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Municipal Water Cell se Caller Shailesh bol raha hoon regarding water bill surcharge clarification needing reference number.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. caller asks recipient to call official municipal board landline.
+[CALLER]: Sir yeh Municipal Water Cell ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

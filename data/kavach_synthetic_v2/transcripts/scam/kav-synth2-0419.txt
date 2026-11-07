@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0419 (te-en) ===
+Scenario: Cryptocurrency Investment Guaranteed Return Scheme (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Calling from Mumbai International Cargo Customs. Mee name meeda Singapore velle parcel lo narcotics drugs seize chesaru.
+[RECIPIENT]: What is this sir? Nenu eppudu ilanti illegal activities lo participate cheyaledu. It's a mistake!
+[CALLER]: Urgent notification from Electricity Department. Unpaid power bill dues valla 30 minutes lo supply disconnect chestham.
+[RECIPIENT]: Singapore ki courier entra babu? Nenu asalu passport kooda ekkada ivvaledu.
+[CALLER]: Alert from Bank Security Team. Mee debit card temporarily restrict ayindi, immediate ga OTP share chesi verify chesukondi.
+[RECIPIENT]: Please power cut cheyakandi sir! What should I do right now to pay the bill?
+[CALLER]: You are placed under 24-hour Digital Arrest. Do not disconnect the call and stay on continuous video surveillance.
+[RECIPIENT]: Bank eppudu OTP adagadhu ani message vasthundi kada? Why are you asking for my OTP?

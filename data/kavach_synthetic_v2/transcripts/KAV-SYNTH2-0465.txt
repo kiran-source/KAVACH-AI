@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0465
+Language: te-en
+Scenario: Bank Customer Care Callback Interrupted by Network Drop (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Good afternoon andi, Union Bank Helpdesk representative Caller Sudha ni. Regarding callback regarding earlier general inquiry on account interest.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Is this an official notice or telecalling?
+[CALLER]: Idi beneficial opportunity andi, but basic profile details verify cheyali.
+[RECIPIENT]: Unknown numbers tho nenu personal details share cheyanu. network drops before customer can explain query.
+[CALLER]: Sir, idi just basic general confirmation matrame, no critical data requested.
+[RECIPIENT]: Even then, official email unte pampandi. Phone lo matladanu.

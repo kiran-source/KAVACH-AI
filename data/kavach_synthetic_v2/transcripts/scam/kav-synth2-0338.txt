@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0338 (hi-en) ===
+Scenario: Wedding Hall Booking Cancellation Immediate Refund Trap (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT
+
+[CALLER]: You are under immediate Digital Arrest. Room lock karein aur confidential video interrogation par connect rahein without hanging up.
+[RECIPIENT]: Please connection cut mat kijiye! Mere exams chal rahe hain. Tell me what is the solution.
+[CALLER]: Security compliance ke liye Play Store se QuickSupport app download kijiye aur code hamein inform karein.
+[RECIPIENT]: Bank policy strictly says never share OTP on call. Main OTP kaise de sakta hoon?
+[CALLER]: To verify your funds, you must immediately transfer refundable security deposit to official government reserve account.
+[RECIPIENT]: I am extremely nervous. Can I consult my family lawyer before proceeding?
+[CALLER]: Hello sir, I am Senior Inspector Ajay Verma from Mumbai Cyber Crime Branch calling. Aapke Aadhaar card ke against money laundering FIR register hui hai.
+[RECIPIENT]: Alright, main link click kar raha hoon but please ensure my bank account is safe.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-002 (en) ===
+Scenario: SBI Netbanking Credential Harvesting & KYC Lock Threat
+Primary Label: SCAM
+Tactics: ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT, MALICIOUS_LINK_OR_APP, URGENCY_OR_THREAT
+
+[CALLER]: Good morning sir, I am calling from State Bank of India regulatory compliance cell.
+[RECIPIENT]: Yes, what is the matter?
+[CALLER]: Your savings account KYC documents have expired as per RBI guidelines. Your debit card and UPI will be blocked in two hours.
+[RECIPIENT]: I visited my home branch last month and submitted my PAN card.
+[CALLER]: Our central database shows pending digital verification. Please open the SMS link sent to your phone and enter your netbanking username and password.
+[RECIPIENT]: Why should I enter my login password on a link sent via SMS?
+[CALLER]: It is an encrypted portal sir. If you delay, your funds will be frozen and you will face a penalty of five thousand rupees.
+[RECIPIENT]: No legitimate bank asks for passwords over phone or SMS. I will report this number.

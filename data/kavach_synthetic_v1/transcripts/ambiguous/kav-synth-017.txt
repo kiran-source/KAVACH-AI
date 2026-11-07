@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-017 (en) ===
+Scenario: Emergency Hospital Admission Inquiry from Unknown Number
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello? Is this Rajesh? I am calling from Apollo Hospital casualty reception.
+[RECIPIENT]: Yes, who is this? Why are you calling from the hospital?
+[CALLER]: A person named Mr. K. Sharma was admitted after a road accident near Silk Board. Your contact number was listed in his emergency diary.
+[RECIPIENT]: Mr. Sharma? My former colleague! How is he now?
+[CALLER]: He is conscious but needs emergency CT scanning. The billing desk needs someone to sign the guardian admission consent.
+[RECIPIENT]: Do you need me to transfer any admission deposit right now?
+[CALLER]: We cannot accept remote payments over phone. Please reach the hospital emergency ward immediately with his identity copy.
+[RECIPIENT]: I am on my way to the hospital right now.

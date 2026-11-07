@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0020 (te-en) ===
+Scenario: State Cyber Crime Cell Section 420 Contempt Warrant (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Nenu Cyber Crime Branch nunchi Inspector Kulkarni matladuthunnanu andi. Mee credentials meeda phishing portal operated using your registered IP detect ayindi.
+[RECIPIENT]: Enti sir, phishing portal operated using your registered IP aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe police patrol team dispatched to residence implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane confidential video link interrogation cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

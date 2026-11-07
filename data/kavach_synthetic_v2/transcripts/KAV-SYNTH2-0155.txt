@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0155
+Language: te-en
+Scenario: Cryptocurrency Investment Guaranteed Double Return Trap (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Urgent security dispatch. Nenu BitPro Wealth Advisory monitoring team lead Trader Aryan ni.
+[RECIPIENT]: Hello? Em jarigindi? Why are you calling with urgent tone?
+[CALLER]: Mee identity credentials tho algorithmic Bitcoin trading giving 200% return in 24 hours lo unauthorized transfers jarigayi. Case docket 810 open aindi.
+[RECIPIENT]: Case docket 810 aa? Nenu eppudu aite transfers cheyaledu. Someone must have hacked it.
+[CALLER]: Hacking aina sare, account holder ga expiration of guaranteed profit multiplier window enforce avthundi legally.
+[RECIPIENT]: Daaniki remedy enti mari? How can I prove my innocence to the authorities?
+[CALLER]: Right now emergency portal lo meeru initial investment deposit of 20,000 rupees complete chesi verify cheyali.
+[RECIPIENT]: Phone call meeda remote actions cheyatam safe kaadu. I will visit bank branch and cyber cell tomorrow.

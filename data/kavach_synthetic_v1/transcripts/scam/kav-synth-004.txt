@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-004 (en) ===
+Scenario: High-Yield Crypto Trading Telegram Investment Fraud
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT
+
+[CALLER]: Hello madam, I am Priya from Apex Global Wealth Advisory. Are you looking for high return passive income?
+[RECIPIENT]: Where did you get my contact number?
+[CALLER]: You registered on our financial portal. We are offering exclusive VIP access to an automated algorithmic crypto trading group.
+[RECIPIENT]: I am not interested in cryptocurrency investments.
+[CALLER]: Madam, our members earn guaranteed daily returns of thirty percent. You just need to start with an initial deposit of ten thousand rupees.
+[RECIPIENT]: Guaranteed thirty percent daily is mathematically impossible.
+[CALLER]: We have SEBI authorized certificates madam. Transfer five thousand right now to our manager's private UPI to lock your introductory slot.
+[RECIPIENT]: SEBI does not authorize private UPI crypto transfers. Please remove me from your list.

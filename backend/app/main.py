@@ -3,7 +3,8 @@ import uuid
 import json
 from datetime import datetime, timezone
 from typing import Optional, List, Dict, Any
-from fastapi import FastAPI, UploadFile, File, Form, Depends, HTTPException, status, Query
+from pydantic import BaseModel
+from fastapi import FastAPI, UploadFile, File, Form, Depends, HTTPException, status, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -24,12 +25,16 @@ from app.audio.processor import (
 from app.audio.validator import read_and_validate_stream, sanitize_filename
 from app.gnani.prisma_service import process_transcription, generate_warning_audio
 from app.detection.engine import analyze_transcript, get_safety_warning_text
+from app.ml import perform_hybrid_analysis
+from app.ml.hybrid_engine import get_hybrid_engine
+from app.ml.hybrid_config import HybridEngineConfig, HybridMode
 from app.reports.pdf_generator import generate_pdf_report
 from app.services.evaluation import run_evaluation_pipeline, LABELS_FILE
 
-# Initialize DB on load
+# Initialize DB and validate runtime environment
 init_db()
-logger.info("KAVACH AI Backend initialized. SQLite database ready.")
+settings.validate_runtime_mode()
+logger.info(f"KAVACH AI Backend initialized. Runtime mode: {'DEMO' if settings.DEMO_MODE else 'REAL API'}. SQLite ready.")
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -37,14 +42,39 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Secure CORS Middleware with explicit origins
+# Secure CORS Middleware with explicit origins and Vercel preview domain support
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=settings.get_allowed_origins(),
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
+
+# Runtime verification state tracker (distinguishes live session calls from disk history)
+SESSION_LIVE_VERIFIED: Dict[str, Any] = {
+    "prisma": False,
+    "timbre": False,
+    "last_verified_at": None
+}
+
+# Strict Localhost Authorization Middleware
+@app.middleware("http")
+async def enforce_localhost_only(request: Request, call_next):
+    """
+    Enforces strict local access boundary for the SOC prototype.
+    Blocks any remote LAN / WAN IP from accessing audio, incidents, or reports.
+    """
+    client_host = request.client.host if request.client else ""
+    # Allow local loopback and internal test harnesses
+    if client_host and client_host not in ["127.0.0.1", "localhost", "::1", "testclient"]:
+        logger.warning(f"Unauthorized external access attempt blocked from: {client_host}")
+        return JSONResponse(
+            status_code=403,
+            content={"detail": "Access Forbidden: KAVACH AI SOC is restricted to local machine access only."}
+        )
+    return await call_next(request)
 
 # Mount warnings directory for audio serving if exists
 WARNING_AUDIO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../uploads/warnings"))
@@ -66,24 +96,44 @@ def health_check():
 
 @app.get("/api/v1/health/providers")
 def provider_health():
-    is_mock = not settings.GNANI_API_KEY or settings.GNANI_API_KEY in ["mock_key", "mock_gnani_api_key_for_testing", ""]
+    """
+    Returns granular provider status distinguishing configured, verified, 
+    simulated demo mode, and unavailable states without leaking secrets.
+    """
+    key_configured = settings.is_api_key_configured()
+    
+    if settings.DEMO_MODE:
+        prisma_status = "simulated_demo_mode"
+        timbre_status = "local_tts_fallback"
+    elif key_configured:
+        # Distinguish verified within this live session vs configured and ready
+        prisma_status = "verified_in_session" if SESSION_LIVE_VERIFIED["prisma"] else "configured_ready_for_inference"
+        timbre_status = "verified_in_session" if SESSION_LIVE_VERIFIED["timbre"] else "configured_ready_for_inference"
+    else:
+        prisma_status = "unavailable_missing_credentials"
+        timbre_status = "unavailable_missing_credentials"
+
     return {
         "gnani_prisma": {
-            "name": "Gnani Prisma v2.5 Speech-to-Text",
-            "status": "connected" if not is_mock and not settings.DEMO_MODE else "simulated_demo_mode",
-            "version": "v2.5",
-            "languages": ["en", "hi", "te"]
+            "name": "Gnani Prisma v3.0 Speech-to-Text",
+            "status": prisma_status,
+            "version": "v3.0",
+            "endpoint": settings.GNANI_PRISMA_ENDPOINT,
+            "languages": ["en-IN", "hi-IN", "te-IN", "indic-auto"]
         },
         "gnani_timbre": {
             "name": "Gnani Timbre v2.5 Text-to-Speech",
-            "status": "connected" if not is_mock and not settings.DEMO_MODE else "local_tts_fallback",
+            "status": timbre_status,
             "version": "v2.5",
-            "languages": ["en", "hi", "te"]
+            "endpoint": settings.GNANI_TIMBRE_ENDPOINT,
+            "voice": "Nalini",
+            "languages": ["en-IN", "hi-IN", "te-IN"]
         },
         "gnani_evon": {
-            "name": "Gnani Evon v3.3 Reasoning Engine",
-            "status": "optional_standby",
-            "version": "v3.3"
+            "name": "Gnani Evon v3.3 Text Generation",
+            "status": "unavailable_scope_not_allowed",
+            "version": "v3.3",
+            "details": "Hosted REST API inference returned 403 SCOPE_NOT_ALLOWED; text generation executed via Domain-Curated Multilingual Scenario Engine."
         }
     }
 
@@ -198,16 +248,20 @@ def delete_audio(audio_id: str, db: Session = Depends(get_db)):
     return {"success": True, "message": f"Audio file {audio_id} deleted."}
 
 # ============================================================================
-# 3. TRANSCRIPTION (GNANI PRISMA v2.5)
+# 3. TRANSCRIPTION (GNANI PRISMA v3)
 # ============================================================================
 @app.post("/api/v1/transcription/{audio_id}")
 def transcribe_audio(audio_id: str, language: str = Form("auto"), db: Session = Depends(get_db)):
-    """Transcribes audio using Gnani Prisma v2.5 STT."""
+    """Transcribes audio using Gnani Prisma v3 STT."""
     audio = db.query(AudioFileDB).filter(AudioFileDB.id == audio_id).first()
     if not audio:
         raise HTTPException(status_code=404, detail="Audio file not found")
 
     transcript_res = process_transcription(audio.stored_path, language)
+    if not transcript_res.get("is_mock"):
+        SESSION_LIVE_VERIFIED["prisma"] = True
+        SESSION_LIVE_VERIFIED["last_verified_at"] = datetime.now(timezone.utc).isoformat()
+
     transcript_id = transcript_res["transcript_id"]
 
     db_transcript = TranscriptDB(
@@ -257,25 +311,31 @@ def get_transcript(transcript_id: str, db: Session = Depends(get_db)):
 # ============================================================================
 @app.post("/api/v1/analysis/{transcript_id}")
 def analyze_transcript_endpoint(transcript_id: str, db: Session = Depends(get_db)):
-    """Analyzes transcript for social engineering patterns, calculates risk score, and initiates incidents."""
+    """Analyzes transcript using Hybrid Risk Engine (Rules + Calibrated ML), calculates risk score, and initiates incidents."""
     tr = db.query(TranscriptDB).filter(TranscriptDB.id == transcript_id).first()
     if not tr:
         raise HTTPException(status_code=404, detail="Transcript not found")
 
-    analysis_res = analyze_transcript(tr.full_text, language_hint=tr.detected_language)
+    hybrid_res = perform_hybrid_analysis(tr.full_text, language_hint=tr.detected_language)
     analysis_id = f"AN-{uuid.uuid4().hex[:8].upper()}"
 
     db_analysis = AnalysisResultDB(
         id=analysis_id,
         transcript_id=transcript_id,
-        risk_score=analysis_res["risk_score"],
-        severity=analysis_res["severity"],
+        risk_score=hybrid_res.risk_score,
+        severity=hybrid_res.severity,
         analysis_status="completed",
-        engine_version=analysis_res["engine_version"]
+        engine_version=hybrid_res.engine_version,
+        detection_mode=hybrid_res.detection_mode,
+        ml_predicted_class=hybrid_res.ml_result.predicted_class if hybrid_res.ml_result else None,
+        ml_confidence=hybrid_res.ml_result.confidence if hybrid_res.ml_result else None,
+        ml_model_version=hybrid_res.ml_result.model_version if hybrid_res.ml_result else None,
+        rule_score=hybrid_res.rule_score,
+        ml_score=hybrid_res.ml_score
     )
     db.add(db_analysis)
 
-    for th in analysis_res["threats"]:
+    for th in hybrid_res.threats:
         db_th = DetectedThreatDB(
             id=str(uuid.uuid4()),
             analysis_id=analysis_id,
@@ -291,18 +351,18 @@ def analyze_transcript_endpoint(transcript_id: str, db: Session = Depends(get_db
 
     # Automated incident creation for Medium, High, or Critical threats (risk >= 40)
     created_incident_id = None
-    if analysis_res["risk_score"] >= 40.0:
+    if hybrid_res.risk_score >= 40.0:
         incident_num = f"INC-{uuid.uuid4().hex[:6].upper()}"
-        primary_threat = analysis_res["categories"][0] if analysis_res["categories"] else "Social Engineering"
+        primary_threat = hybrid_res.categories[0] if hybrid_res.categories else "Social Engineering"
         db_inc = IncidentDB(
             id=str(uuid.uuid4()),
             incident_number=incident_num,
             analysis_id=analysis_id,
-            title=f"{primary_threat} Detected ({analysis_res['severity']} Risk)",
-            severity=analysis_res["severity"],
+            title=f"{primary_threat} Detected ({hybrid_res.severity} Risk)",
+            severity=hybrid_res.severity,
             status="New",
             assigned_analyst="SOC Analyst 1",
-            analyst_notes=f"Auto-generated SOC incident from voice scan. Risk score: {analysis_res['risk_score']}/100. Tactic categories: {', '.join(analysis_res['categories'])}."
+            analyst_notes=f"Auto-generated SOC incident from voice scan. Mode: {hybrid_res.detection_mode}. Risk score: {hybrid_res.risk_score}/100. Tactic categories: {', '.join(hybrid_res.categories)}."
         )
         db.add(db_inc)
         db.flush()
@@ -312,7 +372,7 @@ def analyze_transcript_endpoint(transcript_id: str, db: Session = Depends(get_db
             id=str(uuid.uuid4()),
             incident_id=db_inc.id,
             event_type="Detection",
-            description=f"Rule Engine identified {len(analysis_res['threats'])} threats. Overall risk assessed at {analysis_res['risk_score']}/100 ({analysis_res['severity']})."
+            description=f"Detection ({hybrid_res.detection_mode}): Rule score {hybrid_res.rule_score:.1f}, ML score {hybrid_res.ml_score if hybrid_res.ml_score is not None else 'N/A'}. Final risk: {hybrid_res.risk_score:.1f}/100 ({hybrid_res.severity})."
         )
         db.add(db_timeline)
 
@@ -321,15 +381,118 @@ def analyze_transcript_endpoint(transcript_id: str, db: Session = Depends(get_db
     return {
         "analysis_id": analysis_id,
         "transcript_id": transcript_id,
-        "risk_score": analysis_res["risk_score"],
-        "severity": analysis_res["severity"],
-        "threats": analysis_res["threats"],
-        "categories": analysis_res["categories"],
-        "recommendations": analysis_res["recommendations"],
-        "context_suppressed": analysis_res.get("context_suppressed", False),
-        "context_note": analysis_res.get("context_note", ""),
+        "detection_mode": hybrid_res.detection_mode,
+        "risk_score": hybrid_res.risk_score,
+        "severity": hybrid_res.severity,
+        "rule_score": hybrid_res.rule_score,
+        "ml_score": hybrid_res.ml_score,
+        "ml_result": hybrid_res.ml_result.model_dump() if hybrid_res.ml_result else None,
+        "threats": hybrid_res.threats,
+        "categories": hybrid_res.categories,
+        "recommendations": hybrid_res.recommendations,
+        "context_suppressed": hybrid_res.context_suppressed,
+        "context_note": hybrid_res.context_note,
+        "conflict_detected": hybrid_res.conflict_detected,
+        "conflict_explanation": hybrid_res.conflict_explanation,
+        "explanation": hybrid_res.explanation,
         "incident_id": created_incident_id
     }
+
+@app.post("/api/v1/analysis/text")
+def analyze_raw_text(text: str = Form(...), language: str = Form("en")):
+    """Evaluates raw transcript text using Hybrid Risk Engine for fast incremental threat scoring (used by live microphone chunk analysis)."""
+    if not text or not text.strip():
+        return {
+            "detection_mode": "RULE_ONLY",
+            "risk_score": 0.0,
+            "severity": "Low",
+            "rule_score": 0.0,
+            "ml_score": None,
+            "threats": [],
+            "categories": [],
+            "recommendations": [],
+            "context_suppressed": False,
+            "explanation": "No text provided for analysis."
+        }
+    hybrid_res = perform_hybrid_analysis(text.strip(), language_hint=language)
+    return {
+        "detection_mode": hybrid_res.detection_mode,
+        "risk_score": hybrid_res.risk_score,
+        "severity": hybrid_res.severity,
+        "rule_score": hybrid_res.rule_score,
+        "ml_score": hybrid_res.ml_score,
+        "ml_result": hybrid_res.ml_result.model_dump() if hybrid_res.ml_result else None,
+        "threats": hybrid_res.threats,
+        "categories": hybrid_res.categories,
+        "recommendations": hybrid_res.recommendations,
+        "context_suppressed": hybrid_res.context_suppressed,
+        "context_note": hybrid_res.context_note,
+        "conflict_detected": hybrid_res.conflict_detected,
+        "conflict_explanation": hybrid_res.conflict_explanation,
+        "explanation": hybrid_res.explanation
+    }
+
+# ============================================================================
+# 4.1 EXPERIMENTAL HYBRID INTELLIGENCE ENGINE (TF-IDF v3 + MuRIL v1)
+# ============================================================================
+class HybridAnalysisRequest(BaseModel):
+    text: str = ""
+    language: Optional[str] = "en"
+    mode: Optional[str] = "hybrid_selective"
+
+@app.post("/api/v1/hybrid/analyze")
+def analyze_with_hybrid_engine(payload: HybridAnalysisRequest):
+    """
+    Experimental Hybrid Intelligence endpoint:
+    Combines Deterministic Rule-Priority Shield, TF-IDF v3 Fast Classifier,
+    Selective MuRIL v1 Multilingual Transformer, and Safety-First Decision Fusion.
+    """
+    input_text = payload.text if payload else ""
+    input_lang = (payload.language or "en") if payload else "en"
+    input_mode = (payload.mode or "hybrid_selective") if payload else "hybrid_selective"
+
+    if not input_text or not input_text.strip():
+        return {
+            "status": "EMPTY_INPUT",
+            "final_decision": "AMBIGUOUS",
+            "final_risk_score": 0.0,
+            "severity": "Low",
+            "rule_score": 0.0,
+            "critical_rule_triggered": False,
+            "rule_shield_active": False,
+            "tfidf_result": None,
+            "muril_invoked": False,
+            "muril_result": None,
+            "explanation": "No text provided for hybrid analysis."
+        }
+
+    try:
+        cfg = HybridEngineConfig(
+            mode=HybridMode(input_mode) if input_mode in [m.value for m in HybridMode] else HybridMode.HYBRID_SELECTIVE
+        )
+        engine = get_hybrid_engine(cfg)
+        res = engine.analyze(input_text.strip(), language_hint=input_lang)
+        out = res.to_dict()
+        out["status"] = "SUCCESS"
+        return out
+    except Exception as e:
+        logger.error(f"Hybrid analysis error: {e}")
+        # Graceful fallback to deterministic rule engine
+        fallback_rule = analyze_transcript(input_text.strip(), language_hint=input_lang)
+        return {
+            "status": "FALLBACK_RULE_ONLY",
+            "error": str(e),
+            "final_decision": "SCAM" if fallback_rule.get("risk_score", 0.0) >= 40.0 else "LEGITIMATE",
+            "final_risk_score": fallback_rule.get("risk_score", 0.0),
+            "severity": fallback_rule.get("severity", "Low"),
+            "rule_score": fallback_rule.get("risk_score", 0.0),
+            "critical_rule_triggered": False,
+            "rule_shield_active": False,
+            "tfidf_result": None,
+            "muril_invoked": False,
+            "muril_result": None,
+            "explanation": "Hybrid engine error; safely reverted to deterministic rules."
+        }
 
 @app.get("/api/v1/analysis/{analysis_id}")
 def get_analysis(analysis_id: str, db: Session = Depends(get_db)):
@@ -394,6 +557,10 @@ def generate_warning(
     text = custom_text or get_safety_warning_text(language, cats)
 
     tts_result = generate_warning_audio(text, language)
+    if not tts_result.get("is_fallback"):
+        SESSION_LIVE_VERIFIED["timbre"] = True
+        SESSION_LIVE_VERIFIED["last_verified_at"] = datetime.now(timezone.utc).isoformat()
+
     audio_filename = tts_result["filename"]
     audio_url = f"/static/warnings/{audio_filename}"
 
@@ -578,6 +745,11 @@ def create_report(incident_id: str, db: Session = Depends(get_db)):
         "severity": inc.severity,
         "status": inc.status,
         "risk_score": analysis.risk_score if analysis else 0.0,
+        "detection_mode": getattr(analysis, "detection_mode", "RULE_ONLY") if analysis else "RULE_ONLY",
+        "ml_predicted_class": getattr(analysis, "ml_predicted_class", None) if analysis else None,
+        "ml_confidence": getattr(analysis, "ml_confidence", None) if analysis else None,
+        "rule_score": getattr(analysis, "rule_score", None) if analysis else None,
+        "ml_score": getattr(analysis, "ml_score", None) if analysis else None,
         "assigned_analyst": inc.assigned_analyst,
         "created_at": inc.created_at.strftime("%Y-%m-%d %H:%M:%S UTC") if inc.created_at else "N/A",
         "transcript_text": transcript.full_text if transcript else "",
@@ -731,7 +903,7 @@ def trigger_evaluation_pipeline():
 # ============================================================================
 @app.get("/api/v1/settings")
 def get_settings():
-    is_mock = not settings.GNANI_API_KEY or settings.GNANI_API_KEY in ["mock_key", "mock_gnani_api_key_for_testing", ""]
+    is_mock = not settings.GNANI_API_KEY or settings.GNANI_API_KEY in ["mock_key", "mock_gnani_api_key_for_testing", "YOUR_ACTUAL_API_KEY", ""]
     return {
         "preferred_language": "en",
         "warning_voice_language": "en",

@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0112
+Language: hi
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (HI)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: सावधान हो जाइए। मैं Army Cantonment Wing के नियंत्रण कक्ष से Subedar Major Gill बोल रहा हूँ।
+[RECIPIENT]: जी कहिए, क्या बात है? आप नियंत्रण कक्ष से क्यों फोन कर रहे हैं?
+[CALLER]: आपके पहचान पत्र से urgent sale of military certified vehicle at low price की अवैध गतिविधि पाई गई है। फाइल संख्या 712 खोली गई है।
+[RECIPIENT]: फाइल संख्या 712? मुझे इस बारे में न तो कोई पत्र मिला और न कोई सूचना।
+[CALLER]: सरकारी डाक में समय लगता है, लेकिन विभाग आज ही sale to competing buyer waiting at depot की कार्रवाई करने वाला है।
+[RECIPIENT]: यदि कोई कानूनी मामला है तो मुझे अदालत या थाने में उपस्थित होने का समय मिलना चाहिए।
+[CALLER]: कोर्ट जाने से बचने का एक ही रास्ता है कि आप फौरन 15,000 rupees military gate pass token का पालन करें।
+[RECIPIENT]: मैं फोन पर किसी खाते में पैसे नहीं भेजूँगा। मैं कल सुबह खुद आपके कार्यालय आकर सत्यापन करवाऊँगा।

@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0094
+Language: hi-en
+Scenario: Gas Pipeline Subsidy Release & Mobile QuickSupport Trap (HI-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT
+
+[CALLER]: Attention please. This is Officer Kaul from Indane Gas Vigilance central monitoring unit.
+[RECIPIENT]: Yes speaking, what is this call about? Please be quick as I am driving.
+[CALLER]: Aapke ID documents misuse hue hain in accumulated subsidy of 4,800 rupees held in pipeline. State enforcement team has registered file 904.
+[RECIPIENT]: File 904? Sir mera ID kabhi kisi illicit activity mein use nahi hua. Someone must have forged it.
+[CALLER]: Forged ho ya real, system is preparing cancellation of domestic LPG cylinder quota unless cleared before 5 PM.
+[RECIPIENT]: Toh legal clearing process kya hai? Can I visit the nearest office?
+[CALLER]: Office aane ka time nahi hai. You must immediately connect and perform TeamViewer QuickSupport screen sharing.
+[RECIPIENT]: No, this is completely unsafe. Any legitimate inquiry requires physical presence. I am cutting the call.

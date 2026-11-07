@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0005 (te-en) ===
+Scenario: CBI Money Laundering & Digital Arrest (TE-EN)
+Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu CBI Headquarters nunchi Inspector Raman matladuthunnanu andi. Mee credentials meeda 4.2 crore illegal Hawala laundering detect ayindi.
+[RECIPIENT]: Enti sir, 4.2 crore illegal Hawala laundering aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe Aadhaar non-bailable arrest warrant implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane RBI security verification account cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0462
+Language: hi
+Scenario: Bank Customer Care Callback Interrupted by Network Drop (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्कार, Union Bank Helpdesk की तरफ से Caller Sudha बात कर रहा हूँ callback regarding earlier general inquiry on account interest के संबंध में।
+[RECIPIENT]: नमस्ते, मैं अभी थोड़ा व्यस्त हूँ। क्या यह कोई विज्ञापन कॉल है?
+[CALLER]: यह एक महत्वपूर्ण पेशकश है, पर पहले हमें आपकी पात्रता की जांच करनी होगी।
+[RECIPIENT]: फोन पर मैं कोई विवरण साझा नहीं करता। network drops before customer can explain query।
+[CALLER]: सर, हम केवल सामान्य जानकारी ले रहे हैं, कोई गोपनीय डाटा नहीं चाहिए।
+[RECIPIENT]: फिर भी, आप लिखित विवरण ईमेल पर भेजिए। फोन पर कोई पुष्टि नहीं होगी।

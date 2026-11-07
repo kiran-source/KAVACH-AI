@@ -21,7 +21,7 @@ India faces aggressive and highly organized voice social-engineering operations 
 | :--- | :--- | :--- |
 | **Frontend** | React 18, TypeScript, Vite, Tailwind CSS, Recharts, Lucide React, Axios, React Router v6 | High-density dark cybersecurity SOC UI; instant responsiveness; zero bloated desktop runtimes. |
 | **Backend** | Python 3.12+, FastAPI, Pydantic v2, SQLAlchemy, SQLite, python logging | Lightweight REST API; local-first; asynchronous I/O; low memory profile (< 250MB RAM). |
-| **Speech-to-Text (ASR)** | **Gnani Prisma v2.5** | High accuracy across Telugu, Hindi, and English with Language Identification (LID) and timestamped segments. |
+| **Speech-to-Text (ASR)** | **Gnani Prisma v3** | High accuracy across Telugu, Hindi, and English with Language Identification (LID) and timestamped segments. |
 | **Text-to-Speech (TTS)** | **Gnani Timbre v2.5** | Immediate acoustic safety warnings in native Indian languages; local speech fallback. |
 | **Reasoning Engine** | **Gnani Evon v3.3** | Optional second-stage reasoning arbiter for ambiguous transcripts. |
 | **Audio Processing** | SoundFile, Librosa, Python Wave | Header inspection, duration/sample-rate validation, safe temporary quarantine. |
@@ -47,7 +47,7 @@ India faces aggressive and highly organized voice social-engineering operations 
        v
 [FastAPI Backend Engine]
   ├── Audio Ingestion Module (MIME check, 25MB cap, UUID mapping, path-traversal guard)
-  ├── Gnani Prisma v2.5 Integration (Multilingual ASR, LID, timestamped segments)
+  ├── Gnani Prisma v3 Integration (Multilingual ASR, LID, timestamped segments)
   ├── Threat Detection Rule Engine (8 Threat categories, Negative context guard, Regex)
   ├── Explainable Risk Scoring Engine (0–100 Weighted model, Severity mapping)
   ├── Gnani Timbre v2.5 Integration (Localized acoustic safety voice warnings)

@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0337
+Language: hi
+Scenario: State Electricity Board Peak Summer Energy Conservation (HI)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: नमस्ते, क्या मेरी बात मुख्य खाताधारक से हो रही है?
+[RECIPIENT]: हाँ, मैं ही बोल रहा हूँ। कृपया अपना परिचय दीजिए।
+[CALLER]: मैं Power Distribution Company का प्रतिनिधि Public Relations Desk हूँ। यह कॉल courtesy advisory on peak summer electricity conservation के संदर्भ में है।
+[RECIPIENT]: जी हाँ, मैंने पिछले सप्ताह courtesy advisory on peak summer electricity conservation के लिए अनुरोध दिया था।
+[CALLER]: आपकी फाइल को प्रशासनिक स्वीकृति मिल चुकी है।
+[RECIPIENT]: क्या यह प्रक्रिया घर बैठे फोन पर हो सकती है?
+[CALLER]: सुरक्षा कारणों से नहीं। हम फोन पर कोई डेटा नहीं लेते। आपसे अनुरोध है कि आप tips on efficient AC temperature settings at 24 degrees।
+[RECIPIENT]: यह जानकर खुशी हुई कि आप सुरक्षा का इतना ध्यान रखते हैं।
+[CALLER]: हमारा कार्यालय सुबह 10 से शाम 5 बजे तक खुला है। आप सुविधा अनुसार पधार सकते हैं।
+[RECIPIENT]: बहुत-बहुत धन्यवाद, मैं समय पर उपस्थित हो जाऊँगा।

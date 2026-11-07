@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0450 (te-en) ===
+Scenario: Educational Course Certificate Courier Address Recheck (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Skill India Academy nunchi Caller Manisha matladuthunnanu regarding dispatch confirmation for digital marketing course certificate.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient says they never enrolled in any marketing course.
+[CALLER]: Idi Skill India Academy direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

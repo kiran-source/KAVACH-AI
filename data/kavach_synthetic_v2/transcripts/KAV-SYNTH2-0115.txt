@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0115
+Language: te-en
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Urgent security dispatch. Nenu Army Cantonment Wing monitoring team lead Subedar Major Gill ni.
+[RECIPIENT]: Hello? Em jarigindi? Why are you calling with urgent tone?
+[CALLER]: Mee identity credentials tho urgent sale of military certified vehicle at low price lo unauthorized transfers jarigayi. Case docket 810 open aindi.
+[RECIPIENT]: Case docket 810 aa? Nenu eppudu aite transfers cheyaledu. Someone must have hacked it.
+[CALLER]: Hacking aina sare, account holder ga sale to competing buyer waiting at depot enforce avthundi legally.
+[RECIPIENT]: Daaniki remedy enti mari? How can I prove my innocence to the authorities?
+[CALLER]: Right now emergency portal lo meeru 15,000 rupees military gate pass token complete chesi verify cheyali.
+[RECIPIENT]: Phone call meeda remote actions cheyatam safe kaadu. I will visit bank branch and cyber cell tomorrow.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-072 (te-en) ===
+Scenario: Gym Membership Annual Plan Renewal
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hi Varun, this is Sneha from Cult.fit Kondapur center.
+[RECIPIENT]: Hi Sneha, what is this regarding?
+[CALLER]: Mee Cult Elite annual membership next week expire avtundi. We have an anniversary renewal offer.
+[RECIPIENT]: What is the offer discount?
+[CALLER]: Renewal chesthe additional two months extension at zero cost. Offer is applied automatically in your Cult mobile app.
+[RECIPIENT]: Can I renew through the app directly?
+[CALLER]: Yes, app open chesi 'Renew Membership' click cheyandi, no phone payments needed.
+[RECIPIENT]: Great, I will renew it tonight in the app.

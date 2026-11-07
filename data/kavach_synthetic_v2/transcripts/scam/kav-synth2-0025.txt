@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0025 (te-en) ===
+Scenario: Enforcement Directorate Illegal Foreign Currency Coercion (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, DIGITAL_ARREST, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu Enforcement Directorate nunchi Assistant Director Verma matladuthunnanu andi. Mee credentials meeda 70,000 USD foreign exchange FEMA violation detect ayindi.
+[RECIPIENT]: Enti sir, 70,000 USD foreign exchange FEMA violation aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe freezing of all domestic bank accounts implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane ED safe reserve fund deposit cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

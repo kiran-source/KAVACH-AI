@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0370
+Language: te-en
+Scenario: Broadband Optical Fiber Upgrade Neighborhood Notice (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, ACT Fibernet Tech Desk support desk nunchi Technician Santosh matladuthunnanu.
+[RECIPIENT]: Hello sir, idhi na scheduled fiber optic speed upgrade in neighborhood related update aa?
+[CALLER]: Yes exactly. Mee application approval vachindi. You just need to maintenance window between 2 PM and 4 PM with minimal downtime.
+[RECIPIENT]: What physical documents should I bring along?
+[CALLER]: Original photo ID card okati tesukoni randi. Online payment emi avasaram ledu.
+[RECIPIENT]: Thanks a lot for the clarity. I will visit the authorized counter.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0115 (te-en) ===
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu Army Cantonment Wing nunchi Subedar Major Gill matladuthunnanu andi. Mee credentials meeda urgent sale of military certified vehicle at low price detect ayindi.
+[RECIPIENT]: Enti sir, urgent sale of military certified vehicle at low price aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe sale to competing buyer waiting at depot implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane 15,000 rupees military gate pass token cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

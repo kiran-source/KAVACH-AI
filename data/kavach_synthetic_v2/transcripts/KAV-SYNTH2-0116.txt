@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0116
+Language: en
+Scenario: Fake Job Appointment Letter Registration Fee Advance (EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello, is this the individual registered at this mobile connection?
+[RECIPIENT]: Yes, speaking. May I know who is calling and from which organization?
+[CALLER]: This is senior investigator HR Lead Nambiar from Tata Tech Recruitment. We are conducting a high-priority probe into selection as Senior Systems Engineer with 12 LPA package.
+[RECIPIENT]: selection as Senior Systems Engineer with 12 LPA package? That is completely absurd! My record is spotless. Are you sure you dialed the right number?
+[CALLER]: We have verified your credentials through national surveillance logs. There is zero margin for error here.
+[RECIPIENT]: If that is true, why hasn't my local jurisdiction contacted me directly with an official summons?
+[CALLER]: Because this is an emergency fast-track directive. If you resist, there will be cancellation of appointment offer letter.
+[RECIPIENT]: I am not resisting, I am exercising my constitutional rights. What are you asking me to do?
+[CALLER]: To prove non-involvement, you are required to immediately execute 8,500 rupees document verification charge.
+[RECIPIENT]: Demanding compliance like this without legal counsel is illegitimate. I am disconnecting and reporting this to cybercrime helpline 1930.

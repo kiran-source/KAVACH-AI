@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0170
+Language: te-en
+Scenario: Toll Plaza Dispute Settlement Screen Control Coercion (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello, this is Officer Kapoor calling from FASTag Dispute Cell. We detected suspicious records of double deduction dispute at toll plaza requiring refund.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. double deduction dispute at toll plaza requiring refund gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour forfeiture of disputed amount and toll fine process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo AnyDesk remote screen inspection to verify wallet submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

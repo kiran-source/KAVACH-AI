@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0436 (te-en) ===
+Scenario: Defence Personnel OLX Vehicle Advance Token Fraud (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Good afternoon sir, this is Cyber Crime Police Department Hyderabad. Mee Aadhaar details meeda illegal money laundering investigation start ayindi.
+[RECIPIENT]: Naku chala fear ga undi sir. Can I please call my family lawyer first?
+[CALLER]: Calling from Mumbai International Cargo Customs. Mee name meeda Singapore velle parcel lo narcotics drugs seize chesaru.
+[RECIPIENT]: Okay sir, application download chesthunnanu, please don't arrest me.
+[CALLER]: Urgent notification from Electricity Department. Unpaid power bill dues valla 30 minutes lo supply disconnect chestham.
+[RECIPIENT]: What is this sir? Nenu eppudu ilanti illegal activities lo participate cheyaledu. It's a mistake!
+[CALLER]: Alert from Bank Security Team. Mee debit card temporarily restrict ayindi, immediate ga OTP share chesi verify chesukondi.
+[RECIPIENT]: Singapore ki courier entra babu? Nenu asalu passport kooda ekkada ivvaledu.

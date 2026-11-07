@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0469
+Language: hi-en
+Scenario: Utility Water Billing Clarification Requesting Callback (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, am I speaking with the primary subscriber? Calling from Municipal Water Cell.
+[RECIPIENT]: Yes speaking. What is this call regarding?
+[CALLER]: We are coordinating an initiative regarding water bill surcharge clarification needing reference number in your city zone.
+[RECIPIENT]: Never heard of your agency before. Are you an authorized representative?
+[CALLER]: We operate alongside major service partners for customer facilitation.
+[RECIPIENT]: This sounds very vague and unverified. caller asks recipient to call official municipal board landline.
+[CALLER]: Sir there is no payment involved, just preliminary feedback.
+[RECIPIENT]: Still, I don't give feedback to random cold callers. Please do not call back.

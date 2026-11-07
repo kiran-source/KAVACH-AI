@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0221 (en) ===
+Scenario: Automobile Service Center Scheduled Maintenance Readiness (EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, this is Advisor Sunil calling from Tata Motors Service. I am reaching out regarding your regular vehicle periodic servicing ready for inspection.
+[RECIPIENT]: Hello, yes thank you for calling. I was expecting an official update regarding this.
+[CALLER]: We would like to request that you drop vehicle at workshop tomorrow morning. Our authorized counter is open during normal working hours.
+[RECIPIENT]: Understood. Are there any specific reference documents or identity proofs I need to carry?
+[CALLER]: Just carry your standard photo ID and previous receipt copy. No financial payment or OTP is requested on this call.
+[RECIPIENT]: Thank you for the clear information and safety reminder. I will visit tomorrow as advised.

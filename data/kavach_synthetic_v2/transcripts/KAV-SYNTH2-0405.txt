@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0405
+Language: te-en
+Scenario: Wrong Number Callback from Unknown Distant Person (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Good afternoon andi, Unknown Private Caller representative Caller Harish ni. Regarding inquiry looking for someone named Mr. Raghunath.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Is this an official notice or telecalling?
+[CALLER]: Idi beneficial opportunity andi, but basic profile details verify cheyali.
+[RECIPIENT]: Unknown numbers tho nenu personal details share cheyanu. recipient confirms wrong number and ends call.
+[CALLER]: Sir, idi just basic general confirmation matrame, no critical data requested.
+[RECIPIENT]: Even then, official email unte pampandi. Phone lo matladanu.

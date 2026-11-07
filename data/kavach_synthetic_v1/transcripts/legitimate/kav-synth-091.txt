@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-091 (hi-en) ===
+Scenario: Authorized Car Servicing Center Estimate & Pickup Time
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good afternoon Mr. Kapoor, Hyundai authorized service center Okhla se Service Advisor Amit bol raha hoon.
+[RECIPIENT]: Haan Amit ji, meri Creta car ki 30,000 km regular servicing complete ho gayi kya?
+[CALLER]: Sir engine oil replacement, brake pad cleaning aur wheel alignment sab complete ho gaya hai.
+[RECIPIENT]: Total billing amount kitna hua?
+[CALLER]: Estimate bill tax mila kar six thousand four hundred bana hai sir. Invoice aapke WhatsApp aur email par bhej di hai.
+[RECIPIENT]: Car pickup ke liye kab aa sakta hoon?
+[CALLER]: Washing aur vacuuming chal rahi hai, six PM tak vehicle ready ho jayegi. Payment aap bill desk par card ya cash se kar sakte hain.
+[RECIPIENT]: Theek hai, main six thirty par aakar test drive leke bill clear kar dunga.

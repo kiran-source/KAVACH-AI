@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-082 (hi-en) ===
+Scenario: Enforcement Directorate Money Laundering Digital Arrest Skype Threat
+Primary Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE, URGENCY_OR_THREAT
+
+[CALLER]: This is Joint Director R.K. Singhal from Enforcement Directorate, New Delhi headquarters.
+[RECIPIENT]: ED office? Maine kya kiya hai sir?
+[CALLER]: Aapke Aadhaar aur ICICI account ke through Naresh Goyal money laundering scam mein five crore transactions trace huye hain.
+[RECIPIENT]: Mera aisa koi transaction nahi hai sir, my income is completely tax paid.
+[CALLER]: Non-bailable arrest warrant ready hai. Aapko twenty-four hours digital arrest mein rehna hoga under Skype continuous camera surveillance.
+[RECIPIENT]: Main apne family advocate ko call karke inform kar doon?
+[CALLER]: Strictly confidential investigation hai. Kisi ko bataya toh immediate family members ko bhi arrest kar liya jayega.
+[RECIPIENT]: Courts aur ED Skype par digital arrest nahi karte. Main police station jaakar cybercrime complaint karunga.

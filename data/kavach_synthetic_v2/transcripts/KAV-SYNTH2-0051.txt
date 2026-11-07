@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0051
+Language: en
+Scenario: Supreme Court Contempt Notice & Asset Freezing Coercion (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Attention. This is an urgent broadcast from Supreme Court Registry, department supervisor Advocate Tandon speaking.
+[RECIPIENT]: Yes, hello? Why is this urgent? Who am I speaking to?
+[CALLER]: We have documented evidence linking your identity to contempt of court summons regarding unpaid digital fine. Case file number 409-B has been opened.
+[RECIPIENT]: Case file 409-B? I have never received any postal summons or email about this matter.
+[CALLER]: Postal notices take days. In the meantime, the authorities are issuing seizure of immovable family assets against your name.
+[RECIPIENT]: This sounds completely unreasonable. What official procedure is available right now?
+[CALLER]: You must immediately access court treasury security deposit. This will place a temporary hold on the enforcement.
+[RECIPIENT]: I refuse to transfer funds or share access on a voice call. I will visit the headquarters personally tomorrow.

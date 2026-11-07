@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0271
+Language: en
+Scenario: Bookstore Customer Reserve Copy Availability & Pickup Call (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, this is Attendant Gautam from Landmark Books official customer relations desk.
+[RECIPIENT]: Hello, good afternoon. How may I help you?
+[CALLER]: I am calling to update you on your application regarding reserved hardback book arrived from publisher.
+[RECIPIENT]: Thank you. Has the preliminary review been completed successfully?
+[CALLER]: Yes, all background verifications are in order. The next step is to copy held at front desk for five business days.
+[RECIPIENT]: Is there any online link or payment portal I need to access?
+[CALLER]: No, please do not click any unsolicited links. All procedures are conducted strictly at the registered counter.
+[RECIPIENT]: That is very reassuring. I will come in person during office hours.

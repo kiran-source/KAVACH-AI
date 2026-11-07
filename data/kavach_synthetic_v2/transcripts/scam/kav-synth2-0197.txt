@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0197 (hi) ===
+Scenario: Telecom Tower Land Lease Advance Registration Fee Fraud (HI)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: यह Tower Infrastructure Cell से Officer Kapoor हैं। आपके विरुद्ध monthly rent of 45,000 for vacant plot mobile tower installation के संबंध में गंभीर शिकायत दर्ज हुई है।
+[RECIPIENT]: क्या? monthly rent of 45,000 for vacant plot mobile tower installation? मैंने ऐसा कोई काम नहीं किया है, आप गलत व्यक्ति को फोन कर रहे हैं।
+[CALLER]: हमारे रिकॉर्ड में आपकी पूरी जानकारी मौजूद है। यदि आपने सहयोग नहीं किया तो forfeiture of commercial tower installation rights की जाएगी।
+[RECIPIENT]: साहब, मैं एक शरीफ नागरिक हूँ। कृपया मुझे बताइए कि यह मामला कैसे सुलझ सकता है?
+[CALLER]: तुरंत कानूनी कार्रवाई रोकने के लिए आपको 18,000 rupees structural survey clearance deposit करना होगा। देर करने पर कोई राहत नहीं मिलेगी।
+[RECIPIENT]: मैं बिना किसी लिखित सरकारी नोटिस के कोई कदम नहीं उठाऊँगा। मैं पहले अपने वकील से सलाह लूँगा।

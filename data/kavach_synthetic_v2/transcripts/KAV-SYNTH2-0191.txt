@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0191
+Language: en
+Scenario: Fake Anti-Virus Subscription Renewal & Remote Refund Scam (EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Attention. This is an urgent broadcast from Global Cyber Defender, department supervisor Tech Lead Peter speaking.
+[RECIPIENT]: Yes, hello? Why is this urgent? Who am I speaking to?
+[CALLER]: We have documented evidence linking your identity to automatic annual renewal fee of 24,000 charged to account. Case file number 409-B has been opened.
+[RECIPIENT]: Case file 409-B? I have never received any postal summons or email about this matter.
+[CALLER]: Postal notices take days. In the meantime, the authorities are issuing non-refundable auto-debit if not cancelled in 1 hour against your name.
+[RECIPIENT]: This sounds completely unreasonable. What official procedure is available right now?
+[CALLER]: You must immediately access TeamViewer remote connection to process refund. This will place a temporary hold on the enforcement.
+[RECIPIENT]: I refuse to transfer funds or share access on a voice call. I will visit the headquarters personally tomorrow.

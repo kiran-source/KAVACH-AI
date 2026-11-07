@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0460 (te-en) ===
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Smart Mart Rewards nunchi Caller Varun matladuthunnanu regarding inquiry on redeeming 450 reward points on next grocery bill.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient acknowledges message and will check in store.
+[CALLER]: Idi Smart Mart Rewards direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0034 (hi-en) ===
+Scenario: Electricity Arrears & Power Disconnection Emergency (HI-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Yeh State Electricity Board se Officer Shinde bol raha hoon. Aapke khilaf 15 rupees outstanding surcharge from prior cycle ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? 15 rupees outstanding surcharge from prior cycle? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh power supply termination in 30 minutes hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi net banking password via urgent link fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

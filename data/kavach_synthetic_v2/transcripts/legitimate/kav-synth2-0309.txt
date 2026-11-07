@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0309 (hi-en) ===
+Scenario: Local Public Library Book Return & Digital Renewal Guide (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Central Library se Librarian Murthy bol raha hoon. Yeh call aapke two borrowed books due for return on Friday ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap option to renew online via official library portal complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

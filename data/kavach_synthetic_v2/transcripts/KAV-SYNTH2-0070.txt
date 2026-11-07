@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0070
+Language: te-en
+Scenario: FASTag Toll Blacklisting & Security Deposit Theft (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, MALICIOUS_LINK_OR_APP
+
+[CALLER]: Hello, this is Officer Chopra calling from FASTag Operations Unit. We detected suspicious records of blacklisting of highway toll tag due to KYC lapse.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. blacklisting of highway toll tag due to KYC lapse gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour penalty of 10,000 rupees at toll plazas process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo FASTag reactivation UPI PIN transfer submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

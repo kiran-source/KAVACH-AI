@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0376
+Language: en
+Scenario: Credit Card Limit Upgrade Pitch Interrupted by Network Drop (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, I am Caller Arvind calling on behalf of Banking Sales Desk regarding complimentary credit card credit limit increase offer.
+[RECIPIENT]: I didn't request any call regarding complimentary credit card credit limit increase offer. Where did you obtain my contact?
+[CALLER]: Our partner database indicated you might qualify for this exclusive opportunity.
+[RECIPIENT]: I do not entertain unverified telephone pitches. call dropped mid-sentence before financial details. Goodbye.

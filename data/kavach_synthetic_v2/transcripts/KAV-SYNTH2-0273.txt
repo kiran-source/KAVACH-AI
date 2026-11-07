@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0273
+Language: te
+Scenario: Bookstore Customer Reserve Copy Availability & Pickup Call (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: హలో అండి, నేను Landmark Books అధికారిక డెస్క్ నుండి Attendant Gautam మాట్లాడుతున్నాను.
+[RECIPIENT]: నమస్కారం అండి, చెప్పండి విషయం ఏమిటి?
+[CALLER]: మీరు నమోదు చేసుకున్న reserved hardback book arrived from publisher సమాచారం తెలియజేయడానికి కాల్ చేశాను.
+[RECIPIENT]: థాంక్స్ అండి. నా దరఖాస్తు ఆమోదం పొందిందా?
+[CALLER]: అవునండి, వివరాలు సరిగ్గా ఉన్నాయి. చివరిగా మీరు copy held at front desk for five business days.
+[RECIPIENT]: ఫోన్ లోనే ఏదైనా వివరాలు లేదా కోడ్ చెప్పాలా అండి?
+[CALLER]: వద్దండి, ఎవరికీ ఫోన్ లో వ్యక్తిగత పిన్ లేదా ఓటీపీలు చెప్పకండి. పని మొత్తం కార్యాలయంలోనే జరుగుతుంది.
+[RECIPIENT]: చాలా సంతోషం అండి. నేను పనివేళల్లో వచ్చి కలుస్తాను.

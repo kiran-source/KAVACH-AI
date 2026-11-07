@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0175
+Language: te-en
+Scenario: Government Healthcare Subsidy Portal Fake App Trap (TE-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Urgent security dispatch. Nenu Ayushman Bharat Desk monitoring team lead Officer Patel ni.
+[RECIPIENT]: Hello? Em jarigindi? Why are you calling with urgent tone?
+[CALLER]: Mee identity credentials tho government health insurance reimbursement of 50,000 approved lo unauthorized transfers jarigayi. Case docket 810 open aindi.
+[RECIPIENT]: Case docket 810 aa? Nenu eppudu aite transfers cheyaledu. Someone must have hacked it.
+[CALLER]: Hacking aina sare, account holder ga lapse of government medical subsidy funds enforce avthundi legally.
+[RECIPIENT]: Daaniki remedy enti mari? How can I prove my innocence to the authorities?
+[CALLER]: Right now emergency portal lo meeru custom healthcare APK download from SMS complete chesi verify cheyali.
+[RECIPIENT]: Phone call meeda remote actions cheyatam safe kaadu. I will visit bank branch and cyber cell tomorrow.

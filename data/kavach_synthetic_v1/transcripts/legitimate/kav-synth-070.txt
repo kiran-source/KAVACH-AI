@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-070 (te-en) ===
+Scenario: Tech Conference Registration & Delegate Badging Details
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello Aditya, this is Divya from PyData Hyderabad organizing committee.
+[RECIPIENT]: Hi Divya, thanks for calling!
+[CALLER]: Calling to confirm your delegate registration for PyData conference at HICC Novotel this Friday.
+[RECIPIENT]: Yes, I registered under early bird pass.
+[CALLER]: Great! Entry badge will be available at gate registration desk. Please carry any government photo ID.
+[RECIPIENT]: Are workshop seats reserved or first-come-first-serve?
+[CALLER]: Hands-on workshops are first-come-first-serve basis, so early ga arrive avvadam better.
+[RECIPIENT]: Understood Divya, see you at the venue on Friday.

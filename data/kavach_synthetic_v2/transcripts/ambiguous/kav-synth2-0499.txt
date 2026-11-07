@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0499 (hi-en) ===
+Scenario: Health Insurance Claim Follow-up Lacking Claim Number (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main MediCare Assist Desk se Caller Archana bol raha hoon regarding follow-up inquiry on diagnostic test reimbursement status.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient asks for hospital claim reference which caller does not have.
+[CALLER]: Sir yeh MediCare Assist Desk ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

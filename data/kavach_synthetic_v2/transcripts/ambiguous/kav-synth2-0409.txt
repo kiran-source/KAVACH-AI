@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0409 (hi-en) ===
+Scenario: Charity Fundraiser Inquiring for Donation Without Reg ID (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Child Hope Foundation se Caller Karuna bol raha hoon regarding appeal for donations to help underprivileged children.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient asks for official 80G tax exemption number and website.
+[CALLER]: Sir yeh Child Hope Foundation ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

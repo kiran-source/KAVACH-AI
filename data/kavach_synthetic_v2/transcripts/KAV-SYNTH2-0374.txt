@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0374
+Language: hi-en
+Scenario: Bank Safe Deposit Locker Annual Physical Verification (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, this is Locker Incharge Neha reaching out from Bank of Baroda.
+[RECIPIENT]: Good afternoon, how can I help you today?
+[CALLER]: Sir, I am calling with an update regarding your pending annual physical inspection of safe deposit locker.
+[RECIPIENT]: Oh great! Has the administrative clearance been issued?
+[CALLER]: Yes sir, all checks passed. We request you to visit branch during banking hours with locker key.
+[RECIPIENT]: Can I do this online through net banking or some link?
+[CALLER]: No sir, please do not click unknown links. Secure verification requires physical presence at our counter.
+[RECIPIENT]: Understood. That is safe practice. I will visit in person.

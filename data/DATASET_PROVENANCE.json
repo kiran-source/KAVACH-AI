@@ -1,0 +1,200 @@
+{
+  "dataset_name": "KAVACH-AI Synthetic Speech Evaluation Benchmark",
+  "voice_engine": "Microsoft Neural TTS (hi-IN-SwaraNeural, te-IN-MohanNeural, en-IN-NeerjaNeural)",
+  "sample_rate_hz": 16000,
+  "format": "16-bit PCM mono WAV",
+  "languages": [
+    "hi",
+    "te",
+    "en"
+  ],
+  "scenarios_count": 20,
+  "acoustic_conditions": [
+    "clean",
+    "low_noise",
+    "moderate_noise",
+    "telephone-band"
+  ],
+  "items": [
+    {
+      "scenario_id": "SCAM-001",
+      "filename": "scam-001_telephone-band.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "telephone-band",
+      "duration_samples": 380544,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-002",
+      "filename": "scam-002_clean.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "clean",
+      "duration_samples": 283392,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-003",
+      "filename": "scam-003_low_noise.wav",
+      "language": "te",
+      "voice": "te-IN-MohanNeural",
+      "condition": "low_noise",
+      "duration_samples": 182016,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-004",
+      "filename": "scam-004_moderate_noise.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "moderate_noise",
+      "duration_samples": 267264,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-005",
+      "filename": "scam-005_telephone-band.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "telephone-band",
+      "duration_samples": 316416,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-006",
+      "filename": "scam-006_clean.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "clean",
+      "duration_samples": 238464,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-007",
+      "filename": "scam-007_low_noise.wav",
+      "language": "te",
+      "voice": "te-IN-MohanNeural",
+      "condition": "low_noise",
+      "duration_samples": 257280,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-008",
+      "filename": "scam-008_clean.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "clean",
+      "duration_samples": 272640,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-009",
+      "filename": "scam-009_telephone-band.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "telephone-band",
+      "duration_samples": 291456,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "SCAM-010",
+      "filename": "scam-010_clean.wav",
+      "language": "te",
+      "voice": "te-IN-MohanNeural",
+      "condition": "clean",
+      "duration_samples": 176640,
+      "expected_classification": "scam"
+    },
+    {
+      "scenario_id": "LEGIT-001",
+      "filename": "legit-001_clean.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "clean",
+      "duration_samples": 251904,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "LEGIT-002",
+      "filename": "legit-002_low_noise.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "low_noise",
+      "duration_samples": 217728,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "LEGIT-003",
+      "filename": "legit-003_moderate_noise.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "moderate_noise",
+      "duration_samples": 197376,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "LEGIT-004",
+      "filename": "legit-004_clean.wav",
+      "language": "te",
+      "voice": "te-IN-MohanNeural",
+      "condition": "clean",
+      "duration_samples": 217728,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "LEGIT-005",
+      "filename": "legit-005_telephone-band.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "telephone-band",
+      "duration_samples": 243456,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "AMBIG-001",
+      "filename": "ambig-001_clean.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "clean",
+      "duration_samples": 299136,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "AMBIG-002",
+      "filename": "ambig-002_low_noise.wav",
+      "language": "en",
+      "voice": "en-IN-NeerjaNeural",
+      "condition": "low_noise",
+      "duration_samples": 208512,
+      "expected_classification": "ambiguous"
+    },
+    {
+      "scenario_id": "AMBIG-003",
+      "filename": "ambig-003_telephone-band.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "telephone-band",
+      "duration_samples": 218880,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "AMBIG-004",
+      "filename": "ambig-004_clean.wav",
+      "language": "te",
+      "voice": "te-IN-MohanNeural",
+      "condition": "clean",
+      "duration_samples": 209280,
+      "expected_classification": "legitimate"
+    },
+    {
+      "scenario_id": "AMBIG-005",
+      "filename": "ambig-005_moderate_noise.wav",
+      "language": "hi",
+      "voice": "hi-IN-SwaraNeural",
+      "condition": "moderate_noise",
+      "duration_samples": 170880,
+      "expected_classification": "ambiguous"
+    }
+  ]
+}

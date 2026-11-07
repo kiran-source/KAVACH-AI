@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0080 (te-en) ===
+Scenario: Family Member Police Custody Emergency Bail Trap (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Nenu City Police Station nunchi Sub-Inspector Pandey matladuthunnanu andi. Mee credentials meeda nephew arrested in hit-and-run accident with injuries detect ayindi.
+[RECIPIENT]: Enti sir, nephew arrested in hit-and-run accident with injuries aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe immediate transfer to central prison implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane 35,000 rupees cash bail to officer UPI cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

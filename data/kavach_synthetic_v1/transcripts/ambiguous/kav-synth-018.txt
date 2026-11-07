@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-018 (en) ===
+Scenario: Property Maintenance Dues Notice with Unverified Payment Portal
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Good evening, calling from Prestige Falcon Ridge Residents Association management committee.
+[RECIPIENT]: Hello, is this regarding the quarterly maintenance?
+[CALLER]: Yes sir. The audited accounts show an outstanding water surcharge of three thousand rupees against Flat 402.
+[RECIPIENT]: I already cleared the full annual society dues in April via MyGate app.
+[CALLER]: The committee migrated to a new billing vendor last month. We have sent a direct payment link on your mobile.
+[RECIPIENT]: I will not click any unverified link. Why was this not announced in the resident AGM?
+[CALLER]: It was discussed in the circular. You may also pay by cheque directly to the estate office on Monday.
+[RECIPIENT]: I will drop by the estate office in person on Monday with my receipt.

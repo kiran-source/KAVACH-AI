@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0489 (hi-en) ===
+Scenario: Home Broadband Plan Change Inquiry Without Customer ID (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main SpeedNet Broadband se Caller Bharat bol raha hoon regarding inquiry regarding upgrading home internet plan to gigabit.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient asks caller to state registered customer ID which caller lacks.
+[CALLER]: Sir yeh SpeedNet Broadband ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0426 (te-en) ===
+Scenario: Courier Tracking Failure Custom APK Installation Coercion (Variant 1)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, COURIER_CUSTOMS_FRAUD, REMOTE_ACCESS_MANIPULATION
+
+[CALLER]: Calling from Mumbai International Cargo Customs. Mee name meeda Singapore velle parcel lo narcotics drugs seize chesaru.
+[RECIPIENT]: Please power cut cheyakandi sir! What should I do right now to pay the bill?
+[CALLER]: Urgent notification from Electricity Department. Unpaid power bill dues valla 30 minutes lo supply disconnect chestham.
+[RECIPIENT]: Bank eppudu OTP adagadhu ani message vasthundi kada? Why are you asking for my OTP?
+[CALLER]: Alert from Bank Security Team. Mee debit card temporarily restrict ayindi, immediate ga OTP share chesi verify chesukondi.
+[RECIPIENT]: Naku chala fear ga undi sir. Can I please call my family lawyer first?
+[CALLER]: You are placed under 24-hour Digital Arrest. Do not disconnect the call and stay on continuous video surveillance.
+[RECIPIENT]: Okay sir, application download chesthunnanu, please don't arrest me.

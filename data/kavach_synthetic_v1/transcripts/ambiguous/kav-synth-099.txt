@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-099 (hi-en) ===
+Scenario: Real Estate Property Rental Agreement Advance Terms Dispute
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello Mr. Gupta, main property consultant Harish baat kar raha hoon from DLF Phase 5 brokerage.
+[RECIPIENT]: Haan Harish ji, apartment rental agreement finalize hua kya landlord ke sath?
+[CALLER]: Landlord agrees on sixty thousand monthly rent, par unka kehna hai ki security deposit two months ke badle three months upfront dena hoga.
+[RECIPIENT]: Pehle toh two months deposit agree hua tha verbally!
+[CALLER]: Society maintenance charges hike hue hain sir. Agreement draft lock karne ke liye unko fifty thousand token money transfer karna padega today.
+[RECIPIENT]: Token money direct landlord ke bank account mein RTGS karunga, aapko nahi.
+[CALLER]: Bilkul sir, landlord ka account detail lease draft agreement ke sath aayega. Aap lawyer ke presence mein signing par hi pay kijiye.
+[RECIPIENT]: Theek hai, agreement draft bhej dijiye, signing ke waqt hi payment hogi.

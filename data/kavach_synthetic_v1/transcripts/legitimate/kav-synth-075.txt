@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-075 (te-en) ===
+Scenario: Pet Veterinary Clinic Vaccination Reminder
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello Swathi, this is Dr. Rao's Pet Clinic reception calling regarding your Golden Retriever, Bruno.
+[RECIPIENT]: Hi! Is Bruno's annual rabies booster vaccination due?
+[CALLER]: Yes Swathi, annual anti-rabies and DHPP booster vaccine due date is day after tomorrow.
+[RECIPIENT]: Can I book a Saturday morning appointment slot?
+[CALLER]: Saturday eleven AM slot is available. General health checkup and weight monitoring kuda untundi.
+[RECIPIENT]: Does he need any fasting before vaccination?
+[CALLER]: No fasting needed. Just bring Bruno's vaccination booklet with you. Payment can be made at clinic desk.
+[RECIPIENT]: Perfect, please confirm the Saturday eleven AM slot. Thanks!

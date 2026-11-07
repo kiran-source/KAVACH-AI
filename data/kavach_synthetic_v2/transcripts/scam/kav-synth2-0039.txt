@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0039 (hi-en) ===
+Scenario: AnyDesk Tech Support NetBanking Trojan Hijacking (HI-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Yeh HDFC Digital Security se Supervisor Vikram bol raha hoon. Aapke khilaf unauthorized Russian IP breach on netbanking ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? unauthorized Russian IP breach on netbanking? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh total account drain within minutes hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi AnyDesk 9-digit remote control code fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

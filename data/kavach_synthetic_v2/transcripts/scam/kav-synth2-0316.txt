@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0316 (hi-en) ===
+Scenario: Gas Pipeline Subsidy Verification & NetBanking Phishing (Variant 1)
+Label: SCAM
+Tactics: ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT, MALICIOUS_LINK_OR_APP
+
+[CALLER]: Urgent alert from Electricity Board. Aapka electricity bill payment update nahi hua hai, connection within 1 hour disconnect ho jayega.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: Dear customer, your bank account is under suspicious activity freeze. Turant OTP share karein to prevent permanent account suspension.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.
+[CALLER]: You are under immediate Digital Arrest. Room lock karein aur confidential video interrogation par connect rahein without hanging up.
+[RECIPIENT]: Please connection cut mat kijiye! Mere exams chal rahe hain. Tell me what is the solution.
+[CALLER]: Security compliance ke liye Play Store se QuickSupport app download kijiye aur code hamein inform karein.
+[RECIPIENT]: Bank policy strictly says never share OTP on call. Main OTP kaise de sakta hoon?

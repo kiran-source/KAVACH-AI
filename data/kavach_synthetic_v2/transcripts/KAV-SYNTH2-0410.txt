@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0410
+Language: te-en
+Scenario: Charity Fundraiser Inquiring for Donation Without Reg ID (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, is this the primary account contact? Calling from Child Hope Foundation.
+[RECIPIENT]: Yes speaking. Enti vishayam?
+[CALLER]: Mee region lo appeal for donations to help underprivileged children rollout gurinchi information ivvataniki call chesamu.
+[RECIPIENT]: Mee organization name nenu eppudu vinaledu. Are you authorized?
+[CALLER]: Memu partner network tho kalisi ee service operate chesthunnamu.
+[RECIPIENT]: Idhi clear ga ledu, konchem suspicious ga undi. recipient asks for official 80G tax exemption number and website.
+[CALLER]: Miku elanti risk ledu sir, just feedback matrame tesukuntunnamu.
+[RECIPIENT]: Official verification lekunda nenu information ivvanu. Please don't call again.

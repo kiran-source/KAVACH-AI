@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0106
+Language: en
+Scenario: Airline Flight Cancellation Urgent Refund Portal Trap (EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Greetings, this is Executive Bhatia representing IndiGo Care Desk. Your file has been flagged for scheduled domestic flight cancelled due to engine fault.
+[RECIPIENT]: Oh no! scheduled domestic flight cancelled due to engine fault? Please tell me this is an error, I am getting very anxious.
+[CALLER]: We are ready to issue forfeiture of complete ticket refund value unless this inquiry is settled within the hour.
+[RECIPIENT]: How can this be settled without proper legal representation and court proceedings?
+[CALLER]: Under special statutory provisions, you can halt the escalation by completing remote verification refund APK installation right now.
+[RECIPIENT]: Let me discuss this with my family first. I will not make any hasty decisions over phone.

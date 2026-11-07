@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-081 (hi-en) ===
+Scenario: Google Maps Hotel Review Work-From-Home Task Scam
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello sir, I am Tina from Digital Boost India. Are you interested in part-time flexible online earning?
+[RECIPIENT]: Kis tarah ka kaam hai? Office aana hoga kya?
+[CALLER]: No office needed, daily one to two hours work from home. Sirf Google Maps par luxury hotels ko 5-star rating aur reviews dena hai.
+[RECIPIENT]: Per review kitna payment milega?
+[CALLER]: One review fifty rupees. Daily minimum two thousand guaranteed payout directly into your UPI account.
+[RECIPIENT]: Kaam shuru karne ke liye kya karna hoga?
+[CALLER]: Aapko pehle humare Telegram VIP task group mein do hazar rupaye security deposit transfer karna padega for verification.
+[RECIPIENT]: Kaam karne ke liye paise mang rahe ho? Yeh fake rating task scam hai.

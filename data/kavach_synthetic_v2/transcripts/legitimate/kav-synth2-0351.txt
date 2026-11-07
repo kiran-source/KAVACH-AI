@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0351 (en) ===
+Scenario: Government Higher Education Scholarship Verification (EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, this is Desk Officer Prasad calling from State Education Board. I am reaching out regarding your verification of college scholarship eligibility records.
+[RECIPIENT]: Hello, yes thank you for calling. I was expecting an official update regarding this.
+[CALLER]: We would like to request that you submit bonafide student certificate to principal office. Our authorized counter is open during normal working hours.
+[RECIPIENT]: Understood. Are there any specific reference documents or identity proofs I need to carry?
+[CALLER]: Just carry your standard photo ID and previous receipt copy. No financial payment or OTP is requested on this call.
+[RECIPIENT]: Thank you for the clear information and safety reminder. I will visit tomorrow as advised.

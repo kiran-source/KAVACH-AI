@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0178 (te) ===
+Scenario: Insurance Bonus Settlement AnyDesk Verification Scam (TE)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, FINANCIAL_REDIRECTION
+
+[CALLER]: ఇది LIC Claims Division నుండి Officer Tripathi మాట్లాడుతున్నాను. మీపై accrued life insurance loyalty bonus of 2.1 lakhs కి సంబంధించి తక్షణ విచారణ ప్రారంభమైంది.
+[RECIPIENT]: హలో? accrued life insurance loyalty bonus of 2.1 lakhs గురించి నాకేం సంబంధం లేదు సార్! మీరు ఎవరి గురించి మాట్లాడుతున్నారు?
+[CALLER]: కేసు డైరీలో మీ వివరాలు స్పష్టంగా ఉన్నాయి. తక్షణమే సమాధానం ఇవ్వకపోతే forfeiture of accumulated policy maturity bonus జరుగుతుంది.
+[RECIPIENT]: అయ్యో సార్, నేను ఏ తప్పూ చేయలేదు. నా పేరు రికార్డుల నుంచి క్లియర్ అవ్వాలంటే ఏం చేయాలి?
+[CALLER]: కేసు నుండి బయటపడాలంటే మీరు వెంటనే AnyDesk code sharing to verify bank passbook పూర్తి చేయాలి. లేకపోతే చట్టపరమైన అరెస్ట్ తప్పదు.
+[RECIPIENT]: అధికారిక కాపీలు లేకుండా నేను ఏమీ చేయను. ముందుగా మా కుటుంబ న్యాయవాదితో మాట్లాడతాను.

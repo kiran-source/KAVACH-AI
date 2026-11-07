@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0406 (en) ===
+Scenario: Charity Fundraiser Inquiring for Donation Without Reg ID (EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello, am I speaking with the primary resident? This is Caller Karuna from Child Hope Foundation regarding appeal for donations to help underprivileged children.
+[RECIPIENT]: Yes speaking, but I am in the middle of a meeting. What exactly is this about?
+[CALLER]: We have an ongoing update concerning your profile, but we need to confirm a few initial personal details.
+[RECIPIENT]: Which company did you say you are calling from? Can you share your official registration number first? recipient asks for official 80G tax exemption number and website.
+[CALLER]: This is a courtesy inquiry from Child Hope Foundation. We are conducting general profile maintenance.
+[RECIPIENT]: Please send official correspondence in writing or by email. I do not discuss personal information over unsolicited calls.

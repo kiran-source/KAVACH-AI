@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0495
+Language: te-en
+Scenario: Courier Delivery Driver Lost in Neighborhood Seeking Directions (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, this is Driver Jagdish from City Parcel Drop team.
+[RECIPIENT]: Hello, please state why you are contacting me.
+[CALLER]: Mee mobile tier ki driver confused between cross road 4 and cross road 5 benefit apply cheyavachu ani update vachindi.
+[RECIPIENT]: Nenu eppudu ee service request pettaledu kada?
+[CALLER]: Idi selected premium numbers ki direct ga system allocate chesindi.
+[RECIPIENT]: Daaniki na nunchi em details kavali?
+[CALLER]: Just mee date of birth and pincode confirm chesthe activate chesthamu.
+[RECIPIENT]: Phone call meeda date of birth cheppanu sir. recipient gives clear directional landmarks near bakery.
+[CALLER]: Miku doubt unte we will pause this offer for now sir.
+[RECIPIENT]: Yes, pause it permanently. I will check verified web portals directly.

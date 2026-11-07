@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0241
+Language: en
+Scenario: Public Health Clinic Routine Child Vaccination Camp Invitation (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good afternoon, this is Nurse Anjali calling from Primary Health Center regarding your free pulse polio and MMR booster vaccination camp this Sunday.
+[RECIPIENT]: Hello, thank you for reaching out. Yes, I was expecting a status update on that.
+[CALLER]: Please be advised to bring child immunization yellow book. Kindly note we will never request your OTP, PIN, or net banking password.
+[RECIPIENT]: Understood and appreciated. I will complete this at the branch during normal business hours.

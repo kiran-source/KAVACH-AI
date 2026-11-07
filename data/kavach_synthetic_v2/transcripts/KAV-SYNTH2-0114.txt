@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0114
+Language: hi-en
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Attention please. This is Subedar Major Gill from Army Cantonment Wing central monitoring unit.
+[RECIPIENT]: Yes speaking, what is this call about? Please be quick as I am driving.
+[CALLER]: Aapke ID documents misuse hue hain in urgent sale of military certified vehicle at low price. State enforcement team has registered file 904.
+[RECIPIENT]: File 904? Sir mera ID kabhi kisi illicit activity mein use nahi hua. Someone must have forged it.
+[CALLER]: Forged ho ya real, system is preparing sale to competing buyer waiting at depot unless cleared before 5 PM.
+[RECIPIENT]: Toh legal clearing process kya hai? Can I visit the nearest office?
+[CALLER]: Office aane ka time nahi hai. You must immediately connect and perform 15,000 rupees military gate pass token.
+[RECIPIENT]: No, this is completely unsafe. Any legitimate inquiry requires physical presence. I am cutting the call.

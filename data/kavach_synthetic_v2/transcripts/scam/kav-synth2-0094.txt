@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0094 (hi-en) ===
+Scenario: Gas Pipeline Subsidy Release & Mobile QuickSupport Trap (HI-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT
+
+[CALLER]: Yeh Indane Gas Vigilance se Officer Kaul bol raha hoon. Aapke khilaf accumulated subsidy of 4,800 rupees held in pipeline ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? accumulated subsidy of 4,800 rupees held in pipeline? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh cancellation of domestic LPG cylinder quota hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi TeamViewer QuickSupport screen sharing fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

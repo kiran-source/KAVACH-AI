@@ -1,5 +1,8 @@
 {
+  "benchmark_type": "Threat Detection Engine on Ground-Truth Reference Transcripts",
   "dataset_size": 20,
+  "held_out_scenarios_count": 5,
+  "evaluation_scope": "Evaluates semantic analysis, urgency weighting, authority impersonation, and negative context suppression against canonical transcripts. Does not claim 100% open-world audio accuracy.",
   "confusion_matrix": {
     "true_positives": 10,
     "true_negatives": 10,
@@ -19,7 +22,7 @@
   },
   "per_category_coverage": {
     "Authority Impersonation": 1.0,
-    "Urgency and Threats": 0.6,
+    "Urgency and Threats": 0.8,
     "Digital Arrest Patterns": 1.0,
     "Psychological Manipulation & Isolation": 0.3333,
     "Credential Theft": 1.0,
@@ -37,9 +40,9 @@
       "predicted_severity": "Critical",
       "detected_categories": [
         "Authority Impersonation",
-        "Urgency and Threats",
         "Credential Theft",
-        "Digital Arrest Patterns"
+        "Digital Arrest Patterns",
+        "Urgency and Threats"
       ],
       "outcome": "TP"
     },
@@ -51,8 +54,8 @@
       "predicted_score": 53.0,
       "predicted_severity": "Medium",
       "detected_categories": [
-        "Urgency and Threats",
-        "Credential Theft"
+        "Credential Theft",
+        "Urgency and Threats"
       ],
       "outcome": "TP"
     },
@@ -64,8 +67,8 @@
       "predicted_score": 53.0,
       "predicted_severity": "Medium",
       "detected_categories": [
-        "Urgency and Threats",
-        "Credential Theft"
+        "Credential Theft",
+        "Urgency and Threats"
       ],
       "outcome": "TP"
     },
@@ -74,11 +77,12 @@
       "title": "Electricity Disconnection Threat",
       "language": "hi",
       "expected_classification": "scam",
-      "predicted_score": 53.0,
-      "predicted_severity": "Medium",
+      "predicted_score": 75.0,
+      "predicted_severity": "High",
       "detected_categories": [
         "Financial Fraud",
-        "Remote Access Manipulation"
+        "Remote Access Manipulation",
+        "Urgency and Threats"
       ],
       "outcome": "TP"
     },
@@ -90,8 +94,8 @@
       "predicted_score": 75.0,
       "predicted_severity": "High",
       "detected_categories": [
-        "Financial Fraud",
         "Authority Impersonation",
+        "Financial Fraud",
         "Courier and Customs Fraud"
       ],
       "outcome": "TP"
@@ -104,8 +108,8 @@
       "predicted_score": 58.0,
       "predicted_severity": "Medium",
       "detected_categories": [
-        "Remote Access Manipulation",
-        "Credential Theft"
+        "Credential Theft",
+        "Remote Access Manipulation"
       ],
       "outcome": "TP"
     },
@@ -117,10 +121,10 @@
       "predicted_score": 100.0,
       "predicted_severity": "Critical",
       "detected_categories": [
-        "Financial Fraud",
         "Authority Impersonation",
-        "Urgency and Threats",
         "Credential Theft",
+        "Financial Fraud",
+        "Urgency and Threats",
         "Psychological Manipulation & Isolation"
       ],
       "outcome": "TP"
@@ -159,9 +163,9 @@
       "predicted_score": 80.0,
       "predicted_severity": "Critical",
       "detected_categories": [
-        "Remote Access Manipulation",
+        "Credential Theft",
         "Urgency and Threats",
-        "Credential Theft"
+        "Remote Access Manipulation"
       ],
       "outcome": "TP"
     },

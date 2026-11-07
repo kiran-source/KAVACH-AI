@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0275
+Language: te-en
+Scenario: Bookstore Customer Reserve Copy Availability & Pickup Call (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, Landmark Books customer relations nunchi Attendant Gautam ni.
+[RECIPIENT]: Good afternoon, cheppandi emiti vishayam?
+[CALLER]: Mee reserved hardback book arrived from publisher process complete aindi ani inform cheyataniki call chesamu.
+[RECIPIENT]: Good to know. Next step enti sir?
+[CALLER]: Next step lo meeru direct ga copy held at front desk for five business days cheyali.
+[RECIPIENT]: Phone lo credentials confirm cheyalsina avasaram unda?
+[CALLER]: Ledu sir, phone meeda credentials eppudu share cheyakandi. Office lo direct ga complete cheyandi.
+[RECIPIENT]: Very reassuring sir. I will visit during normal working hours.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0385 (te-en) ===
+Scenario: Unverified Courier Delivery Incomplete Address Query (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Express Parcel Service nunchi Caller Vinod matladuthunnanu regarding unmarked package with torn address slip requiring landmark.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient pushes back asking for tracking ID before confirming.
+[CALLER]: Idi Express Parcel Service direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

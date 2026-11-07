@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0211
+Language: en
+Scenario: E-Commerce Logistics Package Out for Delivery Confirmation (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, this is Courier Ramesh from BlueDart Logistics official customer relations desk.
+[RECIPIENT]: Hello, good afternoon. How may I help you?
+[CALLER]: I am calling to update you on your application regarding Amazon delivery out for delivery today.
+[RECIPIENT]: Thank you. Has the preliminary review been completed successfully?
+[CALLER]: Yes, all background verifications are in order. The next step is to leave parcel with building security guard.
+[RECIPIENT]: Is there any online link or payment portal I need to access?
+[CALLER]: No, please do not click any unsolicited links. All procedures are conducted strictly at the registered counter.
+[RECIPIENT]: That is very reassuring. I will come in person during office hours.

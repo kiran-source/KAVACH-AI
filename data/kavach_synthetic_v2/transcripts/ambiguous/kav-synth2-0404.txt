@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0404 (hi-en) ===
+Scenario: Wrong Number Callback from Unknown Distant Person (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Unknown Private Caller se Caller Harish bol raha hoon regarding inquiry looking for someone named Mr. Raghunath.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient confirms wrong number and ends call.
+[CALLER]: Sir yeh Unknown Private Caller ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

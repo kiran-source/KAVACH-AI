@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0459
+Language: hi-en
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello, I am Caller Varun calling from Smart Mart Rewards regarding inquiry on redeeming 450 reward points on next grocery bill.
+[RECIPIENT]: Mujhe inquiry on redeeming 450 reward points on next grocery bill mein koi interest nahi hai. Where did you get my data?
+[CALLER]: Sir, this was shared through our partner portal for special customers.
+[RECIPIENT]: I don't entertain cold marketing calls. recipient acknowledges message and will check in store. Bye.

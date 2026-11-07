@@ -6,7 +6,7 @@ prisma_client = GnaniPrismaClient()
 timbre_client = GnaniTimbreClient()
 
 def process_transcription(audio_path: str, language: str = "auto") -> Dict[str, Any]:
-    """Transcribe audio using Gnani Prisma v2.5 STT."""
+    """Transcribe audio using Gnani Prisma v3 STT."""
     return prisma_client.transcribe(audio_path, language)
 
 def generate_warning_audio(text: str, language: str = "en") -> Dict[str, Any]:

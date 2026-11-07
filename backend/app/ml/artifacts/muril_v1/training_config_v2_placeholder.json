@@ -1,0 +1,30 @@
+{
+  "model_checkpoint": "google/muril-base-cased",
+  "num_labels": 3,
+  "max_length": 256,
+  "train_batch_size": 8,
+  "eval_batch_size": 8,
+  "learning_rate": 2e-05,
+  "num_train_epochs": 3,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "output_dir": "./muril_checkpoints",
+  "export_dir": "./backend/app/ml/artifacts/muril_v1",
+  "label2id": {
+    "LEGITIMATE": 0,
+    "AMBIGUOUS": 1,
+    "SCAM": 2
+  },
+  "id2label": {
+    "0": "LEGITIMATE",
+    "1": "AMBIGUOUS",
+    "2": "SCAM"
+  },
+  "target_languages": [
+    "en",
+    "hi",
+    "te",
+    "hi-en",
+    "te-en"
+  ]
+}

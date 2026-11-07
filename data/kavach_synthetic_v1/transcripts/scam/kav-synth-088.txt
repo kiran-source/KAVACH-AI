@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-088 (hi-en) ===
+Scenario: Fake Police Cyber Cell FIR Cancellation Bribe Fraud
+Primary Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: This is Sub-Inspector Verma from Delhi Police Special Cyber Cell unit, Lodhi Colony.
+[RECIPIENT]: Ji inspector sahab, kis baare mein phone hai?
+[CALLER]: Aapke IP address se illegal darknet website browsing aur financial fraud complaints register hui hain under Section 66D IT Act.
+[RECIPIENT]: Main IT company mein software engineer hoon sir, maine aisi koi darknet site nahi kholi.
+[CALLER]: Server logs prove kar rahe hain. FIR draft ho chuki hai, shaam tak media mein release ho jayegi aur company HR ko inform karenge.
+[RECIPIENT]: Company HR ko kyu inform karenge? Meri job risk mein aa jayegi!
+[CALLER]: Agar naam clean rakhna hai aur FIR cancel karwani hai toh informal settlement charge of forty thousand transfer kijiye.
+[RECIPIENT]: Police officer phone par settlement bribe nahi mangte. Main lawyer ke sath seedha ACP cybercrime office aa raha hoon.

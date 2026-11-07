@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0050
+Language: te-en
+Scenario: FedEx Cambodia Parcel Fake Credit Card Seizure (TE-EN)
+Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, this is Officer Bansal calling from FedEx Security Unit. We detected suspicious records of carton containing 16 cloned credit cards and forged IDs.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. carton containing 16 cloned credit cards and forged IDs gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour Interpol cyber slavery FIR registration process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo 40,000 rupees bail clearance bond submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

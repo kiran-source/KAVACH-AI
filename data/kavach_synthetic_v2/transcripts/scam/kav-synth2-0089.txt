@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0089 (hi-en) ===
+Scenario: Work From Home YouTube Liking Deposit Scheme (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh Global Media Marketing se Recruiter Sneha bol raha hoon. Aapke khilaf daily guaranteed earnings of 3,500 rupees for video likes ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? daily guaranteed earnings of 3,500 rupees for video likes? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh loss of assigned investment portfolio slot hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi 5,000 rupees VIP task security deposit fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

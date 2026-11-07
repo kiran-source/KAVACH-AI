@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0046 (en) ===
+Scenario: FedEx Cambodia Parcel Fake Credit Card Seizure (EN)
+Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION
+
+[CALLER]: This is Officer Bansal calling from FedEx Security Unit. We are conducting an urgent investigation regarding carton containing 16 cloned credit cards and forged IDs.
+[RECIPIENT]: Hello? I have no knowledge of any carton containing 16 cloned credit cards and forged IDs. What is this regarding?
+[CALLER]: A formal case file has been registered. If you do not resolve this immediately, there will be Interpol cyber slavery FIR registration.
+[RECIPIENT]: Please, this is a serious misunderstanding! I am a law-abiding citizen. How can this be cleared?
+[CALLER]: You must immediately comply with 40,000 rupees bail clearance bond. Failure to do so will result in non-bailable enforcement.
+[RECIPIENT]: I will not comply blindly without official documentation. Let me consult my advocate and local police first.

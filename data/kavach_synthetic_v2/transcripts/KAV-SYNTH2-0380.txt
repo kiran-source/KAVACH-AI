@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0380
+Language: te-en
+Scenario: Credit Card Limit Upgrade Pitch Interrupted by Network Drop (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu Banking Sales Desk nunchi Caller Arvind matladuthunnanu regarding complimentary credit card credit limit increase offer.
+[RECIPIENT]: Naku complimentary credit card credit limit increase offer tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. call dropped mid-sentence before financial details. Cutting call.

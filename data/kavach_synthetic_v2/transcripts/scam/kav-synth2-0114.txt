@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0114 (hi-en) ===
+Scenario: Defence Personnel Vehicle Advance Token Payment Fraud (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh Army Cantonment Wing se Subedar Major Gill bol raha hoon. Aapke khilaf urgent sale of military certified vehicle at low price ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? urgent sale of military certified vehicle at low price? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh sale to competing buyer waiting at depot hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi 15,000 rupees military gate pass token fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

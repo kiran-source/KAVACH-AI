@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0493
+Language: te
+Scenario: Courier Delivery Driver Lost in Neighborhood Seeking Directions (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: నమస్కారం అండి, City Parcel Drop డెస్క్ నుండి Driver Jagdish ని.
+[RECIPIENT]: నమస్కారం. దేని గురించి ఈ కాల్ అండి?
+[CALLER]: మీ ప్రొఫైల్ కి driver confused between cross road 4 and cross road 5 సదుపాయం కల్పించవచ్చని మాకు సమాచారం వచ్చింది.
+[RECIPIENT]: నేను దీని కోసం ఎక్కడా దరఖాస్తు చేయలేదే?
+[CALLER]: ఎంపిక చేసిన వినియోగదారులకు ప్రాధాన్యత ప్రకారం ఈ సదుపాయం ఇస్తున్నాం.
+[RECIPIENT]: దీని కోసం నేను ఏమి చేయాలి?
+[CALLER]: మీ పిన్‌కోడ్ మరియు ప్రస్తుత సేవా వివరాలను నిర్ధారిస్తే చాలు.
+[RECIPIENT]: అపరిచితులకు ఫోన్ లో నా సమాచారం ఇవ్వడం ఇష్టం లేదు. recipient gives clear directional landmarks near bakery.
+[CALLER]: మీరు ఇష్టపడకపోతే మేము బలవంతం చేయము అండి.
+[RECIPIENT]: సరేనండి, నా నంబర్ కు ఇలాంటి కాల్స్ చేయకండి. ధన్యవాదాలు.

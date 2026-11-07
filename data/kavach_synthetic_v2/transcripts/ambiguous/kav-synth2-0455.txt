@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0455 (te-en) ===
+Scenario: Vehicle Insurance Renewal Inquiry with Misstated Expiry (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Policy Hub Direct nunchi Caller Tarun matladuthunnanu regarding car insurance policy allegedly expiring in three days.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient checks document and confirms policy is valid for 6 months.
+[CALLER]: Idi Policy Hub Direct direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

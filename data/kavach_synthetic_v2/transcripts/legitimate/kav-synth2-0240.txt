@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0240 (te-en) ===
+Scenario: University Admissions Counter Document Verification Schedule (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Osmania University Admissions nunchi Coordinator Lakshmi matladuthunnanu. Mee verification of postgraduate application marksheets gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo report to administrative building counter 4 with originals complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

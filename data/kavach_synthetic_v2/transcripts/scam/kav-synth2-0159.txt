@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0159 (hi-en) ===
+Scenario: Wedding Hall Booking Cancellation Immediate Refund Trap (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT
+
+[CALLER]: Yeh Grand Palace Bookings se Manager Joshi bol raha hoon. Aapke khilaf accidental double charge for banquet hall reservation ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? accidental double charge for banquet hall reservation? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh blocking of total booking advance hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi Google Pay refund scan requiring UPI PIN entry fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0302
+Language: hi
+Scenario: Veterinary Hospital Pet Annual Vaccination Due Reminder (HI)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: नमस्ते, मैं Cessna Pet Hospital से Dr. George बोल रहा हूँ। यह कॉल आपके annual rabies and DHLPP booster due for pet dog के संबंध में है।
+[RECIPIENT]: नमस्ते, जी हाँ। मैं इस बारे में आधिकारिक सूचना की प्रतीक्षा कर रहा था।
+[CALLER]: कृपया ध्यान दें कि आपको book convenient slot between 10 AM and 6 PM। बैंक या संस्थान कभी भी फोन पर ओटीपी या पासवर्ड नहीं मांगता।
+[RECIPIENT]: जी धन्यवाद, मैं सुरक्षा नियमों का पालन करते हुए कार्यदिवस में शाखा में उपस्थित हो जाऊँगा।

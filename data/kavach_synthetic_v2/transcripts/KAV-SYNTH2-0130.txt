@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0130
+Language: te-en
+Scenario: Hospital Intensive Care Emergency Cash Extortion (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Hello, this is Dr. Alok calling from City Care Hospital. We detected suspicious records of relative admitted unconscious after highway collision.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. relative admitted unconscious after highway collision gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour withholding of emergency blood transfusion surgery process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo 25,000 rupees medical deposit via phone submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

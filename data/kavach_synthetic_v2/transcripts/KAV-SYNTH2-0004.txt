@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0004
+Language: hi-en
+Scenario: CBI Money Laundering & Digital Arrest (HI-EN)
+Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh CBI Headquarters se Inspector Raman bol raha hoon. Urgent investigation notice nikla hai regarding 4.2 crore illegal Hawala laundering.
+[RECIPIENT]: Wait a minute, 4.2 crore illegal Hawala laundering? Maine aisa koi transaction ya activity nahi ki. Who authorized this?
+[CALLER]: Server logs mein aapka IP trace hua hai. To cancel Aadhaar non-bailable arrest warrant, aapko turant RBI security verification account karna hoga.
+[RECIPIENT]: Main bina formal written documentation ke koi action nahi loonga. Send official summon to my address.

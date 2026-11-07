@@ -9,8 +9,8 @@
 - **FR-1.4**: Filenames MUST be sanitized against path traversal (`../`, null bytes, illegal characters) and stored on disk under non-sequential UUID4 identifiers.
 - **FR-1.5**: Acoustic metadata (sample rate, channel count, duration, format) MUST be extracted and stored in the database.
 
-### FR-2: Gnani Prisma v2.5 Multilingual Transcription
-- **FR-2.1**: The system MUST integrate the genuine Gnani Prisma v2.5 Speech-to-Text API.
+### FR-2: Gnani Prisma v3 Multilingual Transcription
+- **FR-2.1**: The system MUST integrate the genuine Gnani Prisma v3 Speech-to-Text API.
 - **FR-2.2**: The STT module MUST support Telugu (`te`), Hindi (`hi`), English (`en`), and code-mixed speech.
 - **FR-2.3**: Provider responses MUST be normalized into an internal schema preserving verbatim transcripts and timestamped segments.
 - **FR-2.4**: The system MUST implement bounded retries with exponential backoff on transient network and rate-limit errors.

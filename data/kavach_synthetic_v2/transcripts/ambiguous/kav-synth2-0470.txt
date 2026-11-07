@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0470 (te-en) ===
+Scenario: Utility Water Billing Clarification Requesting Callback (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Municipal Water Cell nunchi Caller Shailesh matladuthunnanu regarding water bill surcharge clarification needing reference number.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? caller asks recipient to call official municipal board landline.
+[CALLER]: Idi Municipal Water Cell direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

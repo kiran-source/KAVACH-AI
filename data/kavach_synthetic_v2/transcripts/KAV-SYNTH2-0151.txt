@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0151
+Language: en
+Scenario: Cryptocurrency Investment Guaranteed Double Return Trap (EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Attention. This is an urgent broadcast from BitPro Wealth Advisory, department supervisor Trader Aryan speaking.
+[RECIPIENT]: Yes, hello? Why is this urgent? Who am I speaking to?
+[CALLER]: We have documented evidence linking your identity to algorithmic Bitcoin trading giving 200% return in 24 hours. Case file number 409-B has been opened.
+[RECIPIENT]: Case file 409-B? I have never received any postal summons or email about this matter.
+[CALLER]: Postal notices take days. In the meantime, the authorities are issuing expiration of guaranteed profit multiplier window against your name.
+[RECIPIENT]: This sounds completely unreasonable. What official procedure is available right now?
+[CALLER]: You must immediately access initial investment deposit of 20,000 rupees. This will place a temporary hold on the enforcement.
+[RECIPIENT]: I refuse to transfer funds or share access on a voice call. I will visit the headquarters personally tomorrow.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0170 (te-en) ===
+Scenario: Toll Plaza Dispute Settlement Screen Control Coercion (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu FASTag Dispute Cell nunchi Officer Kapoor matladuthunnanu andi. Mee credentials meeda double deduction dispute at toll plaza requiring refund detect ayindi.
+[RECIPIENT]: Enti sir, double deduction dispute at toll plaza requiring refund aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe forfeiture of disputed amount and toll fine implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane AnyDesk remote screen inspection to verify wallet cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

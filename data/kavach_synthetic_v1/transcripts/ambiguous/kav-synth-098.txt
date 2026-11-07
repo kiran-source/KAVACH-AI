@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-098 (hi-en) ===
+Scenario: Incomplete Credit Card Dispute Chargeback Call
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Good evening, calling from CitiBank card dispute operations. Am I speaking with Mr. Ankit?
+[RECIPIENT]: Yes Ankit speaking. Maine ek fraudulent online transaction par chargeback raise kiya tha.
+[CALLER]: Yes sir, fourteen thousand rupees transaction on gaming merchant portal. Uska merchant dispute resolution status update hai.
+[RECIPIENT]: Paisa mere account mein kab reverse hoga?
+[CALLER]: Merchant claims the goods were delivered digitally to your registered email. Verification ke liye transaction acknowledgment sign karke bhejna hoga.
+[RECIPIENT]: Maine koi digital goods receive nahi kiye!
+[CALLER]: Aap dispute declaration form sign karke dispute@citi.com par mail kijiye with your police complaint copy. Phone par koi sensitive details mat share kijiye.
+[RECIPIENT]: Theek hai, main formal affidavit attach karke bank ke official email par bhej deta hoon.

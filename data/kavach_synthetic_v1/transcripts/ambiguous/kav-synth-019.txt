@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-019 (en) ===
+Scenario: Credit Score Improvement Consultation Inquiry
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello Mr. Das, I am calling from CreditKarma Financial Advisory services.
+[RECIPIENT]: Yes, what service are you offering?
+[CALLER]: We offer credit score restoration for customers whose CIBIL score is below seven hundred due to past loan settlement remarks.
+[RECIPIENT]: How do you improve a CIBIL score? Can you remove settlement flags?
+[CALLER]: We file legal representation with credit bureaus under the Fair Credit Reporting framework to dispute inaccurate negative entries.
+[RECIPIENT]: Do you need any banking passwords or advance fees?
+[CALLER]: We only charge a consultancy retainer of twelve hundred rupees after sending you a preliminary legal assessment report.
+[RECIPIENT]: Send the assessment details to my email first. I will verify your company credentials before deciding.

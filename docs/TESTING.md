@@ -15,7 +15,7 @@ KAVACH AI employs **Pytest** for backend integration and logic verification, alo
 ### Run Backend Pytest Suite Directly
 ```powershell
 $env:PYTHONPATH = "backend"
-pytest -v backend/tests/test_api.py
+pytest backend/tests/ -v
 ```
 
 ### Run Synthetic Benchmark Pipeline
@@ -26,19 +26,19 @@ python -c "from app.services.evaluation import run_evaluation_pipeline; print(ru
 
 ---
 
-## 3. Test Coverage Matrix
+## 3. Test Coverage Summary (52 Passed Tests)
 
-| Test Case | Module | Description | Status |
-| :--- | :--- | :--- | :---: |
-| `test_health_check` | `app.main` | Validates `/api/v1/health` status, service identity, and version | **PASSED** |
-| `test_provider_health` | `app.main` | Validates Gnani Prisma & Timbre provider connection contracts | **PASSED** |
-| `test_threat_detection_engine_credential_theft` | `app.detection` | Tests OTP, UPI PIN, and CVV keyword/regex rule triggering | **PASSED** |
-| `test_threat_detection_engine_digital_arrest` | `app.detection` | Tests CBI and continuous video call pattern recognition | **PASSED** |
-| `test_threat_detection_engine_negative_context` | `app.detection` | Verifies bank security advisories are suppressed from false positives | **PASSED** |
-| `test_multilingual_safety_warnings` | `app.detection` | Validates localized warning copy in Telugu, Hindi, and English | **PASSED** |
-| `test_audio_metadata_extraction` | `app.audio` | Tests sample rate, channel count, and duration extraction | **PASSED** |
-| `test_end_to_end_incident_and_report_flow` | E2E | Tests upload -> transcribe -> analyze -> incident -> PDF export | **PASSED** |
-| `test_evaluation_pipeline_metrics` | `app.services` | Validates 20-scenario dataset precision, recall, and F1 >= 0.90 | **PASSED** |
+The full automated backend test suite consists of **52 tests** across 6 test modules, achieving a **100% pass rate**:
+
+| Test Module | Test Count | Focus Areas | Status |
+| :--- | :---: | :--- | :---: |
+| `backend/tests/test_api.py` | 11 | Health, providers, audio metadata, incidents, PDF generation, security | **PASSED** |
+| `backend/tests/test_backend.py` | 5 | Direct engine initialization, scam/safe triage, Prisma mock integration | **PASSED** |
+| `backend/tests/test_dataset_generator.py` | 7 | Storage monitoring, API ledger tracking, turn/PII validation, Timbre/Prisma adapters | **PASSED** |
+| `backend/tests/test_gnani_integration.py` | 7 | Config validation, auth error handling, demo/real mode separation | **PASSED** |
+| `backend/tests/test_ml_and_hybrid.py` | 16 | 7 Rule-Priority & safety edge cases, educational context, abstention, multilinguality | **PASSED** |
+| `backend/tests/test_recording_format.py` | 6 | Container magic-byte validation (WAV, MP3, M4A, WebM) & script rejection | **PASSED** |
+| **Total** | **52** | **Full Backend, Hybrid ML & Security Suite (63.30s)** | **100% PASS** |
 
 ---
 

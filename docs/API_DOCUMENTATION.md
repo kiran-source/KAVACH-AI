@@ -21,7 +21,7 @@ Returns system status, service name, version, and demo mode flag.
   ```
 
 ### `GET /health/providers`
-Returns connection status and supported languages for Gnani AI modules (Prisma v2.5, Timbre v2.5, Evon v3.3).
+Returns connection status and supported languages for Gnani AI modules (Prisma v3, Timbre v2.5, Evon v3.3).
 
 ---
 
@@ -54,28 +54,29 @@ Permanently purges audio file from disk to comply with user privacy and data ret
 
 ---
 
-## 3. Speech Transcription (Gnani Prisma v2.5)
+## 3. Speech Transcription (Gnani Prisma V3.0)
 
 ### `POST /transcription/{audio_id}`
-Transcribes stored audio using Gnani Prisma v2.5 STT engine.
+Transcribes stored audio using the official Gnani Prisma V3.0 STT engine on Vachana (`https://api.vachana.ai/stt/v3`).
 - **Form Data**:
-  - `language`: Target language hint (`auto`, `te`, `hi`, `en`)
+  - `language`: Target language hint (`auto` / `indic-auto`, `te`, `hi`, `en`)
+- **Authentication Header**: `X-API-Key-ID: <GNANI_API_KEY>`
 - **Response (200 OK)**:
   ```json
   {
-    "transcript_id": "TR-4F9A2B1C",
-    "language": "hi",
-    "detected_languages": ["hi", "en"],
+    "transcript_id": "01a1a288-780e-7037-bbcf-8e280334aaba",
+    "language": "en-IN",
+    "detected_languages": ["en", "hi"],
     "segments": [
       {
         "start": 0.0,
-        "end": 4.5,
-        "text": "Namaste. I am Inspector Sharma from CBI headquarters Delhi.",
-        "language": "en"
+        "end": 6.4,
+        "text": "Namaste, your State Bank of India account KYC verification is pending, please update your details.",
+        "language": "en-IN"
       }
     ],
-    "full_text": "Namaste. I am Inspector Sharma from CBI headquarters Delhi...",
-    "provider": "gnani_prisma_v2.5",
+    "full_text": "Namaste, your State Bank of India account KYC verification is pending, please update your details.",
+    "provider": "gnani_prisma_v3.0",
     "is_mock": false
   }
   ```
@@ -168,4 +169,53 @@ Computes real-time SOC metrics directly from SQLite database records.
 
 ### `POST /evaluation/run`
 Executes evaluation pipeline on the 20-scenario synthetic dataset and returns Confusion Matrix, Precision, Recall, and F1 score.
+
+---
+
+## 8. Gnani AI Official Vachana Cloud Integration
+
+### Overview
+KAVACH AI integrates genuinely with official **Gnani.ai Vachana VoiceOS** speech APIs.
+
+| Service | Official Endpoint | Auth Header | Model / Voice |
+| :--- | :--- | :--- | :--- |
+| **Speech-to-Text (STT)** | `POST https://api.vachana.ai/stt/v3` | `X-API-Key-ID: <KEY>` | Model: `prisma-v3.0`, Language: `indic-auto` |
+| **Text-to-Speech (TTS)** | `POST https://api.vachana.ai/api/v1/tts/inference` | `X-API-Key-ID: <KEY>` | Model: `timbre-v2.5`, Voice: `Nalini` |
+
+### Environment Configuration (`backend/.env`)
+```env
+PORT=8000
+DATABASE_URL=sqlite:///./kavach.db
+
+# Insert your actual secret key from the Gnani / Vachana developer portal:
+GNANI_API_KEY=YOUR_ACTUAL_API_KEY
+
+GNANI_PRISMA_ENDPOINT=https://api.vachana.ai/stt/v3
+GNANI_TIMBRE_ENDPOINT=https://api.vachana.ai/api/v1/tts/inference
+
+# Mode toggle:
+# false = Live authenticated calls to api.vachana.ai
+# true  = Offline deterministic simulator (zero credits consumed)
+DEMO_MODE=false
+RETENTION_DAYS=7
+MAX_UPLOAD_SIZE_MB=25
+ENVIRONMENT=development
+```
+
+### Real API Mode vs Demo Mode
+1. **Real API Mode (`DEMO_MODE=false`)**:
+   - Sends real authenticated multipart/form-data audio to `api.vachana.ai/stt/v3`.
+   - Sends real JSON speech synthesis requests to `api.vachana.ai/api/v1/tts/inference`.
+   - Returns genuine cloud provider responses (`provider: "gnani_prisma_v3.0"` and `"gnani_timbre_v2.5"`).
+   - If authentication fails (HTTP 401/403) or rate limits occur (HTTP 429), the API surfaces explicit HTTP exceptions rather than masking errors with simulated responses.
+2. **Demo Mode (`DEMO_MODE=true` or unconfigured placeholder key)**:
+   - Uses local deterministic transcripts mapped to test scenarios.
+   - Transparently labels responses as `provider: "gnani_prisma_v3.0 (Simulated / Demo Mode)"` and `is_mock: true`.
+   - Synthesizes local playable audio via Windows SAPI5 or audio tone signals.
+
+### Troubleshooting & Diagnostics
+- **HTTP 401 / 403 (Unauthorized)**: Verify that `GNANI_API_KEY` in `backend/.env` is active and has permissions for STT and TTS in the Gnani Vachana portal.
+- **HTTP 429 (Rate Limit / Quota Exceeded)**: Check your credit balance on Vachana (e.g. 5,000 credit allocation).
+- **HTTP 502 / 503 (Bad Gateway / Unreachable)**: Ensure the host machine has outbound internet connectivity to `api.vachana.ai:443`.
+- **Credit Protection**: Automated CI unit tests (`pytest`) use mocks to preserve your credit balance. Controlled live tests can be executed using `python scratch/audit_gnani_live.py` (which makes strictly 1 TTS call and 1 STT call).
 

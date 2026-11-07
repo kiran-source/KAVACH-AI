@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0267 (hi) ===
+Scenario: Blood Bank Rare Blood Group Voluntary Donation Inquiry (HI)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: नमस्ते, मैं Red Cross Blood Center से Coordinator Swathi बोल रहा हूँ। यह कॉल आपके shortage of O negative blood group for scheduled surgeries के संदर्भ में है।
+[RECIPIENT]: नमस्ते, जी बताइए। मैं इस आधिकारिक जानकारी का इंतजार कर रहा था।
+[CALLER]: कृपया ध्यान दें कि आपको voluntary blood donation at clinic if healthy and available की प्रक्रिया पूरी करनी है। हमारा कार्यालय कार्यदिवसों में खुला रहता है।
+[RECIPIENT]: ठीक है, क्या इसके लिए मुझे कोई मूल पहचान पत्र या रसीद साथ लानी होगी?
+[CALLER]: हाँ, केवल अपना वैध पहचान पत्र लाइएगा। याद रहे, हमारी संस्था फोन पर कभी कोई ओटीपी या पासवर्ड नहीं माँगती।
+[RECIPIENT]: सटीक जानकारी और सुरक्षा परामर्श के लिए बहुत-बहुत धन्यवाद। मैं समय पर पहुँच जाऊँगा।

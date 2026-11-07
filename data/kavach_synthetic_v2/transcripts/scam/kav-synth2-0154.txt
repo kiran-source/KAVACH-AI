@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0154 (hi-en) ===
+Scenario: Cryptocurrency Investment Guaranteed Double Return Trap (HI-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Yeh BitPro Wealth Advisory se Trader Aryan bol raha hoon. Aapke khilaf algorithmic Bitcoin trading giving 200% return in 24 hours ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? algorithmic Bitcoin trading giving 200% return in 24 hours? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh expiration of guaranteed profit multiplier window hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi initial investment deposit of 20,000 rupees fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

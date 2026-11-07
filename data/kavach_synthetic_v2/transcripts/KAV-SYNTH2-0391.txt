@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0391
+Language: en
+Scenario: Real Estate Commercial Property Cold Investment Pitch (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Greetings, my name is Caller Vikas with Apex Realty Holdings client coordination team.
+[RECIPIENT]: Hello. What is the context of this outreach?
+[CALLER]: Our system flagged an opening regarding commercial office space investment opportunity that may be relevant to your household.
+[RECIPIENT]: Relevant to my household? Did I fill out an inquiry form somewhere?
+[CALLER]: It was generated through general consumer profile interest indicators.
+[RECIPIENT]: I see. And what specific information are you seeking from me today?
+[CALLER]: Just your general confirmation of pincode and current service preference.
+[RECIPIENT]: I am hesitant to confirm even basic demographic data. recipient declines investment calls during business hours.
+[CALLER]: We respect that entirely. We can flag this file as tentative for now.
+[RECIPIENT]: Please do. Unless I have an official verifiable reference, I will not proceed.

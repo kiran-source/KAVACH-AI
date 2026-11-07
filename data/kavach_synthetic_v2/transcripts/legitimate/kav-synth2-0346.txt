@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0346 (en) ===
+Scenario: Courier Delivery Address Landmark Clarification Call (EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good day, this is Delivery Agent Imran calling from DTDC Courier Service. I am reaching out regarding your clarification of apartment building wing name for envelope.
+[RECIPIENT]: Hello, yes thank you for calling. I was expecting an official update regarding this.
+[CALLER]: We would like to request that you confirm landmark near residential entrance. Our authorized counter is open during normal working hours.
+[RECIPIENT]: Understood. Are there any specific reference documents or identity proofs I need to carry?
+[CALLER]: Just carry your standard photo ID and previous receipt copy. No financial payment or OTP is requested on this call.
+[RECIPIENT]: Thank you for the clear information and safety reminder. I will visit tomorrow as advised.

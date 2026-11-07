@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-062 (te-en) ===
+Scenario: Aadhaar Card Linked SIM Misuse Digital Arrest
+Primary Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE, URGENCY_OR_THREAT
+
+[CALLER]: This is Inspector Rajesh from Telecom Regulatory Authority and Delhi Police Crime Branch.
+[RECIPIENT]: Yes sir, cheppandi. Enti vishayam?
+[CALLER]: Mee Aadhaar number tho link aina BSNL SIM card dwaara illegal financial extortion jarigindi.
+[RECIPIENT]: Sir, na daggara BSNL SIM eppudu ledu sir, someone must have forged my ID.
+[CALLER]: Already Non-Bailable Warrant issue aindi. Meeru immediately Skype video call lo join avvali under digital arrest.
+[RECIPIENT]: Digital arrest enti sir? Can I call my advocate?
+[CALLER]: Advocate ki call cheste case national security kindaki veltundi. Ee call disconnect cheste squad mee intiki vastundi.
+[RECIPIENT]: Police phone lo digital arrest cheyaru. I know this is a scam, I am filing a complaint on 1930.

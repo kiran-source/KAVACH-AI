@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0194
+Language: hi-en
+Scenario: Fake Anti-Virus Subscription Renewal & Remote Refund Scam (HI-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Attention please. This is Tech Lead Peter from Global Cyber Defender central monitoring unit.
+[RECIPIENT]: Yes speaking, what is this call about? Please be quick as I am driving.
+[CALLER]: Aapke ID documents misuse hue hain in automatic annual renewal fee of 24,000 charged to account. State enforcement team has registered file 904.
+[RECIPIENT]: File 904? Sir mera ID kabhi kisi illicit activity mein use nahi hua. Someone must have forged it.
+[CALLER]: Forged ho ya real, system is preparing non-refundable auto-debit if not cancelled in 1 hour unless cleared before 5 PM.
+[RECIPIENT]: Toh legal clearing process kya hai? Can I visit the nearest office?
+[CALLER]: Office aane ka time nahi hai. You must immediately connect and perform TeamViewer remote connection to process refund.
+[RECIPIENT]: No, this is completely unsafe. Any legitimate inquiry requires physical presence. I am cutting the call.

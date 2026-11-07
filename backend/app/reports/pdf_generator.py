@@ -110,12 +110,27 @@ def generate_pdf_report(incident_data: Dict[str, Any]) -> str:
     sev_bg = colors.HexColor("#fee2e2") if severity in ["Critical", "High"] else colors.HexColor("#fef3c7")
     sev_text = "#991b1b" if severity in ["Critical", "High"] else "#92400e"
 
+    mode = incident_data.get("detection_mode", "RULE_ONLY")
+    ml_class = incident_data.get("ml_predicted_class")
+    ml_conf = incident_data.get("ml_confidence")
+    r_score = incident_data.get("rule_score", risk_score)
+    m_score = incident_data.get("ml_score")
+
+    if mode == "HYBRID" and ml_class:
+        conf_str = f"{ml_conf * 100:.1f}%" if ml_conf is not None else "N/A"
+        ml_score_str = f"{m_score:.1f}" if m_score is not None else "N/A"
+        rule_score_str = f"{r_score:.1f}" if r_score is not None else "N/A"
+        mode_desc = f"<b>HYBRID</b> (Rules: {rule_score_str} | ML: {ml_score_str} - Class: {ml_class}, Conf: {conf_str})"
+    else:
+        mode_desc = "<b>RULE_ONLY</b> (8-Pillar Deterministic Threat Engine)"
+
     overview_rows = [
         [Paragraph("Incident Title:", body_bold), Paragraph(str(incident_data.get("title", "Voice Scam Alert")), body_style)],
         [Paragraph("Assigned Analyst:", body_bold), Paragraph(str(incident_data.get("assigned_analyst", "SOC Analyst 1")), body_style)],
         [Paragraph("Investigation Status:", body_bold), Paragraph(f"<b>{incident_data.get('status', 'New')}</b>", body_style)],
         [Paragraph("Assessed Severity:", body_bold), Paragraph(f"<font color='{sev_text}'><b>{severity}</b></font>", body_style)],
-        [Paragraph("Calculated Risk Score:", body_bold), Paragraph(f"<b>{risk_score} / 100</b> (Explainable Rule Engine)", body_style)],
+        [Paragraph("Detection Mode:", body_bold), Paragraph(mode_desc, body_style)],
+        [Paragraph("Calculated Risk Score:", body_bold), Paragraph(f"<b>{risk_score} / 100</b>", body_style)],
         [Paragraph("Detected Language:", body_bold), Paragraph(str(incident_data.get("detected_language", "en")).upper(), body_style)],
     ]
     t_overview = Table(overview_rows, colWidths=[140, 400])

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0045
+Language: te-en
+Scenario: KBC Lucky Draw Processing Fee Advance Fraud (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Nenu KBC Lottery Office nunchi Officer Rana Pratap matladuthunnanu andi. Severe allegation vachindi regarding 25 Lakhs cash prize in national SIM draw.
+[RECIPIENT]: What are you saying sir? 25 Lakhs cash prize in national SIM draw aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop cancellation of winning check, meeru ventane 12,500 rupees GST processing charge cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0442
+Language: hi
+Scenario: Medical Insurance Cashless Hospitalization Network Inquiry (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्कार, Health First TPA की तरफ से Caller Shalini बात कर रहा हूँ general inquiry regarding preferred local hospital network के संबंध में।
+[RECIPIENT]: नमस्ते, मैं अभी थोड़ा व्यस्त हूँ। क्या यह कोई विज्ञापन कॉल है?
+[CALLER]: यह एक महत्वपूर्ण पेशकश है, पर पहले हमें आपकी पात्रता की जांच करनी होगी।
+[RECIPIENT]: फोन पर मैं कोई विवरण साझा नहीं करता। recipient asks caller to send policy brochure by post।
+[CALLER]: सर, हम केवल सामान्य जानकारी ले रहे हैं, कोई गोपनीय डाटा नहीं चाहिए।
+[RECIPIENT]: फिर भी, आप लिखित विवरण ईमेल पर भेजिए। फोन पर कोई पुष्टि नहीं होगी।

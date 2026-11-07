@@ -15,9 +15,9 @@
 ---
 
 ### [00:15 - 00:35] Audio Ingestion & Gnani Prisma STT
-- **Visual**: Operator selects the **"CBI Digital Arrest"** preset scenario. Hits **EXECUTE KAVACH SCAN**. Pipeline steps light up sequentially: Audio Ingestion -> Gnani Prisma v2.5 -> Threat Engine.
+- **Visual**: Operator selects the **"CBI Digital Arrest"** preset scenario. Hits **EXECUTE KAVACH SCAN**. Pipeline steps light up sequentially: Audio Ingestion -> Gnani Prisma v3 -> Threat Engine.
 - **Audio / Voiceover**:
-  > *"We ingest a suspicious incoming voice recording. KAVACH AI validates the audio and passes it to Gnani Prisma v2.5 for multilingual speech-to-text and automatic language identification.*
+  > *"We ingest a suspicious incoming voice recording. KAVACH AI validates the audio and passes it to Gnani Prisma v3 for multilingual speech-to-text and automatic language identification.*
   > *Notice how Prisma accurately transcribes the code-mixed conversation without altering the original evidence."*
 
 ---

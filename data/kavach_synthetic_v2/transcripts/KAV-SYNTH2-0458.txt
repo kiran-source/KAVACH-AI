@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0458
+Language: te
+Scenario: Retail Supermarket Loyalty Card Reward Balance Call (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: హలో అండి, నేను Smart Mart Rewards నుండి Caller Varun ని. inquiry on redeeming 450 reward points on next grocery bill గురించి మాట్లాడుతున్నాను.
+[RECIPIENT]: నాకు inquiry on redeeming 450 reward points on next grocery bill గురించి ఎటువంటి అవసరం లేదు. నా నంబర్ ఎవరిచ్చారు?
+[CALLER]: సిస్టమ్ ప్రమోషనల్ లిస్ట్ ద్వారా మీ నంబర్ సెలెక్ట్ అయింది అండి.
+[RECIPIENT]: పరిచయం లేని కాల్స్ లో నేను మాట్లాడను. recipient acknowledges message and will check in store.

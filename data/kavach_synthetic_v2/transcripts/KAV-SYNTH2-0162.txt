@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0162
+Language: hi
+Scenario: Overseas University Visa Bond Emergency Transfer (HI)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: यह Consulate Visa Cell से Officer David बोल रहे हैं। आपके खिलाफ student visa documentation discrepancy for dependent child की जांच शुरू की गई है।
+[RECIPIENT]: क्या? student visa documentation discrepancy for dependent child? मैंने ऐसा कुछ नहीं किया है, आप गलत व्यक्ति को कॉल कर रहे हैं।
+[CALLER]: रिकॉर्ड में आपका नाम दर्ज है। तुरंत कार्रवाई रोकने के लिए embassy security deposit transfer करना आवश्यक है, वर्ना immediate deportation and visa cancellation होगी।
+[RECIPIENT]: मैं फोन पर कोई भुगतान या जानकारी नहीं दूँगा। लिखित सरकारी नोटिस भेजिए, मैं थाने में आकर बात करूँगा।

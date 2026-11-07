@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0010 (te-en) ===
+Scenario: Customs Narcotics International Parcel Confiscation (TE-EN)
+Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu Mumbai Airport Customs nunchi Officer Deshmukh matladuthunnanu andi. Mee credentials meeda FedEx carton seized with MDMA drugs detect ayindi.
+[RECIPIENT]: Enti sir, FedEx carton seized with MDMA drugs aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe Anti-Narcotics Bureau immediate remand implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane provisional customs clearance bond cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

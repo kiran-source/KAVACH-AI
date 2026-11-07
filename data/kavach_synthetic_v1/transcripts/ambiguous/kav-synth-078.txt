@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-078 (te-en) ===
+Scenario: Coworking Space Dedicated Seat Deposit Clarification
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hi Sandeep, calling from WeWork Gachibowli community management team.
+[RECIPIENT]: Hi, regarding our four-seater dedicated desk agreement?
+[CALLER]: Yes Sandeep, lease agreement signed kani two months refundable security deposit payment gateway lo pending chupistundi.
+[RECIPIENT]: We already transferred via RTGS from our company account on Tuesday.
+[CALLER]: Bank statement lo UTR update kaledu. Can you share payment screenshot to our manager personal WhatsApp?
+[RECIPIENT]: Why personal WhatsApp? Isn't there an official billing ticket portal?
+[CALLER]: You can upload on WeWork portal also, WhatsApp was suggested just for immediate desk activation today.
+[RECIPIENT]: I will stick to official billing portal and upload the RTGS counterfoil there.

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0437
+Language: hi
+Scenario: Apartment Rental Broker Seeking Tenant Background Details (HI)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: नमस्ते, मैं City Property Associates से Caller Naresh बोल रहा हूँ। inquiry whether residential apartment is available for rent के बारे में एक विशेष जानकारी है।
+[RECIPIENT]: मुझे inquiry whether residential apartment is available for rent में कोई दिलचस्पी नहीं है। आपको मेरा नंबर कहाँ से मिला?
+[CALLER]: सर, हमारे सहयोगी डेटाबेस से आपका नाम चयनित हुआ है।
+[RECIPIENT]: बिना पहचान के मैं बात नहीं करता। recipient clarifies property is already occupied। धन्यवाद।

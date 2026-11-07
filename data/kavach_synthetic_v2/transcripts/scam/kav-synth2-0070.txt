@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0070 (te-en) ===
+Scenario: FASTag Toll Blacklisting & Security Deposit Theft (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, MALICIOUS_LINK_OR_APP
+
+[CALLER]: Nenu FASTag Operations Unit nunchi Officer Chopra matladuthunnanu andi. Mee credentials meeda blacklisting of highway toll tag due to KYC lapse detect ayindi.
+[RECIPIENT]: Enti sir, blacklisting of highway toll tag due to KYC lapse aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe penalty of 10,000 rupees at toll plazas implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane FASTag reactivation UPI PIN transfer cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

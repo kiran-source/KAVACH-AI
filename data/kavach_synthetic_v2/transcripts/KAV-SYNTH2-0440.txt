@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0440
+Language: te-en
+Scenario: Apartment Rental Broker Seeking Tenant Background Details (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, nenu City Property Associates nunchi Caller Naresh matladuthunnanu regarding inquiry whether residential apartment is available for rent.
+[RECIPIENT]: Naku inquiry whether residential apartment is available for rent tho pani ledu andi. Where did you get my phone number?
+[CALLER]: Marketing tie-up list nunchi mee number vachindi andi.
+[RECIPIENT]: Naku ilanti unverified calls nachavu. recipient clarifies property is already occupied. Cutting call.

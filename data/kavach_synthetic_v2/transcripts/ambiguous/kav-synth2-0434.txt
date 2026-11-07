@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0434 (hi-en) ===
+Scenario: Mobile Broadband Speed Diagnostic Disconnecting Mid-Call (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main Telecom Network Support se Caller Ravi bol raha hoon regarding routine network diagnostic following slow speed report.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. call disconnects abruptly due to cellular signal drop.
+[CALLER]: Sir yeh Telecom Network Support ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

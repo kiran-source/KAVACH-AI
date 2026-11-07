@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0214
+Language: hi-en
+Scenario: E-Commerce Logistics Package Out for Delivery Confirmation (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, this is Courier Ramesh reaching out from BlueDart Logistics.
+[RECIPIENT]: Good afternoon, how can I help you today?
+[CALLER]: Sir, I am calling with an update regarding your pending Amazon delivery out for delivery today.
+[RECIPIENT]: Oh great! Has the administrative clearance been issued?
+[CALLER]: Yes sir, all checks passed. We request you to leave parcel with building security guard.
+[RECIPIENT]: Can I do this online through net banking or some link?
+[CALLER]: No sir, please do not click unknown links. Secure verification requires physical presence at our counter.
+[RECIPIENT]: Understood. That is safe practice. I will visit in person.

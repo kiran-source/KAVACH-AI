@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0220
+Language: te-en
+Scenario: Bank Educational Advisory on Never Sharing One Time Passwords (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, is this the registered account applicant?
+[RECIPIENT]: Yes speaking. Who is on the line please?
+[CALLER]: I am Advisory Voice from State Bank of India Security. Reaching out regarding your RBI cyber awareness campaign reminder.
+[RECIPIENT]: Yes sir, nenu 10 days back RBI cyber awareness campaign reminder submit chesanu.
+[CALLER]: The verification team cleared your file for the next phase.
+[RECIPIENT]: Can we authenticate this through an automated call?
+[CALLER]: No sir, for your account security we request that you never share OTP, ATM PIN, or passwords with anyone.
+[RECIPIENT]: Understood. Good that your institution maintains strict protocols.
+[CALLER]: Our facility is open on all business days until 5 PM.
+[RECIPIENT]: Thank you for the professional call. I will visit accordingly.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0134 (hi-en) ===
+Scenario: Courier Tracking Failure Malicious APK Download (HI-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, COURIER_CUSTOMS_FRAUD, REMOTE_ACCESS_MANIPULATION
+
+[CALLER]: Yeh BlueDart Logistics se Driver Mukesh bol raha hoon. Aapke khilaf inability to deliver parcel due to incorrect house number ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? inability to deliver parcel due to incorrect house number? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh return of parcel to sender with heavy penalty hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi custom tracking APK installed from WhatsApp link fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

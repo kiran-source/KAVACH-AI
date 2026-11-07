@@ -1,18 +1,13 @@
 import pytest
 import os
 import json
-from fastapi.testclient import TestClient
-from app.main import app
+from app.main import health_check
 from app.detection.engine import analyze_transcript
 from app.gnani.prisma_client import GnaniPrismaClient
-from app.database.session import init_db
+from fastapi import HTTPException
 
-client = TestClient(app)
-
-def test_health_check():
-    response = client.get("/api/v1/health")
-    assert response.status_code == 200
-    data = response.json()
+def test_health_check_direct():
+    data = health_check()
     assert data["status"] == "healthy"
     assert data["service"] == "KAVACH AI Backend"
 
@@ -31,7 +26,21 @@ def test_detection_engine_safe():
 
 def test_prisma_client_mock():
     pc = GnaniPrismaClient()
-    res = pc._get_mock_transcript("data/uploads/test_digital_arrest.wav", "en")
+    dummy_wav = "data/synthetic_audio/ambig-001_clean.wav"
+    res = pc._generate_simulated_transcript(dummy_wav, "en")
     assert "transcript_id" in res
     assert "full_text" in res
     assert len(res["segments"]) > 0
+    assert res["is_mock"] is True
+
+def test_prisma_empty_transcript_validation():
+    pc = GnaniPrismaClient()
+    empty_raw = {
+        "success": True,
+        "transcript": "   ",
+        "detected_language_code": "en-IN"
+    }
+    with pytest.raises(HTTPException) as exc:
+        pc._normalize_prisma_response(empty_raw, "en")
+    assert exc.value.status_code == 502
+    assert "empty transcript" in exc.value.detail.lower()

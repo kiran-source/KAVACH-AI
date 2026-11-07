@@ -16,6 +16,7 @@ SCAM_RULES: List[Dict[str, Any]] = [
             r"\b(customs department|customs officer|customs clearance)\b",
             r"\b(supreme court|high court|district magistrate|magistrate court)\b",
             r"\b(trai|telecom regulatory authority|dot department|income tax (department|officer|notice))\b",
+            r"\b(state bank of india|sbi (officer|bank|manager)|reserve bank of india|rbi (officer|guidelines?)|bank official|bank verification desk)\b",
             # Hindi
             r"(सीबीआई|पुलिस|थाना|इंस्पेक्टर|साइबर सेल|क्राइम ब्रांच|सीमा शुल्क|कस्टम्स|अदालत|कोर्ट|न्यायालय)",
             r"\b(police team|police arrest|cbi team|cyber branch)\b",
@@ -32,12 +33,15 @@ SCAM_RULES: List[Dict[str, Any]] = [
         "recommendation": "Do not panic or rush under high pressure. Fraudsters rely on urgency to prevent rational thinking. Legitimate notices are always dispatched in writing via registered post.",
         "patterns": [
             r"\b(immediate arrest|arrest you immediately|warrant issued|non-bailable warrant)\b",
-            r"\b(account (will be|is) blocked|permanently suspended|service disconnect(ed)?|electricity disconnect(ed)?)\b",
+            r"\b(account (will be|is) blocked|permanently suspended|service disconnect(ed)?)\b",
+            r"\b((electricity|power|power connection|sim card|mobile number) (will be |is )?disconnect(ed)?)\b",
+            r"\b(electricity (bill|power|connection)?\s*(will be\s*)?disconnect(ed)?)\b",
             r"\b(within 10 minutes|within 1 hour|right now|immediately or face|urgent action)\b",
+            r"\b(immediately|right away|at once|without delay)\b",
             r"\b(assets frozen|bank freeze|legal proceeding(s)?)\b",
             # Hindi
             r"(तुरंत|अभी के अभी|अरेस्ट|गिरफ्तार|खाता बंद|बिजली कट|वारंट जारी|कानूनी कार्रवाई)",
-            r"\b(turant|abhi ke abhi|arrest ho jaoge|account block ho jayega|police bhej rahe)\b",
+            r"\b(turant|abhi ke abhi|arrest ho jaoge|account block ho jayega|police bhej rahe|connection cut|bijli cut|power cut)\b",
             # Telugu / Code-mixed
             r"(వెంటనే|అరెస్ట్|బ్లాక్ అవుతుంది|కరెంట్ కట్|కేసు పెడతాం|వారెంట్)",
             r"\b(ventane|block ayindi|jail ki pampistam|police arrest chestharu)\b"
@@ -51,10 +55,12 @@ SCAM_RULES: List[Dict[str, Any]] = [
         "recommendation": "NEVER share OTP, UPI PIN, CVV, or passwords under ANY situation. Banks, RBI, and police will NEVER ask for authentication credentials.",
         "patterns": [
             r"\b(otp|one time password|verification code|security code)\b",
+            r"\b(\d+[\s-]?digit\s+(code|number|pin)|access code|screen code|pairing code|anydesk code)\b",
             r"\b(upi pin|mpin|atm pin|pin number|secret pin)\b",
             r"\b(cvv|cvv number|card expiry|card verification)\b",
-            r"\b(net banking password|login password|transaction password)\b",
+            r"\b(net\s*banking (password|pin|login|user id)|login password|transaction password)\b",
             r"\b(pan card number|aadhaar number|debit card number|16 digit card)\b",
+            r"\b(kyc (verification|update|expired|pending|suspended|blocked)|update (your )?(pan card|kyc|aadhaar|bank account))\b",
             # Hindi
             r"(ओटीपी|पिन|सीवीवी|पासवर्ड|एटीएम पिन|आधार नंबर|पैन कार्ड)",
             r"\b(otp batao|pin enter karo|cvv share karo|otp bhejiyega)\b",
@@ -159,11 +165,46 @@ SCAM_RULES: List[Dict[str, Any]] = [
 
 # Educational or contextual phrases that indicate an advisory ABOUT security rather than an actual scam attack
 NEGATIVE_CONTEXT_PATTERNS = [
-    r"\b(never share your otp|bank never asks for otp|awareness (campaign|notice))\b",
-    r"\b(be aware of fraud|cyber safety tip|rbi guidelines state|fraud awareness)\b",
+    r"\b(never share (your )?(one time password|otp|password|pin|cvv))\b",
+    r"\b(bank never asks for otp|awareness (campaign|notice|warning))\b",
+    r"\b(public awareness (campaign|notice|warning)|security awareness|fraud warning)\b",
+    r"\b(be aware of fraud|beware of (fraud|fraudulent|scam|scammers|fake))\b",
+    r"\b(cyber safety tip|rbi guidelines state|fraud awareness|security advisory)\b",
     r"\b(do not share your password|stay safe from scam calls|beware of digital arrest)\b",
-    r"(ओटीपी कभी साझा न करें|बैंक कभी ओटीपी नहीं मांगता|धोखाधड़ी से सावधान रहें)",
-    r"(ఓటీపీని ఎవరితోనూ పంచుకోవద్దు|మోసగాళ్ల పట్ల జాగ్రత్తగా ఉండండి)"
+    r"(ओटीपी कभी साझा न करें|बैंक कभी ओटीपी नहीं मांगता|धोखाधड़ी से सावधान रहें|जागरूकता)",
+    r"(ఓటీపీని ఎవరితోనూ పంచుకోవద్దు|మోసగాళ్ల పట్ల జాగ్రత్తగా ఉండండి|అవగాహన)"
+]
+
+# Active coercion, credential harvesting, or extortion instructions that CANNOT be excused by an educational disclaimer
+ACTIVE_CRITICAL_THREAT_PATTERNS = [
+    # Active OTP / credential extraction demands
+    r"\b(tell me|share|read out|send|provide|give)\s+(me\s+)?(your|the)?\s*(\w+\s+){0,3}(otp|pin|cvv|code|password|mpin)\b",
+    r"\b(enter (your|the)?\s*(\w+\s+){0,3}(pin|upi pin|mpin|password|code))\b",
+    r"(ओटीपी (बताइए|दीजिए|शेयर करें|भेजें)|पिन (दर्ज करें|बताइए)|अपना पासवर्ड बताइए)",
+    r"(ఓటీపీ (చెప్పండి|పంపండి|షేర్ చేయండి)|పిన్ (ఎంటర్ చేయండి|చెప్పండి))",
+    r"\b(otp bolo|otp share karo|pin enter karo|otp cheppandi|pin share cheyandi)\b",
+    
+    # Active remote access manipulation demands
+    r"\b(download|install|open)\s+(anydesk|teamviewer|quicksupport|rustdesk|\.apk|apk file)\b",
+    r"\b(share|give|tell)\s+(me\s+)?(the\s+)?(9|nine|\d+)[\s-]digit\s+(code|number|access)\b",
+    r"(एनीडेस्क|टीमव्यूअर|क्विकसपोर्ट) (डाउनलोड|इंस्टॉल) (करें|कीजिए)",
+    r"(ఎనీడెస్క్|టీమ్‌వీవర్|క్విక్‌సపోర్ట్) (డౌన్‌లోడ్|ఇన్‌స్టాల్) చేయండి",
+    r"\b(anydesk download karo|quicksupport install karo|9 digit code cheppandi)\b",
+    
+    # Active Digital arrest / confinement commands
+    r"\b(you are under (immediate )?digital arrest|placed under digital arrest|in digital custody)\b",
+    r"\b(do not disconnect (the )?(video )?call|keep (your )?camera on|face the camera|stay on (this |the )?(video )?call|lock (yourself in )?(your |the )?room)\b",
+    r"(डिजिटल अरेस्ट (में हैं|किया जाता है)|वीडियो कॉल (मत काटना|चालू रखिए)|कैमरा (ऑन|चालू) रखो|कमरे में बंद हो जाओ)",
+    r"(డిజిటల్ అరెస్ట్ (లో ఉన్నారు|చేస్తున్నాం)|వీడియో కాల్ (కట్ చేయొద్దు|ఆన్ చేసి ఉంచండి)|గదిలో ఉండండి)",
+    r"\b(digital arrest me ho|video call mat kaatna|camera on rakho|video call cut cheyyoddu)\b",
+    
+    # Active coercive financial transfer demands
+    r"\b(transfer|deposit|pay|send)\s+(\w+\s+){0,5}(money|funds|rupees|amount|rs\.?|fee|penalty|fine|bail|bond|deposit)\b",
+    r"\b(rbi|police|court|government|cyber crime)\s+[\w\s]{0,25}account\b",
+    r"\b(safe|clearance|verified|reserve)\s+account\b",
+    r"(पैसे (ट्रांसफर|जमा) करें|जुर्माना (भरें|दीजिए)|आरबीआई (सुरक्षा|क्लियरेंस) खाते में)",
+    r"(డబ్బులు (ట్రాన్స్‌ఫర్|డిపాజిట్) చేయండి|ఆర్బీఐ (సేఫ్|క్లియరెన్స్) అకౌంట్ కి)",
+    r"\b(paise transfer karo|fine bharo|rbi safe account me transfer|dabbulu transfer cheyandi)\b"
 ]
 
 SAFETY_WARNINGS = {

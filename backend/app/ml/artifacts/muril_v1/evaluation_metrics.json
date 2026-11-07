@@ -1,0 +1,26 @@
+{
+  "test_accuracy": 1.0,
+  "test_macro_precision": 1.0,
+  "test_macro_recall": 1.0,
+  "test_macro_f1": 1.0,
+  "test_sample_count": 450,
+  "train_duration_seconds": 225.49,
+  "eval_duration_seconds": 1.86,
+  "confusion_matrix": [
+    [
+      135,
+      0,
+      0
+    ],
+    [
+      0,
+      135,
+      0
+    ],
+    [
+      0,
+      0,
+      180
+    ]
+  ]
+}

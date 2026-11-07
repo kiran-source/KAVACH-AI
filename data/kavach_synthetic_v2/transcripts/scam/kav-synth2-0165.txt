@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0165 (te-en) ===
+Scenario: Overseas University Visa Bond Emergency Transfer (TE-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Nenu Consulate Visa Cell nunchi Officer David matladuthunnanu andi. Mee credentials meeda student visa documentation discrepancy for dependent child detect ayindi.
+[RECIPIENT]: Enti sir, student visa documentation discrepancy for dependent child aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe immediate deportation and visa cancellation implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane embassy security deposit transfer cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

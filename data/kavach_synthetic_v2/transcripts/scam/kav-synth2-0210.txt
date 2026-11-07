@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0210 (te) ===
+Scenario: Cyber Police Obscene Content Complaint Harassment (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Mee paina Digital Arrest order undi. Evaritho matladakunda confidential Skype call lo live connect avvandi.
+[RECIPIENT]: Enti saar? Nenu em tappu cheyaledu! Naku ee parcel tho em sambandham ledu.
+[CALLER]: QuickSupport application download chesi ma officer ki remote screen access ivvandi.
+[RECIPIENT]: Nenu regular ga tax pay chese citizen ni. Na pai ilanti case enduku peduthunnaru?
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Dayachesi current cut cheyakandi saar. Nenu em cheyalo cheppandi.
+[CALLER]: Namaskaram, nenu Hyderabad Cyber Crime Police Station nundi Inspector Ramesh Kumar matladuthunnanu. Mee Aadhaar card pai arrest warrant issue ayindi.
+[RECIPIENT]: Bank vallu eppudu OTP share cheyavaddhu ani cheptharu kada? Nenu ela ivvali?

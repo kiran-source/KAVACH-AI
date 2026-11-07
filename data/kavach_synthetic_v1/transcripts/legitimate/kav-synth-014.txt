@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-014 (en) ===
+Scenario: Laptop Service Center Repair Status Update
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hello, calling from Dell Authorized Service Center, Koramangala. Is this Mr. Joseph?
+[RECIPIENT]: Yes, I dropped off my XPS laptop yesterday for display diagnostic.
+[CALLER]: Our hardware team inspected the unit. The display cable had come loose, but the LCD panel is completely undamaged.
+[RECIPIENT]: Oh, that is a relief! Will it be covered under my active warranty?
+[CALLER]: Yes sir, it is fully covered under your accidental damage protection. There is zero service charge.
+[RECIPIENT]: When will it be ready for pickup?
+[CALLER]: The laptop has passed quality calibration and is ready at the front desk. Please bring your job sheet acknowledgment slip when visiting.
+[RECIPIENT]: I will drop by this evening. Thank you.

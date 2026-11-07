@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0286 (te) ===
+Scenario: Unknown Mobile Number Claiming to be Distant College Acquaintance (Variant 1)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Namaskaram, mee address incomplete ga undatam valla delivery aagipoyindi.
+[RECIPIENT]: Nenu phone lo elanti details share cheyanu. Branch ki vachi matladathanu.
+[CALLER]: Mee bank account sambandhinchi oka mukhyamaina information teliyajeyali.
+[RECIPIENT]: E delivery gurinchi matladuthunnaru? Company name emiti?
+[CALLER]: Hello andi, mee card details verify chesukovadaniki call chesthunnamu.
+[RECIPIENT]: Meeru e bank nundi call chesthunnaru? Pehle mee ID details cheppandi.
+[CALLER]: Namaskaram, mee address incomplete ga undatam valla delivery aagipoyindi.
+[RECIPIENT]: Nenu phone lo elanti details share cheyanu. Branch ki vachi matladathanu.

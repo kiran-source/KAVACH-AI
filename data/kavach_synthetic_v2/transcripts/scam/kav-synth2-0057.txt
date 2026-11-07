@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0057 (hi) ===
+Scenario: Income Tax Department Tax Evasion & Bank Seizure (HI)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: यह Income Tax Central Circle से Commissioner Saxena हैं। आपके विरुद्ध discrepancy of 18 lakhs in cash deposits के संबंध में गंभीर शिकायत दर्ज हुई है।
+[RECIPIENT]: क्या? discrepancy of 18 lakhs in cash deposits? मैंने ऐसा कोई काम नहीं किया है, आप गलत व्यक्ति को फोन कर रहे हैं।
+[CALLER]: हमारे रिकॉर्ड में आपकी पूरी जानकारी मौजूद है। यदि आपने सहयोग नहीं किया तो immediate attachment of commercial bank accounts की जाएगी।
+[RECIPIENT]: साहब, मैं एक शरीफ नागरिक हूँ। कृपया मुझे बताइए कि यह मामला कैसे सुलझ सकता है?
+[CALLER]: तुरंत कानूनी कार्रवाई रोकने के लिए आपको tax dispute settlement gateway payment करना होगा। देर करने पर कोई राहत नहीं मिलेगी।
+[RECIPIENT]: मैं बिना किसी लिखित सरकारी नोटिस के कोई कदम नहीं उठाऊँगा। मैं पहले अपने वकील से सलाह लूँगा।

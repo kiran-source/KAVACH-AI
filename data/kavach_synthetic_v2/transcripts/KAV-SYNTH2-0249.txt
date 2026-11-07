@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0249
+Language: hi-en
+Scenario: Laptop Service Center Warranty Part Replacement Readiness (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, main Lenovo Authorized Service customer support team se Engineer Deepak bol raha hoon.
+[RECIPIENT]: Hello, is this regarding my application for replacement laptop screen arrived under warranty?
+[CALLER]: Yes absolutely. Verification complete ho chuka hai, now you need to bring original service job-sheet to collect laptop.
+[RECIPIENT]: Do I need to carry original KYC documents or receipt copies?
+[CALLER]: Just carry your original Aadhaar or PAN card. Koi payment ya OTP call par required nahi hai.
+[RECIPIENT]: Thank you for the guidance. I will come to the branch tomorrow morning.

@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0076
+Language: en
+Scenario: Family Member Police Custody Emergency Bail Trap (EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Hello, is this the individual registered at this mobile connection?
+[RECIPIENT]: Yes, speaking. May I know who is calling and from which organization?
+[CALLER]: This is senior investigator Sub-Inspector Pandey from City Police Station. We are conducting a high-priority probe into nephew arrested in hit-and-run accident with injuries.
+[RECIPIENT]: nephew arrested in hit-and-run accident with injuries? That is completely absurd! My record is spotless. Are you sure you dialed the right number?
+[CALLER]: We have verified your credentials through national surveillance logs. There is zero margin for error here.
+[RECIPIENT]: If that is true, why hasn't my local jurisdiction contacted me directly with an official summons?
+[CALLER]: Because this is an emergency fast-track directive. If you resist, there will be immediate transfer to central prison.
+[RECIPIENT]: I am not resisting, I am exercising my constitutional rights. What are you asking me to do?
+[CALLER]: To prove non-involvement, you are required to immediately execute 35,000 rupees cash bail to officer UPI.
+[RECIPIENT]: Demanding compliance like this without legal counsel is illegitimate. I am disconnecting and reporting this to cybercrime helpline 1930.

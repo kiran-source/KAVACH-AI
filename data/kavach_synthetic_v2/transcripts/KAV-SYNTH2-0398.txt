@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0398
+Language: te
+Scenario: Vague Consumer Insurance Survey Inquiring on Family Size (TE)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: హలో అండి, నేను National Market Survey నుండి Caller Monica ని. demographic research survey on life insurance ownership గురించి మాట్లాడుతున్నాను.
+[RECIPIENT]: నాకు demographic research survey on life insurance ownership గురించి ఎటువంటి అవసరం లేదు. నా నంబర్ ఎవరిచ్చారు?
+[CALLER]: సిస్టమ్ ప్రమోషనల్ లిస్ట్ ద్వారా మీ నంబర్ సెలెక్ట్ అయింది అండి.
+[RECIPIENT]: పరిచయం లేని కాల్స్ లో నేను మాట్లాడను. recipient declines to disclose household financial information.

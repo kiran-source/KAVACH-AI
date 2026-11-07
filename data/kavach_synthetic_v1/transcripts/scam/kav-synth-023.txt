@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-023 (hi) ===
+Scenario: Mumbai Police Crime Branch Cyber Extortion
+Primary Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: मुंबई क्राइम ब्रांच से सीनियर सब इंस्पेक्टर पाटिल। आपके आधार कार्ड पर बीस सिम कार्ड जारी हैं।
+[RECIPIENT]: बीस सिम? सर मैंने सिर्फ एक ही सिम लिया है आज तक।
+[CALLER]: इन नंबरों से अश्लील वीडियो और आतंकवादी संगठनों को कॉल किए गए हैं। केस दर्ज हो चुका है।
+[RECIPIENT]: सर मैं एक सीधा-साधा स्कूल शिक्षक हूँ, मेरा इन सब से क्या वास्ता?
+[CALLER]: अगर जेल जाने से बचना चाहते हो तो तुरंत हमारे प्राइवेट वेरिफिकेशन वीडियो रूम में आओ।
+[RECIPIENT]: क्या मुझे वकील बुलाना चाहिए?
+[CALLER]: वकील को बताया तो तुरंत केस बिगड़ेगा। पचास हजार की जमानत राशि अभी सरकारी खाते में जमा करो।
+[RECIPIENT]: पुलिस फोन पर पैसे नहीं मांगती। मैं सीधे कमिश्नर दफ्तर में जाकर बात करूंगा।

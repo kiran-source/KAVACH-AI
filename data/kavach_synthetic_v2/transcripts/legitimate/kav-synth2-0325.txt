@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0325 (te-en) ===
+Scenario: Mutual Fund Annual Portfolio Review Branch Invitation (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, SBI Mutual Fund nunchi Advisor Nikhil matladuthunnanu. Mee scheduled annual review of equity mutual fund scheme gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo visit nearest branch at your convenience for discussion complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

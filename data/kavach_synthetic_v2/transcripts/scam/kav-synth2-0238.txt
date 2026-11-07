@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0238 (te) ===
+Scenario: Wedding Hall Booking Cancellation Immediate Refund Trap (Variant 1)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT
+
+[CALLER]: Mee paina Digital Arrest order undi. Evaritho matladakunda confidential Skype call lo live connect avvandi.
+[RECIPIENT]: Dayachesi current cut cheyakandi saar. Nenu em cheyalo cheppandi.
+[CALLER]: QuickSupport application download chesi ma officer ki remote screen access ivvandi.
+[RECIPIENT]: Bank vallu eppudu OTP share cheyavaddhu ani cheptharu kada? Nenu ela ivvali?
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Naku chala bayamga undi. Nenu ma lawyer tho matladocha?
+[CALLER]: Namaskaram, nenu Hyderabad Cyber Crime Police Station nundi Inspector Ramesh Kumar matladuthunnanu. Mee Aadhaar card pai arrest warrant issue ayindi.
+[RECIPIENT]: Meeru cheppina app install chesthunnanu, dayachesi ma intiki police ni pampinchakandi.

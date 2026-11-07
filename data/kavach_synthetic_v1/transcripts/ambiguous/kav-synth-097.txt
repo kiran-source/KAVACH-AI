@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-097 (hi-en) ===
+Scenario: College Friend Requesting Emergency Travel Fare via UPI
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Bhai Rohan, main Aman bol raha hoon, IIT Roorkee wala. Pehchan liya?
+[RECIPIENT]: Aman! Haan bhai, bohot time baad phone kiya. Kahan hai tu?
+[CALLER]: Bhai main Delhi airport par phansa hua hoon. Mera wallet aur debit card bag ke sath cab mein chhoot gaya hai.
+[RECIPIENT]: Arey teri flight thi kya kahin ki?
+[CALLER]: Haan, Bangalore ki connecting flight hai. Boarding pass nikalna hai par cab driver ka fare pay karne ke liye three thousand rupaye urgently chahiye.
+[RECIPIENT]: Tu cab driver ka Google Pay number bhej de ya apna number bhej.
+[CALLER]: Mera phone battery low hai bhai, cab driver ke scanner par abhi three thousand transfer kar de na, flight land karte hi return kar dunga.
+[RECIPIENT]: Ruk, main pehle tere room partner Varun ko call karke verify karta hoon fir bhejta hoon.

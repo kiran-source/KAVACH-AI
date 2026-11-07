@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0025
+Language: te-en
+Scenario: Enforcement Directorate Illegal Foreign Currency Coercion (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, DIGITAL_ARREST, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu Enforcement Directorate nunchi Assistant Director Verma matladuthunnanu andi. Severe allegation vachindi regarding 70,000 USD foreign exchange FEMA violation.
+[RECIPIENT]: What are you saying sir? 70,000 USD foreign exchange FEMA violation aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop freezing of all domestic bank accounts, meeru ventane ED safe reserve fund deposit cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

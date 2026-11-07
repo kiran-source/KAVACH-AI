@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0069 (en) ===
+Scenario: Authorized Mobile Phone Repair Center Diagnostic Estimate Approval (Variant 1)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: This is an automated educational alert from SBI: please remember our bank never asks for your PIN or OTP.
+[RECIPIENT]: Thank you for the advisory. I always keep my security credentials safe.
+[CALLER]: Hello sir, I am calling from Tata Motors service center to confirm your car regular servicing appointment.
+[RECIPIENT]: Yes, I will drop the car off tomorrow morning by 9 AM.
+[CALLER]: Good morning, this is Priya calling from HDFC Bank customer relations, MG Road branch.
+[RECIPIENT]: Yes, good morning Priya. I received the email about the annual review.
+[CALLER]: Hello, I am calling from Apollo Clinic regarding your scheduled health checkup for tomorrow.
+[RECIPIENT]: Yes, tomorrow at 10 AM works fine for the appointment. Thank you for confirming.

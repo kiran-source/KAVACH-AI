@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0326
+Language: en
+Scenario: Airlines Web Check-in Reminder & Baggage Policy Advisory (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, I am Ground Staff Tanvi from the customer support division at Air India Airport Operations.
+[RECIPIENT]: Hello, is this regarding my recent inquiry about scheduled flight departure tomorrow morning?
+[CALLER]: Yes, exactly. We have reviewed your record and request you to complete web check-in and arrive two hours before departure.
+[RECIPIENT]: Are there any specific original identity documents or receipts I should carry with me?
+[CALLER]: Just carry your government photo ID and reference docket. No payment or confidential credentials are required.
+[RECIPIENT]: Thank you for the clear instructions and safety notice. I will visit as advised.

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-083 (hi-en) ===
+Scenario: Fake Electricity Bill Penalty APK Download Threat
+Primary Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, MALICIOUS_LINK_OR_APP, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Discom customer care service alert. Sir, aapka power supply tonight at ten PM disconnect ho jayega.
+[RECIPIENT]: Disconnect kyu hoga? Maine regular bill pay kiya hai through Cred app.
+[CALLER]: Third party payment app ka server error tha sir, unka reconciliation hamare electricity board mein pending hai.
+[RECIPIENT]: Toh main subah bill receipt electricity office dikha dunga.
+[CALLER]: Night line maintenance squad already on the way hai. Line chalu rakhne ke liye hamara quick utility APK update install kijiye.
+[RECIPIENT]: APK file kahan se milegi?
+[CALLER]: Hum WhatsApp par direct link bhej rahe hain. Install karke bank details fill karke one rupee verification payment kijiye.
+[RECIPIENT]: Third-party APK se phone control lene ka scam hai yeh. Main direct discom substation call karunga.

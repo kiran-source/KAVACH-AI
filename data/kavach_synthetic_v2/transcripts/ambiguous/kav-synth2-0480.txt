@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0480 (te-en) ===
+Scenario: E-Commerce Return Pickup Driver Seeking Security Gate Entry (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Fast Track Logistics nunchi Driver Kanta matladuthunnanu regarding pickup van outside residential gated community.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient instructs driver to coordinate with security guard.
+[CALLER]: Idi Fast Track Logistics direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

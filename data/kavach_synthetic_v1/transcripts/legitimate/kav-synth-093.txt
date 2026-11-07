@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-093 (hi-en) ===
+Scenario: Diagnostic Health Package Report Delivery Notification
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Namaste Mr. Saxena, Lal PathLabs customer care team se baat kar rahi hoon.
+[RECIPIENT]: Haan, mere annual health checkup ke reports ready ho gaye kya?
+[CALLER]: Yes sir, aapka complete blood count, HbA1c aur lipid profile reports verify hokar ready hain.
+[RECIPIENT]: Reports kaise milengi?
+[CALLER]: Soft copy PDF aapke registered email par password-protected format mein send kar diya gaya hai. Password aapka birth year hai.
+[RECIPIENT]: Hard copy collect karne lab aana padega kya?
+[CALLER]: Agar hard copy chahiye toh lab reception par lab ID bata kar collect kar sakte hain. No extra charges.
+[RECIPIENT]: Email par mil gaya hai toh hard copy ki zarurat nahi. Thank you.

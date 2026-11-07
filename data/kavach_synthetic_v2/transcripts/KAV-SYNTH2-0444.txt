@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0444
+Language: hi-en
+Scenario: Medical Insurance Cashless Hospitalization Network Inquiry (HI-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hi sir, good afternoon. Main Health First TPA se Caller Shalini bol raha hoon regarding general inquiry regarding preferred local hospital network.
+[RECIPIENT]: Hello, I am driving right now. Can you tell me if this is urgent or promotional?
+[CALLER]: It is an exclusive opportunity sir, but we need to verify basic eligibility first.
+[RECIPIENT]: Main unknown calls par details confirm nahi karta. recipient asks caller to send policy brochure by post.
+[CALLER]: Sir we are not asking for financial details, just basic profile check.
+[RECIPIENT]: Send whatever brochure you have to my registered email. No phone confirmations.

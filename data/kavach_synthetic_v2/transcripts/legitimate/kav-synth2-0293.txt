@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0293 (te) ===
+Scenario: Passport Seva Kendra Document Submission Slot Reminder (TE)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: నమస్కారం అండి, Passport Seva Kendra నుండి Helpdesk Officer ని. మీ appointment tomorrow at 9:15 AM at Regional Passport Office కి సంబంధించి ఈ ఫోన్ కాల్ చేస్తున్నాము.
+[RECIPIENT]: నమస్కారం అండి, చెప్పండి. దీని గురించిన అధికారిక వివరాల కోసం నేను కూడా ఎదురుచూస్తున్నాను.
+[CALLER]: మీరు వీలు చూసుకుని carry original birth certificate and address proof పూర్తి చేయవలసిందిగా కోరుతున్నాము. మా కౌంటర్ సాధారణ సమయాల్లో పనిచేస్తుంది.
+[RECIPIENT]: సరేనండి, దీని కోసం నేను ఏమైనా ఒరిజినల్ డాక్యుమెంట్లు లేదా కార్డులు తీసుకురావాలా?
+[CALLER]: మీ గుర్తింపు కార్డు కాపీ తెస్తే చాలు అండి. మేము ఫోన్ లో ఎప్పుడూ ఓటీపీలు లేదా పాస్‌వర్డ్‌లు అడగము.
+[RECIPIENT]: చాలా స్పష్టంగా వివరించినందుకు ధన్యవాదాలు అండి. నేను రేపు కార్యాలయానికి వస్తాను.

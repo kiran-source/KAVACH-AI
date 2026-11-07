@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-061 (te-en) ===
+Scenario: Fake IT MNC Job Offer Letter & Security Deposit Scam
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Hello Vinay, I am calling from TCS Talent Acquisition team, Hyderabad campus.
+[RECIPIENT]: Hi madam! Is this regarding my application for Associate Software Engineer role?
+[CALLER]: Yes Vinay, మీ profile shortlist అయింది. Direct technical package offers nine lakhs per annum.
+[RECIPIENT]: Nine lakhs! That is great! Interview schedule eppudu untundi madam?
+[CALLER]: No formal interview needed. Direct corporate project assignment. But document verification fee and laptop security deposit ga twenty thousand pay cheyali.
+[RECIPIENT]: Deposit TCS company official portal lo pay cheyala madam?
+[CALLER]: No, HR clearance team private UPI handle కి transfer cheyali before five PM today, లేదంటే offer cancel avtundi.
+[RECIPIENT]: MNC companies eppudu deposit adagavu. This is a clear job scam. I will not pay.

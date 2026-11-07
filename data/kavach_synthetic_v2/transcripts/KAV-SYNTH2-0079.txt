@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0079
+Language: hi-en
+Scenario: Family Member Police Custody Emergency Bail Trap (HI-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Hello, am I speaking with the primary registered owner of this number?
+[RECIPIENT]: Yes, I am the owner. Please state your designation and purpose of calling.
+[CALLER]: I am Sub-Inspector Pandey, Special Compliance Officer at City Police Station. We are investigating nephew arrested in hit-and-run accident with injuries.
+[RECIPIENT]: nephew arrested in hit-and-run accident with injuries? Sir I am a corporate tax-paying citizen. How can my name appear in such a thing?
+[CALLER]: Forensic audit reports show your digital signature on multiple suspicious files.
+[RECIPIENT]: Then issue a formal notice under section 91 or 160. Phone investigation has no legal validity.
+[CALLER]: If you challenge authority, hamari team immediate transfer to central prison proceed karegi without warning.
+[RECIPIENT]: I am not challenging, I am stating lawful procedure. What are you asking me to do?
+[CALLER]: To prove you are a victim, you must follow official steps and do 35,000 rupees cash bail to officer UPI now.
+[RECIPIENT]: Demanding online compliance like this smells like an online scam. I will verify with Cyber Cell.

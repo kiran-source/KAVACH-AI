@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0344
+Language: hi-en
+Scenario: State Bank Customer Service Experience Feedback Survey (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, this is Survey Officer Divya from Canara Bank Quality Desk. Calling you regarding your routine feedback on recent bank branch visit experience.
+[RECIPIENT]: Hi, yes thank you for calling. I was waiting for an official update on this.
+[CALLER]: Please note that you need to rate service quality on scale of 1 to 5. As a security policy, hum kabhi OTP ya PIN nahi maangte.
+[RECIPIENT]: Great, thanks for the reminder. I will visit the branch counter during working hours.

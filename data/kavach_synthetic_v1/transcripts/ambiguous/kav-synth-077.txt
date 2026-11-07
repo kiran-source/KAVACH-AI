@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-077 (te-en) ===
+Scenario: Bank Fraud Department Suspicious Transaction Verification
+Primary Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Good evening, calling from HDFC Bank Central Fraud Monitoring Cell. Am I speaking with Mr. Teja?
+[RECIPIENT]: Yes, Teja speaking. Is everything alright with my account?
+[CALLER]: Sir, just now forty-eight thousand rupees international e-commerce transaction initiate aindi on UK merchant website. Did you authorize this?
+[RECIPIENT]: No! I did not make any UK transaction! Please stop it immediately!
+[CALLER]: We have temporarily blocked the transaction at our gateway. Card security verify cheyadaniki card details confirm chestara?
+[RECIPIENT]: What details do you need? Will you ask for OTP or CVV?
+[CALLER]: Never share OTP or CVV with anyone. We only need you to confirm your mother's maiden name or you can open mobile banking app and press 'Block Card'.
+[RECIPIENT]: I am opening my official mobile banking app right now and blocking the card directly from settings.

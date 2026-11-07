@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0219 (hi-en) ===
+Scenario: Bank Educational Advisory on Never Sharing One Time Passwords (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main State Bank of India Security se Advisory Voice bol raha hoon. Yeh call aapke RBI cyber awareness campaign reminder ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap never share OTP, ATM PIN, or passwords with anyone complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

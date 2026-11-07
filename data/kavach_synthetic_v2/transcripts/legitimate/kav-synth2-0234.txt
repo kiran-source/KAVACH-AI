@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0234 (hi-en) ===
+Scenario: City Gas Pipeline Routine Kitchen Safety Inspection Scheduling (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Indraprastha Gas Limited se Technician Amit bol raha hoon. Yeh call aapke routine annual kitchen pipeline leak inspection ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap technician carrying official company badge will visit on Saturday complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

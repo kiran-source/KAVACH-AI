@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0259
+Language: hi-en
+Scenario: Municipal Corporation Property Tax Payment Receipt Notice (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello, am I speaking with the registered service user?
+[RECIPIENT]: Yes speaking. May I know who is calling and from which firm?
+[CALLER]: This is Inspector Rao from Greater Hyderabad Municipal Corp. We are reviewing your request on confirmation of property tax assessment receipt.
+[RECIPIENT]: Yes, maine confirmation of property tax assessment receipt ke liye last month register kiya tha.
+[CALLER]: Your documents have been verified and processed by the regional cell.
+[RECIPIENT]: Can we complete the final acknowledgment on phone?
+[CALLER]: For customer safety, phone transactions are strictly disallowed. Please download receipt from official municipal portal.
+[RECIPIENT]: I really appreciate this secure policy. Bahut fake calls aate hain aajkal.
+[CALLER]: Yes sir, customer awareness is vital. Our office timings are 9:30 AM to 5:00 PM.
+[RECIPIENT]: Thank you for the courteous update, {c_name}. Have a good day.

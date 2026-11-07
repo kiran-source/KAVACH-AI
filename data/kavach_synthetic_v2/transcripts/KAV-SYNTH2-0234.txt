@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0234
+Language: hi-en
+Scenario: City Gas Pipeline Routine Kitchen Safety Inspection Scheduling (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, this is Technician Amit reaching out from Indraprastha Gas Limited.
+[RECIPIENT]: Good afternoon, how can I help you today?
+[CALLER]: Sir, I am calling with an update regarding your pending routine annual kitchen pipeline leak inspection.
+[RECIPIENT]: Oh great! Has the administrative clearance been issued?
+[CALLER]: Yes sir, all checks passed. We request you to technician carrying official company badge will visit on Saturday.
+[RECIPIENT]: Can I do this online through net banking or some link?
+[CALLER]: No sir, please do not click unknown links. Secure verification requires physical presence at our counter.
+[RECIPIENT]: Understood. That is safe practice. I will visit in person.

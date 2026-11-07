@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0151 (hi) ===
+Scenario: Bank Relationship Manager Mutual Fund Portfolio Review Request (Variant 1)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: SBI ki taraf se janhit mein soochana: Apna OTP, PIN ya password kisi ko na dein. Bank kabhi ye details nahi maangta.
+[RECIPIENT]: Dhanyawad jaankari ke liye. Main cyber safety ke niyam janta hoon.
+[CALLER]: Namaste, main Apollo Clinic se bol rahi hoon. Kal subah 10 baje aapki doctor appointment confirm karni hai.
+[RECIPIENT]: Haan, kal subah 10 baje main samay par pahunch jaunga. Dhanyawad.
+[CALLER]: Namaste sir, main State Bank of India branch se Sunita bol rahi hoon. Aapka annual KYC update schedule hai.
+[RECIPIENT]: Namaste Sunita ji. Main kal branch aakar document submit kar doonga.
+[CALLER]: Namaste ma'am, main Blue Dart courier se bol raha hoon. Aapka parcel aaj deliver hone wala hai.
+[RECIPIENT]: Haanji, main ghar par hoon. Parcel security guard ke paas chhod dijiye.

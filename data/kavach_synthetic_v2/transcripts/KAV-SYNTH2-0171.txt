@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0171
+Language: en
+Scenario: Government Healthcare Subsidy Portal Fake App Trap (EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Attention. This is an urgent broadcast from Ayushman Bharat Desk, department supervisor Officer Patel speaking.
+[RECIPIENT]: Yes, hello? Why is this urgent? Who am I speaking to?
+[CALLER]: We have documented evidence linking your identity to government health insurance reimbursement of 50,000 approved. Case file number 409-B has been opened.
+[RECIPIENT]: Case file 409-B? I have never received any postal summons or email about this matter.
+[CALLER]: Postal notices take days. In the meantime, the authorities are issuing lapse of government medical subsidy funds against your name.
+[RECIPIENT]: This sounds completely unreasonable. What official procedure is available right now?
+[CALLER]: You must immediately access custom healthcare APK download from SMS. This will place a temporary hold on the enforcement.
+[RECIPIENT]: I refuse to transfer funds or share access on a voice call. I will visit the headquarters personally tomorrow.

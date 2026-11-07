@@ -1,6 +1,12 @@
 import re
 from typing import Dict, Any, List
-from app.detection.rules import SCAM_RULES, NEGATIVE_CONTEXT_PATTERNS, RECOMMENDATIONS, SAFETY_WARNINGS
+from app.detection.rules import (
+    SCAM_RULES, 
+    NEGATIVE_CONTEXT_PATTERNS, 
+    ACTIVE_CRITICAL_THREAT_PATTERNS,
+    RECOMMENDATIONS, 
+    SAFETY_WARNINGS
+)
 from app.core.logging import logger
 
 def analyze_transcript(transcript_text: str, language_hint: str = "en") -> Dict[str, Any]:
@@ -18,21 +24,59 @@ def analyze_transcript(transcript_text: str, language_hint: str = "en") -> Dict[
             "recommendations": RECOMMENDATIONS["default"],
             "engine_version": "1.0.0",
             "context_suppressed": False,
+            "context_note": "",
+            "active_coercion_detected": False,
+            "adversarial_disclaimer_detected": False,
             "explanation": "No speech content provided for threat analysis."
         }
 
     raw_text = transcript_text.strip()
     text_clean = raw_text.lower()
     
-    # 1. Check for negative educational/awareness context
-    is_educational = False
-    context_note = ""
+    # 1. Check for negative educational/awareness context vs active coercion
+    has_educational_phrase = False
     for pat in NEGATIVE_CONTEXT_PATTERNS:
         if re.search(pat, text_clean, re.IGNORECASE):
-            is_educational = True
-            context_note = "Contextual analysis detected security awareness or educational disclaimer."
-            logger.info(f"Negative security context detected: {context_note}")
+            has_educational_phrase = True
             break
+
+    has_active_critical = False
+    matched_critical_patterns = []
+    # Reported speech regex for educational warnings describing scammer tactics (e.g. "beware of callers claiming you are under digital arrest")
+    reported_speech_pattern = re.compile(
+        r"\b(claiming|alleging|reported that|warning.*that|beware of.*claiming)\s+(that\s+)?you are under (immediate )?digital arrest\b",
+        re.IGNORECASE
+    )
+
+    for pat in ACTIVE_CRITICAL_THREAT_PATTERNS:
+        for m in re.finditer(pat, text_clean, re.IGNORECASE):
+            matched_str = m.group(0)
+            start_pos = m.start()
+            # Check preceding 20 characters for defensive/prohibitive phrases (e.g. "never share", "do not give")
+            prefix = text_clean[max(0, start_pos - 20):start_pos].strip()
+            if any(prefix.endswith(neg) for neg in ["never", "do not", "don't", "not to", "kabhi mat", "kabhi bhi mat", "eppudu", "evariki"]):
+                continue
+            # If the digital arrest phrase is merely quoted in reported awareness speech, do not treat as an active command
+            if "digital arrest" in matched_str and reported_speech_pattern.search(text_clean):
+                continue
+            has_active_critical = True
+            matched_critical_patterns.append(matched_str)
+
+    # A conversation is genuinely educational ONLY if it contains awareness phrasing AND has NO active critical demands
+    is_educational = has_educational_phrase and not has_active_critical
+    adversarial_disclaimer_detected = has_educational_phrase and has_active_critical
+
+    if adversarial_disclaimer_detected:
+        context_note = (
+            "Adversarial / Deceptive Context: Caller uttered security awareness or educational phrases but conversation "
+            f"contains active critical threat commands ({', '.join(matched_critical_patterns[:2])}). Educational suppression cancelled."
+        )
+        logger.warning(context_note)
+    elif is_educational:
+        context_note = "Contextual analysis confirmed genuine security awareness / advisory with zero coercive demands."
+        logger.info(context_note)
+    else:
+        context_note = ""
 
     triggered_threats = []
     total_raw_score = 0.0
@@ -119,7 +163,9 @@ def analyze_transcript(transcript_text: str, language_hint: str = "en") -> Dict[
         "recommendations": unique_recommendations,
         "engine_version": "1.0.0",
         "context_suppressed": is_educational,
-        "context_note": context_note
+        "context_note": context_note,
+        "active_coercion_detected": has_active_critical,
+        "adversarial_disclaimer_detected": adversarial_disclaimer_detected
     }
 
 def get_safety_warning_text(language: str = "en", categories: List[str] = None) -> str:

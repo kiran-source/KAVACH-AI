@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-092 (hi-en) ===
+Scenario: Co-Working Desk Monthly Membership Confirmation
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hi Rahul, this is Tanya from Innov8 Coworking community team, Cyber City Gurgaon.
+[RECIPIENT]: Hi Tanya! Regarding our dedicated hot desk renewal?
+[CALLER]: Yes Rahul, aapka monthly dedicated desk pass renew ho gaya hai for next month. Access card validity update ho chuki hai.
+[RECIPIENT]: Does this plan include meeting room credits?
+[CALLER]: Yes, ten hours of conference room credits aapke app wallet mein credit ho gaye hain. You can book directly via app.
+[RECIPIENT]: Tax invoice GST portal par kab reflect karegi?
+[CALLER]: Accounts team within forty-eight hours B2B GST invoice aapke registered GSTIN par upload kar degi.
+[RECIPIENT]: Perfect Tanya, thanks for the quick update.

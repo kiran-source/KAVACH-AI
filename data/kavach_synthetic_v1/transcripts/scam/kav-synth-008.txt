@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-008 (en) ===
+Scenario: Telecom Authority SIM Card Block Threat & Verification Charge
+Primary Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Automated notification from Department of Telecommunications. All services on your primary mobile number will be terminated within two hours.
+[RECIPIENT]: Terminated? What is the reason?
+[CALLER]: Thirteen complaints of harassment and illegal financial SMS broadcasting have been lodged against this SIM card in New Delhi.
+[RECIPIENT]: I live in Chennai! I have never sent any illegal SMS.
+[CALLER]: Your Aadhaar has been duplicated. To prevent a permanent national telecom blacklist, pay a security bond of nine thousand rupees via UPI.
+[RECIPIENT]: Why should I pay a security bond to stop telecom disconnection?
+[CALLER]: This is refundable bail money sir. If you refuse, telecom enforcement and Delhi police will arrest you tomorrow.
+[RECIPIENT]: DoT never collects bail money via UPI. I am lodging an official fraud complaint on Chakshu portal.

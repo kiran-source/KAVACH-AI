@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0439 (hi-en) ===
+Scenario: Apartment Rental Broker Seeking Tenant Background Details (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main City Property Associates se Caller Naresh bol raha hoon regarding inquiry whether residential apartment is available for rent.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient clarifies property is already occupied.
+[CALLER]: Sir yeh City Property Associates ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

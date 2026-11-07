@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0097 (hi) ===
+Scenario: Instant Personal Loan Approval Processing Fee Extortion (HI)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: यह QuickFin Lending Desk से Officer Agarwal हैं। आपके विरुद्ध pre-approved unsecured loan of 5 lakhs sanctioned के संबंध में गंभीर शिकायत दर्ज हुई है।
+[RECIPIENT]: क्या? pre-approved unsecured loan of 5 lakhs sanctioned? मैंने ऐसा कोई काम नहीं किया है, आप गलत व्यक्ति को फोन कर रहे हैं।
+[CALLER]: हमारे रिकॉर्ड में आपकी पूरी जानकारी मौजूद है। यदि आपने सहयोग नहीं किया तो forfeiture of zero percent interest loan approval की जाएगी।
+[RECIPIENT]: साहब, मैं एक शरीफ नागरिक हूँ। कृपया मुझे बताइए कि यह मामला कैसे सुलझ सकता है?
+[CALLER]: तुरंत कानूनी कार्रवाई रोकने के लिए आपको 9,800 rupees insurance stamp duty fee करना होगा। देर करने पर कोई राहत नहीं मिलेगी।
+[RECIPIENT]: मैं बिना किसी लिखित सरकारी नोटिस के कोई कदम नहीं उठाऊँगा। मैं पहले अपने वकील से सलाह लूँगा।

@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0145
+Language: te-en
+Scenario: National Highway Toll Penalty & Vehicle Confiscation (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu NHAI Legal Enforcement nunchi Inspector Tiwari matladuthunnanu andi. Severe allegation vachindi regarding toll gate sensor evasion and unpaid toll fine of 8,500.
+[RECIPIENT]: What are you saying sir? toll gate sensor evasion and unpaid toll fine of 8,500 aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop impounding of vehicle at next police barrier, meeru ventane urgent penalty payment through unofficial link cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

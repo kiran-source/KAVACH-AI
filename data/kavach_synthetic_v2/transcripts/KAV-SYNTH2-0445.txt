@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0445
+Language: te-en
+Scenario: Medical Insurance Cashless Hospitalization Network Inquiry (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Good afternoon andi, Health First TPA representative Caller Shalini ni. Regarding general inquiry regarding preferred local hospital network.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Is this an official notice or telecalling?
+[CALLER]: Idi beneficial opportunity andi, but basic profile details verify cheyali.
+[RECIPIENT]: Unknown numbers tho nenu personal details share cheyanu. recipient asks caller to send policy brochure by post.
+[CALLER]: Sir, idi just basic general confirmation matrame, no critical data requested.
+[RECIPIENT]: Even then, official email unte pampandi. Phone lo matladanu.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0500 (te-en) ===
+Scenario: Health Insurance Claim Follow-up Lacking Claim Number (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, MediCare Assist Desk nunchi Caller Archana matladuthunnanu regarding follow-up inquiry on diagnostic test reimbursement status.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? recipient asks for hospital claim reference which caller does not have.
+[CALLER]: Idi MediCare Assist Desk direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

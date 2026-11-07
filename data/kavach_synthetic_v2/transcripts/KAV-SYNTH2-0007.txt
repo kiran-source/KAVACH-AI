@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0007
+Language: hi
+Scenario: Customs Narcotics International Parcel Confiscation (HI)
+Label: SCAM
+Tactics: COURIER_CUSTOMS_FRAUD, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: नमस्कार, Mumbai Airport Customs से Officer Deshmukh बात कर रहे हैं। आपके नाम पर FedEx carton seized with MDMA drugs का मामला सामने आया है।
+[RECIPIENT]: मैं अभी दफ्तर की मीटिंग में हूँ। FedEx carton seized with MDMA drugs के कागजात मुझे रजिस्टर्ड ईमेल पर भेजिए।
+[CALLER]: यदि आपने अभी सहयोग नहीं दिया तो हमारे पास Anti-Narcotics Bureau immediate remand के आदेश तैयार हैं।
+[RECIPIENT]: अचानक ऐसे फोन पर कार्रवाई की धमकी देना गलत है। इसका कानूनी समाधान क्या है?
+[CALLER]: मामले को यहीं रोकने के लिए आपको तुरंत provisional customs clearance bond की प्रक्रिया पूरी करनी होगी।
+[RECIPIENT]: आधिकारिक डाक से नोटिस भेजिए। मैं बिना कानूनी दस्तावेज के फोन पर बात नहीं करता।

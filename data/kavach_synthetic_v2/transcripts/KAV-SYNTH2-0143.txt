@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0143
+Language: te
+Scenario: National Highway Toll Penalty & Vehicle Confiscation (TE)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: ఇది NHAI Legal Enforcement నుండి Inspector Tiwari మాట్లాడుతున్నాను. మీ పేరు మీద toll gate sensor evasion and unpaid toll fine of 8,500 గురించి తక్షణ కేసు నమోదైంది.
+[RECIPIENT]: ఏంటి? toll gate sensor evasion and unpaid toll fine of 8,500 నా? నాకు దీనితో ఎటువంటి సంబంధం లేదు, మీరు రాంగ్ నంబర్ కి కాల్ చేశారు.
+[CALLER]: సిస్టమ్ లో మీ ఆధార్ రికార్డు ఉంది. వెంటనే impounding of vehicle at next police barrier జరగకుండా ఉండాలంటే మీరు urgent penalty payment through unofficial link చేయాలి.
+[RECIPIENT]: ఫోన్ కాల్ లో నేను ఏ వివరాలు ఇవ్వను, డబ్బులు పంపను. అధికారిక నోటీసు పంపితే పోలీస్ స్టేషన్ లో కలుస్తాను.

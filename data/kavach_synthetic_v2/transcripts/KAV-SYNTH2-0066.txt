@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0066
+Language: en
+Scenario: FASTag Toll Blacklisting & Security Deposit Theft (EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, MALICIOUS_LINK_OR_APP
+
+[CALLER]: Greetings, this is Officer Chopra representing FASTag Operations Unit. Your file has been flagged for blacklisting of highway toll tag due to KYC lapse.
+[RECIPIENT]: Sir, I am a senior citizen living alone. What does blacklisting of highway toll tag due to KYC lapse mean for me?
+[CALLER]: We are ready to issue penalty of 10,000 rupees at toll plazas unless this inquiry is settled within the hour.
+[RECIPIENT]: How can this be settled without proper legal representation and court proceedings?
+[CALLER]: Under special statutory provisions, you can halt the escalation by completing FASTag reactivation UPI PIN transfer right now.
+[RECIPIENT]: My son handles all financial and legal affairs. I will ask him to contact you directly.

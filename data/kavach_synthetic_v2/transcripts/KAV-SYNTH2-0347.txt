@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0347
+Language: hi
+Scenario: Courier Delivery Address Landmark Clarification Call (HI)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: शुभ प्रभात, मैं DTDC Courier Service के सेवा केंद्र से Delivery Agent Imran बात कर रहा हूँ।
+[RECIPIENT]: नमस्कार, क्या यह मेरे clarification of apartment building wing name for envelope के आवेदन के बारे में है?
+[CALLER]: जी हाँ, आपके कागजात की जांच पूरी हो चुकी है। अब आपको confirm landmark near residential entrance।
+[RECIPIENT]: क्या इसके लिए मुझे कोई मूल पहचान पत्र या शुल्क साथ लाना होगा?
+[CALLER]: केवल मूल पहचान पत्र लाइए। इसके लिए कोई अतिरिक्त शुल्क या ऑनलाइन भुगतान नहीं लगता।
+[RECIPIENT]: स्पष्ट जानकारी देने के लिए बहुत धन्यवाद। मैं कल निर्धारित समय पर पहुँच जाऊँगा।

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0205 (te) ===
+Scenario: Enforcement Directorate Currency Seizure Extortion (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, DIGITAL_ARREST, URGENCY_OR_THREAT
+
+[CALLER]: Mumbai Customs nundi customs officer matladuthunnanu. Singapore velle mee parcel lo narcotics drug dorikayi.
+[RECIPIENT]: Dayachesi current cut cheyakandi saar. Nenu em cheyalo cheppandi.
+[CALLER]: Electricity department nundi urgent notice. Ee roju rathri lopala bill kattakapothe power supply cut chestham.
+[RECIPIENT]: Bank vallu eppudu OTP share cheyavaddhu ani cheptharu kada? Nenu ela ivvali?
+[CALLER]: Mee bank account 24 hours lo block avthundi. Immediate ga KYC verify chesukondi, lekapothe legal action untundi.
+[RECIPIENT]: Naku chala bayamga undi. Nenu ma lawyer tho matladocha?
+[CALLER]: Mee paina Digital Arrest order undi. Evaritho matladakunda confidential Skype call lo live connect avvandi.
+[RECIPIENT]: Meeru cheppina app install chesthunnanu, dayachesi ma intiki police ni pampinchakandi.

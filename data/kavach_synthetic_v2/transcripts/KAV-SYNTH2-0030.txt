@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0030
+Language: te-en
+Scenario: Debit Card Expiry & Urgent OTP Harvest Phishing (TE-EN)
+Label: SCAM
+Tactics: ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Hello, this is Manager Rajesh calling from SBI Card Operations. We detected suspicious records of global chip debit card expiration tonight at midnight.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. global chip debit card expiration tonight at midnight gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour permanent suspension of Google Pay and ATM process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo 6-digit card renewal authorization OTP submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

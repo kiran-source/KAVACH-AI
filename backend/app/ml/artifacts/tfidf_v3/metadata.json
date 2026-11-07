@@ -1,0 +1,29 @@
+{
+  "model_name": "KAVACH-AI Multilingual Calibrated Classifier v3.0 (Experimental Benchmark)",
+  "model_architecture": "TF-IDF (Word (1, 2) n-grams | max_features=5,000 | C=1.5 | Sigmoid Calibrated) + Calibrated Logistic Regression (Platt scaling)",
+  "framework": "scikit-learn",
+  "trained_timestamp": "2026-11-07T08:54:26Z",
+  "training_dataset": "data/kavach_synthetic_v3",
+  "split_sizes": {
+    "train": 2100,
+    "validation": 450,
+    "test": 450
+  },
+  "vocabulary_size": 5000,
+  "validation_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0
+  },
+  "model_sizes_kb": {
+    "model_joblib": 354.33,
+    "vectorizer_joblib": 199.07
+  },
+  "synthetic_dataset_limitations": {
+    "annotation_status": "All 3,000 records have annotation_status: pending_review.",
+    "synthetic_provenance": "Evaluated strictly on synthetic domain scenario transcripts (KAVACH synthetic v3).",
+    "telephony_generalization_limit": "Does not establish or claim production telephony accuracy in unconstrained real-world environments.",
+    "leakage_isolation": "Strict 0% scenario-family, 0% exact dialogue hash, and 0% CID leakage across train, val, and test splits."
+  },
+  "status": "EXPERIMENTAL_BENCHMARK_ONLY",
+  "production_baseline_status": "Active baseline remains v1 in backend/app/ml/artifacts/v1/"
+}

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0209
+Language: hi-en
+Scenario: Routine Outpatient Health Clinic Appointment Reminder (HI-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good morning, main Apollo Clinic customer support team se Staff Sister Mary bol raha hoon.
+[RECIPIENT]: Hello, is this regarding my application for scheduled routine preventive health checkup tomorrow at 10 AM?
+[CALLER]: Yes absolutely. Verification complete ho chuka hai, now you need to fasting 8 hours prior to blood test.
+[RECIPIENT]: Do I need to carry original KYC documents or receipt copies?
+[CALLER]: Just carry your original Aadhaar or PAN card. Koi payment ya OTP call par required nahi hai.
+[RECIPIENT]: Thank you for the guidance. I will come to the branch tomorrow morning.

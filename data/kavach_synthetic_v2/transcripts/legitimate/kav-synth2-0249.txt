@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0249 (hi-en) ===
+Scenario: Laptop Service Center Warranty Part Replacement Readiness (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Lenovo Authorized Service se Engineer Deepak bol raha hoon. Yeh call aapke replacement laptop screen arrived under warranty ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap bring original service job-sheet to collect laptop complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

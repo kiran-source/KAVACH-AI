@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0104
+Language: hi-en
+Scenario: Mobile SIM 5G Upgrade & Remote Screen Hijacking (HI-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, ACCOUNT_OR_KYC_THREAT, URGENCY_OR_THREAT
+
+[CALLER]: Yeh Airtel Technical Desk se Executive Roy bol raha hoon. Urgent investigation notice nikla hai regarding mandatory migration of 4G SIM to 5G network.
+[RECIPIENT]: Wait a minute, mandatory migration of 4G SIM to 5G network? Maine aisa koi transaction ya activity nahi ki. Who authorized this?
+[CALLER]: Server logs mein aapka IP trace hua hai. To cancel permanent SIM network deactivation tonight, aapko turant SMS forwarding code and screen sharing approval karna hoga.
+[RECIPIENT]: Main bina formal written documentation ke koi action nahi loonga. Send official summon to my address.

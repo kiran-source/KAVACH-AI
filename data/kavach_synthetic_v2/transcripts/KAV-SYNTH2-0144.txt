@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0144
+Language: hi-en
+Scenario: National Highway Toll Penalty & Vehicle Confiscation (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Yeh NHAI Legal Enforcement se Inspector Tiwari bol raha hoon. Urgent investigation notice nikla hai regarding toll gate sensor evasion and unpaid toll fine of 8,500.
+[RECIPIENT]: Wait a minute, toll gate sensor evasion and unpaid toll fine of 8,500? Maine aisa koi transaction ya activity nahi ki. Who authorized this?
+[CALLER]: Server logs mein aapka IP trace hua hai. To cancel impounding of vehicle at next police barrier, aapko turant urgent penalty payment through unofficial link karna hoga.
+[RECIPIENT]: Main bina formal written documentation ke koi action nahi loonga. Send official summon to my address.

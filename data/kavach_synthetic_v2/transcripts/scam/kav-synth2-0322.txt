@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0322 (hi-en) ===
+Scenario: Bank Netbanking Security Upgrade AnyDesk Hijacking (Variant 1)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, OTP_PIN_CVV_THEFT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Hello sir, I am Senior Inspector Ajay Verma from Mumbai Cyber Crime Branch calling. Aapke Aadhaar card ke against money laundering FIR register hui hai.
+[RECIPIENT]: What nonsense! Maine koi illegal transaction nahi kiya hai. Why are you calling me?
+[CALLER]: Good afternoon, this is Customs Clearance Cargo Office. Aapka international courier packet parcel Singapore route par drugs ke saath intercept hua hai.
+[RECIPIENT]: Wait, this must be a big misunderstanding. I haven't sent any courier to Singapore.
+[CALLER]: Urgent alert from Electricity Board. Aapka electricity bill payment update nahi hua hai, connection within 1 hour disconnect ho jayega.
+[RECIPIENT]: Please connection cut mat kijiye! Mere exams chal rahe hain. Tell me what is the solution.
+[CALLER]: Dear customer, your bank account is under suspicious activity freeze. Turant OTP share karein to prevent permanent account suspension.
+[RECIPIENT]: Bank policy strictly says never share OTP on call. Main OTP kaise de sakta hoon?

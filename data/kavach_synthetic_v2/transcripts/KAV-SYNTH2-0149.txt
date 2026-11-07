@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0149
+Language: hi-en
+Scenario: Cyber Police Obscene Content Complaint Extortion (HI-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, I am calling from Cyber Crime Women Cell, my name is Officer Sengupta. Aapke profile par obscene video call complaint registered against your phone flag hua hai.
+[RECIPIENT]: Good afternoon, but main shocked hoon regarding obscene video call complaint registered against your phone. What is the exact reference number?
+[CALLER]: If you don't cooperate right now, hamare paas order hai for filing of non-bailable public defamation charge within two hours.
+[RECIPIENT]: Phone par bina advocate ke aisi legal threat dena is completely against the law.
+[CALLER]: Immediate relief ke liye aapko system mein case settlement fee to police welfare account execute karna padega immediately.
+[RECIPIENT]: Main direct police station jaakar inquire karoonga. I will not follow phone instructions blindly.

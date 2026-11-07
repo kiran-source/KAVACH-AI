@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0221 (te) ===
+Scenario: Electricity Department QuickSupport APK Sideloading (Variant 1)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, MALICIOUS_LINK_OR_APP, URGENCY_OR_THREAT
+
+[CALLER]: QuickSupport application download chesi ma officer ki remote screen access ivvandi.
+[RECIPIENT]: Naku chala bayamga undi. Nenu ma lawyer tho matladocha?
+[CALLER]: Case nundi clearance pondataniki government safe custody account lo 50,000 rupees transfer cheyandi.
+[RECIPIENT]: Meeru cheppina app install chesthunnanu, dayachesi ma intiki police ni pampinchakandi.
+[CALLER]: Namaskaram, nenu Hyderabad Cyber Crime Police Station nundi Inspector Ramesh Kumar matladuthunnanu. Mee Aadhaar card pai arrest warrant issue ayindi.
+[RECIPIENT]: Enti saar? Nenu em tappu cheyaledu! Naku ee parcel tho em sambandham ledu.
+[CALLER]: Mumbai Customs nundi customs officer matladuthunnanu. Singapore velle mee parcel lo narcotics drug dorikayi.
+[RECIPIENT]: Nenu regular ga tax pay chese citizen ni. Na pai ilanti case enduku peduthunnaru?

@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0056
+Language: en
+Scenario: Income Tax Department Tax Evasion & Bank Seizure (EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Hello, is this the individual registered at this mobile connection?
+[RECIPIENT]: Yes, speaking. May I know who is calling and from which organization?
+[CALLER]: This is senior investigator Commissioner Saxena from Income Tax Central Circle. We are conducting a high-priority probe into discrepancy of 18 lakhs in cash deposits.
+[RECIPIENT]: discrepancy of 18 lakhs in cash deposits? That is completely absurd! My record is spotless. Are you sure you dialed the right number?
+[CALLER]: We have verified your credentials through national surveillance logs. There is zero margin for error here.
+[RECIPIENT]: If that is true, why hasn't my local jurisdiction contacted me directly with an official summons?
+[CALLER]: Because this is an emergency fast-track directive. If you resist, there will be immediate attachment of commercial bank accounts.
+[RECIPIENT]: I am not resisting, I am exercising my constitutional rights. What are you asking me to do?
+[CALLER]: To prove non-involvement, you are required to immediately execute tax dispute settlement gateway payment.
+[RECIPIENT]: Demanding compliance like this without legal counsel is illegitimate. I am disconnecting and reporting this to cybercrime helpline 1930.

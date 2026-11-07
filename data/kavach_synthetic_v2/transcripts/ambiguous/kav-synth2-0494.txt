@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0494 (hi-en) ===
+Scenario: Courier Delivery Driver Lost in Neighborhood Seeking Directions (HI-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello sir, am I speaking to the account holder? Main City Parcel Drop se Driver Jagdish bol raha hoon regarding driver confused between cross road 4 and cross road 5.
+[RECIPIENT]: Yes speaking, but main abhi drive kar raha hoon. What is the exact purpose of this call?
+[CALLER]: Sir system mein aapka preliminary detail verify karna hai before we can update the service.
+[RECIPIENT]: Aap pehle apna employee identification aur official email share kijiye. recipient gives clear directional landmarks near bakery.
+[CALLER]: Sir yeh City Parcel Drop ka standard telecalling inquiry process hai.
+[RECIPIENT]: Main unsolicited calls par koi personal data confirm nahi karta. Please send an official message.

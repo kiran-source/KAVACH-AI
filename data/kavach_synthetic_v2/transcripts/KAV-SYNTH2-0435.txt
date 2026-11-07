@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0435
+Language: te-en
+Scenario: Mobile Broadband Speed Diagnostic Disconnecting Mid-Call (TE-EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Hello andi, this is Caller Ravi from Telecom Network Support team.
+[RECIPIENT]: Hello, please state why you are contacting me.
+[CALLER]: Mee mobile tier ki routine network diagnostic following slow speed report benefit apply cheyavachu ani update vachindi.
+[RECIPIENT]: Nenu eppudu ee service request pettaledu kada?
+[CALLER]: Idi selected premium numbers ki direct ga system allocate chesindi.
+[RECIPIENT]: Daaniki na nunchi em details kavali?
+[CALLER]: Just mee date of birth and pincode confirm chesthe activate chesthamu.
+[RECIPIENT]: Phone call meeda date of birth cheppanu sir. call disconnects abruptly due to cellular signal drop.
+[CALLER]: Miku doubt unte we will pause this offer for now sir.
+[RECIPIENT]: Yes, pause it permanently. I will check verified web portals directly.

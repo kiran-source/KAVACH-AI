@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0335
+Language: te-en
+Scenario: Automobile Emission Test Renewal Courtesy Reminder (TE-EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Hello sir, Regional Transport Office customer relations nunchi Automated Notice ni.
+[RECIPIENT]: Good afternoon, cheppandi emiti vishayam?
+[CALLER]: Mee pollution under control certificate expiring next week process complete aindi ani inform cheyataniki call chesamu.
+[RECIPIENT]: Good to know. Next step enti sir?
+[CALLER]: Next step lo meeru direct ga visit any authorized testing booth for renewal cheyali.
+[RECIPIENT]: Phone lo credentials confirm cheyalsina avasaram unda?
+[CALLER]: Ledu sir, phone meeda credentials eppudu share cheyakandi. Office lo direct ga complete cheyandi.
+[RECIPIENT]: Very reassuring sir. I will visit during normal working hours.

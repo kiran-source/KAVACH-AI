@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0264 (hi-en) ===
+Scenario: Income Tax Department Official E-Filing Acknowledgment (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Income Tax Department se E-Filing Desk bol raha hoon. Yeh call aapke acknowledgment of assessment year income tax e-return ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap no further action required, refund processed to bank complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

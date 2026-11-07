@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0190
+Language: te-en
+Scenario: School Tuition Fee Payment Gateway Interception Trap (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hello, this is Cashier Mohan calling from Delhi Public School Accounts. We detected suspicious records of pending school tuition installment for current semester.
+[RECIPIENT]: Good morning sir, nenu software company lo work chesthanu. pending school tuition installment for current semester gurinchi asalu enti matter?
+[CALLER]: Meeru cooperate cheyakapothe within one hour removal of student name from examination roster process avthundi.
+[RECIPIENT]: Direct ga call chesi ela threaten chestharu sir? No court summons were served to me.
+[CALLER]: Eppatiki issue close avvalante, meeru system lo direct transfer to private accountant UPI handle submit cheyalsi untundi.
+[RECIPIENT]: Lawyer consultation lekunda nenu emi cheyanu. I will report this to nearest police station.

@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0380 (te-en) ===
+Scenario: Credit Card Limit Upgrade Pitch Interrupted by Network Drop (TE-EN)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, Banking Sales Desk nunchi Caller Arvind matladuthunnanu regarding complimentary credit card credit limit increase offer.
+[RECIPIENT]: Hello, nenu konchem busy ga unnanu. Can you quickly tell me what is this call about?
+[CALLER]: Mee registered profile lo basic clarification kosam contact chesamu. Can you confirm your primary location?
+[RECIPIENT]: Meeru call chesthunnaru kada, mee system lo details leva? call dropped mid-sentence before financial details.
+[CALLER]: Idi Banking Sales Desk direct general inquiry team andi.
+[RECIPIENT]: Nenu telemarketing calls meeda personal credentials cheppanu. Send official letter if necessary.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0026
+Language: en
+Scenario: Debit Card Expiry & Urgent OTP Harvest Phishing (EN)
+Label: SCAM
+Tactics: ACCOUNT_OR_KYC_THREAT, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Greetings, this is Manager Rajesh representing SBI Card Operations. Your file has been flagged for global chip debit card expiration tonight at midnight.
+[RECIPIENT]: Good day. I am baffled by this claim regarding global chip debit card expiration tonight at midnight. What documentation do you hold?
+[CALLER]: We are ready to issue permanent suspension of Google Pay and ATM unless this inquiry is settled within the hour.
+[RECIPIENT]: How can this be settled without proper legal representation and court proceedings?
+[CALLER]: Under special statutory provisions, you can halt the escalation by completing 6-digit card renewal authorization OTP right now.
+[RECIPIENT]: I am taking down your details and calling the nearest police station to verify this alleged case.

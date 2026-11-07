@@ -1,0 +1,16 @@
+Conversation ID: KAV-SYNTH2-0200
+Language: te-en
+Scenario: Telecom Tower Land Lease Advance Registration Fee Fraud (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT, AUTHORITY_IMPERSONATION
+
+[CALLER]: Hello, is this the registered account user speaking?
+[RECIPIENT]: Yes speaking. May I know who is on the call and what is the matter?
+[CALLER]: This is Officer Kapoor from Tower Infrastructure Cell investigation desk. A complaint was logged regarding monthly rent of 45,000 for vacant plot mobile tower installation.
+[RECIPIENT]: monthly rent of 45,000 for vacant plot mobile tower installation aa? That is impossible. I am a law-abiding citizen. Meeru verify chesara?
+[CALLER]: Forensic team verified all telemetry logs. Your Aadhaar linked SIM is implicated.
+[RECIPIENT]: If my SIM was duplicated, I am the victim! Why are you threatening me instead of helping?
+[CALLER]: Because statutory protocol mandates forfeiture of commercial tower installation rights unless cleared immediately.
+[RECIPIENT]: Clear cheyataniki lawful procedure emundhi?
+[CALLER]: Department clear chit ravalante, right now meeru 18,000 rupees structural survey clearance deposit perform cheyalsi untundi.
+[RECIPIENT]: This sounds like cyber fraud extortion. Genuine police never ask for money or remote control. Disconnecting.

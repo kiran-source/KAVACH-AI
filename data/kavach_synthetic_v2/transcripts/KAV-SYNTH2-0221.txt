@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0221
+Language: en
+Scenario: Automobile Service Center Scheduled Maintenance Readiness (EN)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: Good afternoon, this is Advisor Sunil calling from Tata Motors Service regarding your regular vehicle periodic servicing ready for inspection.
+[RECIPIENT]: Hello, thank you for reaching out. Yes, I was expecting a status update on that.
+[CALLER]: Please be advised to drop vehicle at workshop tomorrow morning. Kindly note we will never request your OTP, PIN, or net banking password.
+[RECIPIENT]: Understood and appreciated. I will complete this at the branch during normal business hours.

@@ -1,0 +1,12 @@
+Conversation ID: KAV-SYNTH2-0461
+Language: en
+Scenario: Bank Customer Care Callback Interrupted by Network Drop (EN)
+Label: AMBIGUOUS
+Tactics: SUSPICIOUS_UNSOLICITED_CALL
+
+[CALLER]: Good afternoon, this is Caller Sudha from Union Bank Helpdesk. I am reaching out regarding callback regarding earlier general inquiry on account interest.
+[RECIPIENT]: Hello, I am quite busy right now. Is this a sales pitch or a mandatory notice?
+[CALLER]: It is an advisory update that could be beneficial, but we need to verify a few details first.
+[RECIPIENT]: I don't verify personal details on unsolicited calls. network drops before customer can explain query.
+[CALLER]: We understand your caution, sir. We can send a reference brochure by email if you prefer.
+[RECIPIENT]: Yes, send it in writing. Do not call again without prior authorization.

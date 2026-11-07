@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0001 (en) ===
+Scenario: CBI Money Laundering & Digital Arrest (EN)
+Label: SCAM
+Tactics: DIGITAL_ARREST, AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT
+
+[CALLER]: This is Inspector Raman calling from CBI Headquarters. We are conducting an urgent investigation regarding 4.2 crore illegal Hawala laundering.
+[RECIPIENT]: Hello? I have no knowledge of any 4.2 crore illegal Hawala laundering. What is this regarding?
+[CALLER]: A formal case file has been registered. If you do not resolve this immediately, there will be Aadhaar non-bailable arrest warrant.
+[RECIPIENT]: Please, this is a serious misunderstanding! I am a law-abiding citizen. How can this be cleared?
+[CALLER]: You must immediately comply with RBI security verification account. Failure to do so will result in non-bailable enforcement.
+[RECIPIENT]: I will not comply blindly without official documentation. Let me consult my advocate and local police first.

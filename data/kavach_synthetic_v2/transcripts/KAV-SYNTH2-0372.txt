@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0372
+Language: hi
+Scenario: Bank Safe Deposit Locker Annual Physical Verification (HI)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: नमस्कार, मैं Bank of Baroda से Locker Incharge Neha बोल रहा हूँ।
+[RECIPIENT]: नमस्कार जी, बताइए किस कार्य हेतु कॉल किया गया है?
+[CALLER]: हम आपके annual physical inspection of safe deposit locker की स्थिति साझा करने के लिए संपर्क कर रहे हैं।
+[RECIPIENT]: जी, क्या मेरा रिकॉर्ड सिस्टम में अपडेट हो गया है?
+[CALLER]: जी हाँ, सब कुछ सही है। अंतिम चरण के रूप में आपको visit branch during banking hours with locker key।
+[RECIPIENT]: क्या फोन पर कोई कोड या जानकारी देने की आवश्यकता है?
+[CALLER]: बिल्कुल नहीं। फोन पर कभी किसी को ओटीपी या पिन न दें। सभी काम केवल कार्यालय में होते हैं।
+[RECIPIENT]: बहुत अच्छी बात है। मैं व्यक्तिगत रूप से कार्यालय आकर प्रक्रिया पूरी करूँगा।

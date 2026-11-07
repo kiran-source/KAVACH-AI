@@ -1,11 +1,16 @@
-import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import {
   UploadCloud, Mic, Square, Play, Pause, AlertTriangle,
-  ShieldCheck, Volume2, ArrowRight, CheckCircle2, RefreshCw, FileAudio
+  ShieldCheck, Volume2, ArrowRight, CheckCircle2, RefreshCw,
+  FileAudio, ShieldAlert, Sparkles, Layers, Info, ExternalLink, Activity
 } from 'lucide-react';
 import { api } from '../services/api';
 import { AnalysisResponse, TranscriptResponse } from '../types';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/common/Card';
+import { SeverityBadge, StatusBadge } from '../components/common/Badge';
+import { Button } from '../components/common/Button';
+import { AudioWaveform } from '../components/common/AudioWaveform';
 
 export const AudioAnalysisPage: React.FC = () => {
   const navigate = useNavigate();
@@ -20,6 +25,9 @@ export const AudioAnalysisPage: React.FC = () => {
   // Audio Player state
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [playbackProgress, setPlaybackProgress] = useState<number>(0);
+  const [audioDuration, setAudioDuration] = useState<number>(0);
+  const [audioCurrentTime, setAudioCurrentTime] = useState<number>(0);
   const audioPlayerRef = useRef<HTMLAudioElement | null>(null);
 
   // Analysis Pipeline Progress State
@@ -36,11 +44,11 @@ export const AudioAnalysisPage: React.FC = () => {
   const timerRef = useRef<any>(null);
 
   const steps = [
-    'Audio Ingestion & Metadata Validation',
-    'Gnani Prisma v2.5 Multilingual Transcription',
-    'Multilingual Social Engineering Pattern Scan',
-    'Explainable Risk Scoring & Threat Triage',
-    'Gnani Timbre Multilingual Safety Voice Synthesis'
+    'Audio Ingestion & Magic-Byte Container Verification',
+    'Gnani Prisma v3.0 Multilingual Speech-to-Text & LID',
+    '8-Pillar Social Engineering Pattern & Coercion Scan',
+    'Explainable Hybrid Risk Scoring & Rule-Priority Shield',
+    'Gnani Timbre v2.5 Multilingual Safety Voice Advisory'
   ];
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -49,6 +57,38 @@ export const AudioAnalysisPage: React.FC = () => {
       setSelectedFile(file);
       setAudioUrl(URL.createObjectURL(file));
       setAnalysisResult(null);
+      setTranscriptResult(null);
+      setIsPlaying(false);
+      setPlaybackProgress(0);
+    }
+  };
+
+  // Audio player time updates
+  const handleTimeUpdate = () => {
+    if (audioPlayerRef.current) {
+      const curr = audioPlayerRef.current.currentTime;
+      const dur = audioPlayerRef.current.duration || 1;
+      setAudioCurrentTime(curr);
+      setAudioDuration(dur);
+      setPlaybackProgress(curr / dur);
+    }
+  };
+
+  const togglePlayback = () => {
+    if (!audioPlayerRef.current || !audioUrl) return;
+    if (isPlaying) {
+      audioPlayerRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioPlayerRef.current.play().catch(console.error);
+      setIsPlaying(true);
+    }
+  };
+
+  const handleSeek = (ratio: number) => {
+    if (audioPlayerRef.current && audioDuration > 0) {
+      audioPlayerRef.current.currentTime = ratio * audioDuration;
+      setPlaybackProgress(ratio);
     }
   };
 
@@ -59,7 +99,21 @@ export const AudioAnalysisPage: React.FC = () => {
     }
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mediaRecorder = new MediaRecorder(stream);
+      
+      let mimeType = 'audio/webm';
+      let extension = 'webm';
+      if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+        mimeType = 'audio/webm;codecs=opus';
+        extension = 'webm';
+      } else if (MediaRecorder.isTypeSupported('audio/mp4')) {
+        mimeType = 'audio/mp4';
+        extension = 'm4a';
+      } else if (MediaRecorder.isTypeSupported('audio/wav')) {
+        mimeType = 'audio/wav';
+        extension = 'wav';
+      }
+
+      const mediaRecorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
       mediaRecorderRef.current = mediaRecorder;
       audioChunksRef.current = [];
 
@@ -68,8 +122,9 @@ export const AudioAnalysisPage: React.FC = () => {
       };
 
       mediaRecorder.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/wav' });
-        const file = new File([audioBlob], `mic_recording_${Date.now()}.wav`, { type: 'audio/wav' });
+        const resolvedType = mediaRecorder.mimeType || mimeType;
+        const audioBlob = new Blob(audioChunksRef.current, { type: resolvedType });
+        const file = new File([audioBlob], `mic_recording_${Date.now()}.${extension}`, { type: resolvedType });
         setSelectedFile(file);
         setAudioUrl(URL.createObjectURL(audioBlob));
       };
@@ -82,7 +137,7 @@ export const AudioAnalysisPage: React.FC = () => {
       }, 1000);
     } catch (err) {
       console.error("Microphone access error:", err);
-      alert("Unable to access microphone. Please ensure microphone permissions are granted.");
+      alert("Unable to access microphone. Please ensure microphone permissions are granted in browser.");
     }
   };
 
@@ -97,13 +152,14 @@ export const AudioAnalysisPage: React.FC = () => {
 
   const selectScenario = async (filename: string, lang: string) => {
     try {
-      // Create a dummy WAV file for test scenario
+      // Create a simulated test scenario file
       const sampleBlob = new Blob([new Uint8Array(44)], { type: 'audio/wav' });
       const file = new File([sampleBlob], filename, { type: 'audio/wav' });
       setSelectedFile(file);
       setLanguage(lang);
       setAudioUrl(null);
       setAnalysisResult(null);
+      setTranscriptResult(null);
     } catch (e) {
       console.error(e);
     }
@@ -121,7 +177,7 @@ export const AudioAnalysisPage: React.FC = () => {
       const audioId = uploadRes.audio_id;
       setCurrentStep(2);
 
-      // Step 2: Transcribe via Gnani Prisma v2.5
+      // Step 2: Transcribe via Gnani Prisma v3.0
       const trRes = await api.transcribeAudio(audioId, language);
       setTranscriptResult(trRes);
       setCurrentStep(3);
@@ -146,208 +202,299 @@ export const AudioAnalysisPage: React.FC = () => {
     }
   };
 
+  const formatSeconds = (sec: number) => {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m}:${s < 10 ? '0' : ''}${s}`;
+  };
+
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
-      {/* Title */}
-      <div>
-        <h1 className="text-xl font-bold text-white flex items-center space-x-2">
-          <FileAudio className="w-5 h-5 text-cyan-400" />
-          <span>Audio Ingestion & Threat Analysis Engine</span>
-        </h1>
-        <p className="text-xs text-slate-400 mt-1">
-          Upload calls or record voice samples to detect social-engineering tactics across Telugu, Hindi, and English.
-        </p>
-      </div>
+    <div className="max-w-6xl mx-auto space-y-6">
+      {/* Hidden audio element for playback */}
+      {audioUrl && (
+        <audio
+          ref={audioPlayerRef}
+          src={audioUrl}
+          onTimeUpdate={handleTimeUpdate}
+          onEnded={() => setIsPlaying(false)}
+          className="hidden"
+        />
+      )}
 
-      {/* Synthetic Scenario Quick Select */}
-      <div className="bg-[#0c1220] p-4 rounded-xl border border-slate-800">
-        <div className="text-xs font-semibold text-slate-300 mb-2 flex items-center justify-between">
-          <span>Preset Test Scenarios (Demonstration & Evaluation)</span>
-          <span className="text-[10px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">
-            Click to Auto-load
-          </span>
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-800">
+        <div>
+          <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs mb-1">
+            <Activity className="w-4 h-4" />
+            <span>KAVACH AI FORENSIC ANALYSIS WORKSTATION</span>
+          </div>
+          <h1 className="text-2xl font-bold tracking-tight text-slate-100 flex items-center space-x-3">
+            <span>Audio Ingestion & Multilingual Threat Triage</span>
+          </h1>
+          <p className="text-xs text-slate-400 mt-1 max-w-2xl">
+            Accepts audio recordings and live microphone streams. Transcribes Indian languages via Gnani Prisma v3.0 and scans for social-engineering coercion.
+          </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-          <button
-            onClick={() => selectScenario('cbi_digital_arrest_sample.wav', 'hi')}
-            className="p-2.5 bg-slate-800/60 hover:bg-slate-700/60 text-left rounded-lg border border-slate-700/80 text-xs transition"
-          >
-            <div className="font-semibold text-red-400">🚨 CBI Digital Arrest</div>
-            <div className="text-[10px] text-slate-400 mt-0.5">Hindi / Code-mixed threat</div>
-          </button>
-          <button
-            onClick={() => selectScenario('sbi_bank_kyc_otp_sample.wav', 'en')}
-            className="p-2.5 bg-slate-800/60 hover:bg-slate-700/60 text-left rounded-lg border border-slate-700/80 text-xs transition"
-          >
-            <div className="font-semibold text-amber-400">💳 Bank KYC & OTP Theft</div>
-            <div className="text-[10px] text-slate-400 mt-0.5">English banking fraud</div>
-          </button>
-          <button
-            onClick={() => selectScenario('telugu_bank_block_pin.wav', 'te')}
-            className="p-2.5 bg-slate-800/60 hover:bg-slate-700/60 text-left rounded-lg border border-slate-700/80 text-xs transition"
-          >
-            <div className="font-semibold text-red-400">⚠️ Telugu Account Freeze</div>
-            <div className="text-[10px] text-slate-400 mt-0.5">తెలుగు ATM PIN డిమాండ్</div>
-          </button>
-          <button
-            onClick={() => selectScenario('safe_customer_service_legit.wav', 'en')}
-            className="p-2.5 bg-slate-800/60 hover:bg-slate-700/60 text-left rounded-lg border border-slate-700/80 text-xs transition"
-          >
-            <div className="font-semibold text-emerald-400">✅ Legitimate Support Call</div>
-            <div className="text-[10px] text-slate-400 mt-0.5">Benign broadband resolution</div>
-          </button>
+
+        <div className="flex items-center space-x-3">
+          <Link to="/threats">
+            <Button variant="outline" size="sm" rightIcon={<ArrowRight className="w-3.5 h-3.5" />}>
+              Explore 8 Threat Pillars
+            </Button>
+          </Link>
         </div>
       </div>
 
-      {/* Main Ingestion Card */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Method 1: File Upload */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
-          <div>
-            <h2 className="text-sm font-semibold text-white mb-2 flex items-center space-x-2">
-              <UploadCloud className="w-4 h-4 text-cyan-400" />
-              <span>Audio File Upload</span>
-            </h2>
-            <p className="text-xs text-slate-400 mb-4">
-              Supported formats: WAV, MP3, M4A, FLAC, OGG (Max 25MB)
-            </p>
-
-            <div
-              onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-slate-700 hover:border-cyan-500 rounded-xl p-6 text-center cursor-pointer transition bg-slate-900/40"
+      {/* Preset Test Scenarios */}
+      <Card className="bg-[#0a0f1c]/80 border-slate-800/80">
+        <CardHeader className="py-3 px-4 flex flex-row items-center justify-between border-b border-slate-800/50">
+          <div className="flex items-center space-x-2">
+            <Sparkles className="w-4 h-4 text-cyan-400" />
+            <span className="text-xs font-semibold text-slate-200">Demonstration Archetypes</span>
+          </div>
+          <span className="text-[10px] font-mono text-slate-400">Click to quickly evaluate detection logic</span>
+        </CardHeader>
+        <CardContent className="p-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+            <button
+              onClick={() => selectScenario('cbi_digital_arrest_sample.wav', 'hi')}
+              className="p-3 bg-[#0d1424] hover:bg-[#131c31] text-left rounded-lg border border-slate-800 hover:border-red-500/40 text-xs transition group"
             >
-              <UploadCloud className="w-8 h-8 text-slate-500 mx-auto mb-2" />
-              <p className="text-xs font-medium text-slate-300">
-                {selectedFile ? selectedFile.name : 'Click to select audio file or drag & drop'}
-              </p>
-              <p className="text-[10px] text-slate-500 mt-1">Safe temporary quarantine storage</p>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept=".wav,.mp3,.m4a,.flac,.ogg,.webm"
-                onChange={handleFileChange}
-                className="hidden"
-              />
-            </div>
-          </div>
+              <div className="flex items-center justify-between">
+                <span className="font-semibold text-red-400 group-hover:text-red-300">🚨 CBI Digital Arrest</span>
+                <span className="text-[9px] font-mono text-slate-500">HI</span>
+              </div>
+              <p className="text-[10px] text-slate-400 mt-1 line-clamp-1">Hindi coercion · Fake Supreme Court warrant</p>
+            </button>
 
-          <div className="mt-4 flex items-center justify-between text-xs text-slate-400">
-            <span>Selected File:</span>
-            <span className="font-mono text-cyan-400 font-semibold">{selectedFile?.name || 'None'}</span>
+            <button
+              onClick={() => selectScenario('sbi_bank_kyc_otp_sample.wav', 'en')}
+              className="p-3 bg-[#0d1424] hover:bg-[#131c31] text-left rounded-lg border border-slate-800 hover:border-amber-500/40 text-xs transition group"
+            >
+              <div className="flex items-center justify-between">
+                <span className="font-semibold text-amber-400 group-hover:text-amber-300">💳 Bank KYC & OTP Theft</span>
+                <span className="text-[9px] font-mono text-slate-500">EN</span>
+              </div>
+              <p className="text-[10px] text-slate-400 mt-1 line-clamp-1">English banking fraud · 6-digit code demand</p>
+            </button>
+
+            <button
+              onClick={() => selectScenario('telugu_bank_block_pin.wav', 'te')}
+              className="p-3 bg-[#0d1424] hover:bg-[#131c31] text-left rounded-lg border border-slate-800 hover:border-purple-500/40 text-xs transition group"
+            >
+              <div className="flex items-center justify-between">
+                <span className="font-semibold text-purple-400 group-hover:text-purple-300">⚠️ Telugu Account Freeze</span>
+                <span className="text-[9px] font-mono text-slate-500">TE</span>
+              </div>
+              <p className="text-[10px] text-slate-400 mt-1 line-clamp-1">తెలుగు భాషలో ATM PIN కోరిన బెదిరింపు</p>
+            </button>
+
+            <button
+              onClick={() => selectScenario('safe_customer_service_legit.wav', 'en')}
+              className="p-3 bg-[#0d1424] hover:bg-[#131c31] text-left rounded-lg border border-slate-800 hover:border-emerald-500/40 text-xs transition group"
+            >
+              <div className="flex items-center justify-between">
+                <span className="font-semibold text-emerald-400 group-hover:text-emerald-300">✅ Legitimate Support Call</span>
+                <span className="text-[9px] font-mono text-slate-500">EN</span>
+              </div>
+              <p className="text-[10px] text-slate-400 mt-1 line-clamp-1">Routine broadband resolution · Safe context</p>
+            </button>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Main Forensic Ingestion Vault (Dual-Input Grid) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Method 1: File Drop Zone (6 cols) */}
+        <div className="lg:col-span-6">
+          <Card elevated className="h-full flex flex-col justify-between">
+            <CardHeader>
+              <CardTitle className="text-sm">
+                <span className="flex items-center space-x-2">
+                  <UploadCloud className="w-4 h-4 text-cyan-400" />
+                  <span>Acoustic File Ingestion</span>
+                </span>
+                <span className="text-[10px] font-mono text-slate-400 uppercase">Max 25 MB</span>
+              </CardTitle>
+              <CardDescription>
+                Validates WAV, MP3, M4A, FLAC, and WebM containers with magic-byte verification.
+              </CardDescription>
+            </CardHeader>
+
+            <CardContent className="space-y-4">
+              <div
+                onClick={() => fileInputRef.current?.click()}
+                className="border-2 border-dashed border-slate-700/80 hover:border-cyan-500/80 rounded-xl p-8 text-center cursor-pointer transition-all bg-[#090d18]/60 hover:bg-[#0c1424] flex flex-col items-center justify-center group"
+                role="button"
+                tabIndex={0}
+                aria-label="Upload audio file"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') fileInputRef.current?.click();
+                }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-slate-800/80 group-hover:bg-cyan-950/40 border border-slate-700 group-hover:border-cyan-700 flex items-center justify-center text-slate-400 group-hover:text-cyan-400 mb-3 transition-colors">
+                  <FileAudio className="w-6 h-6 stroke-[1.75]" />
+                </div>
+                <p className="text-xs font-semibold text-slate-200">
+                  {selectedFile ? selectedFile.name : 'Click to select audio file or drag & drop'}
+                </p>
+                <p className="text-[10px] font-mono text-slate-400 mt-1">
+                  16 kHz / 8 kHz Mono or Stereo · RIFF/WAVE compliant
+                </p>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".wav,.mp3,.m4a,.flac,.ogg,.webm"
+                  onChange={handleFileChange}
+                  className="hidden"
+                />
+              </div>
+
+              {selectedFile && (
+                <div className="p-3 rounded-lg bg-[#070b14] border border-slate-800 text-xs flex items-center justify-between font-mono">
+                  <span className="text-slate-400">Payload Name:</span>
+                  <span className="text-cyan-400 font-bold truncate max-w-xs">{selectedFile.name}</span>
+                </div>
+              )}
+            </CardContent>
+          </Card>
         </div>
 
-        {/* Method 2: Microphone Recording */}
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
-          <div>
-            <h2 className="text-sm font-semibold text-white mb-2 flex items-center space-x-2">
-              <Mic className="w-4 h-4 text-cyan-400" />
-              <span>Direct Microphone Recording</span>
-            </h2>
-            <p className="text-xs text-slate-400 mb-3">
-              Record voice interactions locally with explicit consent.
-            </p>
+        {/* Method 2: Live Microphone Vault (6 cols) */}
+        <div className="lg:col-span-6">
+          <Card elevated className="h-full flex flex-col justify-between">
+            <CardHeader>
+              <CardTitle className="text-sm">
+                <span className="flex items-center space-x-2">
+                  <Mic className="w-4 h-4 text-cyan-400" />
+                  <span>Browser Microphone Capture</span>
+                </span>
+                <span className="text-[10px] font-mono text-amber-400 uppercase">Consent Required</span>
+              </CardTitle>
+              <CardDescription>
+                Near-real-time speech capture for demonstration and analyst verification.
+              </CardDescription>
+            </CardHeader>
 
-            {/* Consent Checkbox */}
-            <label className="flex items-start space-x-2 p-2.5 rounded bg-slate-900/60 border border-slate-800 text-[11px] text-slate-300 cursor-pointer mb-4">
-              <input
-                type="checkbox"
-                checked={consentGiven}
-                onChange={(e) => setConsentGiven(e.target.checked)}
-                className="mt-0.5 rounded border-slate-700 text-cyan-500 focus:ring-0"
-              />
-              <span>I confirm that audio is recorded with user awareness for cyber threat evaluation.</span>
-            </label>
+            <CardContent className="space-y-4">
+              {/* Mandatory Consent Checkbox */}
+              <label className="flex items-start space-x-2.5 p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={consentGiven}
+                  onChange={(e) => setConsentGiven(e.target.checked)}
+                  className="mt-0.5 rounded border-slate-700 text-cyan-500 focus:ring-0 bg-[#070b14]"
+                />
+                <span className="text-[11px] leading-relaxed">
+                  I explicitly consent to microphone capture and local audio processing for scam and vishing detection evaluation.
+                </span>
+              </label>
 
-            <div className="text-center py-3">
-              {isRecording ? (
-                <div className="space-y-3">
-                  <div className="flex items-center justify-center space-x-2 text-red-400 font-mono text-sm animate-pulse">
-                    <span className="w-3 h-3 rounded-full bg-red-500"></span>
-                    <span>RECORDING ACTIVE: {recordDuration}s</span>
+              {/* Recording Control & Waveform Display */}
+              <div className="p-4 rounded-xl bg-[#090d18] border border-slate-800 text-center space-y-3">
+                <AudioWaveform isRecording={isRecording} height={44} barCount={40} />
+
+                {isRecording ? (
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-center space-x-2 text-red-400 font-mono text-xs font-bold animate-pulse">
+                      <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
+                      <span>STREAM RECORDING: {formatSeconds(recordDuration)}</span>
+                    </div>
+                    <Button variant="destructive" size="sm" onClick={stopRecording} leftIcon={<Square className="w-3.5 h-3.5" />}>
+                      Stop Recording
+                    </Button>
                   </div>
-                  <button
-                    onClick={stopRecording}
-                    className="px-4 py-2 bg-red-600 hover:bg-red-500 text-white font-semibold text-xs rounded-lg transition inline-flex items-center space-x-2 shadow-lg shadow-red-500/20"
+                ) : (
+                  <Button
+                    variant={consentGiven ? 'primary' : 'secondary'}
+                    size="sm"
+                    onClick={startRecording}
+                    disabled={!consentGiven}
+                    leftIcon={<Mic className="w-4 h-4" />}
                   >
-                    <Square className="w-3.5 h-3.5" />
-                    <span>Stop Recording</span>
-                  </button>
-                </div>
-              ) : (
-                <button
-                  onClick={startRecording}
-                  disabled={!consentGiven}
-                  className={`px-4 py-2 rounded-lg font-semibold text-xs inline-flex items-center space-x-2 transition ${
-                    consentGiven
-                      ? 'bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-cyan-800/40 shadow-sm'
-                      : 'bg-slate-800/40 text-slate-600 border border-slate-800 cursor-not-allowed'
-                  }`}
-                >
-                  <Mic className="w-4 h-4" />
-                  <span>Start Microphone Record</span>
-                </button>
-              )}
-            </div>
-          </div>
-
-          <div className="mt-4 flex items-center justify-between text-xs text-slate-400">
-            <span>Audio Preview:</span>
-            {audioUrl ? (
-              <audio src={audioUrl} controls className="h-7 w-48" />
-            ) : (
-              <span className="text-[11px] text-slate-500 italic">No audio loaded</span>
-            )}
-          </div>
+                    Start Microphone Ingestion
+                  </Button>
+                )}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
+
+      {/* Audio Playback Workstation Bar */}
+      {audioUrl && (
+        <Card className="bg-[#090e1a] border-cyan-800/40 p-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center space-x-3 w-full sm:w-auto">
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={togglePlayback}
+                leftIcon={isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+              >
+                {isPlaying ? 'Pause' : 'Play Audio'}
+              </Button>
+              <div className="font-mono text-xs text-slate-300">
+                <span>{formatSeconds(audioCurrentTime)}</span>
+                <span className="text-slate-500"> / </span>
+                <span>{formatSeconds(audioDuration)}</span>
+              </div>
+            </div>
+
+            <div className="w-full sm:flex-1 max-w-lg">
+              <AudioWaveform
+                progress={playbackProgress}
+                isPlaying={isPlaying}
+                height={36}
+                barCount={52}
+                onSeek={handleSeek}
+              />
+            </div>
+          </div>
+        </Card>
+      )}
 
       {/* Language Selector & Scan Action */}
-      <div className="bg-[#0c1220] p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="bg-[#0d1424] p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center space-x-3 w-full sm:w-auto">
           <label className="text-xs font-mono text-slate-400 whitespace-nowrap">Transcription Language:</label>
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
-            className="bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500"
+            className="bg-[#070b14] border border-slate-700/80 rounded-lg px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-cyan-500 font-sans"
           >
             <option value="auto">Auto-Detect (Prisma LID)</option>
             <option value="te">Telugu (తెలుగు / Code-mixed)</option>
-            <option value="hi">Hindi (हिंदी / Code-mixed)</option>
-            <option value="en">English (Indian Accent)</option>
+            <option value="hi">Hindi (हिंदी / Hinglish)</option>
+            <option value="en">English (Indian Telephony Accent)</option>
           </select>
         </div>
 
-        <button
+        <Button
+          variant="primary"
+          size="md"
           onClick={runAnalysisPipeline}
           disabled={!selectedFile || analyzing}
-          className={`w-full sm:w-auto px-6 py-2.5 rounded-lg text-xs font-bold font-mono tracking-wider transition flex items-center justify-center space-x-2 shadow-lg ${
-            selectedFile && !analyzing
-              ? 'bg-gradient-to-r from-cyan-600 to-teal-500 hover:from-cyan-500 hover:to-teal-400 text-slate-950 shadow-cyan-500/20'
-              : 'bg-slate-800 text-slate-500 border border-slate-700 cursor-not-allowed'
-          }`}
+          isLoading={analyzing}
+          rightIcon={!analyzing ? <ArrowRight className="w-4 h-4" /> : undefined}
+          className="w-full sm:w-auto font-mono uppercase tracking-wider text-xs"
         >
-          {analyzing ? (
-            <>
-              <RefreshCw className="w-4 h-4 animate-spin" />
-              <span>ANALYSING THREAT ENGINE...</span>
-            </>
-          ) : (
-            <>
-              <span>EXECUTE KAVACH SCAN</span>
-              <ArrowRight className="w-4 h-4" />
-            </>
-          )}
-        </button>
+          {analyzing ? 'RUNNING HYBRID PIPELINE...' : 'EXECUTE KAVACH THREAT SCAN'}
+        </Button>
       </div>
 
-      {/* Progress Steps Card */}
+      {/* Pipeline Progress Stages */}
       {analyzing && (
-        <div className="bg-[#0c1220] p-5 rounded-xl border border-cyan-800/40 space-y-3">
-          <div className="text-xs font-mono text-cyan-400 font-semibold uppercase tracking-wider">
-            Execution Pipeline in Progress
+        <Card elevated className="border-cyan-500/40 p-5 space-y-3 bg-[#090e1a]">
+          <div className="flex items-center justify-between text-xs font-mono text-cyan-400 font-bold uppercase tracking-wider">
+            <span className="flex items-center space-x-2">
+              <RefreshCw className="w-4 h-4 animate-spin" />
+              <span>Pipeline Stage Execution Active</span>
+            </span>
+            <span>Stage {currentStep} of 5</span>
           </div>
-          <div className="space-y-2">
+
+          <div className="space-y-2 pt-1">
             {steps.map((step, idx) => {
               const stepNum = idx + 1;
               const isDone = currentStep > stepNum;
@@ -365,113 +512,129 @@ export const AudioAnalysisPage: React.FC = () => {
                   >
                     {isDone ? '✓' : stepNum}
                   </div>
-                  <span className={isCurrent ? 'text-cyan-300 font-semibold' : isDone ? 'text-slate-300' : 'text-slate-500'}>
+                  <span
+                    className={
+                      isCurrent
+                        ? 'text-cyan-300 font-semibold'
+                        : isDone
+                        ? 'text-slate-300'
+                        : 'text-slate-500'
+                    }
+                  >
                     {step}
                   </span>
                 </div>
               );
             })}
           </div>
-        </div>
+        </Card>
       )}
 
-      {/* Analysis Results Display */}
+      {/* Forensic Threat Analysis Results */}
       {analysisResult && (
-        <div className="bg-[#0c1220] rounded-xl border border-slate-800 p-6 space-y-6">
-          {/* Header Result */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-4">
+        <Card elevated className="border-slate-700/80 p-6 space-y-6">
+          {/* Header Verdict Banner */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-slate-800 gap-4">
             <div>
-              <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">THREAT ASSESSMENT VERDICT</span>
-              <div className="flex items-center space-x-3 mt-1">
-                <span
-                  className={`px-3 py-1 rounded text-sm font-bold font-mono border ${
-                    analysisResult.severity === 'Critical' || analysisResult.severity === 'High'
-                      ? 'bg-red-500/20 text-red-400 border-red-500/40'
-                      : analysisResult.severity === 'Medium'
-                      ? 'bg-amber-500/20 text-amber-400 border-amber-500/40'
-                      : 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
-                  }`}
-                >
-                  {analysisResult.severity.toUpperCase()} RISK
-                </span>
-                <span className="text-xl font-bold font-mono text-white">
-                  Score: {analysisResult.risk_score} / 100
+              <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">
+                THREAT ASSESSMENT VERDICT
+              </span>
+              <div className="flex items-center space-x-3 mt-1.5">
+                <SeverityBadge severity={analysisResult.severity} size="md" />
+                <span className="text-2xl font-bold font-mono text-slate-100">
+                  Risk Score: {analysisResult.risk_score} / 100
                 </span>
               </div>
             </div>
 
             {analysisResult.incident_id && (
-              <button
+              <Button
+                variant="destructive"
+                size="sm"
                 onClick={() => navigate(`/incidents/${analysisResult.incident_id}`)}
-                className="px-4 py-2 bg-red-600/20 hover:bg-red-600/30 text-red-400 border border-red-500/40 rounded-lg text-xs font-semibold flex items-center space-x-2 transition"
+                rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
               >
-                <span>Open Incident Investigation</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+                Open Investigation Dossier
+              </Button>
             )}
           </div>
 
-          {/* Transcript Preview */}
-          {transcriptResult && (
-            <div className="bg-[#090d16] p-4 rounded-lg border border-slate-800">
-              <div className="flex items-center justify-between text-xs text-slate-400 font-mono mb-2">
-                <span>PRISMA v2.5 TRANSCRIPT ({transcriptResult.language.toUpperCase()})</span>
-                <span className="text-[10px] text-cyan-400">Confidence Verified</span>
-              </div>
-              <p className="text-xs text-slate-200 leading-relaxed font-sans italic">
-                "{transcriptResult.full_text}"
-              </p>
-            </div>
-          )}
+          {/* Side-by-Side: Speech Transcript + Matched Tactics */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            {/* Transcript (6 cols) */}
+            <div className="lg:col-span-6 space-y-4">
+              <h3 className="text-xs font-mono font-semibold text-slate-400 uppercase tracking-wider flex items-center justify-between">
+                <span>PRISMA v3.0 TRANSCRIPT ({transcriptResult?.language?.toUpperCase() || 'MULTI'})</span>
+                <span className="text-cyan-400 font-normal">Acoustic Confidence Verified</span>
+              </h3>
 
-          {/* Voice Warning Synthesizer (Gnani Timbre) */}
-          {warningText && (
-            <div className="bg-gradient-to-r from-red-950/30 to-[#0c1220] p-4 rounded-lg border border-red-900/40 space-y-2">
-              <div className="flex items-center space-x-2 text-xs font-semibold text-red-400">
-                <Volume2 className="w-4 h-4" />
-                <span>Gnani Timbre v2.5 Voice Safety Advisory</span>
+              <div className="p-4 rounded-xl bg-[#070b14] border border-slate-800 text-xs text-slate-200 leading-relaxed font-sans max-h-80 overflow-y-auto">
+                <p className="italic text-slate-300">"{transcriptResult?.full_text || 'No text extracted.'}"</p>
               </div>
-              <p className="text-xs text-slate-300 font-medium">{warningText}</p>
-              {warningAudioUrl && (
-                <div className="pt-2">
-                  <audio src={warningAudioUrl} controls autoPlay className="h-8 w-full max-w-md" />
+
+              {/* Synthesized Voice Warning (Gnani Timbre) */}
+              {warningText && (
+                <div className="p-4 rounded-xl bg-gradient-to-r from-red-950/30 to-[#0d1424] border border-red-900/50 space-y-2.5">
+                  <div className="flex items-center justify-between text-xs font-bold text-red-400">
+                    <span className="flex items-center space-x-1.5">
+                      <Volume2 className="w-4 h-4" />
+                      <span>Gnani Timbre v2.5 Voice Advisory</span>
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400 uppercase">
+                      Voice: {transcriptResult?.language === 'te' ? 'Chitra' : 'Nalini'}
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-300 font-medium">{warningText}</p>
+                  {warningAudioUrl && (
+                    <audio src={warningAudioUrl} controls autoPlay className="h-8 w-full pt-1" />
+                  )}
                 </div>
               )}
             </div>
-          )}
 
-          {/* Detected Tactics List */}
-          <div>
-            <h3 className="text-xs font-mono font-semibold text-slate-400 uppercase tracking-wider mb-3">
-              Triggered Social Engineering Tactics ({analysisResult.threats.length})
-            </h3>
-            {analysisResult.threats.length > 0 ? (
-              <div className="space-y-2">
-                {analysisResult.threats.map((th, i) => (
-                  <div key={i} className="p-3 rounded-lg bg-slate-900/60 border border-slate-800 flex items-start justify-between text-xs">
-                    <div>
-                      <div className="font-semibold text-white flex items-center space-x-2">
-                        <span>{th.category}</span>
-                        <span className="font-mono text-[10px] text-slate-500">({th.rule_id})</span>
+            {/* Matched Tactics & Rule Breakdown (6 cols) */}
+            <div className="lg:col-span-6 space-y-3">
+              <h3 className="text-xs font-mono font-semibold text-slate-400 uppercase tracking-wider flex items-center justify-between">
+                <span>TRIGGERED SOCIAL ENGINEERING TACTICS ({analysisResult.threats.length})</span>
+                <span className="text-red-400 font-normal">Rule-Priority Shield</span>
+              </h3>
+
+              {analysisResult.threats && analysisResult.threats.length > 0 ? (
+                <div className="space-y-2 max-h-96 overflow-y-auto pr-1">
+                  {analysisResult.threats.map((th, i) => (
+                    <div
+                      key={i}
+                      className="p-3.5 rounded-xl bg-[#070b14] border border-slate-800 hover:border-slate-700 text-xs space-y-1.5"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-2">
+                          <span className="font-semibold text-slate-100">{th.category}</span>
+                          <span className="font-mono text-[10px] text-slate-500">[{th.rule_id}]</span>
+                        </div>
+                        <span className="font-mono font-bold text-red-400 bg-red-950/40 px-2 py-0.5 rounded border border-red-900/40 text-[11px]">
+                          +{th.contribution}
+                        </span>
                       </div>
-                      <p className="text-slate-400 mt-1 text-[11px]">{th.explanation}</p>
-                      <div className="mt-2 text-[11px] text-cyan-300 font-mono bg-cyan-950/30 px-2 py-0.5 rounded inline-block border border-cyan-800/30">
+
+                      <p className="text-[11px] text-slate-400 leading-relaxed">{th.explanation}</p>
+
+                      <div className="text-[11px] font-mono text-cyan-300 bg-cyan-950/30 px-2 py-1 rounded border border-cyan-800/30 break-all">
                         Evidence: "{th.matched_text}"
                       </div>
                     </div>
-                    <div className="font-mono font-bold text-red-400 bg-red-950/40 px-2 py-1 rounded border border-red-900/40">
-                      +{th.contribution}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-xs text-slate-500 italic">No suspicious social engineering tactics identified in transcript.</p>
-            )}
+                  ))}
+                </div>
+              ) : (
+                <div className="p-8 text-center text-slate-500 text-xs bg-[#070b14] rounded-xl border border-slate-800">
+                  <ShieldCheck className="w-8 h-8 text-emerald-400 mx-auto mb-2" />
+                  <p className="font-semibold text-slate-300">Clean Dialogue Verified</p>
+                  <p className="text-[11px] text-slate-500 mt-1">No actionable extortion or credential extraction signatures detected.</p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        </Card>
       )}
     </div>
   );
 };
-

@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0279 (te) ===
+Scenario: Ambiguous Real Estate Property Investment Incomplete Pitch (Variant 1)
+Label: AMBIGUOUS
+Tactics: NONE
+
+[CALLER]: Hello andi, mee card details verify chesukovadaniki call chesthunnamu.
+[RECIPIENT]: Meeru e bank nundi call chesthunnaru? Pehle mee ID details cheppandi.
+[CALLER]: Namaskaram, mee address incomplete ga undatam valla delivery aagipoyindi.
+[RECIPIENT]: Nenu phone lo elanti details share cheyanu. Branch ki vachi matladathanu.
+[CALLER]: Mee bank account sambandhinchi oka mukhyamaina information teliyajeyali.
+[RECIPIENT]: E delivery gurinchi matladuthunnaru? Company name emiti?
+[CALLER]: Hello andi, mee card details verify chesukovadaniki call chesthunnamu.
+[RECIPIENT]: Meeru e bank nundi call chesthunnaru? Pehle mee ID details cheppandi.

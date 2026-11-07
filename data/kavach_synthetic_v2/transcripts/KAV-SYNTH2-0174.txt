@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0174
+Language: hi-en
+Scenario: Government Healthcare Subsidy Portal Fake App Trap (HI-EN)
+Label: SCAM
+Tactics: MALICIOUS_LINK_OR_APP, FINANCIAL_REDIRECTION, AUTHORITY_IMPERSONATION
+
+[CALLER]: Attention please. This is Officer Patel from Ayushman Bharat Desk central monitoring unit.
+[RECIPIENT]: Yes speaking, what is this call about? Please be quick as I am driving.
+[CALLER]: Aapke ID documents misuse hue hain in government health insurance reimbursement of 50,000 approved. State enforcement team has registered file 904.
+[RECIPIENT]: File 904? Sir mera ID kabhi kisi illicit activity mein use nahi hua. Someone must have forged it.
+[CALLER]: Forged ho ya real, system is preparing lapse of government medical subsidy funds unless cleared before 5 PM.
+[RECIPIENT]: Toh legal clearing process kya hai? Can I visit the nearest office?
+[CALLER]: Office aane ka time nahi hai. You must immediately connect and perform custom healthcare APK download from SMS.
+[RECIPIENT]: No, this is completely unsafe. Any legitimate inquiry requires physical presence. I am cutting the call.

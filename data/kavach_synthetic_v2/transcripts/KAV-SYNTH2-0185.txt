@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0185
+Language: te-en
+Scenario: Gas Cylinder Booking Express Verification Fee Fraud (TE-EN)
+Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, OTP_PIN_CVV_THEFT, URGENCY_OR_THREAT
+
+[CALLER]: Nenu HP Gas Distributor nunchi Officer Yadav matladuthunnanu andi. Severe allegation vachindi regarding cylinder delivery delayed due to pending safety verification.
+[RECIPIENT]: What are you saying sir? cylinder delivery delayed due to pending safety verification aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop permanent suspension of residential gas connection, meeru ventane advance safety token payment via unknown link cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

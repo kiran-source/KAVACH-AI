@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0195 (te-en) ===
+Scenario: Fake Anti-Virus Subscription Renewal & Remote Refund Scam (TE-EN)
+Label: SCAM
+Tactics: REMOTE_ACCESS_MANIPULATION, FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Nenu Global Cyber Defender nunchi Tech Lead Peter matladuthunnanu andi. Mee credentials meeda automatic annual renewal fee of 24,000 charged to account detect ayindi.
+[RECIPIENT]: Enti sir, automatic annual renewal fee of 24,000 charged to account aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe non-refundable auto-debit if not cancelled in 1 hour implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane TeamViewer remote connection to process refund cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

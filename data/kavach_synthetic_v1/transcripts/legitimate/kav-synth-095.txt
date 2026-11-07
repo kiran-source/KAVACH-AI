@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-095 (hi-en) ===
+Scenario: Fitness Club Personal Trainer Session Reschedule
+Primary Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Hi Rohit, Gold's Gym se trainer Vikram baat kar raha hoon.
+[RECIPIENT]: Haan Vikram, bolo. Aaj shaam ka personal training session hai na?
+[CALLER]: Bhaiya aaj shaam ko gym floor par maintenance work chal raha hai, can we reschedule our session to tomorrow morning seven AM?
+[RECIPIENT]: Tomorrow morning seven AM works fine for me. Leg workout karenge kal?
+[CALLER]: Yes bhaiya, tomorrow we will do squat and mobility session. Post-workout protein shake ready rakhna.
+[RECIPIENT]: Sure Vikram. Package sessions count update ho gaya tha na system mein?
+[CALLER]: Haan, twelve sessions balance hain gym mobile app dashboard par. Kal subah seven AM sharp milte hain.
+[RECIPIENT]: Done Vikram, see you tomorrow morning.

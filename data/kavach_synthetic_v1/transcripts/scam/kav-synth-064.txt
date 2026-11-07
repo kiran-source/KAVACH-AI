@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH-064 (te-en) ===
+Scenario: WhatsApp Hotel Rating Part-Time Task Scam
+Primary Label: SCAM
+Tactics: FINANCIAL_REDIRECTION, URGENCY_OR_THREAT
+
+[CALLER]: Hi sir, this is Anitha from Global Marketing Partners. Are you interested in part-time online tasks?
+[RECIPIENT]: What kind of tasks? How much time does it take?
+[CALLER]: Daily one hour work sir. Google maps lo 5 star hotel reviews submit cheyali. Daily payout three thousand rupees.
+[RECIPIENT]: Is this genuine? How will you transfer money?
+[CALLER]: First two tasks sample bonus five hundred rupees alreadymee Google Pay ki pampam. But next high profit tasks unlock cheyadaniki five thousand deposit cheyali.
+[RECIPIENT]: Why should I deposit money for doing review work?
+[CALLER]: It is prepaid investment task sir. If you deposit five thousand, you will receive seven thousand five hundred within twenty minutes.
+[RECIPIENT]: This is a classic task investment fraud. Stop calling me.

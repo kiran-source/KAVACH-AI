@@ -10,7 +10,7 @@
 | **Audio Upload & Format Validation** | Whitelist (`.wav`, `.mp3`, `.m4a`, `.flac`, `.ogg`) + 25MB cap | **PASS** |
 | **Audio Playback Works** | In-browser `<audio>` streaming from `/api/v1/audio/{id}` | **PASS** |
 | **Microphone Recording with Permission** | HTML5 MediaRecorder with explicit user consent notice | **PASS** |
-| **Gnani Prisma v2.5 STT Integration** | `app/gnani/prisma_client.py` with normalized schema & retry | **PASS** |
+| **Gnani Prisma v3 STT Integration** | `app/gnani/prisma_client.py` with normalized schema & retry | **PASS** |
 | **Multilingual (Telugu, Hindi, English)** | Language ID, multilingual keyword patterns, code-mixed handling | **PASS** |
 | **Threat Detection Engine (8 Categories)** | Exact & regex matching covering all 8 threat categories | **PASS** |
 | **Explainable 0–100 Risk Score** | Transparent weighted scoring with breakdown of points | **PASS** |

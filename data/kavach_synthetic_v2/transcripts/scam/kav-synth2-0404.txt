@@ -1,0 +1,13 @@
+=== CONVERSATION: KAV-SYNTH2-0404 (te-en) ===
+Scenario: TRAI Telecom Disconnection & Identity Fraud (Variant 1)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Case drop avvalante Court security deposit account lo immediate ga fifty thousand rupees UPI transfer cheyandi.
+[RECIPIENT]: What is this sir? Nenu eppudu ilanti illegal activities lo participate cheyaledu. It's a mistake!
+[CALLER]: Good afternoon sir, this is Cyber Crime Police Department Hyderabad. Mee Aadhaar details meeda illegal money laundering investigation start ayindi.
+[RECIPIENT]: Singapore ki courier entra babu? Nenu asalu passport kooda ekkada ivvaledu.
+[CALLER]: Calling from Mumbai International Cargo Customs. Mee name meeda Singapore velle parcel lo narcotics drugs seize chesaru.
+[RECIPIENT]: Please power cut cheyakandi sir! What should I do right now to pay the bill?
+[CALLER]: Urgent notification from Electricity Department. Unpaid power bill dues valla 30 minutes lo supply disconnect chestham.
+[RECIPIENT]: Bank eppudu OTP adagadhu ani message vasthundi kada? Why are you asking for my OTP?

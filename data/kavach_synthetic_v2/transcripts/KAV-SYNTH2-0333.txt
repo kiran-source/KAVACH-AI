@@ -1,0 +1,14 @@
+Conversation ID: KAV-SYNTH2-0333
+Language: te
+Scenario: Automobile Emission Test Renewal Courtesy Reminder (TE)
+Label: LEGITIMATE
+Tactics: 
+
+[CALLER]: హలో అండి, నేను Regional Transport Office అధికారిక డెస్క్ నుండి Automated Notice మాట్లాడుతున్నాను.
+[RECIPIENT]: నమస్కారం అండి, చెప్పండి విషయం ఏమిటి?
+[CALLER]: మీరు నమోదు చేసుకున్న pollution under control certificate expiring next week సమాచారం తెలియజేయడానికి కాల్ చేశాను.
+[RECIPIENT]: థాంక్స్ అండి. నా దరఖాస్తు ఆమోదం పొందిందా?
+[CALLER]: అవునండి, వివరాలు సరిగ్గా ఉన్నాయి. చివరిగా మీరు visit any authorized testing booth for renewal.
+[RECIPIENT]: ఫోన్ లోనే ఏదైనా వివరాలు లేదా కోడ్ చెప్పాలా అండి?
+[CALLER]: వద్దండి, ఎవరికీ ఫోన్ లో వ్యక్తిగత పిన్ లేదా ఓటీపీలు చెప్పకండి. పని మొత్తం కార్యాలయంలోనే జరుగుతుంది.
+[RECIPIENT]: చాలా సంతోషం అండి. నేను పనివేళల్లో వచ్చి కలుస్తాను.

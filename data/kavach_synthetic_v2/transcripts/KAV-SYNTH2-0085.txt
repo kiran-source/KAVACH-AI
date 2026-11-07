@@ -1,0 +1,10 @@
+Conversation ID: KAV-SYNTH2-0085
+Language: te-en
+Scenario: Aadhaar PAN Linking Fine & Biometric Freeze Threat (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, URGENCY_OR_THREAT, FINANCIAL_REDIRECTION
+
+[CALLER]: Nenu UIDAI Compliance Wing nunchi Officer Hegde matladuthunnanu andi. Severe allegation vachindi regarding Aadhaar PAN non-compliance penalty of 10,000 rupees.
+[RECIPIENT]: What are you saying sir? Aadhaar PAN non-compliance penalty of 10,000 rupees aa? Naku deenitho sambandham ledu, check your records.
+[CALLER]: Department database lo mee name clear ga undi. To stop cancellation of PAN card and salary freeze, meeru ventane instant Aadhaar biometric unlocking fee cheyali.
+[RECIPIENT]: Official legal paperwork lekunda nenu single rupee pay cheyanu, phone lo respond avvanu.

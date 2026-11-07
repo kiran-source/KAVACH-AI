@@ -104,7 +104,10 @@ def run_evaluation_pipeline() -> Dict[str, Any]:
     }
 
     metrics_payload = {
+        "benchmark_type": "Threat Detection Engine on Ground-Truth Reference Transcripts",
         "dataset_size": total_samples,
+        "held_out_scenarios_count": 5,
+        "evaluation_scope": "Evaluates semantic analysis, urgency weighting, authority impersonation, and negative context suppression against canonical transcripts. Does not claim 100% open-world audio accuracy.",
         "confusion_matrix": {
             "true_positives": tp,
             "true_negatives": tn,

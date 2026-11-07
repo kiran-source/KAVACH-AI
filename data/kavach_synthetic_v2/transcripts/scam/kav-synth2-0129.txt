@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0129 (hi-en) ===
+Scenario: Hospital Intensive Care Emergency Cash Extortion (HI-EN)
+Label: SCAM
+Tactics: URGENCY_OR_THREAT, FINANCIAL_REDIRECTION, ISOLATION_OR_PSYCHOLOGICAL_PRESSURE
+
+[CALLER]: Yeh City Care Hospital se Dr. Alok bol raha hoon. Aapke khilaf relative admitted unconscious after highway collision ki wajah se emergency action notice nikla hai.
+[RECIPIENT]: What sir? relative admitted unconscious after highway collision? Maine toh koi illegal activity nahi ki, yeh completely false allegation hai.
+[CALLER]: Hamare digital database mein complete record track ho chuka hai. Immediate cooperate nahi kiya toh withholding of emergency blood transfusion surgery hoga.
+[RECIPIENT]: Sir main ek respectable family se hoon, please listen to me. Main kaise verify karoon?
+[CALLER]: Case suspend karne ke liye aapko abhi ke abhi 25,000 rupees medical deposit via phone fulfill karna padega. No delay will be excused.
+[RECIPIENT]: Main bina written legal notice ke koi payment ya code share nahi karoonga. I will speak to police directly.

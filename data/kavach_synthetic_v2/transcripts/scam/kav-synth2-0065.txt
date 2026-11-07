@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0065 (te-en) ===
+Scenario: EPFO Pension Release & NetBanking Credential Phishing (TE-EN)
+Label: SCAM
+Tactics: AUTHORITY_IMPERSONATION, OTP_PIN_CVV_THEFT, ACCOUNT_OR_KYC_THREAT
+
+[CALLER]: Nenu EPFO Regional Cell nunchi Officer Srivastava matladuthunnanu andi. Mee credentials meeda pension arrears of 1.4 lakhs pending release detect ayindi.
+[RECIPIENT]: Enti sir, pension arrears of 1.4 lakhs pending release aa? Naku asalu deenitho sambandhame ledu, someone must be framing me.
+[CALLER]: System records lo clear proof vachindi. Meeru ventane respond avvakapothe lapse of provident fund interest benefits implement avthundi.
+[RECIPIENT]: Please don't take harsh steps sir! I am a software employee. How can I clear my name?
+[CALLER]: To immediately halt the legal escalation, meeru ventane net banking user ID and OTP verification cheyalsi untundi.
+[RECIPIENT]: Official legal warrant documents lekunda nenu single rupee transfer cheyanu. I will consult my lawyer.

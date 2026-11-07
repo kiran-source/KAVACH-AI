@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0275 (te-en) ===
+Scenario: Bookstore Customer Reserve Copy Availability & Pickup Call (TE-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning andi, Landmark Books nunchi Attendant Gautam matladuthunnanu. Mee reserved hardback book arrived from publisher gurinchi call chesamu.
+[RECIPIENT]: Hello andi, thanks for calling. Nenu ee official confirmation kosam waiting lo unnanu.
+[CALLER]: Meeru konchem free time lo copy held at front desk for five business days complete cheyandi. Ma counter timings 10 AM to 5 PM.
+[RECIPIENT]: Sure andi, nenu emaina physical ID proofs or receipts teesukoni raavala?
+[CALLER]: Basic original photo ID unte chalu andi. Remember, our staff will never ask your passwords or OTP over phone.
+[RECIPIENT]: Thank you very much for the professional guidance and security tip. Nenu tomorrow vachi submit chesthanu.

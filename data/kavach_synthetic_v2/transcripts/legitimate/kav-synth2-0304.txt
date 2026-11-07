@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0304 (hi-en) ===
+Scenario: Veterinary Hospital Pet Annual Vaccination Due Reminder (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main Cessna Pet Hospital se Dr. George bol raha hoon. Yeh call aapke annual rabies and DHLPP booster due for pet dog ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap book convenient slot between 10 AM and 6 PM complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.

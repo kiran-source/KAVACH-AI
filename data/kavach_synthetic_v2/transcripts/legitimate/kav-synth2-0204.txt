@@ -1,0 +1,11 @@
+=== CONVERSATION: KAV-SYNTH2-0204 (hi-en) ===
+Scenario: Bank Official Branch Visit Invitation for Annual KYC Review (HI-EN)
+Label: LEGITIMATE
+Tactics: NONE
+
+[CALLER]: Good morning sir, main HDFC Bank MG Road se Priya bol raha hoon. Yeh call aapke annual KYC document verification at branch ke regarding hai.
+[RECIPIENT]: Hello, haanji boliye. Main iss official update ka wait kar raha tha.
+[CALLER]: Aapko request hai ki aap bring original Aadhaar and PAN to branch counter complete kar lijiye. Hamara branch office working days par open hai.
+[RECIPIENT]: Sure, kya mujhe koi specific original documents ya ID proof carry karna hoga?
+[CALLER]: Sirf apna regular photo ID lana hai. Bank ya government kabhi phone par OTP ya PIN nahi maangti.
+[RECIPIENT]: Thank you for the genuine reminder and advisory. Main timely visit kar loonga.
