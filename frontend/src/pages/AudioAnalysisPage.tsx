@@ -169,7 +169,112 @@ export const AudioAnalysisPage: React.FC = () => {
   const getSimulatedData = (filename: string, requestedLang: string) => {
     const name = filename.toLowerCase();
 
-    if (name.includes('cbi') || name.includes('digital_arrest') || name.includes('police')) {
+    // 1. Bank Security Awareness & Advisories (Negative Context Guard Precedence)
+    if (name.includes('awareness') || name.includes('advisory')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'en',
+          detected_languages: ['en'],
+          full_text: "Dear customer, this is an official security awareness announcement from your bank. Please remember that bank officials and police never ask for your confidential OTP, UPI PIN, or passwords over the phone. Stay safe from scam calls and beware of fake digital arrest threats. Report cyber fraud on helpline 1930.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 5.5, text: "Dear customer, this is an official security awareness announcement from your bank.", language: "en" },
+            { start: 5.6, end: 14.0, text: "Please remember that bank officials and police never ask for your confidential OTP, UPI PIN, or passwords over the phone.", language: "en" },
+            { start: 14.1, end: 22.0, text: "Stay safe from scam calls and beware of fake digital arrest threats. Report cyber fraud on helpline 1930.", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 0.0,
+          severity: 'Low' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: [],
+          recommendations: [
+            'Security advisory verified. No extortion, threat coercion, or credential demands detected.',
+            'Negative Context Guard active: references to OTP and police confirmed educational.'
+          ],
+          threats: [],
+          context_suppressed: true,
+          context_note: 'Negative Context Guard confirmed genuine security awareness advisory with zero coercive demands.'
+        },
+        warning: {
+          warning_text: "Verified legitimate security announcement. Negative Context Guard confirmed zero threats."
+        }
+      };
+    }
+
+    // 2. Legitimate Customer Support (Broadband, Utility, etc.)
+    if (name.includes('safe') || name.includes('legit') || name.includes('support') || name.includes('utility')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'en',
+          detected_languages: ['en'],
+          full_text: "Hello, thank you for reaching out to customer care regarding your fiber broadband speed issue. Our technician has resolved the fiber line attenuation at your local node, and ticket number 4819 is now closed. Please let us know if your internet connection is working smoothly. Have a pleasant day.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 8.0, text: "Hello, thank you for reaching out to customer care regarding your fiber broadband speed issue.", language: "en" },
+            { start: 8.1, end: 16.0, text: "Our technician has resolved the fiber line attenuation at your local node, and ticket number 4819 is now closed.", language: "en" },
+            { start: 16.1, end: 23.0, text: "Please let us know if your internet connection is working smoothly. Have a pleasant day.", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 0.6,
+          severity: 'Low' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: [],
+          recommendations: ['Routine business dialogue. No coercion, credential demands, or extortion detected.'],
+          threats: []
+        },
+        warning: {
+          warning_text: "Call verified safe. No social engineering threat patterns detected."
+        }
+      };
+    }
+
+    // 3. Ambiguous Courier / Delivery Coordination
+    if (name.includes('ambig') || name.includes('courier') || name.includes('delivery')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'en',
+          detected_languages: ['en'],
+          full_text: "Hello, am I speaking with the account holder? This is DTDC courier dispatch team regarding a speed post parcel from HDFC Bank containing your renewed checkbook. Nobody was available at your registered address this afternoon. Could you please confirm if you will be available tomorrow between ten am and two pm for delivery?",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 6.5, text: "Hello, am I speaking with the account holder? This is DTDC courier dispatch team.", language: "en" },
+            { start: 6.6, end: 15.0, text: "Regarding a speed post parcel from HDFC Bank containing your renewed checkbook.", language: "en" },
+            { start: 15.1, end: 23.5, text: "Could you please confirm if you will be available tomorrow between ten am and two pm for delivery?", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 35.0,
+          severity: 'Guarded' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: ['Ambiguous Traffic'],
+          recommendations: [
+            'Routine delivery coordination. No immediate credential or financial transfer requests.',
+            'Selective inference escalated call to MuRIL deep contextual classifier.'
+          ],
+          threats: []
+        },
+        warning: {
+          warning_text: "Call classified as Ambiguous Inquiry. No critical social engineering coercion detected."
+        }
+      };
+    }
+
+    // 4. CBI / Police Digital Arrest Scam
+    if (name.includes('cbi') || name.includes('digital_arrest') || name.includes('police') || name.includes('01_scam')) {
       return {
         transcript: {
           transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
@@ -232,7 +337,10 @@ export const AudioAnalysisPage: React.FC = () => {
           warning_text: "चेतावनी: यह एक डिजिटल अरेस्ट धोखाधड़ी कॉल है। सीबीआई या पुलिस कभी भी वीडियो कॉल पर गिरफ्तारी नहीं करती। तुरंत कॉल काटें और 1930 पर रिपोर्ट करें।"
         }
       };
-    } else if (name.includes('kyc') || name.includes('otp') || name.includes('sbi') || name.includes('bank')) {
+    }
+
+    // 5. Bank KYC & OTP Scam
+    if (name.includes('kyc') || name.includes('otp') || name.includes('02_scam')) {
       return {
         transcript: {
           transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
@@ -279,7 +387,53 @@ export const AudioAnalysisPage: React.FC = () => {
           warning_text: "ALERT: This call is demanding confidential banking credentials. Bank staff never ask for OTP or UPI PIN. Do not share codes."
         }
       };
-    } else if (name.includes('telugu') || name.includes('te')) {
+    }
+
+    // 6. AnyDesk & Electricity Cutoff Scam
+    if (name.includes('anydesk') || name.includes('electricity') || name.includes('03_scam')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'en',
+          detected_languages: ['en'],
+          full_text: "Dear consumer, your electricity meter bill payment has failed and power supply will be disconnected tonight at eight pm. Open Google Play Store immediately and install AnyDesk QuickSupport application. Share the nine digit code with our support agent to update your payment status.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 5.5, text: "Dear consumer, your electricity meter bill payment has failed and power supply will be disconnected tonight at eight pm.", language: "en" },
+            { start: 5.6, end: 12.0, text: "Open Google Play Store immediately and install AnyDesk QuickSupport application.", language: "en" },
+            { start: 12.1, end: 18.5, text: "Share the nine digit code with our support agent to update your payment status.", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 93.0,
+          severity: 'Critical' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: ['Remote Access Manipulation', 'Urgency & Coercive Threats'],
+          recommendations: [
+            'NEVER install remote access software (AnyDesk, TeamViewer) at the request of an unverified caller.',
+            'Utility companies never mandate third-party APK installation to prevent service cutoff.'
+          ],
+          threats: [
+            {
+              rule_id: 'RULE-REMOTE-01',
+              category: 'Remote Access Manipulation',
+              matched_text: 'install AnyDesk QuickSupport application. Share the nine digit code',
+              contribution: 48.0,
+              explanation: 'Attempt to gain complete device remote desktop control.'
+            }
+          ]
+        },
+        warning: {
+          warning_text: "CRITICAL ALERT: Never install AnyDesk or share remote codes. This gives scammers full access to your bank accounts."
+        }
+      };
+    }
+
+    // 7. Telugu Regional Scam
+    if (name.includes('telugu') || name.includes('te_') || name.includes('te')) {
       return {
         transcript: {
           transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
@@ -319,63 +473,35 @@ export const AudioAnalysisPage: React.FC = () => {
           warning_text: "హెచ్చరిక: ఇది బ్యాంకు మోసపూరిత కాల్. మీ ఓటీపీ లేదా ఏటీఎం పిన్ ఎవరికీ చెప్పకండి."
         }
       };
-    } else if (name.includes('safe') || name.includes('legit') || name.includes('support')) {
-      return {
-        transcript: {
-          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
-          language: 'en',
-          detected_languages: ['en'],
-          full_text: "Hello, thank you for reaching out to customer care regarding your fiber broadband speed issue. Our technician has resolved the fiber line attenuation at your local node, and ticket number 4819 is now closed. Please let us know if your internet connection is working smoothly. Have a pleasant day.",
-          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
-          is_mock: true,
-          segments: [
-            { start: 0.0, end: 8.0, text: "Hello, thank you for reaching out to customer care regarding your fiber broadband speed issue.", language: "en" },
-            { start: 8.1, end: 16.0, text: "Our technician has resolved the fiber line attenuation at your local node, and ticket number 4819 is now closed.", language: "en" },
-            { start: 16.1, end: 23.0, text: "Please let us know if your internet connection is working smoothly. Have a pleasant day.", language: "en" }
-          ]
-        },
-        analysis: {
-          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
-          transcript_id: 'TR-SIM-DEMO',
-          risk_score: 0.6,
-          severity: 'Low' as const,
-          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
-          categories: [],
-          recommendations: ['Routine business dialogue. No coercion, credential demands, or extortion detected.'],
-          threats: []
-        },
-        warning: {
-          warning_text: "Call verified safe. No social engineering threat patterns detected."
-        }
-      };
-    } else {
-      return {
-        transcript: {
-          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
-          language: requestedLang === 'auto' ? 'en' : requestedLang,
-          detected_languages: [requestedLang === 'auto' ? 'en' : requestedLang],
-          full_text: `Audio stream ingested successfully (${filename}). Evaluated against KAVACH AI 8-pillar threat detection rules.`,
-          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
-          is_mock: true,
-          segments: [
-            { start: 0.0, end: 10.0, text: `Audio analysis stream ingested. File: ${filename}`, language: requestedLang === 'auto' ? 'en' : requestedLang }
-          ]
-        },
-        analysis: {
-          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
-          transcript_id: 'TR-SIM-DEMO',
-          risk_score: 12.0,
-          severity: 'Low' as const,
-          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
-          categories: [],
-          recommendations: ['Audio processed under simulated demo conditions.'],
-          threats: []
-        },
-        warning: {
-          warning_text: "Audio scanned. Connect live backend for full neural transformer inference."
-        }
-      };
     }
+
+    // 8. Default Routine Call
+    return {
+      transcript: {
+        transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+        language: requestedLang === 'auto' ? 'en' : requestedLang,
+        detected_languages: [requestedLang === 'auto' ? 'en' : requestedLang],
+        full_text: `Audio stream verified. Routine telephony dialogue processed (${filename}). Evaluated against KAVACH AI 8-pillar threat detection rules.`,
+        provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+        is_mock: true,
+        segments: [
+          { start: 0.0, end: 10.0, text: `Routine audio call verified without extortion or credential demands. File: ${filename}`, language: requestedLang === 'auto' ? 'en' : requestedLang }
+        ]
+      },
+      analysis: {
+        analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+        transcript_id: 'TR-SIM-DEMO',
+        risk_score: 5.0,
+        severity: 'Low' as const,
+        engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+        categories: [],
+        recommendations: ['Routine call verified. No social engineering threat patterns detected.'],
+        threats: []
+      },
+      warning: {
+        warning_text: "Call verified safe. Connect live backend for full neural transformer inference."
+      }
+    };
   };
 
   const runAnalysisPipeline = async () => {
