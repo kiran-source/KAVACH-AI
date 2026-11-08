@@ -12,7 +12,11 @@ import {
 } from '../types';
 
 const RAW_BASE = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || '').trim();
-const API_BASE = RAW_BASE ? (RAW_BASE.endsWith('/api/v1') ? RAW_BASE : `${RAW_BASE.replace(/\/+$/, '')}/api/v1`) : '/api/v1';
+let normalized = RAW_BASE;
+if (normalized && !normalized.startsWith('http://') && !normalized.startsWith('https://')) {
+  normalized = `https://${normalized}`;
+}
+export const API_BASE = normalized ? (normalized.endsWith('/api/v1') ? normalized : `${normalized.replace(/\/+$/, '')}/api/v1`) : '/api/v1';
 
 export const api = {
   // Health

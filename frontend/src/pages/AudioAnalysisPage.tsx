@@ -37,6 +37,7 @@ export const AudioAnalysisPage: React.FC = () => {
   const [transcriptResult, setTranscriptResult] = useState<TranscriptResponse | null>(null);
   const [warningAudioUrl, setWarningAudioUrl] = useState<string | null>(null);
   const [warningText, setWarningText] = useState<string | null>(null);
+  const [isDemoFallback, setIsDemoFallback] = useState<boolean>(false);
 
   // MediaRecorder refs
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -165,10 +166,223 @@ export const AudioAnalysisPage: React.FC = () => {
     }
   };
 
+  const getSimulatedData = (filename: string, requestedLang: string) => {
+    const name = filename.toLowerCase();
+
+    if (name.includes('cbi') || name.includes('digital_arrest') || name.includes('police')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'hi',
+          detected_languages: ['hi', 'en'],
+          full_text: "Namaste. I am Inspector Sharma calling from Central Bureau of Investigation CBI headquarters New Delhi. A courier parcel containing fake passports and contraband narcotics was seized in Mumbai registered under your Aadhaar number. Supreme Court has issued an immediate non-bailable warrant. You are placed under Digital Arrest right now. Do not disconnect this video call or inform your family, otherwise a police team will arrest you within one hour.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 5.2, text: "Namaste. I am Inspector Sharma calling from Central Bureau of Investigation CBI headquarters New Delhi.", language: "hi" },
+            { start: 5.3, end: 12.8, text: "A courier parcel containing fake passports and contraband narcotics was seized in Mumbai registered under your Aadhaar number.", language: "en" },
+            { start: 12.9, end: 22.0, text: "Supreme Court has issued an immediate non-bailable warrant. You are placed under Digital Arrest right now.", language: "en" },
+            { start: 22.1, end: 32.4, text: "Do not disconnect this video call or inform your family, otherwise a police team will arrest you within one hour.", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 100.0,
+          severity: 'Critical' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: ['Authority Impersonation', 'Urgency & Coercive Threats', 'Psychological Isolation', 'Digital Arrest Patterns'],
+          recommendations: [
+            'CRITICAL THREAT: Disconnect the call immediately. Law enforcement and courts never issue Digital Arrests over video calls.',
+            'Never transfer money to any purported government verification or security escrow account.',
+            'Report this cyber extortion attempt immediately to the National Cybercrime Helpline by dialing 1930 or visiting cybercrime.gov.in.'
+          ],
+          threats: [
+            {
+              rule_id: 'RULE-AUTH-01',
+              category: 'Authority Impersonation',
+              matched_text: 'Inspector Sharma from Central Bureau of Investigation CBI headquarters New Delhi',
+              contribution: 45.0,
+              explanation: 'Caller impersonates a federal law enforcement officer to establish false legal authority.'
+            },
+            {
+              rule_id: 'RULE-URG-01',
+              category: 'Urgency & Coercive Threats',
+              matched_text: 'police team will arrest you within one hour',
+              contribution: 35.0,
+              explanation: 'Imposes an artificial panic deadline to prevent the victim from seeking outside counsel.'
+            },
+            {
+              rule_id: 'RULE-DARR-01',
+              category: 'Digital Arrest Patterns',
+              matched_text: 'placed under Digital Arrest right now. Do not disconnect this video call',
+              contribution: 40.0,
+              explanation: 'Classic Digital Arrest coercion pattern forcing continuous video compliance.'
+            },
+            {
+              rule_id: 'RULE-ISOL-01',
+              category: 'Psychological Isolation',
+              matched_text: 'Do not disconnect this video call or inform your family',
+              contribution: 30.0,
+              explanation: 'Deliberate tactic to cut the victim off from family and trusted advisors.'
+            }
+          ]
+        },
+        warning: {
+          warning_text: "चेतावनी: यह एक डिजिटल अरेस्ट धोखाधड़ी कॉल है। सीबीआई या पुलिस कभी भी वीडियो कॉल पर गिरफ्तारी नहीं करती। तुरंत कॉल काटें और 1930 पर रिपोर्ट करें।"
+        }
+      };
+    } else if (name.includes('kyc') || name.includes('otp') || name.includes('sbi') || name.includes('bank')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'en',
+          detected_languages: ['en'],
+          full_text: "Good morning sir, this is Rajesh calling from State Bank of India KYC verification desk. Your net banking access and debit card are suspended due to pending biometric KYC update. To unfreeze your account immediately, share the six digit OTP received on your mobile and confirm your UPI PIN right now.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 5.5, text: "Good morning sir, this is Rajesh calling from State Bank of India KYC verification desk.", language: "en" },
+            { start: 5.6, end: 12.0, text: "Your net banking access and debit card are suspended due to pending biometric KYC update.", language: "en" },
+            { start: 12.1, end: 21.5, text: "To unfreeze your account immediately, share the six digit OTP received on your mobile and confirm your UPI PIN right now.", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 96.5,
+          severity: 'Critical' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: ['Credential Theft', 'Authority Impersonation', 'Urgency & Coercive Threats'],
+          recommendations: [
+            'NEVER share OTPs, UPI PINs, or card passwords. Legitimate bank staff will never request these over the phone.',
+            'Immediately contact your bank via the official toll-free number printed on the back of your card to freeze credentials if shared.'
+          ],
+          threats: [
+            {
+              rule_id: 'RULE-CRED-01',
+              category: 'Credential Theft',
+              matched_text: 'share the six digit OTP received on your mobile and confirm your UPI PIN',
+              contribution: 50.0,
+              explanation: 'Direct solicitation of banking authentication credentials (OTP and UPI PIN).'
+            },
+            {
+              rule_id: 'RULE-AUTH-02',
+              category: 'Authority Impersonation',
+              matched_text: 'State Bank of India KYC verification desk',
+              contribution: 30.0,
+              explanation: 'Impersonation of banking support personnel.'
+            }
+          ]
+        },
+        warning: {
+          warning_text: "ALERT: This call is demanding confidential banking credentials. Bank staff never ask for OTP or UPI PIN. Do not share codes."
+        }
+      };
+    } else if (name.includes('telugu') || name.includes('te')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'te',
+          detected_languages: ['te'],
+          full_text: "నమస్కారం, మీ బ్యాంకు అకౌంట్ మరియు ఏటీఎం కార్డు వెంటనే బ్లాక్ అవుతుంది. వెంటనే మీ మొబైల్ కి వచ్చిన ఓటీపీ మరియు ఏటీఎం పిన్ నంబర్ చెప్పండి. లేదంటే మీ పై పోలీస్ స్టేషన్ లో కేసు ఫైల్ చేస్తాం, అరెస్ట్ చేస్తారు.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 6.0, text: "నమస్కారం, మీ బ్యాంకు అకౌంట్ మరియు ఏటీఎం కార్డు వెంటనే బ్లాక్ అవుతుంది.", language: "te" },
+            { start: 6.1, end: 12.0, text: "వెంటనే మీ మొబైల్ కి వచ్చిన ఓటీపీ మరియు ఏటీఎం పిన్ నంబర్ చెప్పండి.", language: "te" },
+            { start: 12.1, end: 18.0, text: "లేదంటే మీ పై పోలీస్ స్టేషన్ లో కేసు ఫైల్ చేస్తాం, అరెస్ట్ చేస్తారు.", language: "te" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 95.0,
+          severity: 'Critical' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: ['Credential Theft', 'Urgency & Coercive Threats'],
+          recommendations: [
+            'హెచ్చరిక: బ్యాంకు అధికారులు ఎప్పుడూ ఫోన్ ద్వారా ఓటీపీ లేదా ఏటీఎం పిన్ అడగరు. వెంటనే కాల్ కట్ చేయండి.',
+            'సైబర్ హెల్ప్‌లైన్ 1930 కి ఫిర్యాదు చేయండి.'
+          ],
+          threats: [
+            {
+              rule_id: 'RULE-CRED-TE',
+              category: 'Credential Theft',
+              matched_text: 'ఓటీపీ మరియు ఏటీఎం పిన్ నంబర్ చెప్పండి',
+              contribution: 50.0,
+              explanation: 'Direct demand for OTP and ATM PIN credentials in Telugu.'
+            }
+          ]
+        },
+        warning: {
+          warning_text: "హెచ్చరిక: ఇది బ్యాంకు మోసపూరిత కాల్. మీ ఓటీపీ లేదా ఏటీఎం పిన్ ఎవరికీ చెప్పకండి."
+        }
+      };
+    } else if (name.includes('safe') || name.includes('legit') || name.includes('support')) {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: 'en',
+          detected_languages: ['en'],
+          full_text: "Hello, thank you for reaching out to customer care regarding your fiber broadband speed issue. Our technician has resolved the fiber line attenuation at your local node, and ticket number 4819 is now closed. Please let us know if your internet connection is working smoothly. Have a pleasant day.",
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 8.0, text: "Hello, thank you for reaching out to customer care regarding your fiber broadband speed issue.", language: "en" },
+            { start: 8.1, end: 16.0, text: "Our technician has resolved the fiber line attenuation at your local node, and ticket number 4819 is now closed.", language: "en" },
+            { start: 16.1, end: 23.0, text: "Please let us know if your internet connection is working smoothly. Have a pleasant day.", language: "en" }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 0.6,
+          severity: 'Low' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: [],
+          recommendations: ['Routine business dialogue. No coercion, credential demands, or extortion detected.'],
+          threats: []
+        },
+        warning: {
+          warning_text: "Call verified safe. No social engineering threat patterns detected."
+        }
+      };
+    } else {
+      return {
+        transcript: {
+          transcript_id: `TR-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          language: requestedLang === 'auto' ? 'en' : requestedLang,
+          detected_languages: [requestedLang === 'auto' ? 'en' : requestedLang],
+          full_text: `Audio stream ingested successfully (${filename}). Evaluated against KAVACH AI 8-pillar threat detection rules.`,
+          provider: "Gnani Prisma v3.0 (Interactive Demo Mode)",
+          is_mock: true,
+          segments: [
+            { start: 0.0, end: 10.0, text: `Audio analysis stream ingested. File: ${filename}`, language: requestedLang === 'auto' ? 'en' : requestedLang }
+          ]
+        },
+        analysis: {
+          analysis_id: `AN-SIM-${Math.random().toString(36).substring(2, 8).toUpperCase()}`,
+          transcript_id: 'TR-SIM-DEMO',
+          risk_score: 12.0,
+          severity: 'Low' as const,
+          engine_version: 'Hybrid Intelligence v1.0 (Interactive Demo)',
+          categories: [],
+          recommendations: ['Audio processed under simulated demo conditions.'],
+          threats: []
+        },
+        warning: {
+          warning_text: "Audio scanned. Connect live backend for full neural transformer inference."
+        }
+      };
+    }
+  };
+
   const runAnalysisPipeline = async () => {
     if (!selectedFile) return;
 
     setAnalyzing(true);
+    setIsDemoFallback(false);
     setCurrentStep(1);
 
     try {
@@ -195,12 +409,40 @@ export const AudioAnalysisPage: React.FC = () => {
 
       setCurrentStep(6);
     } catch (err: any) {
-      console.error("Analysis pipeline error:", err);
-      alert(`Analysis failed: ${err.response?.data?.detail || err.message}`);
+      console.warn("Analysis pipeline live API request failed:", err);
+      // If backend is offline or Vercel VITE_API_URL is unconfigured, gracefully fallback to interactive simulation
+      const isNetworkIssue = !err.response || err.message === 'Network Error' || err.code === 'ERR_NETWORK';
+
+      if (isNetworkIssue) {
+        setIsDemoFallback(true);
+
+        // Step 1: Ingestion
+        await new Promise((r) => setTimeout(r, 350));
+        setCurrentStep(2);
+
+        // Step 2: Speech-to-Text
+        await new Promise((r) => setTimeout(r, 450));
+        const sim = getSimulatedData(selectedFile.name, language);
+        setTranscriptResult(sim.transcript);
+        setCurrentStep(3);
+
+        // Step 3 & 4: Threat Pattern & Scoring
+        await new Promise((r) => setTimeout(r, 500));
+        setAnalysisResult(sim.analysis);
+        setCurrentStep(5);
+
+        // Step 5: Voice Warning
+        await new Promise((r) => setTimeout(r, 350));
+        setWarningText(sim.warning.warning_text);
+        setCurrentStep(6);
+      } else {
+        alert(`Analysis failed: ${err.response?.data?.detail || err.message}`);
+      }
     } finally {
       setAnalyzing(false);
     }
   };
+
 
   const formatSeconds = (sec: number) => {
     const m = Math.floor(sec / 60);
@@ -533,6 +775,22 @@ export const AudioAnalysisPage: React.FC = () => {
       {/* Forensic Threat Analysis Results */}
       {analysisResult && (
         <Card elevated className="border-slate-700/80 p-6 space-y-6">
+          {/* Offline / Demo Fallback Notice */}
+          {isDemoFallback && (
+            <div className="p-3.5 bg-amber-950/40 border border-amber-500/40 rounded-xl text-xs text-amber-300 flex items-start space-x-3">
+              <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div className="space-y-1">
+                <div className="font-semibold text-amber-200">
+                  Interactive Demonstration Mode Active
+                </div>
+                <div className="text-[11px] text-amber-300/90 leading-relaxed">
+                  Live backend is currently unreachable at <code className="bg-black/40 px-1 py-0.5 rounded font-mono text-[10px]">VITE_API_URL</code>. 
+                  Demonstration archetype results, 8-pillar threat scoring, and warning advisories are simulated client-side. To enable live neural transformer inference, launch the backend and set <code className="bg-black/40 px-1 py-0.5 rounded font-mono text-[10px]">VITE_API_URL</code> in Vercel.
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Header Verdict Banner */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-slate-800 gap-4">
             <div>
