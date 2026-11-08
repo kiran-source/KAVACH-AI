@@ -63,9 +63,19 @@ SESSION_LIVE_VERIFIED: Dict[str, Any] = {
 @app.middleware("http")
 async def enforce_localhost_only(request: Request, call_next):
     """
-    Enforces strict local access boundary for the SOC prototype.
-    Blocks any remote LAN / WAN IP from accessing audio, incidents, or reports.
+    Enforces strict local access boundary when running locally.
+    Automatically permits cloud deployments (Render, Railway, Cloudflare tunnels)
+    when cloud environment variables or ALLOW_REMOTE_ACCESS are present.
     """
+    is_cloud_or_remote = bool(
+        os.getenv("RENDER") or 
+        os.getenv("RAILWAY_STATIC_URL") or 
+        os.getenv("ALLOW_REMOTE_ACCESS", "").lower() == "true" or
+        settings.ENVIRONMENT == "production"
+    )
+    if is_cloud_or_remote:
+        return await call_next(request)
+
     client_host = request.client.host if request.client else ""
     # Allow local loopback and internal test harnesses
     if client_host and client_host not in ["127.0.0.1", "localhost", "::1", "testclient"]:
@@ -75,6 +85,7 @@ async def enforce_localhost_only(request: Request, call_next):
             content={"detail": "Access Forbidden: KAVACH AI SOC is restricted to local machine access only."}
         )
     return await call_next(request)
+
 
 # Mount warnings directory for audio serving if exists
 WARNING_AUDIO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../uploads/warnings"))
