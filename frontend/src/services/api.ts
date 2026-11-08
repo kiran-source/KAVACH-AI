@@ -11,7 +11,8 @@ import {
   SystemSettings
 } from '../types';
 
-const RAW_BASE = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || '').trim();
+const DEFAULT_CLOUD_API = 'https://kavach-ai-eq0r.onrender.com';
+const RAW_BASE = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || DEFAULT_CLOUD_API).trim();
 let normalized = RAW_BASE;
 if (normalized && !normalized.startsWith('http://') && !normalized.startsWith('https://')) {
   normalized = `https://${normalized}`;

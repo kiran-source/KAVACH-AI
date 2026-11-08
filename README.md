@@ -15,7 +15,10 @@ It protects Indian citizens and enterprise SOCs against advanced voice social-en
 > 📄 **Executive Summary & Submission Pitch**:
 > - 📖 **[Read the 1-Page Solution Pitch (Markdown)](SOLUTION_PITCH.md)**
 > - 📥 **[Download the Official 1-Page Pitch (PDF)](ONE_PAGE_SOLUTION_PITCH.pdf)**
+> - 🌐 **[Live Web Application (Vercel)](https://kavach-ai-azure.vercel.app)**
+> - ⚡ **[Live Backend API (Render)](https://kavach-ai-eq0r.onrender.com/api/v1/health)**
 > - 📦 **[Submission Verification & Package Dossier](submission/SUBMISSION_DOSSIER.md)**
+
 
 ---
 
